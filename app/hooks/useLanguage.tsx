@@ -61,6 +61,30 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'team.andre.role': 'Multi-cloud Specialist',
       'team.alex.role': 'Mentor/Investor Web3',
       'team.thiago.role': 'Mentor/Head AI',
+
+      // Education
+      'education.title': 'Conheça nossos programas de aceleração',
+      'education.psp': 'Mentoria PSP',
+      'education.base': 'Mentoria BASE',
+      'education.bootcamp': 'Bootcamp: Web3 Global Developer',
+      'education.psp.description':
+        'Programa de mentorias estruturado para acelerar sua carreira em tecnologia',
+      'education.psp.features.0': 'Mentoria especializada',
+      'education.psp.features.1': 'Projetos práticos',
+      'education.psp.features.2': 'Network global',
+
+      'education.base.description':
+        'Fundamentos sólidos para sua jornada em tecnologia e mercados internacionais',
+      'education.base.features.0': 'Base técnica',
+      'education.base.features.1': 'Soft skills',
+      'education.base.features.2': 'Preparação global',
+
+      'education.bootcamp.description':
+        'Bootcamp intensivo focado em tecnologias Web3 e desenvolvimento descentralizado',
+      'education.bootcamp.features.0': 'Web3 Stack',
+      'education.bootcamp.features.1': 'DApps',
+      'education.bootcamp.features.2': 'Blockchain',
+      'education.cta.button': 'Saiba mais',
     },
     en: {
       // Header
@@ -95,6 +119,30 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'team.andre.role': 'Multi-cloud Specialist',
       'team.alex.role': 'Web3 Mentor/Investor',
       'team.thiago.role': 'AI Mentor/Head',
+
+      // Education
+      'education.title': 'Meet our acceleration programs',
+      'education.psp': 'PSP Mentorship',
+      'education.base': 'BASE Mentorship',
+      'education.bootcamp': 'Bootcamp: Web3 Global Developer',
+      'education.psp.description':
+        'Structured mentorship program to accelerate your tech career',
+      'education.psp.features.0': 'Specialized mentorship',
+      'education.psp.features.1': 'Hands-on projects',
+      'education.psp.features.2': 'Global networking',
+
+      'education.base.description':
+        'Solid foundations for your journey in tech and international markets',
+      'education.base.features.0': 'Technical base',
+      'education.base.features.1': 'Soft skills',
+      'education.base.features.2': 'Global preparation',
+
+      'education.bootcamp.description':
+        'Intensive bootcamp focused on Web3 technologies and decentralized development',
+      'education.bootcamp.features.0': 'Web3 Stack',
+      'education.bootcamp.features.1': 'DApps',
+      'education.bootcamp.features.2': 'Blockchain',
+      'education.cta.button': 'Discover more',
     },
   }
 
