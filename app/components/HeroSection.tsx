@@ -25,11 +25,6 @@ const HeroSection: React.FC = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="order-1 animate-fade-in-up"
           >
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-borderless-green/10 border border-borderless-green/20 mb-6">
-              <span className="text-sm font-semibold text-borderless-purple dark:text-borderless-green">
-                🚀 {t('hero.tag1')}
-              </span>
-            </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
               <span className="text-borderless-purple dark:text-borderless-green">
