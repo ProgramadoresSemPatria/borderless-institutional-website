@@ -4,6 +4,8 @@ import HeroSection from './components/HeroSection'
 import BorderlessArms from './components/BorderlessArms'
 import TeamSection from './components/TeamSection'
 import EducationDetails from './components/EducationDetails'
+import ContentPrinciples from './components/ContentPrinciples'
+import StartupIncubator from './components/StartupIncubator'
 import { LanguageProvider } from './hooks/useLanguage'
 import { ThemeProvider } from './hooks/useTheme'
 
@@ -18,6 +20,8 @@ function App() {
             <BorderlessArms />
             <TeamSection />
             <EducationDetails />
+            <ContentPrinciples />
+            <StartupIncubator />
           </main>
         </div>
       </LanguageProvider>
