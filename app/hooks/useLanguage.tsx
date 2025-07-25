@@ -85,6 +85,30 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'education.bootcamp.features.1': 'DApps',
       'education.bootcamp.features.2': 'Blockchain',
       'education.cta.button': 'Saiba mais',
+
+      // Principles
+      'principles.tag': 'Garantia de Emprego',
+      'principles.banner':
+        'Consiga um emprego em tech ou seu dinheiro de volta',
+      'principles.implementation': 'Aulas de implementação',
+      'principles.implementation_description':
+        'Aprenda fazendo com projetos práticos e reais',
+      'principles.live': 'Encontros ao vivo',
+      'principles.live_description':
+        'Interação direta com mentores especialistas',
+      'principles.community': 'Comunidade & Networking',
+      'principles.community_description':
+        'Rede de contatos global para sua carreira',
+      'principles.apps': 'Mini-apps para acompanhamento',
+      'principles.apps_description': 'Tecnologia para acompanhar sua evolução',
+
+      // Incubator
+      'incubator.tag': 'Incubadora',
+      'incubator.title': 'Incubadora de Startups',
+      'incubator.subtitle': 'Como é a incubadora?',
+      'incubator.desc':
+        'Dentro do ecossistema os membros podem buscar desde parceiros para iniciar negócios juntos até buscar investidores. Na foto ao lado é o nosso SaaS que atua como um Super-App englobando desde rede social a área de membros.',
+      'incubator.cta': 'Para founders e investidores',
     },
     en: {
       // Header
@@ -98,7 +122,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'hero.subtitle':
         'The only ecosystem in Brazil that prepares, trains and connects tech professionals with global markets',
       'hero.tag1': 'Global Tech Ecosystem',
-      'hero.tag2': 'Internacionalization',
+      'hero.tag2': 'Internacionalizations',
       'hero.tag3': 'Foundation',
 
       // Arms
@@ -143,6 +167,27 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'education.bootcamp.features.1': 'DApps',
       'education.bootcamp.features.2': 'Blockchain',
       'education.cta.button': 'Discover more',
+
+      // Principles
+      'principles.tag': 'Job Garantee',
+      'principles.banner': 'Get a job in tech or your tuition back',
+      'principles.implementation': 'Implementation classes',
+      'principles.implementation_description':
+        'Learn by building real, practical projects',
+      'principles.live': 'Live meetings',
+      'principles.live_description': 'Direct interaction with expert mentors',
+      'principles.community': 'Community & Networking',
+      'principles.community_description': 'Global network to grow your career',
+      'principles.apps': 'Mini-apps for tracking',
+      'principles.apps_description': 'Tech tools to track your evolution',
+
+      // Incubator
+      'incubator.tag': 'Incubator',
+      'incubator.title': 'Startup Incubator',
+      'incubator.subtitle': 'What is the incubator like?',
+      'incubator.desc':
+        'Inside the ecosystem, members can seek everything from partners to start businesses together to investors. The image shows our SaaS, which acts as a Super-App encompassing everything from a social network to a members area.',
+      'incubator.cta': 'For founders and investors',
     },
   }
 
