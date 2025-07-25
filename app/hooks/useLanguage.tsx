@@ -39,7 +39,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'hero.subtitle':
         'O único ecossistema do Brasil que prepara, forma e conecta profissionais de tech com os mercados globais',
       'hero.tag1': 'Ecossistema Tech Global',
-      'hero.tag2': 'Internacionalização',
+      'hero.tag2': 'Internacionalizações',
       'hero.tag3': 'Fundação',
 
       // Arms
