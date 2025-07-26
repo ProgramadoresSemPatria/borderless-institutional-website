@@ -6,6 +6,9 @@ import TeamSection from './components/TeamSection'
 import EducationDetails from './components/EducationDetails'
 import ContentPrinciples from './components/ContentPrinciples'
 import StartupIncubator from './components/StartupIncubator'
+import RecruitmentSection from './components/RecruitmentSection'
+import AboutSection from './components/AboutSection'
+import Footer from './components/Footer'
 import { LanguageProvider } from './hooks/useLanguage'
 import { ThemeProvider } from './hooks/useTheme'
 
@@ -22,6 +25,9 @@ function App() {
             <EducationDetails />
             <ContentPrinciples />
             <StartupIncubator />
+            <RecruitmentSection />
+            <AboutSection />
+            <Footer />
           </main>
         </div>
       </LanguageProvider>
