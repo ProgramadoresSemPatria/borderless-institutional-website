@@ -87,7 +87,6 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'education.cta.button': 'Saiba mais',
 
       // Principles
-      'principles.tag': 'Garantia de Emprego',
       'principles.banner':
         'Consiga um emprego em tech ou seu dinheiro de volta',
       'principles.implementation': 'Aulas de implementação',
@@ -109,6 +108,35 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'incubator.desc':
         'Dentro do ecossistema os membros podem buscar desde parceiros para iniciar negócios juntos até buscar investidores. Na foto ao lado é o nosso SaaS que atua como um Super-App englobando desde rede social a área de membros.',
       'incubator.cta': 'Para founders e investidores',
+
+      // Recruitment
+      'recruitment.title':
+        'A única empresa que conecta developers com empresas globais',
+      'recruitment.title-emphasis': 'SEM TAXA',
+      'recruitment.subtitle':
+        'Full-stack, ML Engineer, GoLang Dev e muito mais',
+      'recruitment.cta': 'Eu quero contratar um profissional',
+      'recruitment.benefits.smart-search.title': 'Busca Inteligente',
+      'recruitment.benefits.smart-search.description':
+        'Encontre o profissional ideal para sua empresa',
+      'recruitment.benefits.global-reach.title': 'Alcance Global',
+      'recruitment.benefits.global-reach.description':
+        'Talentos preparados para mercados internacionais',
+      'recruitment.benefits.no-fees.title': 'Sem Taxa',
+      'recruitment.benefits.no-fees.description':
+        'Zero cobrança para empresas contratantes',
+
+      // About
+      'about.title': 'Nossa História',
+      'about.subtitle': 'O ecossistema que te conecta com o mundo real',
+      'about.content1':
+        "Criada em 2023 por Yuri Pereira somente como uma mentoria que conectava developers com o mercado, hoje se tornou um ecossistema com professores de Tech, Inglês, CTO's, Managers, Cybersecurity e diversos áreas do mercado tech.",
+      'about.content2':
+        'Hoje, a Borderless já contribuiu para a internacionalização de mais de 95 profissionais — desde iniciantes em início de carreira até especialistas com mais de 10 anos de experiência.',
+
+      // Footer
+      'footer.copyright.message':
+        'Borderless Coding. Todos os direitos reservados.',
     },
     en: {
       // Header
@@ -169,7 +197,6 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'education.cta.button': 'Discover more',
 
       // Principles
-      'principles.tag': 'Job Garantee',
       'principles.banner': 'Get a job in tech or your tuition back',
       'principles.implementation': 'Implementation classes',
       'principles.implementation_description':
@@ -182,12 +209,39 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'principles.apps_description': 'Tech tools to track your evolution',
 
       // Incubator
-      'incubator.tag': 'Incubator',
       'incubator.title': 'Startup Incubator',
       'incubator.subtitle': 'What is the incubator like?',
       'incubator.desc':
         'Inside the ecosystem, members can seek everything from partners to start businesses together to investors. The image shows our SaaS, which acts as a Super-App encompassing everything from a social network to a members area.',
       'incubator.cta': 'For founders and investors',
+
+      // Recruitment
+      'recruitment.title':
+        'The only company that connects developers with global companies',
+      'recruitment.title-emphasis': 'WITHOUT FEE',
+      'recruitment.subtitle':
+        'Full-stack, ML Engineer, GoLang Dev and much more',
+      'recruitment.cta': 'I want to hire a professional',
+      'recruitment.benefits.smart-search.title': 'Smart Search',
+      'recruitment.benefits.smart-search.description':
+        'Find the ideal professional for your company',
+      'recruitment.benefits.global-reach.title': 'Global Reach',
+      'recruitment.benefits.global-reach.description':
+        'Talents prepared for international markets',
+      'recruitment.benefits.no-fees.title': 'No Fees',
+      'recruitment.benefits.no-fees.description':
+        'Zero charges for hiring companies',
+
+      // About
+      'about.title': 'Our Story',
+      'about.subtitle': 'The ecosystem that connects you with the real world',
+      'about.content1':
+        'Founded in 2023 by Yuri Pereira as a simple mentorship connecting developers with the market, it has now become an ecosystem with Tech and English teachers, CTOs, Managers, Cybersecurity specialists, and professionals from various areas of the tech industry.',
+      'about.content2':
+        'Today, Borderless has contributed to the internationalization of over 95 professionals — from early-career beginners to specialists with more than 10 years of experience.',
+
+      // Footer
+      'footer.copyright.message': 'Borderless Coding. All rights reserved.',
     },
   }
 
