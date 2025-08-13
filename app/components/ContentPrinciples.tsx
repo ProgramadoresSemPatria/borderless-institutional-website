@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { useLanguage } from '../hooks/useLanguage'
+import Image from 'next/image'
 import { motion } from 'motion/react'
 
 const ContentPrinciples: React.FC = () => {
@@ -11,74 +12,204 @@ const ContentPrinciples: React.FC = () => {
     {
       title: t('principles.implementation'),
       description: t('principles.implementation_description'),
-      number: '01',
+      position: 'top-left',
     },
     {
       title: t('principles.live'),
       description: t('principles.live_description'),
-      number: '02',
+      position: 'bottom-left',
     },
     {
       title: t('principles.community'),
       description: t('principles.community_description'),
-      number: '03',
+      position: 'top-right',
     },
     {
       title: t('principles.apps'),
       description: t('principles.apps_description'),
-      number: '04',
+      position: 'bottom-right',
     },
   ]
 
   return (
-    <section className="py-16 md:py-24 bg-borderless-purple relative overflow-hidden">
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
-        <div className="absolute bottom-20 right-20 w-40 h-40 bg-white/5 rounded-full blur-2xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-      </div>
+    <section className="py-5 bg-borderless-background relative overflow-hidden">
+      <div className="bg-borderless-background-secondary py-20 px-4 text-center relative overflow-hidden">
+        <motion.h2
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-3xl md:text-4xl xl:text-5xl font-medium mb-6 text-white"
+        >
+          {t('principles.banner')}
+        </motion.h2>
 
-      <motion.div
-        initial={{ y: 30, scale: 1, opacity: 0.7 }}
-        whileInView={{ y: 0, scale: 1, opacity: 1 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 0.3 }}
-        className="container mx-auto px-4 sm:px-6 lg:px-8 relative"
-      >
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-            {t('principles.banner')}
-          </h2>
-
-          <div className="w-32 h-1 bg-white/30 mx-auto rounded-full"></div>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {principles.map((principle, index) => (
-            <div
-              key={index}
-              className="group relative p-8 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/10 transition-all duration-500 transform hover:-translate-y-3 hover:shadow-2xl"
-            >
-              <div className="absolute -top-4 -right-4 w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg">
-                <span className="text-borderless-purple font-bold text-lg">
-                  {principle.number}
-                </span>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-1 bg-white/40 mx-auto mb-6 group-hover:w-24 transition-all duration-300 rounded-full"></div>
-
-                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-borderless-green transition-colors duration-300">
-                  {principle.title}
+        <div className="hidden lg:block relative w-full max-w-6xl mx-auto h-[700px] mt-10">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="relative">
+              <Image
+                src="/ui/globe-img.png"
+                alt="Globo Borderless"
+                className="w-72 md:w-96 lg:w-[28rem] h-auto mx-auto"
+                width={600}
+                height={600}
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none">
+                <Image
+                  src="/ui/logo.webp"
+                  alt="Logo Borderless"
+                  className="w-16 h-auto mx-auto drop-shadow-[0_0_8px_#4fffbcb7]"
+                  width={64}
+                  height={64}
+                />
+                <h3 className="text-2xl md:text-3xl font-bold text-white drop-shadow-[0_0_8px_#4fffbccc]">
+                  BORDERLESS
                 </h3>
-                <p className="text-white/90 leading-relaxed">
-                  {principle.description}
+              </div>
+            </div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+            viewport={{ once: true }}
+            className="absolute top-22 left-0 w-[22.3rem] h-[22rem]"
+          >
+            <div className="relative w-full h-full">
+              <Image
+                src="/ui/ellipse-item.png"
+                alt=""
+                className="absolute inset-0 w-full h-full object-contain z-0 rotate-[32deg]"
+                width={600}
+                height={600}
+              />
+              <div className="relative top-29 left-1 z-20 p-6 text-white">
+                <h3 className="font-semibold text-lg">{principles[0].title}</h3>
+                <p className="text-sm text-gray-100">
+                  {principles[0].description}
                 </p>
               </div>
             </div>
-          ))}
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+            viewport={{ once: true }}
+            className="absolute bottom-0 left-6 w-[22.3rem] h-[22rem]"
+          >
+            <div className="relative w-full h-full">
+              <Image
+                src="/ui/ellipse-item.png"
+                alt=""
+                className="absolute inset-0 w-full h-full object-contain z-0 -rotate-[2deg]"
+                width={600}
+                height={600}
+              />
+              <div className="relative top-19 z-10 p-6 text-white">
+                <h3 className="font-semibold text-lg">{principles[1].title}</h3>
+                <p className="text-sm text-gray-100">
+                  {principles[1].description}
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+            viewport={{ once: true }}
+            className="absolute top-5 right-5 w-[22.3rem] h-[22rem]"
+          >
+            <div className="relative w-full h-full">
+              <Image
+                src="/ui/ellipse-item.png"
+                alt=""
+                className="absolute inset-0 w-full h-full object-contain z-0 rotate-[-182deg]"
+                width={600}
+                height={600}
+              />
+              <div className="relative top-46 left-1 z-10 p-6 text-white">
+                <h3 className="font-semibold text-lg">{principles[2].title}</h3>
+                <p className="text-sm text-gray-100">
+                  {principles[2].description}
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
+            viewport={{ once: true }}
+            className="absolute bottom-17 -right-0 w-[22.3rem] h-[22rem]"
+          >
+            <div className="relative w-full h-full">
+              <Image
+                src="/ui/ellipse-item.png"
+                alt=""
+                className="absolute inset-0 w-full h-full object-contain z-0 rotate-[-147deg]"
+                width={600}
+                height={600}
+              />
+              <div className="relative top-36 right-2 z-10 p-6 text-white">
+                <h3 className="font-semibold text-lg">{principles[3].title}</h3>
+                <p className="text-sm text-gray-100">
+                  {principles[3].description}
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
-      </motion.div>
+
+        <div className="lg:hidden mt-10">
+          <div className="flex flex-col items-center justify-center mb-12">
+            <div className="relative mb-8">
+              <Image
+                src="/ui/globe-img.png"
+                alt="Globo Borderless"
+                className="w-48 md:w-64 h-auto mx-auto opacity-20"
+                width={400}
+                height={400}
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
+                <Image
+                  src="/ui/logo.webp"
+                  alt="Logo Borderless"
+                  className="w-12 md:w-16 h-auto mx-auto drop-shadow-[0_0_8px_#4fffbc58]"
+                  width={64}
+                  height={64}
+                />
+                <h3 className="text-xl md:text-2xl font-bold text-white drop-shadow-[0_0_8px_#4fffbc89]">
+                  BORDERLESS
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+            {principles.map((principle, index) => (
+              <div key={index} className="relative">
+                <div className="bg-gradient-to-br from-borderless-green/20 to-borderless-purple/20 backdrop-blur-sm border border-borderless-green/30 rounded-2xl p-6 text-white shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="absolute inset-0 bg-gradient-to-br from-borderless-green/10 to-borderless-purple/10 rounded-2xl"></div>
+                  <div className="relative z-10">
+                    <h3 className="font-semibold text-lg mb-3 text-borderless-green">
+                      {principle.title}
+                    </h3>
+                    <p className="text-sm text-gray-100 leading-relaxed">
+                      {principle.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   )
 }

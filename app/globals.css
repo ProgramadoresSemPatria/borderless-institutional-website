@@ -4,14 +4,12 @@
 
 html {
   @apply scroll-smooth;
-}
-
-body {
-  @apply bg-white text-black dark:bg-black dark:text-white;
+  font-family: 'ui-sans-serif', 'system-ui', 'sans-serif';
 }
 
 @theme {
-
+  --color-borderless-background: #090916e9;
+  --color-borderless-background-secondary: #0A0A1F;
   --color-borderless-green: #28d3a0;
   --color-borderless-purple: #4814b0;
   --color-borderless-green-light: #3de6b3;

@@ -1,16 +1,8 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
+import { LanguageProvider } from './hooks/useLanguage'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 export const metadata: Metadata = {
   title: 'Borderless Coding | Progamadores para o Mundo',
@@ -20,9 +12,6 @@ export const metadata: Metadata = {
 
 const themeInitScript = `
   try {
-    const theme = localStorage.getItem('borderless-theme') || 'dark';
-    document.documentElement.classList.add(theme);
-
     const userLang = navigator.language || navigator.userLanguage || 'en';
     document.documentElement.setAttribute('lang', userLang);
   } catch (e) {}
@@ -38,10 +27,14 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-black transition-colors duration-300`}
-      >
-        {children}
+      <body className="antialiased text-white">
+        <LanguageProvider>
+          <div className="min-h-screen bg-borderless-background transition-colors duration-300">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </LanguageProvider>
       </body>
     </html>
   )

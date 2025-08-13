@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from './components/Header'
 import HeroSection from './components/HeroSection'
 import BorderlessArms from './components/BorderlessArms'
 import TeamSection from './components/TeamSection'
@@ -8,31 +7,28 @@ import ContentPrinciples from './components/ContentPrinciples'
 import StartupIncubator from './components/StartupIncubator'
 import RecruitmentSection from './components/RecruitmentSection'
 import AboutSection from './components/AboutSection'
-import Footer from './components/Footer'
-import { LanguageProvider } from './hooks/useLanguage'
-import { ThemeProvider } from './hooks/useTheme'
+import StartupIncubatorExample from './components/StartupIncubationExample'
+import SocialProof from './components/SocialProof'
+import Events from './components/Events'
+import HowWeCanHelp from './components/HowWeCanHelp'
 
-function App() {
+function Home() {
   return (
-    <ThemeProvider>
-      <LanguageProvider>
-        <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-          <Header />
-          <main>
-            <HeroSection />
-            <BorderlessArms />
-            <TeamSection />
-            <EducationDetails />
-            <ContentPrinciples />
-            <StartupIncubator />
-            <RecruitmentSection />
-            <AboutSection />
-            <Footer />
-          </main>
-        </div>
-      </LanguageProvider>
-    </ThemeProvider>
+    <main>
+      <HeroSection />
+      <BorderlessArms />
+      <StartupIncubatorExample />
+      <TeamSection />
+      <SocialProof />
+      <EducationDetails />
+      <ContentPrinciples />
+      <StartupIncubator />
+      <RecruitmentSection />
+      <AboutSection />
+      <HowWeCanHelp />
+      <Events />
+    </main>
   )
 }
 
-export default App
+export default Home
