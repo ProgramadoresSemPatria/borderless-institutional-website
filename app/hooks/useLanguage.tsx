@@ -1,5 +1,11 @@
 'use client'
-import React, { createContext, useContext, useState, ReactNode } from 'react'
+import React, {
+  createContext,
+  useContext,
+  useState,
+  ReactNode,
+  useEffect,
+} from 'react'
 
 type Language = 'pt' | 'en'
 
@@ -26,21 +32,30 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
 }) => {
   const [language, setLanguage] = useState<Language>('pt')
 
+  useEffect(() => {
+    const browserLang = navigator.language.slice(0, 2)
+    const initialLang: Language = browserLang === 'en' ? 'en' : 'pt'
+    setLanguage(initialLang)
+  }, [])
+
   const translations: Record<Language, Record<string, string>> = {
     pt: {
+      // Home
       // Header
-      'nav.education': 'Educação',
       'nav.tech': 'Tech',
       'nav.people': 'Pessoas',
+      'nav.education': 'Educação',
       'nav.about': 'Sobre',
+      'nav.events': 'Eventos',
 
       // Hero
       'hero.title': 'Tech global começa aqui',
       'hero.subtitle':
-        'O único ecossistema do Brasil que prepara, forma e conecta profissionais de tech com os mercados globais',
-      'hero.tag1': 'Ecossistema Tech Global',
-      'hero.tag2': 'Internacionalizações',
-      'hero.tag3': 'Fundação',
+        'O único ecossistema do Brasil que prepara, forma e conecta profissionais de tech com os mercados globais.',
+      'hero.subtitle2':
+        'A ponte entre talentos tech brasileiros e o mercado internacional — com produtos educacionais, plataforma própria e startups em incubação.',
+      'hero.button-exp': 'Ver plano de expansão',
+      'hero.button-intl': 'Quero internacionalizar',
 
       // Arms
       'arms.title': 'Desde Mobile development até Machine Learning Engineering',
@@ -53,6 +68,14 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'arms.companies':
         'Empresas onde nossos talentos já trabalharam ou trabalham',
 
+      // Incubation Examples
+      'incubation.examples.title':
+        'Startups em Incubação – Powered by Borderless Hub',
+      'incubation.examples.rampix.btn': 'Visitar',
+      'incubation.examples.rampix.desc':
+        'Exchange 100% brasileira para comprar e vender criptomoedas via Pix, de maneira rápida e segura.',
+      'incubation.examples.super-app.btn': 'Exclusivo para membros',
+
       // Team
       'team.title': 'Nossa Equipe',
       'team.yuri.role': 'Founder e Strategic Tech Advisor',
@@ -61,6 +84,15 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'team.andre.role': 'Multi-cloud Specialist',
       'team.alex.role': 'Mentor/Investor Web3',
       'team.thiago.role': 'Mentor/Head AI',
+
+      // Social Proof
+      'social-proof.title': 'Prova Real – Mais de 105 devs globalizados',
+      'social-proof.iframe.caique.desc':
+        'Caíque saiu de 8k BRL do Brasil para mais de 60k BRL (11k usd/month) em 6 meses.',
+      'social-proof.iframe.lucas.desc':
+        'Lucas saiu de 3k BRL do Brasil para mais de 25k BRL (5k usd/month + equity em uma startup no AZ, USA).',
+      'social-proof.arthur.desc': 'Testemunho do Arthur (Mentorado da Base).',
+      'social-proof.map.desc': 'Diversos países e continentes.',
 
       // Education
       'education.title': 'Conheça nossos programas de aceleração',
@@ -116,15 +148,6 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'recruitment.subtitle':
         'Full-stack, ML Engineer, GoLang Dev e muito mais',
       'recruitment.cta': 'Eu quero contratar um profissional',
-      'recruitment.benefits.smart-search.title': 'Busca Inteligente',
-      'recruitment.benefits.smart-search.description':
-        'Encontre o profissional ideal para sua empresa',
-      'recruitment.benefits.global-reach.title': 'Alcance Global',
-      'recruitment.benefits.global-reach.description':
-        'Talentos preparados para mercados internacionais',
-      'recruitment.benefits.no-fees.title': 'Sem Taxa',
-      'recruitment.benefits.no-fees.description':
-        'Zero cobrança para empresas contratantes',
 
       // About
       'about.title': 'Nossa História',
@@ -132,26 +155,53 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'about.content1':
         "Criada em 2023 por Yuri Pereira somente como uma mentoria que conectava developers com o mercado, hoje se tornou um ecossistema com professores de Tech, Inglês, CTO's, Managers, Cybersecurity e diversos áreas do mercado tech.",
       'about.content2':
-        'Hoje, a Borderless já contribuiu para a internacionalização de mais de 95 profissionais — desde iniciantes em início de carreira até especialistas com mais de 10 anos de experiência.',
+        'Hoje, a Borderless já contribuiu para a internacionalização de mais de 105 profissionais — desde iniciantes em início de carreira até especialistas com mais de 10 anos de experiência.',
+
+      // How Can We Help
+      'how-can-we-help.title': 'Como podemos te ajudar?',
+      'how-can-we-help.subtitle':
+        'Oferecemos um ecossistema completo de soluções para desenvolvedores, startups e empresas que buscam profissionais de excelência em tecnologia.',
+      'how-can-we-help.cta.mentorship': 'Mentoria',
+      'how-can-we-help.cta.incubator': 'Incubadora',
+      'how-can-we-help.cta.platform': 'Plataforma',
+      'how-can-we-help.cta.community': 'Comunidade',
+
+      // Events
+      'events.title': 'Eventos & Conquistas',
+      'events.image.desc1':
+        'Primeira borderless conf São Paulo, Brasil, para mais de 70 convidados.',
+      'events.image.desc2':
+        'Entrevista do Nosso founder, Yuri Pereira, para a revista Entrepreneur em Dubai, UAE 🇦🇪.',
+      'events.image.desc3':
+        'Brainstorm durante uma hackthon de AI na França 🇫🇷.',
+      'events.image.desc4':
+        'Mentorados da borderless receberam o segundo lugar na hackathon da EthCC em Cannes, França 🇫🇷.',
 
       // Footer
       'footer.copyright.message':
         'Borderless Coding. Todos os direitos reservados.',
+
+      // Expansion
+      'expansion.title': 'Expansão',
+      'expansion.subtitle':
+        'A Borderless tem um plano de expansão para o mercado global. Se vocês querem ser parte, envie um email para: ',
     },
     en: {
       // Header
-      'nav.education': 'Education',
       'nav.tech': 'Tech',
       'nav.people': 'People',
+      'nav.education': 'Education',
       'nav.about': 'About',
+      'nav.events': 'Events',
 
       // Hero
       'hero.title': 'Global tech starts here',
       'hero.subtitle':
-        'The only ecosystem in Brazil that prepares, trains and connects tech professionals with global markets',
-      'hero.tag1': 'Global Tech Ecosystem',
-      'hero.tag2': 'Internacionalizations',
-      'hero.tag3': 'Foundation',
+        'The only ecosystem in Brazil that prepares, trains and connects tech professionals with global markets.',
+      'hero.subtitle2':
+        'The bridge between Brazilian tech talent and the international market — with educational products, a proprietary platform, and incubated startups.',
+      'hero.button-exp': 'See expansion plan',
+      'hero.button-intl': 'I want to internationalize',
 
       // Arms
       'arms.title': 'From Mobile development to Machine Learning Engineering',
@@ -163,6 +213,14 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'arms.people.desc': 'Connection with global markets',
       'arms.companies': 'Companies where our talents have worked or work',
 
+      // Incubation Examples
+      'incubation.examples.title':
+        'Startups in Incubation – Powered by Borderless Hub',
+      'incubation.examples.rampix.btn': 'Visit',
+      'incubation.examples.rampix.desc':
+        '100% Brazilian exchange to buy and sell cryptocurrencies via Pix, fast and secure.',
+      'incubation.examples.super-app.btn': 'Exclusive for members',
+
       // Team
       'team.title': 'Our Team',
       'team.yuri.role': 'Founder & Strategic Tech Advisor',
@@ -171,6 +229,15 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'team.andre.role': 'Multi-cloud Specialist',
       'team.alex.role': 'Web3 Mentor/Investor',
       'team.thiago.role': 'AI Mentor/Head',
+
+      // Social Proof
+      'social-proof.title': 'Real Proof – Over 105 Global Developers',
+      'social-proof.iframe.caique.desc':
+        'Caíque went from 8k BRL in Brazil to over 60k BRL (11k USD/month) in 6 months.',
+      'social-proof.iframe.lucas.desc':
+        'Lucas went from 3k BRL in Brazil to over 25k BRL (5k USD/month + equity in a startup in AZ, USA).',
+      'social-proof.arthur.desc': "Arthur's testimony about Borderless.",
+      'social-proof.map.desc': 'Multiple countries and continents.',
 
       // Education
       'education.title': 'Meet our acceleration programs',
@@ -222,15 +289,6 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'recruitment.subtitle':
         'Full-stack, ML Engineer, GoLang Dev and much more',
       'recruitment.cta': 'I want to hire a professional',
-      'recruitment.benefits.smart-search.title': 'Smart Search',
-      'recruitment.benefits.smart-search.description':
-        'Find the ideal professional for your company',
-      'recruitment.benefits.global-reach.title': 'Global Reach',
-      'recruitment.benefits.global-reach.description':
-        'Talents prepared for international markets',
-      'recruitment.benefits.no-fees.title': 'No Fees',
-      'recruitment.benefits.no-fees.description':
-        'Zero charges for hiring companies',
 
       // About
       'about.title': 'Our Story',
@@ -238,10 +296,33 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
       'about.content1':
         'Founded in 2023 by Yuri Pereira as a simple mentorship connecting developers with the market, it has now become an ecosystem with Tech and English teachers, CTOs, Managers, Cybersecurity specialists, and professionals from various areas of the tech industry.',
       'about.content2':
-        'Today, Borderless has contributed to the internationalization of over 95 professionals — from early-career beginners to specialists with more than 10 years of experience.',
+        'Today, Borderless has contributed to the internationalization of over 105 professionals — from early-career beginners to specialists with more than 10 years of experience.',
+
+      // How Can We Help
+      'how-can-we-help.title': 'How can we help you?',
+      'how-can-we-help.subtitle':
+        'We offer a complete ecosystem of solutions for developers, startups, and companies seeking excellence in technology professionals.',
+      'how-can-we-help.cta.mentorship': 'Mentorship',
+      'how-can-we-help.cta.incubator': 'Incubator',
+      'how-can-we-help.cta.platform': 'Platform',
+      'how-can-we-help.cta.community': 'Community',
+
+      // Events
+      'events.title': 'Events & Achievements',
+      'events.image.desc1':
+        'First Borderless Conf São Paulo, Brazil, for more than 70 guests.',
+      'events.image.desc2':
+        'Interview with our founder, Yuri Pereira, for Entrepreneur magazine in Dubai, UAE 🇦🇪.',
+      'events.image.desc3': 'Brainstorm during an AI hackathon in France 🇫🇷.',
+      'events.image.desc4':
+        'Borderless mentees took second place in the EthCC hackathon in Cannes, France 🇫🇷.',
 
       // Footer
       'footer.copyright.message': 'Borderless Coding. All rights reserved.',
+
+      // Expansion
+      'expansion.title': 'Expansion',
+      'expansion.content': 'Expansion content',
     },
   }
 
