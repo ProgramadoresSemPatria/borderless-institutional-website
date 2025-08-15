@@ -3,11 +3,25 @@ import './globals.css'
 import { LanguageProvider } from './hooks/useLanguage'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import { headers } from 'next/headers'
 
-export const metadata: Metadata = {
-  title: 'Borderless Coding | Progamadores para o Mundo',
-  description:
-    'A Borderless é o primeiro ecossistema brasileiro que forma e conecta talentos de tecnologia com o mercado global, por meio de mentorias, bootcamps, aceleração e recrutamento sem fees.',
+export async function generateMetadata(): Promise<Metadata> {
+  const acceptLanguage = (await headers()).get('accept-language') || 'en'
+  const lang = acceptLanguage.startsWith('pt') ? 'pt' : 'en'
+
+  if (lang === 'pt') {
+    return {
+      title: 'Borderless Coding',
+      description:
+        'A Borderless é o primeiro ecossistema brasileiro que forma e conecta talentos de tecnologia com o mercado global...',
+    }
+  } else {
+    return {
+      title: 'Borderless Coding',
+      description:
+        'Borderless is the first Brazilian ecosystem that trains and connects tech talents with the global market...',
+    }
+  }
 }
 
 const themeInitScript = `
