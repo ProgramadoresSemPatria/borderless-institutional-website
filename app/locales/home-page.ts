@@ -53,6 +53,7 @@ export const homeTranslations: Record<Language, Record<string, string>> = {
     'social-proof.iframe.lucas.desc':
       'Lucas saiu de 3k BRL do Brasil para mais de 25k BRL (5k usd/month + equity em uma startup no AZ, USA).',
     'social-proof.arthur.desc': 'Testemunho do Arthur (Mentorado da Base).',
+    'social-proof.thiago.desc': 'Testemunho do Thiago (Mentorado da PSP).',
     'social-proof.map.desc': 'Diversos países e continentes.',
 
     // Education
@@ -106,7 +107,7 @@ export const homeTranslations: Record<Language, Record<string, string>> = {
       'A única empresa que conecta developers com empresas globais',
     'recruitment.title-emphasis': 'SEM TAXA',
     'recruitment.subtitle': 'Full-stack, ML Engineer, GoLang Dev e muito mais',
-    'recruitment.cta': 'Eu quero contratar um profissional',
+    'recruitment.cta': 'Contratar um profissional',
 
     // About
     'about.title': 'Nossa História',
@@ -194,6 +195,7 @@ export const homeTranslations: Record<Language, Record<string, string>> = {
     'social-proof.iframe.lucas.desc':
       'Lucas went from 3k BRL in Brazil to over 25k BRL (5k USD/month + equity in a startup in AZ, USA).',
     'social-proof.arthur.desc': "Arthur's testimony about Borderless.",
+    'social-proof.thiago.desc': "Thiago's testimony about Borderless (from 13k USD/month to 22k USD/month in 1 month of mentorship).",
     'social-proof.map.desc': 'Multiple countries and continents.',
 
     // Education

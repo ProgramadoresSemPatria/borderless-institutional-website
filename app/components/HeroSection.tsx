@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
-                className="text-5xl md:text-6xl lg:text-7xl font-bold:text-white font-medium leading-tight"
+                className="text-5xl md:text-6xl lg:text-7xl font-bold:text-white font-bold leading-tight"
               >
                 <span className="bg-gradient-to-r from-borderless-purple to-borderless-green bg-clip-text text-transparent">
                   Global tech
@@ -64,11 +64,14 @@ const HeroSection: React.FC = () => {
                 {t('hero.subtitle2')}
               </p>
 
-              <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-4">
+              <div className="w-full flex flex-col sm:flex-row justify-start items-center gap-4">
                 <Link
-                  href="/expansion"
-                  className="w-full cursor-pointer group bg-gradient-to-r bg-borderless-purple text-white px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center"
-                  aria-label='expansion button'
+                  href="https://www.instagram.com/borderlesscoding"
+                  className="w-full sm:w-fit cursor-pointer group bg-gradient-to-r bg-borderless-purple hover:bg-borderless-purple-dark 
+                   text-white px-8 py-4 
+                  rounded-xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 
+                  flex items-center justify-center"
+                  aria-label="expansion button"
                 >
                   <motion.span
                     whileHover={{ scale: 1.02 }}
@@ -82,11 +85,11 @@ const HeroSection: React.FC = () => {
                 </Link>
 
                 <Link
-                  href="/"
-                  className="w-full  cursor-pointer group border-2 border-gray-600 hover:border-borderless-green 
-                  text-gray-300 hover:text-borderless-green px-8 py-4 rounded-xl f
-                  ont-semibold transition-all duration-300 flex items-center justify-center backdrop-blur-sm"
-                  aria-label='internationalize button'
+                  href="https://www.instagram.com/borderlesscoding"
+                  className="w-full sm:w-fit cursor-pointer group border-2 border-gray-600 hover:border-borderless-green 
+                  text-gray-300 hover:text-borderless-green px-8 py-4 rounded-xl font-semibold 
+                  transition-all duration-300 flex items-center justify-center backdrop-blur-sm"
+                  aria-label="internationalize button"
                 >
                   <motion.span
                     whileHover={{ scale: 1.02 }}
@@ -110,11 +113,11 @@ const HeroSection: React.FC = () => {
             <div className="relative w-full max-w-[700px] rounded-3xl shadow-2xl p-[1.2rem] border border-gray-700">
               <picture>
                 <source
-                  srcSet="/ui/hero-img-horizontal.png"
+                  srcSet="/ui/hero-img-mobile.webp"
                   media="(max-width: 768px)"
                 />
                 <Image
-                  src="/ui/hero-img-horizontal.png"
+                  src="/ui/hero-img.webp"
                   alt="Global Tech"
                   className="w-full h-auto rounded-2xl object-cover"
                   width={800}

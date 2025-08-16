@@ -51,7 +51,7 @@ const HowWeCanHelp: React.FC = () => {
             ].map((item, index) => (
               <motion.a
                 key={item}
-                href="https://community.borderlesscoding.com/dashboard"
+                href="https://www.instagram.com/borderlesscoding"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ y: 30, opacity: 0 }}

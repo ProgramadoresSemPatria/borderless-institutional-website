@@ -69,7 +69,7 @@ const EducationDetails: React.FC = () => {
               viewport={{ once: true, amount: 0.3 }}
               key={index}
               className="group relative overflow-hidden rounded-2xl border border-borderless-purple/30
-                transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-3 w-full max-w-sm"
+                transition-all duration-500 hover:shadow-md transform hover:-translate-y-[.2rem] w-full max-w-sm"
             >
               <div className="p-8 flex flex-col justify-between h-full">
                 <div>
