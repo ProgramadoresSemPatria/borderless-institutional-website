@@ -47,7 +47,7 @@ const TeamSection: React.FC = () => {
       role: t('team.alex.role'),
       image: '/team/alex-miloski.webp',
       color: 'borderless-green',
-      linkedin: 'https://www.linkedin.com/in/alex-miloski/',
+      linkedin: 'https://www.linkedin.com/in/amiloski',
       github: 'https://github.com/alex-miloski',
     },
     {
