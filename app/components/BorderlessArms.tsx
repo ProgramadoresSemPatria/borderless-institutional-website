@@ -113,7 +113,7 @@ const BorderlessArms: React.FC = () => {
   return (
     <section
       id="tech"
-      className="py-16 md:py-24 bg-borderless-background-secondary relative"
+      className="pb-16 pt-20 md:py-24 bg-borderless-background-secondary relative"
     >
       <motion.div
         initial={{ y: 30, scale: 1, opacity: 0.7 }} 
