@@ -45,7 +45,73 @@ const ContentPrinciples: React.FC = () => {
         </motion.h2>
 
         <div className="hidden lg:block relative w-full max-w-6xl mx-auto h-[700px] mt-10">
-          <div className="absolute inset-0 flex items-center justify-center">
+          <motion.svg 
+            className="absolute inset-0 w-full h-full pointer-events-none" 
+            style={{ zIndex: 1 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            <motion.line
+              x1="50%"
+              y1="50%"
+              x2="160"
+              y2="180"
+              stroke="#465851"
+              strokeWidth="2"
+              strokeDasharray="8,6"
+              opacity="0.6"
+              initial={{ pathLength: 0, opacity: 0 }}
+              whileInView={{ pathLength: 1, opacity: 0.6 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+            />
+            <motion.line
+              x1="50%"
+              y1="50%"
+              x2="180"
+              y2="580"
+              stroke="#465851"
+              strokeWidth="2"
+              strokeDasharray="8,6"
+              opacity="0.6"
+              initial={{ pathLength: 0, opacity: 0 }}
+              whileInView={{ pathLength: 1, opacity: 0.6 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+            />
+            <motion.line
+              x1="50%"
+              y1="50%"
+              x2="calc(100% - 160px)"
+              y2="120"
+              stroke="#465851"
+              strokeWidth="2"
+              strokeDasharray="8,6"
+              opacity="0.6"
+              initial={{ pathLength: 0, opacity: 0 }}
+              whileInView={{ pathLength: 1, opacity: 0.6 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              viewport={{ once: true }}
+            />
+            <motion.line
+              x1="50%"
+              y1="50%"
+              x2="calc(100% - 160px)"
+              y2="520"
+              stroke="#465851"
+              strokeWidth="2"
+              strokeDasharray="8,6"
+              opacity="0.6"
+              initial={{ pathLength: 0, opacity: 0 }}
+              whileInView={{ pathLength: 1, opacity: 0.6 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              viewport={{ once: true }}
+            />
+          </motion.svg>
+
+          <div className="absolute inset-0 flex items-center justify-center" style={{ zIndex: 2 }}>
             <div className="relative">
               <Image
                 src="/ui/globe-img.png"
@@ -72,96 +138,72 @@ const ContentPrinciples: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.6, duration: 0.2 }}
             viewport={{ once: true }}
-            className="absolute top-22 left-0 w-[22.3rem] h-[22rem]"
+            className="absolute top-28 left-0 w-80"
+            style={{ zIndex: 3 }}
           >
-            <div className="relative w-full h-full">
-              <Image
-                src="/ui/ellipse-item.png"
-                alt=""
-                className="absolute inset-0 w-full h-full object-contain z-0 rotate-[32deg]"
-                width={600}
-                height={600}
-              />
-              <div className="relative top-29 left-1 z-20 p-6 text-white">
-                <h3 className="font-semibold text-lg">{principles[0].title}</h3>
-                <p className="text-sm text-gray-100">
-                  {principles[0].description}
-                </p>
-              </div>
+            <div className="bg-borderless-background-secondary/90 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 text-white shadow-lg">
+              <h3 className="font-semibold text-lg mb-3 text-borderless-green-dark">
+                {principles[0].title}
+              </h3>
+              <p className="text-sm text-gray-100 leading-relaxed">
+                {principles[0].description}
+              </p>
             </div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
+            transition={{ delay: 0.6, duration: 0.3 }}
             viewport={{ once: true }}
-            className="absolute bottom-0 left-6 w-[22.3rem] h-[22rem]"
+            className="absolute bottom-16 left-6 w-80"
+            style={{ zIndex: 3 }}
           >
-            <div className="relative w-full h-full">
-              <Image
-                src="/ui/ellipse-item.png"
-                alt=""
-                className="absolute inset-0 w-full h-full object-contain z-0 -rotate-[2deg]"
-                width={600}
-                height={600}
-              />
-              <div className="relative top-19 z-10 p-6 text-white">
-                <h3 className="font-semibold text-lg">{principles[1].title}</h3>
-                <p className="text-sm text-gray-100">
-                  {principles[1].description}
-                </p>
-              </div>
+            <div className="bg-borderless-background-secondary/90 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 text-white shadow-lg">
+              <h3 className="font-semibold text-lg mb-3 text-borderless-green-dark">
+                {principles[1].title}
+              </h3>
+              <p className="text-sm text-gray-100 leading-relaxed">
+                {principles[1].description}
+              </p>
             </div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
+            transition={{ delay: 0.6, duration: 0.4 }}
             viewport={{ once: true }}
-            className="absolute top-5 right-5 w-[22.3rem] h-[22rem]"
+            className="absolute top-16 right-5 w-80"
+            style={{ zIndex: 3 }}
           >
-            <div className="relative w-full h-full">
-              <Image
-                src="/ui/ellipse-item.png"
-                alt=""
-                className="absolute inset-0 w-full h-full object-contain z-0 rotate-[-182deg]"
-                width={600}
-                height={600}
-              />
-              <div className="relative top-46 left-1 z-10 p-6 text-white">
-                <h3 className="font-semibold text-lg">{principles[2].title}</h3>
-                <p className="text-sm text-gray-100">
-                  {principles[2].description}
-                </p>
-              </div>
+            <div className="bg-borderless-background-secondary/90 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 text-white shadow-lg">
+              <h3 className="font-semibold text-lg mb-3 text-borderless-green-dark">
+                {principles[2].title}
+              </h3>
+              <p className="text-sm text-gray-100 leading-relaxed">
+                {principles[2].description}
+              </p>
             </div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
+            transition={{ delay: 0.6, duration: 0.5 }}
             viewport={{ once: true }}
-            className="absolute bottom-17 -right-0 w-[22.3rem] h-[22rem]"
+            className="absolute bottom-17 right-0 w-80"
+            style={{ zIndex: 3 }}
           >
-            <div className="relative w-full h-full">
-              <Image
-                src="/ui/ellipse-item.png"
-                alt=""
-                className="absolute inset-0 w-full h-full object-contain z-0 rotate-[-147deg]"
-                width={600}
-                height={600}
-              />
-              <div className="relative top-36 right-2 z-10 p-6 text-white">
-                <h3 className="font-semibold text-lg">{principles[3].title}</h3>
-                <p className="text-sm text-gray-100">
-                  {principles[3].description}
-                </p>
-              </div>
+            <div className="bg-borderless-background-secondary/90 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 text-white shadow-lg">
+              <h3 className="font-semibold text-lg mb-3 text-borderless-green-dark">
+                {principles[3].title}
+              </h3>
+              <p className="text-sm text-gray-100 leading-relaxed">
+                {principles[3].description}
+              </p>
             </div>
           </motion.div>
         </div>
@@ -212,6 +254,6 @@ const ContentPrinciples: React.FC = () => {
       </div>
     </section>
   )
-}
+} 
 
 export default ContentPrinciples
