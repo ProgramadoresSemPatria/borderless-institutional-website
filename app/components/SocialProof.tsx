@@ -35,7 +35,13 @@ const SocialProof: React.FC = () => {
       type: 'image',
     },
     {
-      src: '/ui/global-map.png',
+      src: '/ui/thiago-testimony.webp',
+      desc: 'social-proof.thiago.desc',
+      alt: 'Arthur testimony about Borderless',
+      type: 'image',
+    },
+    {
+      src: '/ui/global-map.webp',
       desc: 'social-proof.map.desc',
       alt: 'Global Map where Borderless helped developers to internationalize their careers',
       type: 'image',
