@@ -34,7 +34,7 @@ const StartupIncubatorExample: React.FC = () => {
           >
             <div className="relative h-64 w-full rounded-xl overflow-hidden">
               <Image
-                src="/ui/rampix.png"
+                src="/ui/rampix.webp"
                 alt="Rampix - Plataforma inovadora de exchange"
                 fill
                 className="object-contain transition-transform duration-300 group-hover:scale-105"
@@ -72,7 +72,7 @@ const StartupIncubatorExample: React.FC = () => {
           >
             <div className="relative h-64 w-full rounded-xl overflow-hidden">
               <Image
-                src="/ui/borderless-community.png"
+                src="/ui/borderless-community.webp"
                 alt="Borderless Community - Rede global de desenvolvedores"
                 fill
                 className="object-contain transition-transform duration-300 group-hover:scale-105"

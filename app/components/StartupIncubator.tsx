@@ -5,6 +5,7 @@ import { useLanguage } from '@/app/hooks/useLanguage'
 import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { motion } from 'motion/react'
+import Link from 'next/link'
 
 const StartupIncubator: React.FC = () => {
   const { t } = useLanguage()
@@ -32,10 +33,23 @@ const StartupIncubator: React.FC = () => {
               {t('incubator.desc')}
             </p>
 
-            <button className="flex items-center justify-center bg-borderless-purple hover:bg-borderless-purple-dark text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl cursor-pointer">
-              {t('incubator.cta')}
-              <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </button>
+            <Link
+              href="https://www.instagram.com/borderlesscoding"
+              className="w-fit cursor-pointer group bg-gradient-to-r bg-borderless-purple hover:bg-borderless-purple-dark 
+            text-white px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 
+              flex items-center justify-center"
+              aria-label="incubator button"
+            >
+              <motion.span
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ delay: 0.8, duration: 0.8 }}
+                className="flex items-center gap-3 cursor-pointer"
+              >
+                {t('incubator.cta')}
+                <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </motion.span>
+            </Link>
           </motion.div>
 
           <motion.div

@@ -86,9 +86,8 @@ const TeamSection: React.FC = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="group relative rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 transform 
-              hover:-translate-y-3   
-              overflow-hidden"
+              className="group relative rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-500 
+              transform hover:-translate-y-[.2rem] overflow-hidden"
             >
               <div
                 className={`absolute inset-0 bg-${member.color} opacity-0 transition-opacity duration-500`}
@@ -110,12 +109,13 @@ const TeamSection: React.FC = () => {
                       src={member.image}
                       alt={member.name}
                       className="w-full h-full rounded-2xl object-cover border-4 border-gray-300 shadow-xl 
-                      backdrop-blur-sm group-hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                      backdrop-blur-sm group-hover:shadow-2xl transition-all duration-500 group-hover:scale-[0.5rem]"
                       width={800}
                       height={600}
                     />
                     <div
-                      className={`absolute inset-0 rounded-2xl ring-2 ring-${member.color}/30 group-hover:ring-${member.color}/50 group-hover:ring-4 transition-all duration-500`}
+                      className={`absolute inset-0 rounded-2xl ring-2 ring-${member.color}/30 
+                        group-hover:ring-${member.color}/50 group-hover:ring-2 transition-all duration-500`}
                     ></div>
                   </div>
                 </div>
