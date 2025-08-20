@@ -35,7 +35,7 @@ export function Testimonials() {
               key={`testimonial-${index}`}
               className="md:basis-1/2 xl:basis-1/3 pl-2"
             >
-              <div className="bg-tertiary rounded-md min-h-[30rem] p-8 select-none flex flex-col gap-6">
+              <div className="bg-tertiary rounded-md min-h-[30rem] p-6 select-none flex flex-col gap-6">
                 <div className="flex items-center gap-4">
                   <div className="relative size-16">
                     <Image

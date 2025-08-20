@@ -27,7 +27,10 @@ export function IncubatedStartups() {
   useGSAP(() => {});
 
   return (
-    <section className="space-y-6 incubated-startups-section">
+    <section
+      className="pt-[10svh] space-y-6 incubated-startups-section"
+      style={{ minHeight: "fit-content" }}
+    >
       <AnimatedText as="h2">
         Startups em <span className="font-ivy">Incubação</span>{" "}
       </AnimatedText>

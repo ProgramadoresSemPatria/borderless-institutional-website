@@ -1,4 +1,5 @@
 import { AccelerationPrograms } from "./components/sections/homepage/AccelerationPrograms";
+import { GlobalTalentConnector } from "./components/sections/homepage/GlobalTalentConnector";
 import { GuaranteeSection } from "./components/sections/homepage/GuaranteeSection";
 import { HeroSection } from "./components/sections/homepage/HeroSection";
 import { IncubatedStartups } from "./components/sections/homepage/IncubatedStartups";
@@ -17,6 +18,7 @@ export default function Home() {
       <GuaranteeSection />
       <Testimonials />
       <StartupIncubator />
+      <GlobalTalentConnector />
       <IncubatedStartups />
     </div>
   );
