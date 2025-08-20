@@ -1,34 +1,23 @@
-import React from 'react'
-import HeroSection from './components/HeroSection'
-import BorderlessArms from './components/BorderlessArms'
-import TeamSection from './components/TeamSection'
-import EducationDetails from './components/EducationDetails'
-import ContentPrinciples from './components/ContentPrinciples'
-import StartupIncubator from './components/StartupIncubator'
-import RecruitmentSection from './components/RecruitmentSection'
-import AboutSection from './components/AboutSection'
-import StartupIncubatorExample from './components/StartupIncubationExample'
-import SocialProof from './components/SocialProof'
-import Events from './components/Events'
-import HowWeCanHelp from './components/HowWeCanHelp'
+import { AccelerationPrograms } from "./sections/AccelerationPrograms";
+import { GuaranteeSection } from "./sections/GuaranteeSection";
+import { HeroSection } from "./sections/HeroSection";
+import { IncubatedStartups } from "./sections/IncubatedStartups";
+import { OurServices } from "./sections/OurServices";
+import { StartupIncubator } from "./sections/StartupIncubator";
+import { TalentCompanies } from "./sections/TalentCompanies";
+import { Testimonials } from "./sections/Testimonials";
 
-function Home() {
+export default function Home() {
   return (
-    <main>
+    <div className="overflow-x-hidden">
       <HeroSection />
-      <BorderlessArms />
-      <StartupIncubatorExample />
-      <TeamSection />
-      <SocialProof />
-      <EducationDetails />
-      <ContentPrinciples />
+      <OurServices />
+      <TalentCompanies />
+      <AccelerationPrograms />
+      <GuaranteeSection />
+      <Testimonials />
       <StartupIncubator />
-      <RecruitmentSection />
-      <AboutSection />
-      <HowWeCanHelp />
-      <Events />
-    </main>
-  )
+      <IncubatedStartups />
+    </div>
+  );
 }
-
-export default Home
