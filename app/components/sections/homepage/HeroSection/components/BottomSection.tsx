@@ -1,7 +1,7 @@
+import { AnimatedText } from "@/app/components/ui/AnimatedText";
+import { IconWrapper } from "@/app/components/ui/IconWrapper";
 import { ArrowDown } from "lucide-react";
-import { AnimatedText } from "../../ui/AnimatedText";
-import { IconWrapper } from "../../ui/IconWrapper";
-import { DataCard } from "./DataCard";
+import { NumbersHighlightCard } from "./NumbersHighlightCard";
 
 export function BottomSection() {
   return (
@@ -24,7 +24,7 @@ export function BottomSection() {
         </div>
       </div>
 
-      <DataCard />
+      <NumbersHighlightCard />
     </div>
   );
 }

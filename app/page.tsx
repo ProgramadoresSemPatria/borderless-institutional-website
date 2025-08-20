@@ -1,11 +1,11 @@
-import { AccelerationPrograms } from "./sections/AccelerationPrograms";
-import { GuaranteeSection } from "./sections/GuaranteeSection";
-import { HeroSection } from "./sections/HeroSection";
-import { IncubatedStartups } from "./sections/IncubatedStartups";
-import { OurServices } from "./sections/OurServices";
-import { StartupIncubator } from "./sections/StartupIncubator";
-import { TalentCompanies } from "./sections/TalentCompanies";
-import { Testimonials } from "./sections/Testimonials";
+import { AccelerationPrograms } from "./components/sections/homepage/AccelerationPrograms";
+import { GuaranteeSection } from "./components/sections/homepage/GuaranteeSection";
+import { HeroSection } from "./components/sections/homepage/HeroSection";
+import { IncubatedStartups } from "./components/sections/homepage/IncubatedStartups";
+import { OurServices } from "./components/sections/homepage/OurServices";
+import { StartupIncubator } from "./components/sections/homepage/StartupIncubator";
+import { TalentCompanies } from "./components/sections/homepage/TalentCompanies";
+import { Testimonials } from "./components/sections/homepage/Testimonials";
 
 export default function Home() {
   return (

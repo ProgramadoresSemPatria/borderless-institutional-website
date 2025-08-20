@@ -3,8 +3,8 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
-import { AnimatedGrid } from "../components/ui/AnimatedGrid";
-import { AnimatedText } from "../components/ui/AnimatedText";
+import { AnimatedGrid } from "../../ui/AnimatedGrid";
+import { AnimatedText } from "../../ui/AnimatedText";
 
 const logosSrc = [
   "/brand-logos/coca-cola.png",

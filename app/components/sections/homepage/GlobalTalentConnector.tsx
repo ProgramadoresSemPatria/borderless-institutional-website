@@ -1,5 +1,5 @@
-import { AnimatedText } from "../components/ui/AnimatedText";
-import { ExternalLink } from "../components/ui/ExternalLink";
+import { AnimatedText } from "../../ui/AnimatedText";
+import { ExternalLink } from "../../ui/ExternalLink";
 
 export function GlobalTalentConnector() {
   return (

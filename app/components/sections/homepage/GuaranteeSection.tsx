@@ -3,8 +3,8 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Code, Smartphone, Users, Video } from "lucide-react";
-import { AnimatedText } from "../components/ui/AnimatedText";
-import { FeatureCard } from "../components/ui/FeatureCard";
+import { AnimatedText } from "../../ui/AnimatedText";
+import { FeatureCard } from "../../ui/FeatureCard";
 
 const features = [
   {

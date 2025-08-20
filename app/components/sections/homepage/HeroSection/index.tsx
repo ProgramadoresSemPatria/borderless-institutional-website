@@ -4,9 +4,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import { useState } from "react";
-import { BottomSection } from "../components/features/hero/BottomSection";
-import { TopSection } from "../components/features/hero/TopSection";
-import { AnimatedGrid } from "../components/ui/AnimatedGrid";
+import { AnimatedGrid } from "../../../ui/AnimatedGrid";
+import { BottomSection } from "./components/BottomSection";
+import { TopSection } from "./components/TopSection";
 
 export function HeroSection() {
   const [show, setShow] = useState(false);
@@ -23,7 +23,8 @@ export function HeroSection() {
   }, [show]);
 
   if (!show) {
-    return <section></section>;
+    // just show hero section when page is hydrated, so animation runs without flicker
+    return <section />;
   }
 
   return (

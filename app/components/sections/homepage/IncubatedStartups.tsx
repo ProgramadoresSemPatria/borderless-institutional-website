@@ -3,8 +3,8 @@
 import { useGSAP } from "@gsap/react";
 import { Bitcoin, Users, Zap } from "lucide-react";
 import Image from "next/image";
-import { AnimatedText } from "../components/ui/AnimatedText";
-import { ExternalLink } from "../components/ui/ExternalLink";
+import { AnimatedText } from "../../ui/AnimatedText";
+import { ExternalLink } from "../../ui/ExternalLink";
 
 const startups = [
   {

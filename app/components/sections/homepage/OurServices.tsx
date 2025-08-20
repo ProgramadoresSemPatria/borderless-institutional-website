@@ -3,9 +3,9 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Code, GraduationCap, Users } from "lucide-react";
-import { AnimatedGrid } from "../components/ui/AnimatedGrid";
-import { AnimatedText } from "../components/ui/AnimatedText";
-import { FeatureCard } from "../components/ui/FeatureCard";
+import { AnimatedGrid } from "../../ui/AnimatedGrid";
+import { AnimatedText } from "../../ui/AnimatedText";
+import { FeatureCard } from "../../ui/FeatureCard";
 
 const services = [
   {

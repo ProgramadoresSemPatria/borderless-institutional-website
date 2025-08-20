@@ -1,5 +1,5 @@
 import { ArrowRight, Globe } from "lucide-react";
-import { AnimatedText } from "../../ui/AnimatedText";
+import { AnimatedText } from "../../../../ui/AnimatedText";
 
 export function TopSection() {
   return (

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { AnimatedGrid } from "../../ui/AnimatedGrid";
+import { AnimatedGrid } from "../../../../ui/AnimatedGrid";
 
-export function DataCard() {
+export function NumbersHighlightCard() {
   return (
     <div className="bg-tertiary rounded-lg p-6 font-bold w-full lg:max-w-sm h-40 relative">
       <div className="flex flex-col justify-between h-full">

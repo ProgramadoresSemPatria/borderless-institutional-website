@@ -1,16 +1,15 @@
-"use client";
+import { ReactNode } from "react";
 
-import Image from "next/image";
-import { AnimatedText } from "../components/ui/AnimatedText";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "../components/ui/Carousel";
+export interface Testimonial {
+  img: string;
+  name: string;
+  role: string;
+  testimony?: ReactNode;
+  iframeSrc?: string;
+  description?: string;
+}
 
-const testimonials = [
+export const testimonials: Testimonial[] = [
   {
     img: "/testimonials/arthur.png",
     name: "Arthur Duarte",
@@ -78,79 +77,19 @@ const testimonials = [
     ),
   },
   {
-    img: "/testimonials/thiago.webp",
+    img: "/testimonials/arthur.png",
     name: "Caíque",
     role: "Mentorado da PSP",
-    video: "https://player.vimeo.com/video/1108946498?h=3f9f4bb648&api=1",
+    iframeSrc: "https://player.vimeo.com/video/1108946498?h=3f9f4bb648&api=1",
     description:
       "Saiu de 8k BRL do Brasil para mais de 60k BRL (11k usd/month) em 6 meses.",
   },
   {
-    img: "/testimonials/thiago.webp",
+    img: "/testimonials/arthur.png",
     name: "Lucas",
     role: "Mentorado da PSP",
-    video: "https://player.vimeo.com/video/1108946473?h=669d1e58ee&api=1",
+    iframeSrc: "https://player.vimeo.com/video/1108946473?h=669d1e58ee&api=1",
     description:
       "Saiu de 3k BRL do Brasil para mais de 25k BRL (5k usd/month + equity em uma startup no AZ, USA).",
   },
 ];
-
-export function Testimonials() {
-  return (
-    <section
-      className="py-[10svh] border-b border-solid border-white/20 space-y-12"
-      style={{ minHeight: "fit-content" }}
-    >
-      <Carousel className="flex flex-col gap-4 lg:gap-8">
-        <div className="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-12">
-          <AnimatedText as="h2">
-            Prova real - Mais de 105{" "}
-            <span className="font-ivy">devs globalizados</span>
-          </AnimatedText>
-          <div className="flex gap-2">
-            <CarouselPrevious />
-            <CarouselNext />
-          </div>
-        </div>
-
-        <CarouselContent className="-ml-2">
-          {testimonials.map((testimonial, index) => (
-            <CarouselItem
-              key={`testimonial-${index}`}
-              className="md:basis-1/2 xl:basis-1/3 pl-2"
-            >
-              <div className="bg-tertiary rounded-md min-h-[30rem] p-8 select-none flex flex-col gap-6">
-                <div className="flex items-center gap-4">
-                  <div className="relative size-16">
-                    <Image
-                      fill
-                      src={testimonial.img}
-                      alt="profile picture"
-                      className="rounded-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-bold">{testimonial.name}</p>
-                    <p className="text-sm">{testimonial.role}</p>
-                  </div>
-                </div>
-
-                {testimonial.testimony && <div>{testimonial.testimony}</div>}
-
-                {testimonial.video && (
-                  <div className="size-full space-y-6">
-                    <iframe
-                      src={testimonial.video}
-                      className="h-[28rem] mx-auto"
-                    />
-                    <p>{testimonial.description}</p>
-                  </div>
-                )}
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-      </Carousel>
-    </section>
-  );
-}
