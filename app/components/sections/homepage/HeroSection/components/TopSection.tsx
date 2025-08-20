@@ -19,9 +19,9 @@ export function TopSection() {
         className="text-2xl md:text-4xl 2xl:text-6xl font-semibold max-w-6xl 2xl:max-w-7xl leading-snug md:leading-tight"
       >
         A ponte entre talentos tech{" "}
-        <span className="font-ivy">brasileiros</span> e o{" "}
-        <span className="font-ivy">mercado internacional</span> — com produtos
-        educacionais, plataforma própria e startups em incubação.
+        <span className="font-ivy text-secondary">brasileiros</span> e o{" "}
+        <span className="font-ivy text-secondary">mercado internacional</span> —
+        com produtos educacionais, plataforma própria e startups em incubação.
       </AnimatedText>
 
       <div className="overflow-hidden pt-2">

@@ -15,7 +15,7 @@ export function NumbersHighlightCard() {
             className="size-6"
             width={501}
             height={596}
-            src={"/borderless-logo-white.svg"}
+            src={"/borderless-logo.svg"}
             alt="borderless logo"
           />
           <p className="font-bold text-sm mr-auto">Borderless Coding</p>

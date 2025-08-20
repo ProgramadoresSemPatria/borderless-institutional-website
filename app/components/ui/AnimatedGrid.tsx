@@ -22,7 +22,6 @@ export function AnimatedGrid() {
   useGSAP(
     () => {
       const squares = gsap.utils.toArray<HTMLDivElement>(".grid-square");
-
       squares.forEach((square) => animateSquare(square));
       animateSquare(".off-grid-square");
     },
