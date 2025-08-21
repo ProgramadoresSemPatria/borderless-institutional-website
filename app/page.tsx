@@ -1,4 +1,5 @@
 import { AccelerationPrograms } from "./components/sections/homepage/AccelerationPrograms";
+import { EventsAndAchievements } from "./components/sections/homepage/EventsAndAchievements";
 import { GlobalTalentConnector } from "./components/sections/homepage/GlobalTalentConnector";
 import { GuaranteeSection } from "./components/sections/homepage/GuaranteeSection";
 import { HelpSection } from "./components/sections/homepage/HelpSection";
@@ -27,7 +28,9 @@ export default function Home() {
         <OurHistory />
         <OurTeam />
         <HelpSection />
+        <EventsAndAchievements />
       </div>
+      <section></section>
     </div>
   );
 }
