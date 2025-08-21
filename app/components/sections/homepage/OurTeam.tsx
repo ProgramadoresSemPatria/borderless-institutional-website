@@ -1,13 +1,7 @@
 import { Github, Linkedin } from "lucide-react";
 import Image from "next/image";
 import { AnimatedText } from "../../ui/AnimatedText";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "../../ui/Carousel";
+import { Carousel, CarouselContent, CarouselItem } from "../../ui/Carousel";
 import { IconWrapper } from "../../ui/IconWrapper";
 
 const teamPeople = [
@@ -45,22 +39,14 @@ const teamPeople = [
 
 export function OurTeam() {
   return (
-    <section className="py-[10svh]">
-      <div className="bg-tertiary py-24 flex-center flex-col rounded-md space-y-12">
-        <AnimatedText
-          as="h1"
-          className="text-2xl md:text-4xl 2xl:text-6xl font-semibold leading-snug md:leading-tight w-fit max-w-[80%] text-center"
-        >
-          Nosso time global de <span className="font-ivy">especialistas</span>
+    <section className="pb-[10svh]" style={{ minHeight: "fit-content" }}>
+      <div className="bg-tertiary py-8 lg:py-16 flex-col rounded-md space-y-12">
+        <AnimatedText as="h2" className="w-fit ml-8 lg:ml-16">
+          Nosso time de <span className="font-ivy">especialistas</span>
         </AnimatedText>
 
         <Carousel className="w-full space-y-4">
-          <div className="flex gap-2 ml-8 lg:ml-28">
-            <CarouselPrevious />
-            <CarouselNext />
-          </div>
-
-          <CarouselContent className="first:ml-4 last:mr-8 lg:first:ml-24 lg:last:mr-24 -ml-4">
+          <CarouselContent className="first:ml-4 last:mr-8 lg:first:ml-12 lg:last:mr-16 -ml-4">
             {teamPeople.map((member) => (
               <CarouselItem
                 key={member.src}

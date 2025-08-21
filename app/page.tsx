@@ -8,6 +8,7 @@ import { OurTeam } from "./components/sections/homepage/OurTeam";
 import { StartupIncubator } from "./components/sections/homepage/StartupIncubator";
 import { TalentCompanies } from "./components/sections/homepage/TalentCompanies";
 import { Testimonials } from "./components/sections/homepage/Testimonials";
+import { OurHistory } from "./components/sections/OurHistory";
 
 export default function Home() {
   return (
@@ -21,7 +22,10 @@ export default function Home() {
       <StartupIncubator />
       <GlobalTalentConnector />
       <IncubatedStartups />
-      <OurTeam />
+      <div className="space-y-4">
+        <OurHistory />
+        <OurTeam />
+      </div>
     </div>
   );
 }
