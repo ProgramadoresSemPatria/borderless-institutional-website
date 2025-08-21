@@ -39,7 +39,7 @@ const teamPeople = [
 
 export function OurTeam() {
   return (
-    <section className="pb-[10svh]" style={{ minHeight: "fit-content" }}>
+    <section style={{ minHeight: "fit-content" }}>
       <div className="bg-tertiary py-8 lg:py-16 flex-col rounded-md space-y-12">
         <AnimatedText as="h2" className="w-fit ml-8 lg:ml-16">
           Nosso time de <span className="font-ivy">especialistas</span>

@@ -1,6 +1,7 @@
 import { AccelerationPrograms } from "./components/sections/homepage/AccelerationPrograms";
 import { GlobalTalentConnector } from "./components/sections/homepage/GlobalTalentConnector";
 import { GuaranteeSection } from "./components/sections/homepage/GuaranteeSection";
+import { HelpSection } from "./components/sections/homepage/HelpSection";
 import { HeroSection } from "./components/sections/homepage/HeroSection";
 import { IncubatedStartups } from "./components/sections/homepage/IncubatedStartups";
 import { OurServices } from "./components/sections/homepage/OurServices";
@@ -25,6 +26,7 @@ export default function Home() {
       <div className="space-y-4">
         <OurHistory />
         <OurTeam />
+        <HelpSection />
       </div>
     </div>
   );
