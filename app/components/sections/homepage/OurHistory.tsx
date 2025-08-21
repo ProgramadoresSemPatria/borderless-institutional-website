@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { AnimatedText } from "../ui/AnimatedText";
+import { AnimatedText } from "../../ui/AnimatedText";
 
 export function OurHistory() {
   return (

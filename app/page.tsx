@@ -1,3 +1,4 @@
+import { Footer } from "./components/layout/Footer";
 import { AccelerationPrograms } from "./components/sections/homepage/AccelerationPrograms";
 import { EventsAndAchievements } from "./components/sections/homepage/EventsAndAchievements";
 import { GlobalTalentConnector } from "./components/sections/homepage/GlobalTalentConnector";
@@ -5,12 +6,12 @@ import { GuaranteeSection } from "./components/sections/homepage/GuaranteeSectio
 import { HelpSection } from "./components/sections/homepage/HelpSection";
 import { HeroSection } from "./components/sections/homepage/HeroSection";
 import { IncubatedStartups } from "./components/sections/homepage/IncubatedStartups";
+import { OurHistory } from "./components/sections/homepage/OurHistory";
 import { OurServices } from "./components/sections/homepage/OurServices";
 import { OurTeam } from "./components/sections/homepage/OurTeam";
 import { StartupIncubator } from "./components/sections/homepage/StartupIncubator";
 import { TalentCompanies } from "./components/sections/homepage/TalentCompanies";
 import { Testimonials } from "./components/sections/homepage/Testimonials";
-import { OurHistory } from "./components/sections/OurHistory";
 
 export default function Home() {
   return (
@@ -24,13 +25,13 @@ export default function Home() {
       <StartupIncubator />
       <GlobalTalentConnector />
       <IncubatedStartups />
-      <div className="space-y-4">
+      <div className="space-y-4 mb-40">
         <OurHistory />
         <OurTeam />
         <HelpSection />
         <EventsAndAchievements />
       </div>
-      <section></section>
+      <Footer />
     </div>
   );
 }
