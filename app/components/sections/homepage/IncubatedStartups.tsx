@@ -28,7 +28,7 @@ export function IncubatedStartups() {
 
   return (
     <section
-      className="pt-[10svh] space-y-6 incubated-startups-section"
+      className="py-[10svh] space-y-6 incubated-startups-section  border-b border-solid border-white/20 "
       style={{ minHeight: "fit-content" }}
     >
       <AnimatedText as="h2">

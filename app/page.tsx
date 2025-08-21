@@ -4,6 +4,7 @@ import { GuaranteeSection } from "./components/sections/homepage/GuaranteeSectio
 import { HeroSection } from "./components/sections/homepage/HeroSection";
 import { IncubatedStartups } from "./components/sections/homepage/IncubatedStartups";
 import { OurServices } from "./components/sections/homepage/OurServices";
+import { OurTeam } from "./components/sections/homepage/OurTeam";
 import { StartupIncubator } from "./components/sections/homepage/StartupIncubator";
 import { TalentCompanies } from "./components/sections/homepage/TalentCompanies";
 import { Testimonials } from "./components/sections/homepage/Testimonials";
@@ -20,6 +21,7 @@ export default function Home() {
       <StartupIncubator />
       <GlobalTalentConnector />
       <IncubatedStartups />
+      <OurTeam />
     </div>
   );
 }

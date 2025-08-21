@@ -179,7 +179,7 @@ function CarouselPrevious({
     <button
       data-slot="carousel-previous"
       className={cn(
-        "bg-white rounded-md p-3 size-fit cursor-pointer disabled:opacity-50 hover:scale-115 transition-all duration-150",
+        "bg-white rounded-md p-2 md:p-3 size-fit cursor-pointer disabled:opacity-50 hover:scale-115 transition-all duration-150",
         className
       )}
       disabled={!canScrollPrev}
@@ -199,7 +199,7 @@ function CarouselNext({ className, ...props }: React.ComponentProps<"button">) {
     <button
       data-slot="carousel-next"
       className={cn(
-        "bg-white rounded-md p-3 size-fit cursor-pointer disabled:opacity-50 hover:scale-115 transition-all duration-150",
+        "bg-white rounded-md p-2 md:p-3 size-fit cursor-pointer disabled:opacity-50 hover:scale-115 transition-all duration-150",
         className
       )}
       disabled={!canScrollNext}

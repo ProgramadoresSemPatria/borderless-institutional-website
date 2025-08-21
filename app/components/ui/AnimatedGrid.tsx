@@ -29,8 +29,8 @@ export function AnimatedGrid() {
   );
 
   return (
-    <div className="w-36 md:w-48 pointer-events-none">
-      <div ref={gridContainerRef} className="w-full grid grid-cols-4">
+    <div ref={gridContainerRef} className="w-36 md:w-48 pointer-events-none">
+      <div className="w-full grid grid-cols-4">
         {[...Array(16)].map((_, index) => (
           <div
             key={`grid-square-${index}`}
