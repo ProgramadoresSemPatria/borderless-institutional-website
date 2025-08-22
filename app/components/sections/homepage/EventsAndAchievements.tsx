@@ -71,7 +71,7 @@ export function EventsAndAchievements() {
                   className="object-cover rounded-md"
                 />
               </div>
-              <p className="text-gray mt-2 text-sm md:text-base font-medium">
+              <p className="text-gray mt-6 text-sm md:text-base font-medium">
                 {event.description}
               </p>
             </CarouselItem>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import localFont from "next/font/local";
 import { GSAPWrapper } from "./components/features/wrappers/GSAPWrapper";
+import { Header } from "./components/layout/Header";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} ${ivyPresto.variable} antialiased`}
       >
+        <Header />
         <GSAPWrapper>{children}</GSAPWrapper>
       </body>
     </html>
