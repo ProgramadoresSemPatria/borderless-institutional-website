@@ -56,10 +56,8 @@ export function IncubatedStartups() {
                 className="mt-4 rounded-md aspect-video"
               />
 
-              <div className="space-y-1">
-                <h3 className="text-xl md:text-3xl font-bold">
-                  {startup.title}
-                </h3>
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold">{startup.title}</h3>
                 <p className="text-sm md:text-base font-medium max-w-xl mb-auto text-white/80">
                   {startup.description}
                 </p>

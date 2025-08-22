@@ -19,7 +19,7 @@ export function Testimonials() {
     >
       <Carousel className="flex flex-col gap-4 lg:gap-8">
         <div className="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-12">
-          <AnimatedText as="h2">
+          <AnimatedText as="h2" className="max-w-4xl">
             Prova real - Mais de 105{" "}
             <span className="font-ivy">devs globalizados</span>
           </AnimatedText>
@@ -51,7 +51,11 @@ export function Testimonials() {
                   </div>
                 </div>
 
-                {testimonial.testimony && <div>{testimonial.testimony}</div>}
+                {testimonial.testimony && (
+                  <div className="text-base text-gray">
+                    {testimonial.testimony}
+                  </div>
+                )}
 
                 {testimonial.iframeSrc && (
                   <div className="size-full space-y-6">
@@ -59,7 +63,7 @@ export function Testimonials() {
                       src={testimonial.iframeSrc}
                       className="h-[28rem] mx-auto"
                     />
-                    <p>{testimonial.description}</p>
+                    <p className="text-gray">{testimonial.description}</p>
                   </div>
                 )}
               </div>

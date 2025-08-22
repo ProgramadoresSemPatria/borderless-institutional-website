@@ -30,7 +30,7 @@ export function EventsAndAchievements() {
       className="flex flex-col gap-8 py-12 bg-tertiary"
       style={{ minHeight: "fit-content" }}
     >
-      <AnimatedText as="h2" className="w-fit px-8 lg:px-16">
+      <AnimatedText as="h2" className="px-8 lg:px-16">
         Eventos e <span className="font-ivy">conquistas</span>
       </AnimatedText>
 
@@ -46,7 +46,9 @@ export function EventsAndAchievements() {
                   className="object-cover rounded-md"
                 />
               </div>
-              <p className="text-sm text-white/80 mt-2">{event.description}</p>
+              <p className="text-gray mt-2 text-sm md:text-base font-medium">
+                {event.description}
+              </p>
             </CarouselItem>
           ))}
         </CarouselContent>

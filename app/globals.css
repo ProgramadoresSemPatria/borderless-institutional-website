@@ -11,6 +11,7 @@
   --color-primary: #9810fa;
   --color-secondary: #2debb1;
   --color-tertiary: #191919;
+  --color-gray: #ffffffcc;
 }
 
 body {
@@ -40,7 +41,7 @@ section {
 }
 
 h2 {
-  @apply text-2xl md:text-3xl 2xl:text-5xl font-semibold max-w-5xl leading-tight;
+  @apply text-2xl md:text-3xl 2xl:text-5xl font-semibold leading-tight;
 }
 
 @utility flex-center {

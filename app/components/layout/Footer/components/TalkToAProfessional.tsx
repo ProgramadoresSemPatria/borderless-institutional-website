@@ -4,9 +4,9 @@ import Image from "next/image";
 export function TalkToAProfessional() {
   return (
     <div className="w-[90%] max-w-[1800px] flex max-[1350px]:flex-col items-center justify-center text-black gap-12 py-[15svh] max-[1350px]:pt-[8svh] mx-auto">
-      <p className="text-center text-4xl sm:text-5xl lg:text-7xl font-bold">
+      <p className="text-center text-4xl sm:text-5xl lg:text-7xl font-semibold">
         Fale com{" "}
-        <span className="min-[1350px]:hidden font-ivy font-medium">
+        <span className="min-[1350px]:hidden font-ivy font-normal">
           um profissional
         </span>{" "}
       </p>

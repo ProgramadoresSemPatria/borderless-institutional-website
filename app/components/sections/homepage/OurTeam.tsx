@@ -72,7 +72,7 @@ export function OurTeam() {
 
                 <div>
                   <h3 className="font-bold text-lg">{member.name}</h3>
-                  <p className="text-white/70 text-sm font-semibold max-w-[90%]">
+                  <p className="text-white/70 text-sm font-medium max-w-[90%]">
                     {member.role}
                   </p>
                 </div>

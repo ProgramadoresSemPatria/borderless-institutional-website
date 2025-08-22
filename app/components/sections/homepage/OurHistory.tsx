@@ -19,7 +19,7 @@ export function OurHistory() {
           <AnimatedText as="h2">
             Nossa <span className="font-ivy">História</span>
           </AnimatedText>
-          <div>
+          <div className="text-gray">
             <AnimatedText className="2xl:text-lg font-medium">
               Criada em 2023 por Yuri Pereira somente como uma mentoria que
               conectava developers com o mercado, hoje se tornou um ecossistema
