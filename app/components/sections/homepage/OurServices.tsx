@@ -45,10 +45,7 @@ export function OurServices() {
   });
 
   return (
-    <section
-      className="pt-[15svh] md:pt-[25svh] pb-[10svh] flex flex-col xl:flex-row xl:items-center gap-8 md:gap-12 relative"
-      style={{ minHeight: "fit-content" }}
-    >
+    <section className="pt-[15svh] md:pt-[25svh] pb-[10svh] flex flex-col xl:flex-row xl:items-center gap-8 md:gap-12 relative">
       <div className="space-y-6 w-full max-w-lg xl:max-w-[40%]">
         <div className="flex items-center gap-2">
           <div className="size-2 rounded-full bg-primary" />

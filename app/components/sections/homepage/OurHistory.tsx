@@ -4,10 +4,7 @@ import { AnimatedText } from "../../ui/AnimatedText";
 
 export function OurHistory() {
   return (
-    <section
-      className="space-y-6 pt-[10svh] history-section"
-      style={{ minHeight: "fit-content" }}
-    >
+    <section className="space-y-6 pt-[10svh] history-section">
       <div className="grid lg:grid-cols-2 gap-4 items-center">
         <div className="relative">
           <Image

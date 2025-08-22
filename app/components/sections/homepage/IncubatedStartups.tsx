@@ -44,10 +44,7 @@ export function IncubatedStartups() {
   });
 
   return (
-    <section
-      className="py-[10svh] space-y-6 incubated-startups-section  border-b border-solid border-white/20 "
-      style={{ minHeight: "fit-content" }}
-    >
+    <section className="py-[10svh] space-y-6 incubated-startups-section  border-b border-solid border-white/20 ">
       <AnimatedText as="h2">
         Startups em <span className="font-ivy">Incubação</span>{" "}
       </AnimatedText>

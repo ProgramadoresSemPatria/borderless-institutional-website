@@ -28,10 +28,7 @@ export function StartupIncubator() {
   });
 
   return (
-    <section
-      className="py-[10svh] space-y-6 grid xl:grid-cols-2 gap-8 items-center"
-      style={{ minHeight: "fit-content" }}
-    >
+    <section className="py-[10svh] space-y-6 grid xl:grid-cols-2 gap-8 items-center">
       <div className="space-y-4">
         <div className="flex items-center gap-2">
           <span className="size-2 bg-primary rounded-full" />

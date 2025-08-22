@@ -4,13 +4,14 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { IconWrapper } from "../ui/IconWrapper";
 
 const links = [
   {
     title: "PSP mentorship",
-    href: "",
+    href: "/psp-mentorship",
   },
   {
     title: "Base mentorship",
@@ -73,14 +74,16 @@ export function Header() {
         </button>
 
         {isOpen && (
-          <div className="header-buttons-container absolute bg-tertiary rounded-lg p-2 w-full space-y-2 left-0 bottom-0 translate-y-[calc(100%+1rem)]">
+          <div className="header-buttons-container absolute bg-tertiary rounded-lg p-2 w-full left-0 bottom-0 translate-y-[calc(100%+1rem)] flex flex-col gap-2">
             {links.map((link) => (
-              <div
+              <Link
+                href={link.href}
                 key={link.title}
                 className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer"
+                onClick={() => setIsOpen(false)}
               >
                 {link.title}
-              </div>
+              </Link>
             ))}
           </div>
         )}

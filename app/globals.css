@@ -37,7 +37,7 @@ body:before {
 }
 
 section {
-  @apply w-[90%] min-h-svh max-w-[1800px] mx-auto;
+  @apply w-[90%] max-w-[1800px] mx-auto;
 }
 
 h2 {

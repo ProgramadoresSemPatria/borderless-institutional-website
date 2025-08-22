@@ -28,10 +28,7 @@ export function HeroSection() {
   }
 
   return (
-    <section
-      className="relative flex flex-col lg:justify-between gap-8 pt-[8svh] md:pt-[10svh] pb-[5svh] border-b border-solid border-white/20"
-      style={{ minHeight: "calc(100svh - 3.5rem)" }}
-    >
+    <section className="relative flex flex-col lg:justify-between gap-8 pt-[8svh] md:pt-[10svh] pb-[5svh] border-b border-solid border-white/20 min-h-[calc(100svh_-_3.5rem)]">
       <TopSection />
       <BottomSection />
 

@@ -13,7 +13,7 @@ import { StartupIncubator } from "./components/sections/homepage/StartupIncubato
 import { TalentCompanies } from "./components/sections/homepage/TalentCompanies";
 import { Testimonials } from "./components/sections/homepage/Testimonials";
 
-export default function Home() {
+export default function Page() {
   return (
     <div className="overflow-x-hidden">
       <HeroSection />

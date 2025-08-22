@@ -49,10 +49,7 @@ export function GuaranteeSection() {
   });
 
   return (
-    <section
-      className="py-[10svh] space-y-6"
-      style={{ minHeight: "fit-content" }}
-    >
+    <section className="py-[10svh] space-y-6">
       <AnimatedText as="h2" className="max-w-5xl">
         Consiga um <span className="font-ivy">emprego</span> em tech ou seu{" "}
         <span className="font-ivy">dinheiro de volta</span>

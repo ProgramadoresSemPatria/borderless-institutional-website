@@ -27,10 +27,7 @@ export function AccelerationPrograms() {
   });
 
   return (
-    <section
-      className="py-[10svh] space-y-6 xl:items-center gap-8 md:gap-12 flex flex-col-reverse xl:grid xl:grid-cols-[60%_1fr] relative"
-      style={{ minHeight: "fit-content" }}
-    >
+    <section className="py-[10svh] space-y-6 xl:items-center gap-8 md:gap-12 flex flex-col-reverse xl:grid xl:grid-cols-[60%_1fr] relative">
       <div className="grid md:grid-cols-2 gap-2">
         {programs.map((program, index) => {
           return (

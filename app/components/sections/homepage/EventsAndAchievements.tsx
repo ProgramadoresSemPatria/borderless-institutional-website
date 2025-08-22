@@ -48,10 +48,7 @@ export function EventsAndAchievements() {
   });
 
   return (
-    <section
-      className="flex flex-col gap-8 py-12 bg-tertiary"
-      style={{ minHeight: "fit-content" }}
-    >
+    <section className="flex flex-col gap-8 py-12 bg-tertiary">
       <AnimatedText as="h2" className="px-8 lg:px-16">
         Eventos e <span className="font-ivy">conquistas</span>
       </AnimatedText>

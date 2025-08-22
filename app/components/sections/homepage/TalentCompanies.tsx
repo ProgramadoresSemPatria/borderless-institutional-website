@@ -42,10 +42,7 @@ export function TalentCompanies() {
   });
 
   return (
-    <section
-      className="py-[10svh] space-y-6"
-      style={{ minHeight: "fit-content" }}
-    >
+    <section className="py-[10svh] space-y-6">
       <AnimatedText as="h2" className="max-w-5xl">
         Empresas onde nossos <span className="font-ivy">talentos</span> já
         trabalharam ou trabalham
