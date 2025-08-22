@@ -27,8 +27,8 @@ export function OurHistory() {
             <AnimatedText className="2xl:text-lg font-medium">
               Criada em 2023 por Yuri Pereira somente como uma mentoria que
               conectava developers com o mercado, hoje se tornou um ecossistema
-              com professores de Tech, Inglês, CTO's, Managers, Cybersecurity e
-              diversos áreas do mercado tech.
+              com professores de Tech, Inglês, CTO&apos;s, Managers,
+              Cybersecurity e diversos áreas do mercado tech.
             </AnimatedText>
             <br />
             <AnimatedText className="2xl:text-lg font-medium">
