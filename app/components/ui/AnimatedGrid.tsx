@@ -3,8 +3,9 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
+import { twMerge } from "tailwind-merge";
 
-export function AnimatedGrid() {
+export function AnimatedGrid({ className }: { className?: string }) {
   const gridContainerRef = useRef<HTMLDivElement>(null);
 
   function animateSquare(square: HTMLDivElement | string) {
@@ -29,7 +30,10 @@ export function AnimatedGrid() {
   );
 
   return (
-    <div ref={gridContainerRef} className="w-36 md:w-48 pointer-events-none">
+    <div
+      ref={gridContainerRef}
+      className={twMerge("w-36 md:w-48 pointer-events-none", className)}
+    >
       <div className="w-full grid grid-cols-4">
         {[...Array(16)].map((_, index) => (
           <div

@@ -22,9 +22,9 @@ export function FullWidthCard({
           {title}
         </AnimatedText>
 
-        <p className="text-base md:text-lg font-medium text-gray text-pretty">
+        <AnimatedText className="text-base md:text-lg font-medium text-gray text-pretty">
           {description}
-        </p>
+        </AnimatedText>
       </div>
 
       {children}

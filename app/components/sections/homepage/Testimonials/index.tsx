@@ -59,10 +59,16 @@ export function Testimonials() {
 
                 {testimonial.iframeSrc && (
                   <div className="size-full space-y-6">
-                    <iframe
-                      src={testimonial.iframeSrc}
-                      className="h-[28rem] mx-auto"
-                    />
+                    <div className="bg-black/30 rounded-md overflow-hidden">
+                      <div className="mx-auto w-full sm:w-[60%] aspect-[9/16] relative overflow-hidden">
+                        <iframe
+                          src={testimonial.iframeSrc}
+                          className="absolute inset-0 size-full"
+                          allow="autoplay; fullscreen; picture-in-picture"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
                     <p className="text-gray">{testimonial.description}</p>
                   </div>
                 )}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { Bitcoin, Users, Zap } from "lucide-react";
 import Image from "next/image";
 import { AnimatedText } from "../../ui/AnimatedText";
@@ -24,7 +25,23 @@ const startups = [
 ];
 
 export function IncubatedStartups() {
-  useGSAP(() => {});
+  useGSAP(() => {
+    gsap.fromTo(
+      ".startup-card",
+      { y: "20%", opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "back.inOut",
+        duration: 0.8,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: ".startup-card",
+          start: "top 90%",
+        },
+      }
+    );
+  });
 
   return (
     <section
@@ -44,7 +61,7 @@ export function IncubatedStartups() {
       <div className="grid md:grid-cols-2 gap-2 ">
         {startups.map((startup, index) => (
           <div
-            className="flex flex-col justify-between bg-tertiary rounded-md p-6 gap-6"
+            className="startup-card flex flex-col justify-between bg-tertiary rounded-md p-6 gap-6"
             key={`startup-${index}`}
           >
             <div className="space-y-4">

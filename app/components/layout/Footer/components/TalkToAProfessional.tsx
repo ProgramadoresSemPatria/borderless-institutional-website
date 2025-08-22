@@ -1,17 +1,54 @@
+"use client";
+
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 export function TalkToAProfessional() {
+  useGSAP(() => {
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width: 1350px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".footer-container",
+          scrub: 1,
+        },
+      });
+
+      tl.to(".left-text", {
+        translateX: "-15%",
+      });
+
+      tl.to(
+        ".right-text",
+        {
+          translateX: "15%",
+        },
+        "<"
+      );
+
+      tl.to(
+        ".background-footer-img",
+        {
+          scale: 1.25,
+        },
+        "<"
+      );
+    });
+  });
+
   return (
-    <div className="w-[90%] max-w-[1800px] flex max-[1350px]:flex-col items-center justify-center text-black gap-12 py-[15svh] max-[1350px]:pt-[8svh] mx-auto">
-      <p className="text-center text-4xl sm:text-5xl lg:text-7xl font-semibold">
+    <div className="footer-container w-[90%] max-w-[1800px] flex max-[1350px]:flex-col items-center justify-center text-black gap-12 py-[15svh] max-[1350px]:pt-[8svh] mx-auto">
+      <p className="left-text text-center text-4xl sm:text-5xl lg:text-7xl font-semibold">
         Fale com{" "}
         <span className="min-[1350px]:hidden font-ivy font-normal">
           um profissional
         </span>{" "}
       </p>
 
-      <div className="relative">
+      <div className="relative cursor-pointer">
         <Image
           width={2048}
           height={2731}
@@ -25,7 +62,7 @@ export function TalkToAProfessional() {
         </div>
       </div>
 
-      <p className="font-ivy text-7xl hidden min-[1350px]:block">
+      <p className="right-text font-ivy text-7xl hidden min-[1350px]:block">
         um profissional
       </p>
 
@@ -34,7 +71,7 @@ export function TalkToAProfessional() {
         width={671}
         height={798}
         alt="borderless logo"
-        className="absolute z-[-1] opacity-30 brightness-125 w-auto h-[100%] object-cover"
+        className="background-footer-img absolute z-[-1] opacity-30 brightness-125 w-auto h-[80%] object-cover"
       />
     </div>
   );

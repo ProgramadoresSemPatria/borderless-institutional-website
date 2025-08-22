@@ -1,3 +1,7 @@
+"use client";
+
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { Github, Linkedin } from "lucide-react";
 import Image from "next/image";
 import { AnimatedText } from "../../ui/AnimatedText";
@@ -38,6 +42,24 @@ const teamPeople = [
 ];
 
 export function OurTeam() {
+  useGSAP(() => {
+    gsap.fromTo(
+      ".team-card",
+      { y: "20%", opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "back.inOut",
+        duration: 0.8,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: ".team-card",
+          start: "top 90%",
+        },
+      }
+    );
+  });
+
   return (
     <section style={{ minHeight: "fit-content" }}>
       <div className="bg-tertiary py-8 lg:py-16 flex-col rounded-md space-y-12">
@@ -50,7 +72,7 @@ export function OurTeam() {
             {teamPeople.map((member) => (
               <CarouselItem
                 key={member.src}
-                className="space-y-4 sm:basis-1/2 lg:basis-1/3 2xl:basis-1/4 pl-4"
+                className="team-card space-y-4 sm:basis-1/2 lg:basis-1/3 2xl:basis-1/4 pl-4"
               >
                 <div className="w-full aspect-[9/12] relative">
                   <Image

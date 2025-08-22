@@ -12,6 +12,22 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     img: "/testimonials/arthur.png",
+    name: "Caíque",
+    role: "Mentorado da PSP",
+    iframeSrc: "https://player.vimeo.com/video/1108946498?h=3f9f4bb648&api=1",
+    description:
+      "Saiu de 8k BRL do Brasil para mais de 60k BRL (11k usd/month) em 6 meses.",
+  },
+  {
+    img: "/testimonials/arthur.png",
+    name: "Lucas",
+    role: "Mentorado da PSP",
+    iframeSrc: "https://player.vimeo.com/video/1108946473?h=669d1e58ee&api=1",
+    description:
+      "Saiu de 3k BRL do Brasil para mais de 25k BRL (5k usd/month + equity em uma startup no AZ, USA).",
+  },
+  {
+    img: "/testimonials/arthur.png",
     name: "Arthur Duarte",
     role: "Mentorado da Base",
     testimony: (
@@ -75,21 +91,5 @@ export const testimonials: Testimonial[] = [
         recusadas pois não eram do rate desejado ou eram web2
       </div>
     ),
-  },
-  {
-    img: "/testimonials/arthur.png",
-    name: "Caíque",
-    role: "Mentorado da PSP",
-    iframeSrc: "https://player.vimeo.com/video/1108946498?h=3f9f4bb648&api=1",
-    description:
-      "Saiu de 8k BRL do Brasil para mais de 60k BRL (11k usd/month) em 6 meses.",
-  },
-  {
-    img: "/testimonials/arthur.png",
-    name: "Lucas",
-    role: "Mentorado da PSP",
-    iframeSrc: "https://player.vimeo.com/video/1108946473?h=669d1e58ee&api=1",
-    description:
-      "Saiu de 3k BRL do Brasil para mais de 25k BRL (5k usd/month + equity em uma startup no AZ, USA).",
   },
 ];
