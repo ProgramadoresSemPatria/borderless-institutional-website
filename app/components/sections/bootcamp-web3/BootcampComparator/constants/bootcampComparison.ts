@@ -7,6 +7,7 @@ import {
   Globe,
   Handshake,
   Layers,
+  Network,
   Users,
   Zap,
 } from "lucide-react";
@@ -45,7 +46,7 @@ export const bootcampComparison: IComparator = {
       secondOptionFeature: "No mentorship, only pre-recorded content",
     },
     {
-      icon: Users,
+      icon: Network,
       title: "Community",
       firstOptionFeature:
         "Active network of 500+ global developers and founders",
