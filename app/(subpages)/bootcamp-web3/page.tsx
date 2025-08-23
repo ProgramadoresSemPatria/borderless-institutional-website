@@ -1,3 +1,4 @@
+import { BootcampComparator } from "@/app/components/sections/bootcamp-web3/BootcampComparator";
 import { BootcampHeroSection } from "@/app/components/sections/bootcamp-web3/BootcampHeroSection";
 import { ModulesOverview } from "@/app/components/sections/bootcamp-web3/ModulesOverview";
 import { ResultsYouCanExpect } from "@/app/components/sections/bootcamp-web3/ResultsYouCanExpect";
@@ -12,6 +13,7 @@ export default function Page() {
       <WhoShouldJoin />
       <ModulesOverview />
       <ResultsYouCanExpect />
+      <BootcampComparator />
       <section className="h-svh"></section>
     </div>
   );

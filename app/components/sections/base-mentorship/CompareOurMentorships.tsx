@@ -1,5 +1,6 @@
 import { SectionHeader } from "@/app/components/ui/SectionHeader";
-import { MentorshipsComparison } from "../../layout/MentorshipsComparison";
+import { mentorshipComparison } from "@/app/constants/mentorshipComparison";
+import { Comparator } from "../../ui/Comparator";
 
 export function CompareOurMentorships() {
   return (
@@ -13,7 +14,7 @@ export function CompareOurMentorships() {
         }
       />
 
-      <MentorshipsComparison />
+      <Comparator comparisonData={mentorshipComparison} />
     </section>
   );
 }
