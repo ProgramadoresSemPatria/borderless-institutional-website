@@ -1,4 +1,3 @@
-import { Footer } from "./components/layout/Footer";
 import { AccelerationPrograms } from "./components/sections/homepage/AccelerationPrograms";
 import { EventsAndAchievements } from "./components/sections/homepage/EventsAndAchievements";
 import { GlobalTalentConnector } from "./components/sections/homepage/GlobalTalentConnector";
@@ -31,7 +30,6 @@ export default function Page() {
         <HelpSection />
         <EventsAndAchievements />
       </div>
-      <Footer />
     </div>
   );
 }
