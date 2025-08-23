@@ -15,7 +15,7 @@ const links = [
   },
   {
     title: "Base mentorship",
-    href: "",
+    href: "/base-mentorship",
   },
   {
     title: "Bootcamp WEB3 Global Developer",
@@ -52,7 +52,7 @@ export function Header() {
   return (
     <nav className="sticky w-full top-8 left-0 right-0 z-50">
       <div className="w-[90%] max-w-[1800px] mx-auto bg-tertiary rounded-lg p-2 flex justify-between items-center h-16 relative">
-        <div className="flex items-center gap-3 h-full py-2">
+        <Link href={"/"} className="flex items-center gap-3 h-full py-2">
           <Image
             width={501}
             height={596}
@@ -61,7 +61,7 @@ export function Header() {
             className="w-fit h-full ml-4"
           />
           <p className="font-bold text-xl">Borderless</p>
-        </div>
+        </Link>
 
         <button
           className="cursor-pointer h-full"
