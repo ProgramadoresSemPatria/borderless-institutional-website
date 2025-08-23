@@ -1,3 +1,4 @@
+import { ApplyNow } from "@/app/components/sections/bootcamp-web3/ApplyNow";
 import { BootcampComparator } from "@/app/components/sections/bootcamp-web3/BootcampComparator";
 import { BootcampHeroSection } from "@/app/components/sections/bootcamp-web3/BootcampHeroSection";
 import { ModulesOverview } from "@/app/components/sections/bootcamp-web3/ModulesOverview";
@@ -14,7 +15,7 @@ export default function Page() {
       <ModulesOverview />
       <ResultsYouCanExpect />
       <BootcampComparator />
-      <section className="h-svh"></section>
+      <ApplyNow />
     </div>
   );
 }
