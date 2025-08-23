@@ -6,6 +6,7 @@ interface FeatureCardProps {
   title: string;
   description: string;
   icon: LucideIcon;
+  variant?: "primary" | "secondary";
   className?: string;
 }
 
@@ -14,11 +15,13 @@ export function FeatureCard({
   description,
   icon,
   className,
+  variant = "primary",
 }: FeatureCardProps) {
   return (
     <div
       className={twMerge(
-        "bg-tertiary rounded-md md:h-64 p-6 flex flex-col justify-between gap-8",
+        "rounded-md md:h-64 p-6 flex flex-col justify-between gap-8",
+        variant === "primary" ? "bg-tertiary" : "bg-[#212121]",
         className
       )}
     >
