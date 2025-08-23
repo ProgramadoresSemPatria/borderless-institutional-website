@@ -24,7 +24,7 @@ export function HeroSection() {
 
   if (!show) {
     // just show hero section when page is hydrated, so animation runs without flicker
-    return <section />;
+    return <section className="h-svh" />;
   }
 
   return (
