@@ -4,6 +4,7 @@ import { PspHeroSection } from "../components/sections/psp-mentorship/PspHeroSec
 import { ResultsYouCanExpect } from "../components/sections/psp-mentorship/ResultsYouCanExpect";
 import { WhatIsPspMentorship } from "../components/sections/psp-mentorship/WhatIsPspMentorship";
 import { WhoIsItFor } from "../components/sections/psp-mentorship/WhoIsItFor";
+import { WhyItWorks } from "../components/sections/psp-mentorship/WhyItWorks";
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
       <GoGlobalMethod />
       <HowItWorks />
       <ResultsYouCanExpect />
+      <WhyItWorks />
       <section className="h-svh"></section>
     </div>
   );
