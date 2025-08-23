@@ -22,8 +22,8 @@ const links = [
     href: "/bootcamp-web3",
   },
   {
-    title: "For founders and Invertors",
-    href: "",
+    title: "For founders and Investors",
+    href: "/for-founders-and-investors",
   },
   {
     title: "I want to hire a professional",
