@@ -31,7 +31,7 @@ const links = [
   },
   {
     title: "I want to internatinalize",
-    href: "",
+    href: "/want-to-internationalize",
   },
   {
     title: "Expansion",

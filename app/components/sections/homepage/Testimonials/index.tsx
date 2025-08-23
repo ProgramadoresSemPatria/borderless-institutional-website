@@ -17,8 +17,8 @@ export function Testimonials() {
       <Carousel className="flex flex-col gap-4 lg:gap-8">
         <div className="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-12">
           <AnimatedText as="h2" className="max-w-4xl">
-            Prova real - Mais de 105{" "}
-            <span className="font-ivy">devs globalizados</span>
+            <span className="font-ivy">105+ Success Stories</span> –
+            professionals now working in the US, Europe, and Asia.
           </AnimatedText>
           <div className="flex gap-2">
             <CarouselPrevious />
