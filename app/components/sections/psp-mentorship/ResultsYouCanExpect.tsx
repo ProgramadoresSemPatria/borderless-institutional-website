@@ -3,9 +3,9 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Star, Users } from "lucide-react";
-import { AnimatedText } from "../../ui/AnimatedText";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { IconWrapper } from "../../ui/IconWrapper";
+import { SectionHeader } from "../../ui/SectionHeader";
 
 const results = [
   {
@@ -41,17 +41,14 @@ export function ResultsYouCanExpect() {
 
   return (
     <section className="py-[10svh] space-y-8">
-      <div className="space-y-4">
-        <div className="flex items-center gap-2">
-          <div className="size-2 rounded-full bg-primary" />
-          <AnimatedText className="text-sm md:text-xl font-medium">
-            Our alumni report
-          </AnimatedText>
-        </div>
-        <AnimatedText as="h2" className="max-w-4xl">
-          <span className="font-ivy">Results</span> You Can Expect
-        </AnimatedText>
-      </div>
+      <SectionHeader
+        preTitle="Our alumni report"
+        title={
+          <>
+            <span className="font-ivy">Results</span> You Can Expect
+          </>
+        }
+      />
 
       <div className="grid lg:grid-cols-3 gap-2">
         {results.map((result) => (

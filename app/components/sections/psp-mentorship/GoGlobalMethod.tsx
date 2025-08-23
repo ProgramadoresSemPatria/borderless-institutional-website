@@ -3,8 +3,8 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Code, Target, Trophy, Users } from "lucide-react";
-import { AnimatedText } from "../../ui/AnimatedText";
 import { FeatureCard } from "../../ui/FeatureCard";
+import { SectionHeader } from "../../ui/SectionHeader";
 
 const methods = [
   {
@@ -51,19 +51,16 @@ export function GoGlobalMethod() {
 
   return (
     <section className="space-y-8 py-[10svh]">
-      <div className="space-y-4">
-        <div className="flex items-center gap-2">
-          <div className="size-2 rounded-full bg-primary" />
-          <AnimatedText className="text-sm md:text-xl font-medium">
-            The Go Global™ Method
-          </AnimatedText>
-        </div>
-        <AnimatedText as="h2" className="max-w-4xl">
-          Our proprietary <span className="font-ivy">4-pillar</span> framework
-          to transition from a national career to{" "}
-          <span className="font-ivy">global success</span>:
-        </AnimatedText>
-      </div>
+      <SectionHeader
+        preTitle="The Go Global™ Method"
+        title={
+          <>
+            Our proprietary <span className="font-ivy">4-pillar</span> framework
+            to transition from a national career to{" "}
+            <span className="font-ivy">global success</span>:
+          </>
+        }
+      />
 
       <div className="grid md:grid-cols-2 2xl:grid-cols-4 gap-2">
         {methods.map((method) => (

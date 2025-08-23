@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/app/components/ui/Accordion";
 import { IconWrapper } from "@/app/components/ui/IconWrapper";
-import { AnimatedText } from "../../../ui/AnimatedText";
+import { SectionHeader } from "@/app/components/ui/SectionHeader";
 import {
   FeatureByMentorship,
   featuresByMentorship,
@@ -14,17 +14,14 @@ import {
 export function CompareOurMentorships() {
   return (
     <section className="pt-[10svh] pb-2 space-y-8">
-      <div className="space-y-4">
-        <div className="flex items-center gap-2">
-          <div className="size-2 rounded-full bg-primary" />
-          <AnimatedText className="text-sm md:text-xl font-medium">
-            If you are not ready yet
-          </AnimatedText>
-        </div>
-        <AnimatedText as="h2" className="max-w-4xl">
-          Compare our <span className="font-ivy">mentorships</span>
-        </AnimatedText>
-      </div>
+      <SectionHeader
+        preTitle="If you are not ready yet"
+        title={
+          <>
+            Compare our <span className="font-ivy">mentorships</span>
+          </>
+        }
+      />
 
       <Accordion
         type="single"

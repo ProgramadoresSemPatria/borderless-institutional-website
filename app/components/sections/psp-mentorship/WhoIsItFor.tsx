@@ -3,8 +3,8 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Check } from "lucide-react";
-import { AnimatedText } from "../../ui/AnimatedText";
 import { IconWrapper } from "../../ui/IconWrapper";
+import { SectionHeader } from "../../ui/SectionHeader";
 
 export function WhoIsItFor() {
   useGSAP(() => {
@@ -27,19 +27,16 @@ export function WhoIsItFor() {
 
   return (
     <section className="py-[10svh] space-y-8">
-      <div className="space-y-4">
-        <div className="flex items-center gap-2">
-          <div className="size-2 rounded-full bg-primary" />
-          <AnimatedText className="text-sm md:text-xl font-medium">
-            Who is it for?
-          </AnimatedText>
-        </div>
-        <AnimatedText as="h2" className="max-w-4xl">
-          The PSP Mentorship is built for{" "}
-          <span className="font-ivy">mid-to-senior-level</span> tech
-          professionals:
-        </AnimatedText>
-      </div>
+      <SectionHeader
+        preTitle="Who is it for?"
+        title={
+          <>
+            The PSP Mentorship is built for{" "}
+            <span className="font-ivy">mid-to-senior-level</span> tech
+            professionals:
+          </>
+        }
+      />
 
       <div className="grid md:grid-cols-2 gap-2">
         <RequirementsCard

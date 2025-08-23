@@ -3,8 +3,8 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Check } from "lucide-react";
-import { AnimatedText } from "../../ui/AnimatedText";
 import { IconWrapper } from "../../ui/IconWrapper";
+import { SectionHeader } from "../../ui/SectionHeader";
 
 const features = [
   "Direct access to a mentor who has personally scaled from $5K to $90K/month in tech contracts",
@@ -34,21 +34,18 @@ export function WhyItWorks() {
 
   return (
     <section className="space-y-8 py-[10svh]">
-      <div className="space-y-4">
-        <div className="flex items-center gap-2">
-          <div className="size-2 rounded-full bg-primary" />
-          <AnimatedText className="text-sm md:text-xl font-medium">
-            Why it works ?
-          </AnimatedText>
-        </div>
-        <AnimatedText as="h2" className="max-w-4xl">
-          Most career advice for devs is{" "}
-          <span className="font-ivy">
-            generic, outdated, or purely theoretical
-          </span>
-          . The PSP Mentorship gives you:
-        </AnimatedText>
-      </div>
+      <SectionHeader
+        preTitle="Why it works ?"
+        title={
+          <>
+            Most career advice for devs is{" "}
+            <span className="font-ivy">
+              generic, outdated, or purely theoretical
+            </span>
+            . The PSP Mentorship gives you:
+          </>
+        }
+      />
 
       <div className="bg-tertiary rounded-md p-2 grid lg:grid-cols-2 gap-2">
         {features.map((feature) => (
