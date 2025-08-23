@@ -30,8 +30,8 @@ export function WhoIsItFor() {
         preTitle="Who is it for?"
         title={
           <>
-            The PSP Mentorship is built for{" "}
-            <span className="font-ivy">mid-to-senior-level</span> tech
+            The BASE Mentorship is built for{" "}
+            <span className="font-ivy">junior to early mid-level</span> tech
             professionals:
           </>
         }
@@ -41,20 +41,17 @@ export function WhoIsItFor() {
         <RequirementsCard
           title="Tech Roles"
           items={[
-            "Backend, Fullstack, DevOps",
-            "Cloud Specialists, Data Engineers",
-            "AI Specialists, Blockchain Developers",
-            "Mobile Developers, Infra Engineers",
-            "Tech Leads, Engineering Managers",
+            "Frontend, Backend, Fullstack Developers",
+            "QA, Data Analysts",
+            "Support Engineers",
           ]}
         />
         <RequirementsCard
           title="Requirements"
           items={[
-            "Minimum 3 years of professional experience",
-            "English level: B1 or higher (we help you get to technical fluency)",
-            "Ready to work remotely for international companies",
-            "Earn in USD/EUR/CHF/GBP/AED",
+            "1-2 years of professional experience or recently graduated",
+            "English level: A1 to B1 (goal: B2 for international readiness)",
+            "Ready to work hard, follow a clear plan, and join a high-performance community",
           ]}
         />
       </div>
