@@ -4,7 +4,7 @@ import { AnimatedText } from "./AnimatedText";
 interface FullWidthCardProps {
   title: string;
   description: string;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export function FullWidthCard({
