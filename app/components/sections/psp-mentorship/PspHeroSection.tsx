@@ -3,7 +3,7 @@ import { AnimatedText } from "../../ui/AnimatedText";
 
 export function PspHeroSection() {
   return (
-    <section className="pt-[8svh] md:pt-[10svh] pb-[5svh] space-y-12">
+    <section className="py-[10svh] space-y-12">
       <div className="space-y-6">
         <AnimatedText
           tweenVars={{

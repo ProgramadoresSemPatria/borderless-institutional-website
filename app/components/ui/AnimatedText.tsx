@@ -4,7 +4,6 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ComponentProps, ElementType, ReactNode, useRef } from "react";
-import { twMerge } from "tailwind-merge";
 
 type AnimatedTextOwnProps<E extends ElementType> = {
   children: ReactNode;
@@ -59,11 +58,7 @@ export function AnimatedText<E extends ElementType = "p">({
   );
 
   return (
-    <Component
-      className={twMerge("w-full", className)}
-      {...rest}
-      ref={container}
-    >
+    <Component className={className} {...rest} ref={container}>
       {children}
     </Component>
   );

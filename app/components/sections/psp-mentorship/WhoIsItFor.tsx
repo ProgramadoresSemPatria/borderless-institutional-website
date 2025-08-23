@@ -26,7 +26,7 @@ export function WhoIsItFor() {
   });
 
   return (
-    <section className="py-[5svh] space-y-8">
+    <section className="py-[10svh] space-y-8">
       <div className="space-y-4">
         <div className="flex items-center gap-2">
           <div className="size-2 rounded-full bg-primary" />
