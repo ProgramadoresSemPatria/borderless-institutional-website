@@ -1,3 +1,4 @@
+import { CompareOurMentorships } from "../components/sections/psp-mentorship/CompareOurMentorships";
 import { GoGlobalMethod } from "../components/sections/psp-mentorship/GoGlobalMethod";
 import { HowItWorks } from "../components/sections/psp-mentorship/HowItWorks";
 import { PspHeroSection } from "../components/sections/psp-mentorship/PspHeroSection";
@@ -16,6 +17,7 @@ export default function Page() {
       <HowItWorks />
       <ResultsYouCanExpect />
       <WhyItWorks />
+      <CompareOurMentorships />
       <section className="h-svh"></section>
     </div>
   );
