@@ -1,3 +1,7 @@
+"use client";
+
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { Award, DollarSign, MapPin, Users2 } from "lucide-react";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
@@ -30,6 +34,24 @@ const results = [
 ];
 
 export function WhyBorderless() {
+  useGSAP(() => {
+    gsap.fromTo(
+      ".results-card",
+      { y: "20%", opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "back.inOut",
+        duration: 0.8,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: ".results-card",
+          start: "top 90%",
+        },
+      }
+    );
+  });
+
   return (
     <section className="py-[10svh] space-y-6">
       <SectionHeader
@@ -46,6 +68,7 @@ export function WhyBorderless() {
       <div className="grid lg:grid-cols-2 2xl:grid-cols-4 gap-2">
         {results.map((result) => (
           <FeatureCard
+            className="results-card"
             key={result.title}
             title={result.title}
             description={result.description}
