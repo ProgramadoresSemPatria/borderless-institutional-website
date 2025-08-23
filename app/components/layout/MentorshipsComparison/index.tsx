@@ -3,36 +3,24 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/app/components/ui/Accordion";
-import { IconWrapper } from "@/app/components/ui/IconWrapper";
-import { SectionHeader } from "@/app/components/ui/SectionHeader";
+} from "../../ui/Accordion";
+import { IconWrapper } from "../../ui/IconWrapper";
 import {
   FeatureByMentorship,
   featuresByMentorship,
 } from "./constants/featuresComparison";
 
-export function CompareOurMentorships() {
+export function MentorshipsComparison() {
   return (
-    <section className="pt-[10svh] pb-2 space-y-8">
-      <SectionHeader
-        preTitle="If you are not ready yet"
-        title={
-          <>
-            Compare our <span className="font-ivy">mentorships</span>
-          </>
-        }
-      />
-
-      <Accordion
-        type="single"
-        collapsible
-        className="flex flex-col gap-2 bg-tertiary p-2"
-      >
-        {featuresByMentorship.map((feature) => (
-          <FeatureComparisonCard {...feature} key={feature.feature} />
-        ))}
-      </Accordion>
-    </section>
+    <Accordion
+      type="single"
+      collapsible
+      className="flex flex-col gap-2 bg-tertiary p-2"
+    >
+      {featuresByMentorship.map((feature) => (
+        <FeatureComparisonCard {...feature} key={feature.feature} />
+      ))}
+    </Accordion>
   );
 }
 
