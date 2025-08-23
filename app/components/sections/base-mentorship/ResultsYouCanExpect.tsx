@@ -9,7 +9,7 @@ import { SectionHeader } from "../../ui/SectionHeader";
 
 const results = [
   {
-    title: "Remote Roles",
+    title: "Higher paying roles",
     description:
       "Move from local junior/mid-level positions to higher-paying remote roles",
     icon: Laptop,
