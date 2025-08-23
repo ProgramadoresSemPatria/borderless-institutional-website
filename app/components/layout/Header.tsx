@@ -19,7 +19,7 @@ const links = [
   },
   {
     title: "Bootcamp WEB3 Global Developer",
-    href: "",
+    href: "/bootcamp-web3",
   },
   {
     title: "For founders and Invertors",
