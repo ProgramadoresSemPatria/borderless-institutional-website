@@ -6,6 +6,15 @@
         "tagline": "Global tech starts here",
         "headline": "A ponte entre <highlight>talentos tech brasileiros</highlight> e o <highlight>mercado internacional</highlight> — com produtos educacionais, plataforma própria e startups em incubação.",
         "button": "Quero internacionalizar"
+      },
+      "BottomSection": {
+        "description": "O único ecossistema do Brasil que prepara, forma e conecta profissionais de tech com os mercados globais.",
+        "discoverMore": "Descubra mais"
+      },
+      "NumbersHighlightCard": {
+        "stats": "500 alunos, 105 internacionalizados e 2 startups encubadas",
+        "name": "Borderless Coding",
+        "logoAlt": "logo da borderless"
       }
     }
   }

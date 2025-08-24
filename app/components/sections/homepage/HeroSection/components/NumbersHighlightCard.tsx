@@ -1,14 +1,14 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { AnimatedGrid } from "../../../../ui/AnimatedGrid";
 
 export function NumbersHighlightCard() {
+  const t = useTranslations("HomePage.HeroSection.NumbersHighlightCard");
+
   return (
     <div className="bg-tertiary rounded-lg p-6 font-bold w-full lg:max-w-sm h-40 relative">
       <div className="flex flex-col justify-between h-full">
-        <p className="italic">
-          &quot;500 alunos, 105 internacionalizados e 2 startups encubadas
-          &quot;
-        </p>
+        <p className="italic">{t("stats")}</p>
 
         <div className="flex items-center gap-2">
           <Image
@@ -16,9 +16,9 @@ export function NumbersHighlightCard() {
             width={501}
             height={596}
             src={"/borderless-logo.svg"}
-            alt="borderless logo"
+            alt={t("logoAlt")}
           />
-          <p className="font-bold text-sm mr-auto">Borderless Coding</p>
+          <p className="font-bold text-sm mr-auto">{t("name")}</p>
         </div>
       </div>
 

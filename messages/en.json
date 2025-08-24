@@ -6,6 +6,15 @@
         "tagline": "Global tech starts here",
         "headline": "The bridge between <highlight>Brazilian tech talents</highlight> and the <highlight>international market</highlight> — with educational products, our own platform, and incubated startups.",
         "button": "I want to internationalize"
+      },
+      "BottomSection": {
+        "description": "The only ecosystem in Brazil that trains, educates, and connects tech professionals with global markets.",
+        "discoverMore": "Discover more"
+      },
+      "NumbersHighlightCard": {
+        "stats": "500 students, 105 internationalized and 2 incubated startups",
+        "name": "Borderless Coding",
+        "logoAlt": "borderless logo"
       }
     }
   }
