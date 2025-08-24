@@ -6,9 +6,8 @@ import gsap from "gsap";
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IconWrapper } from "../ui/IconWrapper";
-
 
 export function Header() {
   const t = useTranslations("Header");
@@ -31,66 +30,93 @@ export function Header() {
   };
 
   useGSAP(() => {
-    gsap.from(".header-buttons-container", {
-      opacity: 0,
-      ease: "power4.in",
-    });
+    gsap.fromTo(
+      ".header-buttons-container",
+      { opacity: 0 },
+      { opacity: 1, ease: "power4.in", duration: 0.5 }
+    );
+    gsap.fromTo(
+      ".header-backdrop",
+      { opacity: 0 },
+      { opacity: 1, ease: "power4.in", duration: 0.5 }
+    );
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prevOverflow;
+    };
   }, [isOpen]);
 
   return (
-    <nav className="sticky w-full top-8 left-0 right-0 z-50">
-      <div className="w-[90%] max-w-[1800px] mx-auto bg-tertiary rounded-lg p-2 flex justify-between items-center h-16 relative">
-        <Link href={"/"} className="flex items-center gap-3 h-full py-2">
-          <Image
-            width={501}
-            height={596}
-            alt={t("logoAlt")}
-            src={"/borderless-logo-white.svg"}
-            className="w-fit h-full ml-4"
-          />
-          <p className="font-bold text-xl">Borderless</p>
-        </Link>
-
+    <>
+      {isOpen && (
         <button
-          className="cursor-pointer h-full"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <IconWrapper
-            className="aspect-square h-full p-0 flex-center"
-            icon={isOpen ? X : Menu}
-          />
-        </button>
+          aria-label="Close menu"
+          className="header-backdrop fixed inset-0 bg-black/50 backdrop-blur-[1px] z-40 cursor-pointer"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+      <nav className="sticky w-full top-8 left-0 right-0 z-50">
+        <div className="w-[90%] max-w-[1800px] mx-auto bg-tertiary rounded-lg p-2 flex justify-between items-center h-16 relative">
+          <Link href={"/"} className="flex items-center gap-3 h-full py-2">
+            <Image
+              width={501}
+              height={596}
+              alt={t("logoAlt")}
+              src={"/borderless-logo-white.svg"}
+              className="w-fit h-full ml-4"
+            />
+            <p className="font-bold text-xl">Borderless</p>
+          </Link>
 
-        {isOpen && (
-          <div className="header-buttons-container absolute bg-tertiary rounded-lg p-2 w-full left-0 bottom-0 translate-y-[calc(100%+1rem)] flex flex-col gap-2">
-            {links.map((link) => (
-              <Link
-                href={link.href}
-                key={link.title}
-                className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.title}
-              </Link>
-            ))}
+          <button
+            className="cursor-pointer h-full"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <IconWrapper
+              className="aspect-square h-full p-0 flex-center"
+              icon={isOpen ? X : Menu}
+            />
+          </button>
 
-            <div className="flex gap-2">
-              <button
-                className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer"
-                onClick={() => changeLocale("pt")}
-              >
-                PT-BR
-              </button>
-              <button
-                className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer"
-                onClick={() => changeLocale("en")}
-              >
-                US-EN
-              </button>
+          {isOpen && (
+            <div className="header-buttons-container absolute bg-tertiary rounded-lg p-2 w-full left-0 bottom-0 translate-y-[calc(100%+1rem)] flex flex-col gap-2 max-h-[calc(100vh-16rem)] overflow-y-auto scrollbar-hide">
+               <div className="grid grid-cols-2 gap-2">
+                <button
+                  className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150"
+                  onClick={() => changeLocale("pt")}
+                >
+                  PT-BR
+                </button>
+                <button
+                  className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150"
+                  onClick={() => changeLocale("en")}
+                >
+                  US-EN
+                </button>
+              </div>
+
+              <div className="h-px bg-white/20 w-full my-2" />
+
+              {links.map((link) => (
+                <Link
+                  href={link.href}
+                  key={link.title}
+                  className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.title}
+                </Link>
+              ))}
+
             </div>
-          </div>
-        )}
-      </div>
-    </nav>
+          )}
+        </div>
+      </nav>
+    </>
   );
 }
