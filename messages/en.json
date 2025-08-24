@@ -4,7 +4,7 @@
       "logoAlt": "logo",
       "TopSection": {
         "tagline": "Global tech starts here",
-        "headline": "The bridge between <highlight>Brazilian tech talents</highlight> and the <highlight>international market</highlight> — with educational products, our own platform, and incubated startups.",
+        "headline": "The bridge between <colorful>Brazilian tech talents</colorful> and the <colorful>international market</colorful> — with educational products, our own platform, and incubated startups.",
         "button": "I want to internationalize"
       },
       "BottomSection": {
@@ -15,6 +15,59 @@
         "stats": "500 students, 105 internationalized and 2 incubated startups",
         "name": "Borderless Coding",
         "logoAlt": "borderless logo"
+      }
+    },
+    "ServicesSection": {
+      "preTitle": "What we offer?",
+      "title": "From <italic>Mobile development</italic> to Machine Learning Engineering",
+      "education": {
+        "title": "Education",
+        "description": "Acceleration programs and specialized mentorship"
+      },
+      "tech": {
+        "title": "Tech",
+        "description": "Development of innovative solutions"
+      },
+      "people": {
+        "title": "People",
+        "description": "Connection with global markets"
+      }
+    },
+    "TalentCompanies": {
+      "title": "Companies where our <italic>talents</italic> have already worked or currently work"
+    },
+    "AccelerationPrograms": {
+      "preTitle": "Boost your journey",
+      "title": "Discover our <italic>acceleration programs</italic>",
+      "buttonText": "Learn more",
+      "programs": {
+        "psp": {
+          "title": "PSP Mentoring",
+          "description": "Structured mentoring program to accelerate your career in technology",
+          "features": {
+            "mentoring": "Specialized mentoring",
+            "projects": "Practical projects",
+            "network": "Global network"
+          }
+        },
+        "base": {
+          "title": "BASE Mentoring",
+          "description": "Solid foundations for your journey in technology and international markets",
+          "features": {
+            "tech": "Technical base",
+            "softSkills": "Soft skills",
+            "global": "Global preparation"
+          }
+        },
+        "bootcamp": {
+          "title": "Bootcamp: Web3 Global Developer",
+          "description": "Intensive bootcamp focused on Web3 technologies and decentralized development",
+          "features": {
+            "stack": "Web3 Stack",
+            "dapps": "DApps",
+            "blockchain": "Blockchain"
+          }
+        }
       }
     }
   }

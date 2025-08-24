@@ -1,31 +1,18 @@
 "use client";
 
+import RichText from "@/app/components/ui/RichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Code, GraduationCap, Users } from "lucide-react";
-import { AnimatedGrid } from "../../ui/AnimatedGrid";
-import { AnimatedText } from "../../ui/AnimatedText";
-import { FeatureCard } from "../../ui/FeatureCard";
-
-const services = [
-  {
-    icon: GraduationCap,
-    title: "Educação",
-    description: "Programas de aceleração e mentoria especializada",
-  },
-  {
-    icon: Code,
-    title: "Tech",
-    description: "Desenvolvimento de soluções inovadoras",
-  },
-  {
-    icon: Users,
-    title: "People",
-    description: "Conexão com mercados globais",
-  },
-];
+import { useTranslations } from "next-intl";
+import { AnimatedGrid } from "../../../ui/AnimatedGrid";
+import { AnimatedText } from "../../../ui/AnimatedText";
+import { FeatureCard } from "../../../ui/FeatureCard";
+import { useOurServices } from "./hooks/useOurServices";
 
 export function OurServices() {
+  const t = useTranslations("HomePage.ServicesSection");
+  const services = useOurServices();
+
   useGSAP(() => {
     gsap.fromTo(
       ".service-card",
@@ -49,11 +36,10 @@ export function OurServices() {
       <div className="space-y-6 w-full max-w-lg xl:max-w-[40%]">
         <div className="flex items-center gap-2">
           <div className="size-2 rounded-full bg-primary" />
-          <p className="text-sm md:text-xl font-medium">O que oferecemos ?</p>
+          <p className="text-sm md:text-xl font-medium">{t("preTitle")}</p>
         </div>
         <AnimatedText as="h2">
-          Desde <span className="font-ivy">Mobile development</span> até{" "}
-          <span className="">Machine Learning Engineering</span>
+          <RichText>{(tags) => t.rich("title", { ...tags })}</RichText>
         </AnimatedText>
       </div>
 

@@ -4,7 +4,7 @@
       "logoAlt": "logo",
       "TopSection": {
         "tagline": "Global tech starts here",
-        "headline": "A ponte entre <highlight>talentos tech brasileiros</highlight> e o <highlight>mercado internacional</highlight> — com produtos educacionais, plataforma própria e startups em incubação.",
+        "headline": "A ponte entre <colorful>talentos tech brasileiros</colorful> e o <colorful>mercado internacional</colorful> — com produtos educacionais, plataforma própria e startups em incubação.",
         "button": "Quero internacionalizar"
       },
       "BottomSection": {
@@ -15,6 +15,59 @@
         "stats": "500 alunos, 105 internacionalizados e 2 startups encubadas",
         "name": "Borderless Coding",
         "logoAlt": "logo da borderless"
+      }
+    },
+    "ServicesSection": {
+      "preTitle": "O que oferecemos ?",
+      "title": "Desde <italic>Mobile development</italic> até Machine Learning Engineering",
+      "education": {
+        "title": "Educação",
+        "description": "Programas de aceleração e mentoria especializada"
+      },
+      "tech": {
+        "title": "Tech",
+        "description": "Desenvolvimento de soluções inovadoras"
+      },
+      "people": {
+        "title": "People",
+        "description": "Conexão com mercados globais"
+      }
+    },
+    "TalentCompanies": {
+      "title": "Empresas onde nossos <italic>talentos</italic> já trabalharam ou trabalham"
+    },
+    "AccelerationPrograms": {
+      "preTitle": "Impulsione sua jornada",
+      "title": "Conheça nossos <italic>programas de aceleração</italic>",
+      "buttonText": "Saiba mais",
+      "programs": {
+        "psp": {
+          "title": "Mentoria PSP",
+          "description": "Programa de mentorias estruturado para acelerar sua carreira em tecnologia",
+          "features": {
+            "mentoring": "Mentoria especializada",
+            "projects": "Projetos práticos",
+            "network": "Network global"
+          }
+        },
+        "base": {
+          "title": "Mentoria BASE",
+          "description": "Fundamentos sólidos para sua jornada em tecnologia e mercados internacionais",
+          "features": {
+            "tech": "Base técnica",
+            "softSkills": "Soft skills",
+            "global": "Preparação global"
+          }
+        },
+        "bootcamp": {
+          "title": "Bootcamp: Web3 Global Developer",
+          "description": "Bootcamp intensivo focado em tecnologias Web3 e desenvolvimento descentralizado",
+          "features": {
+            "stack": "Web3 Stack",
+            "dapps": "DApps",
+            "blockchain": "Blockchain"
+          }
+        }
       }
     }
   }

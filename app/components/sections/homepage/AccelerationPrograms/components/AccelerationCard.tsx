@@ -1,7 +1,8 @@
 import { ExternalLink } from "@/app/components/ui/ExternalLink";
 import { IconWrapper } from "@/app/components/ui/IconWrapper";
+import { useTranslations } from "next-intl";
 import { twMerge } from "tailwind-merge";
-import { Program } from "../constants/programs";
+import { Program } from "../hooks/useAccelerationPrograms";
 
 export function AccelerationCard({
   description,
@@ -9,6 +10,8 @@ export function AccelerationCard({
   title,
   className,
 }: Program & { className?: string }) {
+  const t = useTranslations("HomePage.AccelerationPrograms");
+
   return (
     <div className={twMerge("bg-tertiary rounded-md p-8", className)}>
       <div className="space-y-6">
@@ -28,7 +31,7 @@ export function AccelerationCard({
       </div>
 
       <div className="w-full flex justify-end mt-8">
-        <ExternalLink>Saiba mais</ExternalLink>
+        <ExternalLink>{t("buttonText")}</ExternalLink>
       </div>
     </div>
   );

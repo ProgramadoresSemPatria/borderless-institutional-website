@@ -2,9 +2,11 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { AnimatedGrid } from "../../ui/AnimatedGrid";
 import { AnimatedText } from "../../ui/AnimatedText";
+import RichText from "../../ui/RichText";
 
 const logosSrc = [
   "/brand-logos/coca-cola.png",
@@ -20,6 +22,8 @@ const logosSrc = [
 ];
 
 export function TalentCompanies() {
+  const t = useTranslations("HomePage.TalentCompanies");
+
   useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -44,8 +48,7 @@ export function TalentCompanies() {
   return (
     <section className="py-[10svh] space-y-6">
       <AnimatedText as="h2" className="max-w-5xl">
-        Empresas onde nossos <span className="font-ivy">talentos</span> já
-        trabalharam ou trabalham
+        <RichText>{(tags) => t.rich("title", { ...tags })}</RichText>
       </AnimatedText>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-8 gap-2 relative">

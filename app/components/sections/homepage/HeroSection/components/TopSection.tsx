@@ -1,3 +1,4 @@
+import RichText from "@/app/components/ui/RichText";
 import { ArrowRight, Globe } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { AnimatedText } from "../../../../ui/AnimatedText";
@@ -19,11 +20,7 @@ export function TopSection() {
         as="h1"
         className="text-2xl md:text-4xl 2xl:text-6xl font-semibold max-w-6xl 2xl:max-w-7xl leading-snug md:leading-tight"
       >
-        {t.rich("headline", {
-          highlight: (chunks) => (
-            <span className="font-ivy text-secondary">{chunks}</span>
-          ),
-        })}
+        <RichText>{(tags) => t.rich("headline", { ...tags })}</RichText>
       </AnimatedText>
 
       <div className="overflow-hidden pt-2">

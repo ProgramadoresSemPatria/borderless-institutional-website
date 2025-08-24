@@ -1,13 +1,17 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { AnimatedGrid } from "../../../ui/AnimatedGrid";
 import { AnimatedText } from "../../../ui/AnimatedText";
 import { AccelerationCard } from "./components/AccelerationCard";
-import { programs } from "./constants/programs";
+import { useAccelerationPrograms } from "./hooks/useAccelerationPrograms";
 
 export function AccelerationPrograms() {
+  const { t, rich } = useRichText("HomePage.AccelerationPrograms");
+  const programs = useAccelerationPrograms();
+
   useGSAP(() => {
     gsap.fromTo(
       ".acceleration-card",
@@ -43,14 +47,9 @@ export function AccelerationPrograms() {
       <div className="space-y-6 mb-0">
         <div className="flex items-center gap-2">
           <div className="size-2 rounded-full bg-primary" />
-          <p className="text-sm md:text-xl font-medium">
-            Impulsione sua jornada
-          </p>
+          <p className="text-sm md:text-xl font-medium">{t("preTitle")}</p>
         </div>
-        <AnimatedText as="h2">
-          Conheça nossos{" "}
-          <span className="font-ivy">programas de aceleração</span>
-        </AnimatedText>
+        <AnimatedText as="h2">{rich("title")}</AnimatedText>
       </div>
 
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 z-[-1]">

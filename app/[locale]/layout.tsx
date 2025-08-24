@@ -1,6 +1,7 @@
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
 import { Montserrat } from "next/font/google";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
@@ -24,6 +25,10 @@ export const metadata: Metadata = {
   description: "Global tech starts here",
 };
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export default async function RootLayout({
   children,
   params,
@@ -36,6 +41,8 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  setRequestLocale(locale);
 
   return (
     <html lang="en">
