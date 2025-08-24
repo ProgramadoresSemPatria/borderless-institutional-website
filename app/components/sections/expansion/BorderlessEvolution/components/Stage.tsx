@@ -20,7 +20,7 @@ export function Stage({ stage }: { stage: RoadmapStage }) {
 
       <ul className="space-y-4 grow">
         {stage.goals.map((goal) => (
-          <li className="flex items-center gap-4">
+          <li key={goal} className="flex items-center gap-4">
             <div className="bg-primary size-1.5 rounded-full  shrink-0" />
             <p className="font-medium">{goal}</p>
           </li>
