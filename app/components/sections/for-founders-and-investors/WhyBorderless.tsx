@@ -2,38 +2,14 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Award, DollarSign, MapPin, Users2 } from "lucide-react";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
-
-const results = [
-  {
-    title: "Proven Success",
-    description:
-      "Proven track record: 95+ professionals internationalized through our mentorship",
-    icon: Award,
-  },
-  {
-    title: "Revenue Growth",
-    description:
-      "Revenue-backed ecosystem: $1.7M in the last 12 months from education products fueling incubation",
-    icon: DollarSign,
-  },
-  {
-    title: "Validated Talent",
-    description:
-      "Community-first dealflow: startups grow from a base of already-validated tech talent",
-    icon: Users2,
-  },
-  {
-    title: "Global Reach",
-    description:
-      "International presence: operations and partnerships across Brazil, Europe, and the US",
-    icon: MapPin,
-  },
-];
+import { useWhyBorderless } from "./hooks/useWhyBorderless";
+import { useRichText } from "@/app/hooks/useRichText";
 
 export function WhyBorderless() {
+  const { header, results } = useWhyBorderless();
+  const { rich } = useRichText("ForFoundersAndInvestors.WhyBorderless");
   useGSAP(() => {
     gsap.fromTo(
       ".results-card",
@@ -54,19 +30,10 @@ export function WhyBorderless() {
 
   return (
     <section className="py-[10svh] space-y-6">
-      <SectionHeader
-        preTitle="Why Borderless?"
-        title={
-          <>
-            Our track record speaks for itself -{" "}
-            <span className="font-ivy">we deliver results</span> for founders
-            and investors
-          </>
-        }
-      />
+      <SectionHeader preTitle={header.preTitle} title={rich("title")} />
 
       <div className="grid lg:grid-cols-2 2xl:grid-cols-4 gap-2">
-        {results.map((result) => (
+        {results.map((result: any) => (
           <FeatureCard
             className="results-card"
             key={result.title}

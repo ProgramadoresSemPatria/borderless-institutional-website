@@ -2,39 +2,15 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Globe, Lightbulb, Target, Users } from "lucide-react";
 import { AnimatedText } from "../../ui/AnimatedText";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
-
-const features = [
-  {
-    title: "Global Developer Community",
-    description:
-      "A community of 500+ internationalized developers and engineers",
-    icon: Users,
-  },
-  {
-    title: "Expert Mentorship",
-    description:
-      "Mentorship from experienced operators in tech, growth, and fundraising",
-    icon: Lightbulb,
-  },
-  {
-    title: "Strategic Guidance",
-    description:
-      "Guidance on product, technical architecture, and go-to-market strategies",
-    icon: Target,
-  },
-  {
-    title: "Investor Network",
-    description:
-      "Direct connections to investors and partners across the US, EU, and LATAM",
-    icon: Globe,
-  },
-];
+import { useForFounders } from "./hooks/useForFounders";
+import { useRichText } from "@/app/hooks/useRichText";
 
 export function ForFounders() {
+  const { header, features } = useForFounders();
+  const { rich } = useRichText("ForFoundersAndInvestors.ForFounders");
   useGSAP(() => {
     gsap.fromTo(
       ".for-founders-feature-card",
@@ -57,23 +33,17 @@ export function ForFounders() {
     <section className="py-[10svh] space-y-8">
       <div className="space-y-2">
         <SectionHeader
-          preTitle="For Founders"
-          title={
-            <>
-              Are you a builder with{" "}
-              <span className="font-ivy">global ambition?</span>
-            </>
-          }
+          preTitle={header.preTitle}
+          title={rich("title")}
         />
 
         <AnimatedText className="text-gray text-lg font-medium">
-          At Borderless Hub, we help top tech professionals transition from
-          talent to founder. Through our ecosystem, founders gain:
+          {header.description}
         </AnimatedText>
       </div>
 
       <div className="grid lg:grid-cols-2 gap-2">
-        {features.map((feature) => (
+        {features.map((feature: { title: string; description: string; icon: any }) => (
           <FeatureCard
             className="for-founders-feature-card"
             key={feature.title}

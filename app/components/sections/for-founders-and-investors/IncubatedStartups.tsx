@@ -2,31 +2,17 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Bitcoin, Users, Zap } from "lucide-react";
+import { Zap } from "lucide-react";
 import Image from "next/image";
 import { ExternalLink } from "../../ui/ExternalLink";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
-
-const startups = [
-  {
-    src: "/startups/rampix.png",
-    title: "Rampix",
-    description:
-      " A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure.",
-    icon: Bitcoin,
-  },
-  {
-    src: "/startups/borderless-community.webp",
-    title: "Borderless Community",
-    description:
-      "The super app from Borderless Coding: combining social network, members area, and forum for global tech professionals",
-    buttonText: "Exclusivo para membros",
-    icon: Users,
-  },
-];
+import { useIncubatedStartups } from "./hooks/useIncubatedStartups";
+import { useRichText } from "@/app/hooks/useRichText";
 
 export function IncubatedStartups() {
+  const { header, startups, moreCard, visitLabel } = useIncubatedStartups();
+  const { rich } = useRichText("ForFoundersAndInvestors.IncubatedStartups");
   useGSAP(() => {
     gsap.fromTo(
       ".startup-card",
@@ -47,19 +33,11 @@ export function IncubatedStartups() {
 
   return (
     <section className="py-[10svh] space-y-6 incubated-startups-section">
-      <SectionHeader
-        preTitle="Featured Startups"
-        title={
-          <>
-            Meet some of the ventures emerging from our{" "}
-            <span className="font-ivy">ecosystem</span>:
-          </>
-        }
-      />
+      <SectionHeader preTitle={header.preTitle} title={rich("title")} />
 
       <div className="space-y-2">
         <div className="grid md:grid-cols-2 gap-2 ">
-          {startups.map((startup, index) => (
+          {startups.map((startup: any, index: number) => (
             <div
               className="startup-card flex flex-col justify-between bg-tertiary rounded-md p-6 gap-6"
               key={`startup-${index}`}
@@ -82,15 +60,15 @@ export function IncubatedStartups() {
               </div>
 
               <div className="w-full flex justify-end">
-                <ExternalLink>{startup.buttonText || "Visitar"}</ExternalLink>
+                <ExternalLink>{startup.buttonText || visitLabel}</ExternalLink>
               </div>
             </div>
           ))}
         </div>
 
         <FeatureCard
-          title="More Startups Coming Soon"
-          description="As part of our incubation pipeline, new ventures are constantly emerging from our ecosystem."
+          title={moreCard.title}
+          description={moreCard.description}
           icon={Zap}
         />
       </div>

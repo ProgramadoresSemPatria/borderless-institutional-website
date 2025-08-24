@@ -736,5 +736,74 @@
         "Uma comunidade de alta performance que mantém sua accountability"
       ]
     }
+  },
+  "ForFoundersAndInvestors": {
+    "ForFoundersHero": {
+      "title": "Borderless Hub – Onde <colorful>Talento Global</colorful> Encontra Capital",
+      "subtitle": "Empoderamos a próxima geração de founders internacionais por meio de mentoria, incubação e acesso a uma rede global de investidores.",
+      "cta": "Seja nosso parceiro"
+    },
+    "ForFounders": {
+      "preTitle": "Para Founders",
+      "title": "Você é um builder com <italic>ambição global</italic>?",
+      "description": "Na Borderless Hub, ajudamos profissionais de tecnologia de alto nível a fazerem a transição de talento para founder. No nosso ecossistema, founders têm acesso a:",
+      "features": [
+        { "title": "Comunidade Global de Devs", "description": "Uma comunidade com 500+ developers e engenheiros internacionalizados" },
+        { "title": "Mentoria de Especialistas", "description": "Mentoria de operadores experientes em tecnologia, growth e captação" },
+        { "title": "Direção Estratégica", "description": "Orientação em produto, arquitetura técnica e estratégias de go-to-market" },
+        { "title": "Rede de Investidores", "description": "Conexões diretas com investidores e parceiros nos EUA, UE e LATAM" }
+      ]
+    },
+    "ForInvestors": {
+      "preTitle": "Para Investidores",
+      "title": "Buscando dealflow de <italic>alta qualidade</italic>?",
+      "description": "Através do Borderless Hub, investidores têm acesso a ventures early-stage desenhadas para escalabilidade, transparência e proteção. Nosso modelo de incubação combina talento global com execução enxuta, garantindo que as ventures já nasçam fortes.",
+      "incubationTitle": "Nosso Modelo de <italic>Incubação</italic>:",
+      "incubation": [
+        { "title": "Estrutura Independente", "description": "Empresas lideradas por founders – cada startup é estruturada como uma entidade independente, garantindo clareza e proteção ao investidor." },
+        { "title": "Acesso Internacional", "description": "Veículo global de captação – nossa estrutura nos EUA permite participação fluida de investidores internacionais." },
+        { "title": "Pipeline Validado", "description": "Pipeline diversificado – ventures surgem do nosso ecossistema comprovado de educação e mentoria, com apoio de hackathons e incubação seletiva." },
+        { "title": "Capital Inteligente", "description": "Eficiência de capital – startups começam com talento e distribuição antes de captar rodadas externas, reduzindo risco inicial e maximizando o potencial de crescimento." }
+      ],
+      "hubTitle": "Através do <italic>Borderless Hub</italic>, investidores acessam:",
+      "hub": [
+        { "title": "Execução Validada", "description": "Ventures lideradas por founders com mindset internacional e execução validada" },
+        { "title": "Pipeline Exclusivo", "description": "Pipeline exclusivo de incubação de startups nascidas do nosso ecossistema de mentoria e hackathons" },
+        { "title": "Setores Diversificados", "description": "Oportunidades diversificadas em SaaS, IA, fintech e ferramentas para developers" },
+        { "title": "Operações Escaláveis", "description": "Operações preparadas para o global, desenhadas para escalabilidade e transparência" }
+      ],
+      "banner": {
+        "title": "Conectando Talento da América Latina com Capital Global",
+        "description": "Construímos startups enxutas, resilientes e posicionadas para crescimento exponencial."
+      }
+    },
+    "IncubatedStartups": {
+      "preTitle": "Startups em Destaque",
+      "title": "Conheça algumas das ventures que emergem do nosso <italic>ecossistema</italic>:",
+      "startups": [
+        { "src": "/startups/rampix.png", "title": "Rampix", "description": "Exchange 100% brasileira para comprar e vender cripto via PIX, com rapidez e segurança.", "buttonText": "Saiba mais" },
+        { "src": "/startups/borderless-community.webp", "title": "Borderless Community", "description": "O super app da Borderless Coding: rede social, área de membros e fórum para profissionais globais de tecnologia", "buttonText": "Exclusivo para membros" }
+      ],
+      "moreCard": {
+        "title": "Mais Startups em Breve",
+        "description": "Como parte do nosso pipeline de incubação, novas ventures surgem constantemente do nosso ecossistema."
+      },
+      "visitLabel": "Visitar"
+    },
+    "JoinUs": {
+      "title": "Junte-se a Nós",
+      "description": "Seja você um founder pronto para lançar sua startup ou um investidor em busca de oportunidades early-stage, a Borderless é a ponte entre talento e capital.",
+      "cta": "Seja nosso parceiro"
+    },
+    "WhyBorderless": {
+      "preTitle": "Por que a Borderless?",
+      "title": "Nosso histórico fala por si — <italic>entregamos resultados</italic> para founders e investidores",
+      "results": [
+        { "title": "Sucesso Comprovado", "description": "Histórico validado: 95+ profissionais internacionalizados por meio da nossa mentoria" },
+        { "title": "Crescimento de Receita", "description": "Ecossistema sustentado por receita: $1,7M nos últimos 12 meses com educação financiando a incubação" },
+        { "title": "Talento Validado", "description": "Dealflow com comunidade em primeiro lugar: startups crescem com base em talento técnico já validado" },
+        { "title": "Alcance Global", "description": "Presença internacional: operações e parcerias no Brasil, Europa e Estados Unidos" }
+      ]
+    }
   }
 }

@@ -2,76 +2,16 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import {
-  BriefcaseBusinessIcon,
-  Building2,
-  GitBranch,
-  Globe2,
-  Layers,
-  Rocket,
-  Settings,
-  TrendingUp,
-} from "lucide-react";
 import { AnimatedText } from "../../ui/AnimatedText";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { FullWidthCard } from "../../ui/FullWidthCard";
 import { SectionHeader } from "../../ui/SectionHeader";
-
-const incubationFeatures = [
-  {
-    title: "Independent Structure",
-    description:
-      "Founder-led companies – each startup is structured as an independent entity, ensuring clarity and investor protection.",
-    icon: Building2,
-  },
-  {
-    title: "International Access",
-    description:
-      "Global fundraising vehicle – our US-based structure enables seamless participation for international investors.",
-    icon: Globe2,
-  },
-  {
-    title: "Proven Pipeline",
-    description:
-      "Diversified pipeline – ventures emerge from our proven education and mentorship ecosystem, supported by hackathons and selective incubation.",
-    icon: GitBranch,
-  },
-  {
-    title: "Smart Capital",
-    description:
-      "Capital efficiency – startups bootstrap with talent and distribution before raising external rounds, reducing early risk and maximizing growth potential.",
-    icon: TrendingUp,
-  },
-];
-
-const borderlessHubfeatures = [
-  {
-    title: "Validated Execution",
-    description:
-      "Founder-led ventures with international mindset and validated execution",
-    icon: Rocket,
-  },
-  {
-    title: "Exclusive Pipeline",
-    description:
-      "Exclusive incubation pipeline of startups born from our mentorship and hackathon ecosystem",
-    icon: BriefcaseBusinessIcon,
-  },
-  {
-    title: "Diverse Sectors",
-    description:
-      "Diversified opportunities in SaaS, AI, fintech, and developer tools",
-    icon: Layers,
-  },
-  {
-    title: "Scalable Operations",
-    description:
-      "Global-ready operations designed for scalability and transparency",
-    icon: Settings,
-  },
-];
+import { useForInvestors } from "./hooks/useForInvestors";
+import { useRichText } from "@/app/hooks/useRichText";
 
 export function ForInvestors() {
+  const { header, incubation, hub, banner } = useForInvestors();
+  const { rich } = useRichText("ForFoundersAndInvestors.ForInvestors");
   useGSAP(() => {
     gsap.fromTo(
       ".for-investors-feature-card",
@@ -110,30 +50,20 @@ export function ForInvestors() {
     <section className="py-[10svh] space-y-8">
       <div className="space-y-4">
         <SectionHeader
-          preTitle="For Investors"
-          title={
-            <>
-              Looking for <span className="font-ivy">high-quality</span>{" "}
-              dealflow?
-            </>
-          }
+          preTitle={header.preTitle}
+          title={rich("title")}
         />
 
         <AnimatedText className="text-gray text-lg font-medium max-w-6xl">
-          Through Borderless Hub, investors gain access to early-stage ventures
-          designed for scalability, transparency, and protection. Our incubation
-          model combines global talent with lean execution, ensuring ventures
-          are born strong.
+          {header.description}
         </AnimatedText>
       </div>
 
       <div className="space-y-4">
-        <AnimatedText as="h2">
-          Our <span className="font-ivy">Incubation</span> Model:
-        </AnimatedText>
+        <AnimatedText as="h2">{rich("incubationTitle")}</AnimatedText>
 
         <div className="grid lg:grid-cols-2 gap-2">
-          {incubationFeatures.map((feature) => (
+          {incubation.map((feature: any) => (
             <FeatureCard
               className="for-investors-feature-card"
               key={feature.title}
@@ -146,14 +76,11 @@ export function ForInvestors() {
       </div>
 
       <div className="space-y-4">
-        <AnimatedText as="h2">
-          Through <span className="font-ivy">Borderless Hub</span>, investors
-          access:{" "}
-        </AnimatedText>
+        <AnimatedText as="h2">{rich("hubTitle")}</AnimatedText>
 
         <div className="space-y-2 bg-tertiary p-2">
           <div className="grid lg:grid-cols-2 gap-2">
-            {borderlessHubfeatures.map((feature) => (
+            {hub.map((feature: any) => (
               <FeatureCard
                 className="borderless-hub-features-card"
                 key={feature.title}
@@ -165,8 +92,8 @@ export function ForInvestors() {
             ))}
           </div>
           <FullWidthCard
-            title="Connecting Latin American Talent with Global Capital"
-            description="We build startups that are lean, resilient, and positioned for exponential growth."
+            title={banner.title}
+            description={banner.description}
           />
         </div>
       </div>
