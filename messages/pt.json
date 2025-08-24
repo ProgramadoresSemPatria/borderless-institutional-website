@@ -148,6 +148,13 @@
           "buttonText": "Exclusivo para membros"
         }
       ]
+    },
+    "OurHistory": {
+      "title": "Nossa <italic>História</italic>",
+      "paragraphs": [
+        "Criada em 2023 por Yuri Pereira somente como uma mentoria que conectava developers com o mercado, hoje se tornou um ecossistema com professores de Tech, Inglês, CTO's, Managers, Cybersecurity e diversos áreas do mercado tech.",
+        "Hoje, a Borderless já contribuiu para a internacionalização de mais de 105 profissionais — desde iniciantes em início de carreira até especialistas com mais de 10 anos de experiência."
+      ]
     }
   }
 }

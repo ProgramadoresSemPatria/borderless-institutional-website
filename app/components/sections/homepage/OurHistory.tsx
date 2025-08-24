@@ -1,8 +1,14 @@
+"use client";
+
+import { useRichText } from "@/app/hooks/useRichText";
 import Image from "next/image";
 import { AnimatedGrid } from "../../ui/AnimatedGrid";
 import { AnimatedText } from "../../ui/AnimatedText";
 
 export function OurHistory() {
+  const { rich, t } = useRichText("HomePage.OurHistory");
+  const paragraphs = [t("paragraphs.0"), t("paragraphs.1")];
+
   return (
     <section className="space-y-6 pt-[10svh] history-section">
       <div className="grid lg:grid-cols-2 gap-4 items-center">
@@ -17,22 +23,16 @@ export function OurHistory() {
           <AnimatedGrid className="absolute top-0 left-0 -translate-y-1/2 -translate-x-1/2 md:w-36" />
         </div>
         <div className="bg-tertiary rounded-md p-8 flex flex-col h-full justify-between gap-12">
-          <AnimatedText as="h2">
-            Nossa <span className="font-ivy">História</span>
-          </AnimatedText>
-          <div className="text-gray">
-            <AnimatedText className="2xl:text-lg font-medium">
-              Criada em 2023 por Yuri Pereira somente como uma mentoria que
-              conectava developers com o mercado, hoje se tornou um ecossistema
-              com professores de Tech, Inglês, CTO&apos;s, Managers,
-              Cybersecurity e diversos áreas do mercado tech.
-            </AnimatedText>
-            <br />
-            <AnimatedText className="2xl:text-lg font-medium">
-              Hoje, a Borderless já contribuiu para a internacionalização de
-              mais de 105 profissionais — desde iniciantes em início de carreira
-              até especialistas com mais de 10 anos de experiência.
-            </AnimatedText>
+          <AnimatedText as="h2">{rich("title")}</AnimatedText>
+          <div className="text-gray space-y-4">
+            {paragraphs.map((p, index) => (
+              <AnimatedText
+                key={`our-history-${index}`}
+                className="2xl:text-lg font-medium"
+              >
+                {p}
+              </AnimatedText>
+            ))}
           </div>
         </div>
       </div>
