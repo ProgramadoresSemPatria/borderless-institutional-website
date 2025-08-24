@@ -43,7 +43,7 @@ export function ForFounders() {
       </div>
 
       <div className="grid lg:grid-cols-2 gap-2">
-        {features.map((feature: { title: string; description: string; icon: any }) => (
+        {features.map((feature) => (
           <FeatureCard
             className="for-founders-feature-card"
             key={feature.title}

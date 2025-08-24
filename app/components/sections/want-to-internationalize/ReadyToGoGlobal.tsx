@@ -1,9 +1,9 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { ExternalLink } from "../../ui/ExternalLink";
 import { FullWidthCard } from "../../ui/FullWidthCard";
 import { SectionHeader } from "../../ui/SectionHeader";
-import { useRichText } from "@/app/hooks/useRichText";
 import { useReadyToGoGlobal } from "./hooks/useReadyToGoGlobal";
 
 export function ReadyToGoGlobal() {
@@ -14,7 +14,7 @@ export function ReadyToGoGlobal() {
       <SectionHeader preTitle={header.preTitle} title={rich(header.titleKey)} />
 
       <FullWidthCard title={card.title} description={card.description}>
-        <ExternalLink>{card.cta}</ExternalLink>
+        <ExternalLink href={'/'}>{card.cta}</ExternalLink>
       </FullWidthCard>
     </section>
   );

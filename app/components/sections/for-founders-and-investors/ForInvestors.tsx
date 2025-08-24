@@ -63,7 +63,7 @@ export function ForInvestors() {
         <AnimatedText as="h2">{rich("incubationTitle")}</AnimatedText>
 
         <div className="grid lg:grid-cols-2 gap-2">
-          {incubation.map((feature: any) => (
+          {incubation.map((feature) => (
             <FeatureCard
               className="for-investors-feature-card"
               key={feature.title}
@@ -80,7 +80,7 @@ export function ForInvestors() {
 
         <div className="space-y-2 bg-tertiary p-2">
           <div className="grid lg:grid-cols-2 gap-2">
-            {hub.map((feature: any) => (
+            {hub.map((feature) => (
               <FeatureCard
                 className="borderless-hub-features-card"
                 key={feature.title}

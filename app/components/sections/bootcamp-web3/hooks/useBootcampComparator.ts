@@ -15,23 +15,26 @@ import {
 } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
 
+type ComparatorSection = {
+  preTitle?: string;
+  title?: string;
+  firstOptionTitle?: string;
+  secondOptionTitle?: string;
+  features?: Array<{
+    title: string;
+    first: string;
+    second: string;
+  }>;
+};
+
 export function useBootcampComparator() {
-  const messages = useMessages() as any;
+  const messages = useMessages() as Record<string, unknown>;
   const t = useTranslations("BootcampWeb3.BootcampComparator");
 
-  const section = messages?.BootcampWeb3?.BootcampComparator as
-    | {
-        preTitle?: string;
-        title?: string;
-        firstOptionTitle?: string;
-        secondOptionTitle?: string;
-        features?: Array<{
-          title: string;
-          first: string;
-          second: string;
-        }>;
-      }
-    | undefined;
+  const bootcampRoot = (messages as {
+    BootcampWeb3?: { BootcampComparator?: ComparatorSection };
+  }).BootcampWeb3;
+  const section = bootcampRoot?.BootcampComparator;
 
   const icons = [
     BookOpen,

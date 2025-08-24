@@ -1,8 +1,8 @@
 'use client'
 
+import { useTranslations } from "next-intl";
 import { ExternalLink } from "../../ui/ExternalLink";
 import { FullWidthCard } from "../../ui/FullWidthCard";
-import { useTranslations } from "next-intl";
 
 export function JoinUs() {
   const t = useTranslations("ForFoundersAndInvestors.JoinUs");
@@ -15,7 +15,7 @@ export function JoinUs() {
         title={title}
         description={description}
       >
-        <ExternalLink>{cta}</ExternalLink>
+        <ExternalLink href={'/'}>{cta}</ExternalLink>
       </FullWidthCard>
     </section>
   );

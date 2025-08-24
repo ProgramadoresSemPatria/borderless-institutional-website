@@ -12,8 +12,8 @@ export function PartnerWithBorderless() {
         title={t("title")}
         description={t("description")}
       >
-        <ExternalLink>{t("cta")}</ExternalLink>
+        <ExternalLink href={'/'}>{t("cta")}</ExternalLink>
       </FullWidthCard>
     </section>
-  );
+  );  
 }

@@ -33,7 +33,7 @@ export function WhyBorderless() {
       <SectionHeader preTitle={header.preTitle} title={rich("title")} />
 
       <div className="grid lg:grid-cols-2 2xl:grid-cols-4 gap-2">
-        {results.map((result: any) => (
+        {results.map((result) => (
           <FeatureCard
             className="results-card"
             key={result.title}

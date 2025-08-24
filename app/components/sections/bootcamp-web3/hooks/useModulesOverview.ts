@@ -17,12 +17,12 @@ export interface Module {
 
 export function useModulesOverview() {
   const t = useTranslations("BootcampWeb3.ModulesOverview");
-  const messages = useMessages() as any;
+  const messages = useMessages() as Record<string, unknown>;
 
   // Safely read translated modules structure
-  const section = messages?.BootcampWeb3?.ModulesOverview as {
-    modules?: Module[];
-  } | undefined;
+  const section = (messages as {
+    BootcampWeb3?: { ModulesOverview?: { modules?: Module[] } };
+  }).BootcampWeb3?.ModulesOverview;
 
   const header = {
     preTitle: t("preTitle"),
@@ -30,7 +30,7 @@ export function useModulesOverview() {
   };
 
   const modules: Module[] = Array.isArray(section?.modules)
-    ? (section!.modules as Module[])
+    ? section!.modules
     : [];
 
   return { header, modules };

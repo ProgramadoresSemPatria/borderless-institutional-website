@@ -1,8 +1,8 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { ExternalLink } from "../../ui/ExternalLink";
 import { FullWidthCard } from "../../ui/FullWidthCard";
-import { useTranslations } from "next-intl";
 
 export function ApplyNow() {
   const t = useTranslations("BaseMentorship.ApplyNow");
@@ -12,7 +12,7 @@ export function ApplyNow() {
         title={t("title")}
         description={t("description")}
       >
-        <ExternalLink>{t("cta")}</ExternalLink>
+        <ExternalLink href={'/'}>{t("cta")}</ExternalLink>
       </FullWidthCard>
     </section>
   );

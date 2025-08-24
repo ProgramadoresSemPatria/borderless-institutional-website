@@ -1,4 +1,3 @@
-import { setRequestLocale } from "next-intl/server";
 import { AccelerationPrograms } from "../components/sections/homepage/AccelerationPrograms";
 import { EventsAndAchievements } from "../components/sections/homepage/EventsAndAchievements";
 import { GlobalTalentConnector } from "../components/sections/homepage/GlobalTalentConnector";
@@ -13,10 +12,7 @@ import { StartupIncubator } from "../components/sections/homepage/StartupIncubat
 import { TalentCompanies } from "../components/sections/homepage/TalentCompanies";
 import { Testimonials } from "../components/sections/homepage/Testimonials";
 
-export default async function Page({ params }: { params: { locale: string } }) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-
+export default function Page() {
   return (
     <div className="overflow-x-hidden">
       <HeroSection />
