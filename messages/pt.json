@@ -920,5 +920,102 @@
         "cta": "Agendar Chamada de Estratégia"
       }
     }
+  },
+  "Expansion": {
+    "Hero": {
+      "title": "A <colorful>Expansão</colorful> Borderless",
+      "subtitle": "De mentoria e plataforma à incubação de startups e acesso a investidores — este é nosso roadmap para escalar impacto.",
+      "cta": "Entrar na Expansão"
+    },
+    "WhyItMatters": {
+      "title": "Por que a <italic>Expansão Borderless</italic> Importa",
+      "results": [
+        {
+          "title": "Histórico comprovado",
+          "description": "+$1.5M em receita nos últimos 12 meses, 105+ cases de sucesso"
+        },
+        {
+          "title": "Dealflow forte",
+          "description": "500+ membros na comunidade entre LATAM e Europa"
+        },
+        {
+          "title": "Estrutura global",
+          "description": "Conectando talento latino-americano com capital internacional"
+        }
+      ]
+    },
+    "IncubatedStartups": {
+      "preTitle": "Startups em Destaque",
+      "title": "Exemplos de negócios já nascidos do <italic>nosso ecossistema</italic>:",
+      "items": [
+        {
+          "src": "/startups/rampix.png",
+          "title": "Rampix",
+          "description": "Uma exchange 100% brasileira para comprar e vender criptomoedas via PIX, de forma rápida e segura.",
+          "buttonText": "Saiba mais"
+        },
+        {
+          "src": "/startups/borderless-community.webp",
+          "title": "Borderless Community",
+          "description": "O super app da Borderless Coding: combinando rede social, área de membros e fórum para profissionais globais de tecnologia.",
+          "buttonText": "Exclusivo para membros"
+        }
+      ]
+    },
+    "JoinExpansion": {
+      "title": "Junte-se a Expansão",
+      "description": "Se você é um founder em busca de incubação ou um investidor em busca de fluxo de negócios de alta qualidade, a Borderless é seu ponto de entrada para a próxima onda de empreendimentos globais",
+      "cta": "Explore oportunidades"
+    },
+    "BorderlessEvolution": {
+      "title": "A <italic>evolução</italic> Borderless",
+      "status": { "completed": "Concluído", "inProgress": "Em progresso", "next": "Próximo" },
+      "stages": [
+        {
+          "title": "Fundação de Talentos",
+          "timeline": "2023–2025",
+          "description": "A Borderless começou destravando o mercado global para desenvolvedores brasileiros.",
+          "goals": [
+            "Mentoria PSP: 100+ profissionais internacionalizados",
+            "Mentoria BASE: preparando iniciantes e plenos iniciais para o palco global",
+            "Bootcamps: programas especializados (ex.: Web3 Global Developer) alimentando novos mercados"
+          ],
+          "outcome": "Isso criou um pipeline de talentos pré-validados e prontos para o global."
+        },
+        {
+          "title": "Escala da Plataforma",
+          "timeline": "Final de 2025",
+          "description": "Em seguida, estamos consolidando a nossa Borderless Platform — um super app para profissionais:",
+          "goals": [
+            "Comunidade, fórum e módulos de aprendizagem",
+            "Onboarding e dashboards de carreira",
+            "Hub de networking e contratação"
+          ],
+          "outcome": "A plataforma transforma os resultados das mentorias em infraestrutura escalável, onde talento e oportunidade se encontram em escala."
+        },
+        {
+          "title": "Incubação de Startups",
+          "timeline": "2026",
+          "description": "Com talento validado e plataforma no ar, a expansão natural é via startups lideradas por founders. Todos os anos, hackathons e ciclos de incubação dentro da Borderless vão gerar novos negócios.",
+          "goals": [
+            "Modelo de SPV (LLCs separadas) – garantindo proteção ao investidor e crescimento limpo",
+            "Setores foco: SaaS, IA, DevTools e fintech",
+            "Suporte: estratégia de produto, growth e arquitetura técnica"
+          ],
+          "outcome": ""
+        },
+        {
+          "title": "Acesso a Investimento",
+          "timeline": "2026 em diante",
+          "description": "A Borderless Ventures conecta investidores globais ao nosso dealflow.",
+          "goals": [
+            "Veículo voltado aos EUA – participação simples para investidores internacionais",
+            "Pipeline diversificado – negócios nascidos de mentorias, plataforma e hackathons",
+            "Eficiência de capital – startups bootstrap com talento da comunidade antes de captar"
+          ],
+          "outcome": "Essa expansão garante que investidores acessem um pipeline pré-qualificado e founders captem com confiança."
+        }
+      ]
+    }
   }
 }

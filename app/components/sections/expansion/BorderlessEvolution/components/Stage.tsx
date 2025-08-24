@@ -2,12 +2,12 @@ import { IconWrapper } from "@/app/components/ui/IconWrapper";
 import { RoadmapStage } from "../constants/roadmapStages";
 import { getStatusBadge } from "../getStatusBadge";
 
-export function Stage({ stage }: { stage: RoadmapStage }) {
+export function Stage({ stage, labels }: { stage: RoadmapStage; labels: { completed: string; inProgress: string; next: string } }) {
   return (
     <div className="bg-[#212121] rounded-md p-6 space-y-6 min-h-full flex flex-col">
       <div className="flex items-center justify-between">
         <IconWrapper className="size-12 flex-center" icon={stage.icon} />
-        {getStatusBadge(stage.status)}
+        {getStatusBadge(stage.status, labels)}
       </div>
 
       <div className="space-y-2">

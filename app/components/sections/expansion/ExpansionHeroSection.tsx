@@ -1,7 +1,13 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
 import { AnimatedText } from "../../ui/AnimatedText";
+import { useRichText } from "@/app/hooks/useRichText";
+import { useExpansionHero } from "./hooks/useExpansionHero";
 
 export function ExpansionHeroSection() {
+  const { rich } = useRichText("Expansion.Hero");
+  const { header, subtitle, cta } = useExpansionHero();
   return (
     <section className="py-[10svh] space-y-12">
       <div className="space-y-6">
@@ -12,10 +18,7 @@ export function ExpansionHeroSection() {
           as="h1"
           className="text-2xl md:text-4xl 2xl:text-6xl font-semibold max-w-6xl 2xl:max-w-7xl leading-snug md:leading-tight"
         >
-          From Mentorship to Ventures:{" "}
-          <span className="font-ivy text-secondary">
-            The Borderless Expansion
-          </span>
+          {rich(header.titleKey)}
         </AnimatedText>
 
         <div className="space-y-12">
@@ -26,15 +29,13 @@ export function ExpansionHeroSection() {
             }}
             className="md:text-xl max-w-3xl font-semibold text-gray"
           >
-            Borderless is scaling beyond education — building a platform for
-            startups, investors, and founders to create high-impact ventures
-            born from our talent ecosystem.
+            {subtitle}
           </AnimatedText>
         </div>
 
         <div className="overflow-hidden pt-2">
           <button className="hero-button group border-2 border-primary py-3 w-full md:w-sm rounded-md flex-center gap-4 hover:opacity-80 cursor-pointer transition-opacity duration-150">
-            Explore Opportunities
+            {cta}
             <ArrowRight className="group-hover:translate-x-1 transition-translate duration-150" />
           </button>
         </div>

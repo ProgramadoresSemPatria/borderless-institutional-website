@@ -1,8 +1,8 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { ArrowRight } from "lucide-react";
 import { AnimatedText } from "../../ui/AnimatedText";
-import { useRichText } from "@/app/hooks/useRichText";
 import { useInternationalizeHero } from "./hooks/useInternationalizeHero";
 
 export function InternationalizeHeroSection() {
@@ -34,7 +34,7 @@ export function InternationalizeHeroSection() {
         </div>
 
         <div className="overflow-hidden pt-2">
-          <button className="hero-button group border-2 border-primary py-3 w-full md:w-sm rounded-md flex-center gap-4 hover:opacity-80 cursor-pointer transition-opacity duration-150">
+          <button className="hero-button group border-2 border-primary py-3 w-full md:w-md px-2 rounded-md flex-center gap-4 hover:opacity-80 cursor-pointer transition-opacity duration-150">
             {cta}
             <ArrowRight className="group-hover:translate-x-1 transition-translate duration-150" />
           </button>

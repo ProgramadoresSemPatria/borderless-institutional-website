@@ -849,5 +849,102 @@
         "cta": "Schedule Your Free Strategy Call"
       }
     }
+  },
+  "Expansion": {
+    "Hero": {
+      "title": "The Borderless <colorful>Expansion</colorful>",
+      "subtitle": "From mentorship and platform to startup incubation and investor access — this is our roadmap to scale impact.",
+      "cta": "Join the Expansion"
+    },
+    "WhyItMatters": {
+      "title": "Why <italic>Borderless Expansion</italic> Matters",
+      "results": [
+        {
+          "title": "Proven track record",
+          "description": "$1.5M+ in revenue in the last 12 months, 105+ success stories"
+        },
+        {
+          "title": "Strong dealflow",
+          "description": "500+ community members across LATAM and Europe"
+        },
+        {
+          "title": "Global structure",
+          "description": "Connecting Latin American talent with international capital"
+        }
+      ]
+    },
+    "IncubatedStartups": {
+      "preTitle": "Featured Startups",
+      "title": "Examples of ventures already born from <italic>our ecosystem</italic>:",
+      "items": [
+        {
+          "src": "/startups/rampix.png",
+          "title": "Rampix",
+          "description": "A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure.",
+          "buttonText": "Learn more"
+        },
+        {
+          "src": "/startups/borderless-community.webp",
+          "title": "Borderless Community",
+          "description": "The super app from Borderless Coding: combining social network, members area, and forum for global tech professionals.",
+          "buttonText": "Members Only"
+        }
+      ]
+    },
+    "JoinExpansion": {
+      "title": "Join the Expansion",
+      "description": "If you are a founder looking for incubation or an investor seeking high-quality dealflow, Borderless is your entry point into the next wave of global ventures.",
+      "cta": "Explore Opportunities"
+    },
+    "BorderlessEvolution": {
+      "title": "The Borderless <italic>evolution</italic>",
+      "status": { "completed": "Completed", "inProgress": "In Progress", "next": "Next" },
+      "stages": [
+        {
+          "title": "Talent Foundation",
+          "timeline": "2023–2025",
+          "description": "Borderless started by unlocking the global market for Brazilian developers.",
+          "goals": [
+            "PSP Mentorship: 100+ professionals internationalized",
+            "BASE Mentorship: preparing beginners and early-career devs for the global stage",
+            "Bootcamps: specialized programs (e.g. Web3 Global Developer) feeding new markets"
+          ],
+          "outcome": "This created a pipeline of pre-vetted, globally ready talent."
+        },
+        {
+          "title": "Platform Scale",
+          "timeline": "Late 2025",
+          "description": "Next, we are consolidating our Borderless Platform — a super app for professionals:",
+          "goals": [
+            "Community, forum, and learning modules",
+            "Onboarding and career dashboards",
+            "Networking and hiring hub"
+          ],
+          "outcome": "The platform transforms our mentorship results into scalable infrastructure, where talent meets opportunity at scale."
+        },
+        {
+          "title": "Startup Incubation",
+          "timeline": "2026",
+          "description": "With talent validated and a platform in place, the natural expansion is founder-led startups. Every year, hackathons and incubation cycles inside Borderless will generate new ventures.",
+          "goals": [
+            "SPV model (separate LLCs) – ensuring investor protection and clean growth",
+            "Focus sectors: SaaS, AI, DevTools, and fintech",
+            "Support: product strategy, growth expertise, and technical architecture"
+          ],
+           "outcome": ""
+        },
+        {
+          "title": "Investment Access",
+          "timeline": "2026 onward",
+          "description": "Borderless Ventures connects global investors to our dealflow.",
+          "goals": [
+            "US-facing vehicle – smooth participation for international investors",
+            "Diversified pipeline – ventures born from mentorship, platform, and hackathons",
+            "Capital efficiency – startups bootstrap with community talent before raising rounds"
+          ],
+          "outcome": "This expansion ensures that investors tap into a pre-qualified pipeline and founders raise with confidence."
+        }
+      ]
+    }
   }
 }
