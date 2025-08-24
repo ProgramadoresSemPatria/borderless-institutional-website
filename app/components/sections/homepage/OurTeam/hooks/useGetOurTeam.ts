@@ -16,33 +16,43 @@ export function useGetOurTeam() {
       name: "Yuri Pereira",
       role: t("roles.yuri"),
       src: "/team/yuri.webp",
-      github: "",
-      linkedin: "",
+      github: "https://github.com/yuripramos",
+      linkedin: "https://www.linkedin.com/in/yuri-pereira/",
     },
     {
       name: "Felipe Meriga",
       role: t("roles.felipe"),
       src: "/team/felipe.webp",
+      github: 'https://github.com/felipemeriga',
+      linkedin: 'https://www.linkedin.com/in/felipersil/'
     },
     {
       name: "Matheus Avi",
       role: t("roles.matheus"),
       src: "/team/matheus.webp",
+      github: 'https://github.com/matheusavi',
+      linkedin: 'https://www.linkedin.com/in/matheusavi/'
     },
     {
       name: "André Wlodkosvki",
       role: t("roles.andre"),
       src: "/team/andre.webp",
+      github: 'https://github.com/andrewlod',
+      linkedin: 'https://www.linkedin.com/in/andrewlod/'
     },
     {
       name: "Alex Miloski",
       role: t("roles.alex"),
       src: "/team/alex.webp",
+      github: 'https://github.com/alex-miloski',
+      linkedin: 'https://www.linkedin.com/in/amiloski'
     },
     {
       name: "Thiago Dantas",
       role: t("roles.thiago"),
       src: "/team/thiago.webp",
+      github: 'https://github.com/thiagodma',
+      linkedin: 'https://www.linkedin.com/in/thethiagodma/'
     },
   ];
 

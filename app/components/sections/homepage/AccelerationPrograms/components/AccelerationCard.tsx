@@ -9,6 +9,7 @@ export function AccelerationCard({
   features,
   title,
   className,
+  href
 }: Program & { className?: string }) {
   const t = useTranslations("HomePage.AccelerationPrograms");
 
@@ -31,7 +32,7 @@ export function AccelerationCard({
       </div>
 
       <div className="w-full flex justify-end mt-8">
-        <ExternalLink>{t("buttonText")}</ExternalLink>
+        <ExternalLink href={href}>{t("buttonText")}</ExternalLink>
       </div>
     </div>
   );

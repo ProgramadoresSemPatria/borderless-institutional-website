@@ -1,9 +1,9 @@
-import { Instagram } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { AnimatedGrid } from "../../ui/AnimatedGrid";
 import { FooterSection } from "./components/FooterSection";
 import { TalkToAProfessional } from "./components/TalkToAProfessional";
 import { footerSections } from "./constants/footerSections";
-import { useTranslations } from "next-intl";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -37,8 +37,13 @@ export function Footer() {
             {t("copyright.text", { year })}
           </p>
 
-          <div className="bg-[#f3f3f3] size-fit p-4 rounded-md">
-            <Instagram className="text-black/70" />
+         <div className="flex gap-2"> 
+            <a href="https://www.instagram.com/borderlesscoding" target="_blank" className="bg-[#f3f3f3] size-fit p-4 rounded-md cursor-pointer hover:opacity-70 hover:scale-110 transition-all duration-150">
+              <Instagram className="text-black/70" />
+            </a>
+            <a href="https://www.linkedin.com/company/borderless-coding" target="_blank" className="bg-[#f3f3f3] size-fit p-4 rounded-md cursor-pointer hover:opacity-70 hover:scale-110 transition-all duration-150">
+              <Linkedin className="text-black/70" />
+            </a>
           </div>
         </div>
 

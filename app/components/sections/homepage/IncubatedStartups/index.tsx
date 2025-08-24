@@ -63,7 +63,7 @@ export function IncubatedStartups() {
             </div>
 
             <div className="w-full flex justify-end">
-              <ExternalLink>{startup.buttonText}</ExternalLink>
+              <ExternalLink target="_blank" href={startup.href}>{startup.buttonText}</ExternalLink>
             </div>
           </div>
         ))}

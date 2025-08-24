@@ -19,6 +19,7 @@ export interface Program {
     title: string;
     icon: LucideIcon;
   }[];
+  href: string;
 }
 
 export function useAccelerationPrograms(): Program[] {
@@ -33,6 +34,7 @@ export function useAccelerationPrograms(): Program[] {
         { title: t("programs.psp.features.projects"), icon: Code },
         { title: t("programs.psp.features.network"), icon: Users },
       ],
+      href: '/psp-mentorship'
     },
     {
       title: t("programs.base.title"),
@@ -42,6 +44,7 @@ export function useAccelerationPrograms(): Program[] {
         { title: t("programs.base.features.softSkills"), icon: Speech },
         { title: t("programs.base.features.global"), icon: Earth },
       ],
+      href: '/base-mentorship'
     },
     {
       title: t("programs.bootcamp.title"),
@@ -51,6 +54,7 @@ export function useAccelerationPrograms(): Program[] {
         { title: t("programs.bootcamp.features.dapps"), icon: Network },
         { title: t("programs.bootcamp.features.blockchain"), icon: Bitcoin },
       ],
+      href: '/bootcamp-web3'
     },
   ];
 }

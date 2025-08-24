@@ -10,7 +10,7 @@ export function GlobalTalentConnector() {
   return (
     <section style={{ minHeight: "fit-content" }}>
       <FullWidthCard title={t("title")} description={t("description")}>
-        <ExternalLink>{t("cta")}</ExternalLink>
+        <ExternalLink href="/want-to-hire">{t("cta")}</ExternalLink>
       </FullWidthCard>
     </section>
   );

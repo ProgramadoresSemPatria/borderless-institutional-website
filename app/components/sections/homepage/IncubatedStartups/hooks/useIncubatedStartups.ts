@@ -13,12 +13,14 @@ export function useIncubatedStartups() {
         title: t("startups.0.title"),
         description: t("startups.0.description"),
         buttonText: t("startups.0.buttonText"),
+        href: 'https://www.rampix.xyz/'
       },
       {
         src: "/startups/borderless-community.webp",
         title: t("startups.1.title"),
         description: t("startups.1.description"),
         buttonText: t("startups.1.buttonText"),
+        href: 'https://community.borderlesscoding.com/',
       },
     ],
   };

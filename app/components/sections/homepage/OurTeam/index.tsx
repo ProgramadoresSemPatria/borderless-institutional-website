@@ -53,10 +53,10 @@ export function OurTeam() {
                   />
 
                   <div className="absolute flex gap-2 right-2 bottom-2 bg-tertiary p-2 rounded-md">
-                    <a href="">
+                    <a href={member.github} target="_blank">
                       <IconWrapper icon={Github} />
                     </a>
-                    <a href="">
+                    <a href={member.linkedin} target="_blank">
                       <IconWrapper icon={Linkedin} />
                     </a>
                   </div>
