@@ -2,37 +2,14 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { BookOpen, MessageSquare, Target, User } from "lucide-react";
 import { AnimatedText } from "../../ui/AnimatedText";
 import { FeatureCard } from "../../ui/FeatureCard";
-
-const steps = [
-  {
-    title: "Profile Package",
-    description:
-      "We optimize your LinkedIn, CV, and GitHub for global attraction.",
-    icon: User,
-  },
-  {
-    title: "Interview Engine",
-    description:
-      "You train English + technical interviews until you're ready to perform.",
-    icon: MessageSquare,
-  },
-  {
-    title: "Opportunity Pipeline",
-    description: "We create a predictable flow of international job offers.",
-    icon: Target,
-  },
-  {
-    title: "Global Playbook",
-    description:
-      "You learn long-term strategies (equity, tax planning, relocation).",
-    icon: BookOpen,
-  },
-];
+import { useRichText } from "@/app/hooks/useRichText";
+import { useInternationalizeHowItWorks } from "./hooks/useInternationalizeHowItWorks";
 
 export function HowItWorks() {
+  const { rich } = useRichText("WantToInternationalize.HowItWorks");
+  const { steps, stepLabel } = useInternationalizeHowItWorks();
   useGSAP(() => {
     gsap.fromTo(
       ".how-it-works-card",
@@ -53,13 +30,13 @@ export function HowItWorks() {
 
   return (
     <section className="space-y-8 py-[10svh]">
-      <AnimatedText as="h2">How It Works (Your Next 90-12 Days)</AnimatedText>
+      <AnimatedText as="h2">{rich("title")}</AnimatedText>
 
       <div className="grid md:grid-cols-2 gap-2">
         {steps.map((step, index) => (
           <FeatureCard
             key={step.title}
-            title={`Step ${index + 1}: ${step.title}`}
+            title={`${stepLabel} ${index + 1}: ${step.title}`}
             description={step.description}
             icon={step.icon}
             className="how-it-works-card"

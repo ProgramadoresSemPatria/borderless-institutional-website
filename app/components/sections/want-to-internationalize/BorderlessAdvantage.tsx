@@ -2,34 +2,14 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { CheckCircle, Heart, MessageCircle, Users } from "lucide-react";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
-
-const features = [
-  {
-    title: "A proven system (Go Global™)",
-    description: "LinkedIn, CV, GitHub, Interview prep, Networking",
-    icon: CheckCircle,
-  },
-  {
-    title: "Direct mentorship",
-    description: "from professionals who already scaled globally",
-    icon: Users,
-  },
-  {
-    title: "Mock interviews",
-    description: "train exactly how companies abroad will test you",
-    icon: MessageCircle,
-  },
-  {
-    title: "Community support",
-    description: "stay motivated, accountable, and connected",
-    icon: Heart,
-  },
-];
+import { useRichText } from "@/app/hooks/useRichText";
+import { useBorderlessAdvantage } from "./hooks/useBorderlessAdvantage";
 
 export function BorderlessAdvantage() {
+  const { rich } = useRichText("WantToInternationalize.BorderlessAdvantage");
+  const { header, features } = useBorderlessAdvantage();
   useGSAP(() => {
     gsap.fromTo(
       ".borderless-advantage-card",
@@ -51,13 +31,8 @@ export function BorderlessAdvantage() {
   return (
     <section className="space-y-8 py-[10svh]">
       <SectionHeader
-        preTitle="The Borderless Advantage"
-        title={
-          <>
-            Unlike generic courses or consultancies,{" "}
-            <span className="font-ivy">we give you</span> :
-          </>
-        }
+        preTitle={header.preTitle}
+        title={rich(header.titleKey)}
       />
 
       <div className="grid md:grid-cols-2 2xl:grid-cols-4 gap-2">

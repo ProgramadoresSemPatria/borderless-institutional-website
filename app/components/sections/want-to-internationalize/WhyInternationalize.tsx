@@ -2,34 +2,14 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Award, DollarSign, Globe, Users } from "lucide-react";
 import { AnimatedText } from "../../ui/AnimatedText";
 import { FeatureCard } from "../../ui/FeatureCard";
-
-const features = [
-  {
-    title: "Strong Currencies",
-    description: "Earn in USD/EUR/GBP/CHF/AED instead of BRL",
-    icon: DollarSign,
-  },
-  {
-    title: "Remote Freedom",
-    description: "Gain freedom to work from anywhere",
-    icon: Globe,
-  },
-  {
-    title: "Real Recognition",
-    description: "Be recognized for your real technical value",
-    icon: Award,
-  },
-  {
-    title: "Global Network",
-    description: "Join a community of 500+ global professionals",
-    icon: Users,
-  },
-];
+import { useRichText } from "@/app/hooks/useRichText";
+import { useWhyInternationalize } from "./hooks/useWhyInternationalize";
 
 export function WhyInternationalize() {
+  const { rich } = useRichText("WantToInternationalize.WhyInternationalize");
+  const { features } = useWhyInternationalize();
   useGSAP(() => {
     gsap.fromTo(
       ".why-internationalize-card",
@@ -50,9 +30,7 @@ export function WhyInternationalize() {
 
   return (
     <section className="space-y-8 py-[10svh]">
-      <AnimatedText as="h2">
-        Why <span className="font-ivy">Internationalize?</span>
-      </AnimatedText>
+      <AnimatedText as="h2">{rich("title")}</AnimatedText>
 
       <div className="grid md:grid-cols-2 2xl:grid-cols-4 gap-2">
         {features.map((feature) => (

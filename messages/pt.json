@@ -860,5 +860,65 @@
         ]
       }
     }
+  },
+  "WantToInternationalize": {
+    "Hero": {
+      "title": "Pronto para Levar sua <colorful>Carreira em Tech</colorful> ao Mundo?",
+      "subtitle": "A Borderless Coding já ajudou 100+ desenvolvedores brasileiros a conquistarem vagas internacionais pagando $10K+ USD/mês. Você pode ser o próximo.",
+      "cta": "Agendar uma Chamada de Estratégia Gratuita"
+    },
+    "WhyInternationalize": {
+      "title": "Por que <italic>Internacionalizar?</italic>",
+      "features": [
+        { "title": "Moedas Fortes", "description": "Receba em USD/EUR/GBP/CHF/AED em vez de BRL" },
+        { "title": "Liberdade Remota", "description": "Ganhe liberdade para trabalhar de qualquer lugar" },
+        { "title": "Reconhecimento Real", "description": "Seja reconhecido pelo seu valor técnico real" },
+        { "title": "Rede Global", "description": "Junte-se a uma comunidade com 500+ profissionais globais" }
+      ]
+    },
+    "BorderlessAdvantage": {
+      "preTitle": "O Diferencial Borderless",
+      "title": "Diferente de cursos genéricos ou consultorias, <italic>nós te entregamos</italic>:",
+      "features": [
+        { "title": "Um sistema comprovado (Go Global™)", "description": "LinkedIn, CV, GitHub, preparo para entrevistas, Networking" },
+        { "title": "Mentoria direta", "description": "De profissionais que já escalaram globalmente" },
+        { "title": "Entrevistas simuladas", "description": "Treine exatamente como empresas de fora vão te testar" },
+        { "title": "Suporte da comunidade", "description": "Mantenha motivação, accountability e conexões" }
+      ]
+    },
+    "HowItWorks": {
+      "title": "Como <italic>Funciona</italic> (Seus Próximos 90–120 Dias)",
+      "stepLabel": "Etapa",
+      "steps": [
+        { "title": "Profile Package", "description": "Otimizamos seu LinkedIn, CV e GitHub para atração global." },
+        { "title": "Interview Engine", "description": "Você treina entrevistas em inglês + técnicas até estar pronto para performar." },
+        { "title": "Opportunity Pipeline", "description": "Criamos um fluxo previsível de ofertas de trabalho internacionais." },
+        { "title": "Global Playbook", "description": "Você aprende estratégias de longo prazo (equity, planejamento tributário, relocação)." }
+      ]
+    },
+    "BorderlessVsGoingAlone": {
+      "preTitle": "Comparativo",
+      "title": "<italic>Borderless</italic> vs Caminho Sozinho",
+      "comparison": {
+        "firstOptionTitle": "Borderless Coding",
+        "secondOptionTitle": "Caminho Sozinho",
+        "features": [
+          { "title": "Método", "firstOptionFeature": "Go Global™ – comprovado, passo a passo", "secondOptionFeature": "Tentativa e erro" },
+          { "title": "Mentoria", "firstOptionFeature": "Feedback direto de profissionais globais", "secondOptionFeature": "Sem orientação" },
+          { "title": "Velocidade", "firstOptionFeature": "90 dias até as primeiras propostas", "secondOptionFeature": "12–24 meses (se acontecer)" },
+          { "title": "Comunidade", "firstOptionFeature": "500+ profissionais te apoiando", "secondOptionFeature": "Sozinho" },
+          { "title": "ROI", "firstOptionFeature": "Contratos de $10k+ USD", "secondOptionFeature": "Imprevisível" }
+        ]
+      }
+    },
+    "ReadyToGoGlobal": {
+      "preTitle": "Pronto para ir global?",
+      "title": "Você já viu como funciona. Já viu <italic>os resultados</italic>. A única pergunta é:",
+      "card": {
+        "title": "Você será o próximo?",
+        "description": "Agende sua chamada de estratégia gratuita agora — fale diretamente com nosso time, receba um diagnóstico de carreira e veja se você está pronto para o PSP ou BASE",
+        "cta": "Agendar Chamada de Estratégia"
+      }
+    }
   }
 }

@@ -789,5 +789,65 @@
         ]
       }
     }
+  },
+  "WantToInternationalize": {
+    "Hero": {
+      "title": "Ready to Take Your <colorful>Tech Career Global?</colorful>",
+      "subtitle": "Borderless Coding has already helped 100+ Brazilian developers land international jobs paying $10K+ USD/month. You could be next.",
+      "cta": "Schedule Your Free Strategy Call"
+    },
+    "WhyInternationalize": {
+      "title": "Why <italic>Internationalize?</italic>",
+      "features": [
+        { "title": "Strong Currencies", "description": "Earn in USD/EUR/GBP/CHF/AED instead of BRL" },
+        { "title": "Remote Freedom", "description": "Gain freedom to work from anywhere" },
+        { "title": "Real Recognition", "description": "Be recognized for your real technical value" },
+        { "title": "Global Network", "description": "Join a community of 500+ global professionals" }
+      ]
+    },
+    "BorderlessAdvantage": {
+      "preTitle": "The Borderless Advantage",
+      "title": "Unlike generic courses or consultancies, <italic>we give you</italic>:",
+      "features": [
+        { "title": "A proven system (Go Global™)", "description": "LinkedIn, CV, GitHub, Interview prep, Networking" },
+        { "title": "Direct mentorship", "description": "from professionals who already scaled globally" },
+        { "title": "Mock interviews", "description": "train exactly how companies abroad will test you" },
+        { "title": "Community support", "description": "stay motivated, accountable, and connected" }
+      ]
+    },
+    "HowItWorks": {
+      "title": "How It <italic>Works</italic> (Your Next 90–120 Days)",
+      "stepLabel": "Step",
+      "steps": [
+        { "title": "Profile Package", "description": "We optimize your LinkedIn, CV, and GitHub for global attraction." },
+        { "title": "Interview Engine", "description": "You train English + technical interviews until you're ready to perform." },
+        { "title": "Opportunity Pipeline", "description": "We create a predictable flow of international job offers." },
+        { "title": "Global Playbook", "description": "You learn long-term strategies (equity, tax planning, relocation)." }
+      ]
+    },
+    "BorderlessVsGoingAlone": {
+      "preTitle": "Comparison",
+      "title": "<italic>Borderless</italic> vs Going Alone",
+      "comparison": {
+        "firstOptionTitle": "Borderless Coding",
+        "secondOptionTitle": "On Your Own",
+        "features": [
+          { "title": "Method", "firstOptionFeature": "Go Global™ – proven, step-by-step", "secondOptionFeature": "Trial and error" },
+          { "title": "Mentorship", "firstOptionFeature": "Direct feedback from global professionals", "secondOptionFeature": "No guidance" },
+          { "title": "Speed", "firstOptionFeature": "90 days to first offers", "secondOptionFeature": "12–24 months (if ever)" },
+          { "title": "Community", "firstOptionFeature": "500+ professionals supporting you", "secondOptionFeature": "Alone" },
+          { "title": "ROI", "firstOptionFeature": "$10k+ USD contracts", "secondOptionFeature": "Unpredictable" }
+        ]
+      }
+    },
+    "ReadyToGoGlobal": {
+      "preTitle": "Ready to go global?",
+      "title": "You’ve seen how it works. You’ve seen <italic>the results</italic>. The only question is:",
+      "card": {
+        "title": "Will you be next?",
+        "description": "Schedule your free strategy call now — talk directly to our team, get your career diagnosis, and see if you’re ready for PSP or BASE",
+        "cta": "Schedule Your Free Strategy Call"
+      }
+    }
   }
 }
