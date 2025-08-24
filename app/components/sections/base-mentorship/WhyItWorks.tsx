@@ -5,15 +5,18 @@ import gsap from "gsap";
 import { Check } from "lucide-react";
 import { IconWrapper } from "../../ui/IconWrapper";
 import { SectionHeader } from "../../ui/SectionHeader";
-
-const features = [
-  "Direct mentorship and progress tracking",
-  "A proven path from junior/mid-level to international readiness",
-  "Access to a high-performance tech community",
-  "Integration with the Borderless Platform to keep you accountable and connected",
-];
+import { useTranslations } from "next-intl";
+import { useRichText } from "@/app/hooks/useRichText";
 
 export function WhyItWorks() {
+  const t = useTranslations("BaseMentorship.WhyItWorks");
+  const { rich } = useRichText("BaseMentorship.WhyItWorks");
+  const features = [
+    t("features.0"),
+    t("features.1"),
+    t("features.2"),
+    t("features.3"),
+  ];
   useGSAP(() => {
     gsap.fromTo(
       ".why-it-works-card",
@@ -35,13 +38,8 @@ export function WhyItWorks() {
   return (
     <section className="space-y-8 py-[10svh]">
       <SectionHeader
-        preTitle="Why it works ?"
-        title={
-          <>
-            Unlike random courses or self-study,{" "}
-            <span className="font-ivy">BASE offers</span>:
-          </>
-        }
+        preTitle={t("preTitle")}
+        title={<>{rich("title")}</>}
       />
 
       <div className="bg-tertiary rounded-md p-2 grid lg:grid-cols-2 gap-2">

@@ -16,65 +16,24 @@ import {
 } from "lucide-react";
 import { AnimatedText } from "../../ui/AnimatedText";
 import { FeatureCard } from "../../ui/FeatureCard";
-
-const instructions = [
-  {
-    title: "Duration",
-    description: "12 months",
-    icon: Timer,
-  },
-  {
-    title: "Format",
-    description: "100% online",
-    icon: Globe,
-  },
-  {
-    title: "Live Sessions",
-    description: "Weekly group calls with another amabassors",
-    icon: Video,
-  },
-  {
-    title: "Q&A Session",
-    description: "Monthly sessions with Yuri Pereira",
-    icon: CircleQuestionMark,
-  },
-  {
-    title: "Mock Interviews",
-    description:
-      "Practice sessions with junior-to-mid-level scenarios to build confidence",
-    icon: User,
-  },
-  {
-    title: "English Coaching",
-    description:
-      " 3x/week, tailored to technology professionals starting their global journey",
-    icon: BookOpen,
-  },
-  {
-    title: "Borderless Platform Access",
-    description:
-      "All mentees get a premium account to access lessons, community, and progress tracking",
-    icon: Network,
-  },
-  {
-    title: "Portfolio",
-    description:
-      "Portfolio project templates to impress international recruiters",
-    icon: Code,
-  },
-  {
-    title: "Resumé",
-    description: "A high-conversion résumé tailored to your career stage",
-    icon: FileUser,
-  },
-  {
-    title: "Milestones",
-    description: "Step-by-step milestones to reach PSP readiness",
-    icon: Map,
-  },
-];
+import { useTranslations } from "next-intl";
+import { useRichText } from "@/app/hooks/useRichText";
 
 export function HowItWorks() {
+  const t = useTranslations("BaseMentorship.HowItWorks");
+  const { rich } = useRichText("BaseMentorship.HowItWorks");
+  const instructions = [
+    { title: t("items.duration.title"), description: t("items.duration.description"), icon: Timer },
+    { title: t("items.format.title"), description: t("items.format.description"), icon: Globe },
+    { title: t("items.live.title"), description: t("items.live.description"), icon: Video },
+    { title: t("items.qna.title"), description: t("items.qna.description"), icon: CircleQuestionMark },
+    { title: t("items.mocks.title"), description: t("items.mocks.description"), icon: User },
+    { title: t("items.english.title"), description: t("items.english.description"), icon: BookOpen },
+    { title: t("items.platform.title"), description: t("items.platform.description"), icon: Network },
+    { title: t("items.portfolio.title"), description: t("items.portfolio.description"), icon: Code },
+    { title: t("items.resume.title"), description: t("items.resume.description"), icon: FileUser },
+    { title: t("items.milestones.title"), description: t("items.milestones.description"), icon: Map },
+  ];
   useGSAP(() => {
     gsap.fromTo(
       ".how-it-works-card",
@@ -93,7 +52,7 @@ export function HowItWorks() {
   return (
     <section className="rounded-md space-y-8 py-[10svh]">
       <AnimatedText as="h2" className="text-pretty">
-        How the <span className="font-ivy">Mentorship</span> Works ?
+        {rich("title")}
       </AnimatedText>
 
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-2 p-2 bg-tertiary">

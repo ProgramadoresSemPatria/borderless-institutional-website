@@ -182,6 +182,197 @@
       "event4": "Mentorados da borderless receberam o segundo lugar na hackathon da EthCC em Cannes, França"
     }
   },
+  "BaseMentorship": {
+    "HeroSection": {
+      "title": "Construa sua base para uma carreira global – <colorful>Do Zero ao Pronto</colorful> em 12 meses",
+      "subtitle": "A Mentoria BASE é o programa de fundamentos de carreira para profissionais brasileiros ambiciosos de tecnologia que querem se preparar para vagas internacionais de alta remuneração. Desenvolva as habilidades, o portfólio e a confiança para entrar no mercado global — e ficar pronto para a Mentoria PSP",
+      "cta": "Aplicar para a Próxima Turma"
+    },
+    "WhatIs": {
+      "title": "O que é a Mentoria BASE?",
+      "description": "A Mentoria BASE é um programa estruturado e prático para profissionais de tecnologia em início de carreira que querem sair do mercado nacional e se preparar para oportunidades globais. Liderada por Yuri Pereira e pelo time de mentores da Borderless Coding, a BASE foi desenhada para:",
+      "bullets": [
+        "Fortalecer suas bases técnicas",
+        "Construir um portfólio pronto para o internacional",
+        "Melhorar seu inglês para entrevistas e colaboração",
+        "Te posicionar para a futura entrada na Mentoria PSP"
+      ],
+      "highlight": "Isto não é um bootcamp genérico ou curso online — é um <highlight>caminho guiado</highlight> para te transformar de um talento local em um candidato competitivo globalmente"
+    },
+    "ApplyNow": {
+      "title": "Aplicar Agora",
+      "description": "As vagas na BASE são limitadas para garantir feedback personalizado e engajamento na comunidade. Se você quer se preparar para entrar no mercado global de tecnologia — e futuramente na Mentoria PSP — aplique hoje.",
+      "cta": "Aplicar para a Próxima Turma"
+    },
+    "FoundationMethod": {
+      "preTitle": "O Método de Fundamentos de Carreira Borderless",
+      "title": "Nosso framework de 4 pilares para te preparar para o PSP e o <italic>mercado global</italic>:",
+      "methods": {
+        "technical": {
+          "title": "Evolução Técnica",
+          "description": "Plano estruturado para cobrir gaps técnicos e construir projetos de portfólio que se destacam"
+        },
+        "profile": {
+          "title": "Fundação de Perfil",
+          "description": "Crie seu LinkedIn, GitHub e currículo com posicionamento internacional desde o dia um"
+        },
+        "english": {
+          "title": "Inglês na Prática",
+          "description": "Aulas 3x/semana focadas em vocabulário técnico, entrevistas e cenários de trabalho"
+        },
+        "roadmap": {
+          "title": "Roteiro de Carreira",
+          "description": "Defina sua estratégia de crescimento, marcos e plano de transição para a Mentoria PSP"
+        }
+      }
+    },
+    "HowItWorks": {
+      "title": "Como a <italic>Mentoria</italic> Funciona?",
+      "items": {
+        "duration": { "title": "Duração", "description": "12 meses" },
+        "format": { "title": "Formato", "description": "100% online" },
+        "live": { "title": "Sessões ao Vivo", "description": "Chamadas semanais em grupo com embaixadores" },
+        "qna": { "title": "Sessão de Q&A", "description": "Encontros mensais com Yuri Pereira" },
+        "mocks": { "title": "Simulações de Entrevista", "description": "Práticas com cenários de júnior a pleno para ganhar confiança" },
+        "english": { "title": "Acompanhamento de Inglês", "description": "3x/semana, voltado para profissionais de tecnologia iniciando a jornada global" },
+        "platform": { "title": "Acesso à Plataforma Borderless", "description": "Conta premium com aulas, comunidade e acompanhamento de progresso" },
+        "portfolio": { "title": "Portfólio", "description": "Modelos de projetos para impressionar recrutadores internacionais" },
+        "resume": { "title": "Currículo", "description": "Currículo de alta conversão adaptado ao seu momento de carreira" },
+        "milestones": { "title": "Marcos", "description": "Marcos passo a passo até estar pronto para o PSP" }
+      }
+    },
+    "ResultsYouCanExpect": {
+      "preTitle": "Resultados que você pode esperar",
+      "title": "Nossos ex-alunos da BASE <italic>tipicamente</italic>:",
+      "results": {
+        "higherPay": {
+          "title": "Cargos com maior remuneração",
+          "description": "Migram de posições júnior/pleno locais para vagas remotas com melhor salário"
+        },
+        "english": {
+          "title": "Inglês Proficiente",
+          "description": "Atingem proficiência e confiança para entrevistas internacionais"
+        },
+        "portfolio": {
+          "title": "Portfólio Global",
+          "description": "Constroem um portfólio que atrai recrutadores de fora"
+        },
+        "pspReadiness": {
+          "title": "Pronto para o PSP",
+          "description": "Chegam à Mentoria PSP prontos para fechar contratos de $7K+ USD/mês"
+        }
+      },
+      "case": {
+        "title": "Caso Real",
+        "description": "Amanda, desenvolvedora fullstack júnior de São Paulo, entrou na BASE sem portfólio e com inglês B1. Após 6 meses, tinha 3 projetos sólidos, um LinkedIn lapidado e entrou no PSP — fechando seu primeiro contrato de $7.500/mês em 4 meses após a graduação."
+      }
+    },
+    "WhoIsItFor": {
+      "preTitle": "Para quem é?",
+      "title": "A Mentoria BASE é feita para profissionais de tecnologia <italic>de júnior a pleno inicial</italic>:",
+      "techRoles": {
+        "title": "Cargos de Tech",
+        "items": [
+          "Developers Frontend, Backend, Fullstack",
+          "QA, Analistas de Dados",
+          "Engenheiros de Suporte"
+        ]
+      },
+      "requirements": {
+        "title": "Requisitos",
+        "items": [
+          "1-2 anos de experiência profissional ou recém-formado",
+          "Inglês: A1 a B1 (meta: B2 para prontidão internacional)",
+          "Pronto para trabalhar duro, seguir um plano claro e entrar em uma comunidade de alta performance"
+        ]
+      }
+    },
+    "WhyItWorks": {
+      "preTitle": "Por que funciona?",
+      "title": "Diferente de cursos aleatórios ou estudo sozinho, a <italic>BASE oferece</italic>:",
+      "features": [
+        "Mentoria direta e acompanhamento de progresso",
+        "Um caminho comprovado de júnior/pleno para prontidão internacional",
+        "Acesso a uma comunidade de tecnologia de alta performance",
+        "Integração com a Plataforma Borderless para manter responsabilidade e conexão"
+      ]
+    },
+    "CompareOurMentorships": {
+      "preTitle": "Seu próximo passo após a BASE...",
+      "title": "Compare nossas <italic>mentorias</italic>"
+    },
+    "MentorshipComparison": {
+      "firstOptionTitle": "Mentoria BASE",
+      "secondOptionTitle": "Mentoria PSP",
+      "features": [
+        {
+          "title": "Momento de Carreira",
+          "firstOptionFeature": "Sem experiência prévia → Pleno inicial (0–2 anos de experiência)",
+          "secondOptionFeature": "Pleno → Sênior (3+ anos de experiência)"
+        },
+        {
+          "title": "Nível de Inglês",
+          "firstOptionFeature": "A1 → B1 (Meta: B2 para prontidão internacional)",
+          "secondOptionFeature": "B1 ou superior (fluência técnica necessária)"
+        },
+        {
+          "title": "Objetivo",
+          "firstOptionFeature": "Construir bases técnicas, de portfólio e de inglês para atingir o nível PSP",
+          "secondOptionFeature": "Conquistar contratos internacionais de alta remuneração ($10K–$15K USD/mês)"
+        },
+        {
+          "title": "Foco Principal",
+          "firstOptionFeature": "Melhoria técnica, construção de portfólio, evolução do inglês, plano de carreira",
+          "secondOptionFeature": "Posicionamento estratégico, domínio de entrevistas, networking, negociação de ofertas"
+        },
+        {
+          "title": "Duração da Mentoria",
+          "firstOptionFeature": "12 meses",
+          "secondOptionFeature": "6 ou 12 meses"
+        },
+        {
+          "title": "Sessões ao Vivo",
+          "firstOptionFeature": "Chamada mensal em grupo com o Yuri + chamadas quinzenais com o time de mentores da BASE",
+          "secondOptionFeature": "Chamadas quinzenais em grupo + feedback direto do Yuri"
+        },
+        {
+          "title": "Simulações de Entrevista",
+          "firstOptionFeature": "Cenários de júnior a pleno",
+          "secondOptionFeature": "Cenários técnicos de sênior e system design com 5 mentores especialistas"
+        },
+        {
+          "title": "Acompanhamento de Inglês",
+          "firstOptionFeature": "3x/semana – foco de iniciante a intermediário",
+          "secondOptionFeature": "3x/semana – foco de intermediário a avançado técnico"
+        },
+        {
+          "title": "Acesso à Plataforma Borderless",
+          "firstOptionFeature": "Incluído (portfólio, aulas, comunidade)",
+          "secondOptionFeature": "Incluído (networking, aulas, recursos exclusivos do PSP)"
+        },
+        {
+          "title": "Recursos-Chave",
+          "firstOptionFeature": "Modelos de projetos de portfólio, currículo de alta conversão para aplicações de entrada",
+          "secondOptionFeature": "Currículo de alta conversão adaptado à sua estratégia, scripts de aplicação, playbook de negociação"
+        },
+        {
+          "title": "Resultado Esperado",
+          "firstOptionFeature": "Prontidão para o PSP em até 12 meses",
+          "secondOptionFeature": "1–3 ofertas internacionais em até 120 dias"
+        },
+        {
+          "title": "Resultado Médio de Alumni",
+          "firstOptionFeature": "Entrada no PSP + primeiro portfólio pronto para o mercado internacional",
+          "secondOptionFeature": "Contratos de $10K a $15K USD/mês"
+        },
+        {
+          "title": "Melhor Para",
+          "firstOptionFeature": "Iniciantes ou profissionais iniciando o caminho para oportunidades globais",
+          "secondOptionFeature": "Profissionais prontos para competir e vencer no mercado global agora"
+        }
+      ]
+    }
+  },
   "PspMentorship": {
     "HeroSection": {
       "title": "De Talento Local a <colorful>Profissional Global</colorful> - em 90 dias",

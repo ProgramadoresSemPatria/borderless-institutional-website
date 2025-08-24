@@ -6,34 +6,34 @@ import { Globe, Laptop, MessageSquare, Star, Target } from "lucide-react";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { IconWrapper } from "../../ui/IconWrapper";
 import { SectionHeader } from "../../ui/SectionHeader";
-
-const results = [
-  {
-    title: "Higher paying roles",
-    description:
-      "Move from local junior/mid-level positions to higher-paying remote roles",
-    icon: Laptop,
-  },
-  {
-    title: "English Proficiency",
-    description:
-      "Achieve English proficiency and confidence for international interviews",
-    icon: MessageSquare,
-  },
-  {
-    title: "Global Portfolio",
-    description: "Build a portfolio that attracts recruiters from abroad",
-    icon: Globe,
-  },
-  {
-    title: "PSP Readiness",
-    description:
-      "Progress to PSP Mentorship fully prepared to close $7K+ USD/month contracts",
-    icon: Target,
-  },
-];
+import { useTranslations } from "next-intl";
+import { useRichText } from "@/app/hooks/useRichText";
 
 export function ResultsYouCanExpect() {
+  const t = useTranslations("BaseMentorship.ResultsYouCanExpect");
+  const { rich } = useRichText("BaseMentorship.ResultsYouCanExpect");
+  const results = [
+    {
+      title: t("results.higherPay.title"),
+      description: t("results.higherPay.description"),
+      icon: Laptop,
+    },
+    {
+      title: t("results.english.title"),
+      description: t("results.english.description"),
+      icon: MessageSquare,
+    },
+    {
+      title: t("results.portfolio.title"),
+      description: t("results.portfolio.description"),
+      icon: Globe,
+    },
+    {
+      title: t("results.pspReadiness.title"),
+      description: t("results.pspReadiness.description"),
+      icon: Target,
+    },
+  ];
   useGSAP(() => {
     gsap.fromTo(
       ".result-card",
@@ -52,12 +52,8 @@ export function ResultsYouCanExpect() {
   return (
     <section className="py-[10svh] space-y-8">
       <SectionHeader
-        preTitle="Results you can expect"
-        title={
-          <>
-            Our BASE alumni <span className="font-ivy">typically</span>:
-          </>
-        }
+        preTitle={t("preTitle")}
+        title={<>{rich("title")}</>}
       />
 
       <div className="grid lg:grid-cols-2 gap-2">
@@ -74,13 +70,8 @@ export function ResultsYouCanExpect() {
         <div className="result-card bg-tertiary rounded-md flex gap-4 p-8 lg:col-span-2">
           <IconWrapper className="hidden lg:block" icon={Star} />
           <div className="space-y-2">
-            <p className="text-xl font-bold">Real Case</p>
-            <p className="max-w-6xl text-gray">
-              Amanda, a junior fullstack developer from São Paulo, entered BASE
-              with no portfolio and B1 English. After 6 months, she had 3 solid
-              projects, a polished LinkedIn, and joined PSP — closing her first
-              $7,500/month contract within 4 months of graduation.
-            </p>
+            <p className="text-xl font-bold">{t("case.title")}</p>
+            <p className="max-w-6xl text-gray">{t("case.description")}</p>
           </div>
         </div>
       </div>

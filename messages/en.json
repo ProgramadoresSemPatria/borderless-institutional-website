@@ -182,6 +182,126 @@
       "event4": "Borderless mentees won second place at the EthCC hackathon in Cannes, France"
     }
   },
+  "BaseMentorship": {
+    "HeroSection": {
+      "title": "Build Your Global Career Foundation – <colorful>From Zero to Ready</colorful> in 12 Months",
+      "subtitle": "BASE Mentorship is the career foundation program for ambitious Brazilian tech professionals who want to prepare for high-paying international roles. Develop the skills, portfolio, and confidence to step into the global market — and become ready for PSP Mentorship",
+      "cta": "Apply for the Next Cohort"
+    },
+    "WhatIs": {
+      "title": "What is BASE Mentorship?",
+      "description": "The BASE Mentorship is a structured, practical program for early-career tech professionals who want to break out of the national market and prepare for global opportunities. Led by Yuri Pereira and the Borderless Coding mentor team, BASE is designed to:",
+      "bullets": [
+        "Strengthen your technical foundations",
+        "Build an international‑ready portfolio",
+        "Improve your English for interviews and collaboration",
+        "Position you for future entry into the PSP Mentorship program"
+      ],
+      "highlight": "This is not a generic bootcamp or online course — it is a <highlight>guided path</highlight> to transform you from a talented local developer into a globally competitive candidate"
+    },
+    "ApplyNow": {
+      "title": "Apply Now",
+      "description": "Spots in BASE are limited to ensure personalized feedback and community engagement. If you want to prepare yourself to join the global tech market — and eventually the PSP Mentorship — apply today.",
+      "cta": "Apply for the Next Cohort"
+    },
+    "FoundationMethod": {
+      "preTitle": "The Borderless Career Foundation Method",
+      "title": "Our 4-pillar framework to prepare you for the PSP and the <italic>global market</italic>:",
+      "methods": {
+        "technical": {
+          "title": "Technical Level-Up",
+          "description": "Structured learning plan to fill technical gaps and build portfolio projects that stand out"
+        },
+        "profile": {
+          "title": "Profile Foundations",
+          "description": "Create your LinkedIn, GitHub, and résumé with international positioning from day one"
+        },
+        "english": {
+          "title": "English Upgrade",
+          "description": "3x/week classes focused on tech vocabulary, interviews, and work scenarios"
+        },
+        "roadmap": {
+          "title": "Career Roadmap",
+          "description": "Define your growth strategy, milestones, and transition plan to PSP Mentorship"
+        }
+      }
+    },
+    "HowItWorks": {
+      "title": "How the <italic>Mentorship</italic> Works?",
+      "items": {
+        "duration": { "title": "Duration", "description": "12 months" },
+        "format": { "title": "Format", "description": "100% online" },
+        "live": { "title": "Live Sessions", "description": "Weekly group calls with ambassadors" },
+        "qna": { "title": "Q&A Session", "description": "Monthly sessions with Yuri Pereira" },
+        "mocks": { "title": "Mock Interviews", "description": "Practice sessions with junior-to-mid-level scenarios to build confidence" },
+        "english": { "title": "English Coaching", "description": "3x/week, tailored to technology professionals starting their global journey" },
+        "platform": { "title": "Borderless Platform Access", "description": "Premium account with lessons, community, and progress tracking" },
+        "portfolio": { "title": "Portfolio", "description": "Project templates to impress international recruiters" },
+        "resume": { "title": "Resumé", "description": "A high-conversion résumé tailored to your career stage" },
+        "milestones": { "title": "Milestones", "description": "Step-by-step milestones to reach PSP readiness" }
+      }
+    },
+    "ResultsYouCanExpect": {
+      "preTitle": "Results you can expect",
+      "title": "Our BASE alumni <italic>typically</italic>:",
+      "results": {
+        "higherPay": {
+          "title": "Higher paying roles",
+          "description": "Move from local junior/mid-level positions to higher-paying remote roles"
+        },
+        "english": {
+          "title": "English Proficiency",
+          "description": "Achieve English proficiency and confidence for international interviews"
+        },
+        "portfolio": {
+          "title": "Global Portfolio",
+          "description": "Build a portfolio that attracts recruiters from abroad"
+        },
+        "pspReadiness": {
+          "title": "PSP Readiness",
+          "description": "Progress to PSP Mentorship fully prepared to close $7K+ USD/month contracts"
+        }
+      },
+      "case": {
+        "title": "Real Case",
+        "description": "Amanda, a junior fullstack developer from São Paulo, entered BASE with no portfolio and B1 English. After 6 months, she had 3 solid projects, a polished LinkedIn, and joined PSP — closing her first $7,500/month contract within 4 months of graduation."
+      }
+    },
+    "WhoIsItFor": {
+      "preTitle": "Who is it for?",
+      "title": "The BASE Mentorship is built for <italic>junior to early mid-level</italic> tech professionals:",
+      "techRoles": {
+        "title": "Tech Roles",
+        "items": [
+          "Frontend, Backend, Fullstack Developers",
+          "QA, Data Analysts",
+          "Support Engineers"
+        ]
+      },
+      "requirements": {
+        "title": "Requirements",
+        "items": [
+          "1-2 years of professional experience or recently graduated",
+          "English level: A1 to B1 (goal: B2 for international readiness)",
+          "Ready to work hard, follow a clear plan, and join a high-performance community"
+        ]
+      }
+    },
+    "WhyItWorks": {
+      "preTitle": "Why it works?",
+      "title": "Unlike random courses or self-study, <italic>BASE offers</italic>:",
+      "features": [
+        "Direct mentorship and progress tracking",
+        "A proven path from junior/mid-level to international readiness",
+        "Access to a high-performance tech community",
+        "Integration with the Borderless Platform to keep you accountable and connected"
+      ]
+    },
+    "CompareOurMentorships": {
+      "preTitle": "Your next step after BASE...",
+      "title": "Compare our <italic>mentorships</italic>"
+    }
+  },
   "PspMentorship": {
     "HeroSection": {
       "title": "From Local Talent to <colorful>Global Professional</colorful> - in 90 Days",

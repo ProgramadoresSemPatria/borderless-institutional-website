@@ -1,26 +1,23 @@
+"use client";
+
 import { Trophy } from "lucide-react";
 import { IconWrapper } from "../../ui/IconWrapper";
+import { useRichText } from "@/app/hooks/useRichText";
+import { useTranslations } from "next-intl";
 
 export function WhatIsBaseMentorship() {
+  const { t, rich } = useRichText("BaseMentorship.WhatIs");
+  const tl = useTranslations("BaseMentorship.WhatIs");
   return (
     <section className="bg-tertiary rounded-md p-8 space-y-4">
-      <h3 className="text-xl font-bold">What is BASE Mentorship?</h3>
+      <h3 className="text-xl font-bold">{t("title")}</h3>
       <div>
-        <p className="text-gray max-w-6xl">
-          The <strong>BASE Mentorship</strong> is a structured, practical
-          program for early-career tech professionals who want to break out of
-          the national market and prepare for global opportunities. Led by 
-          <strong>Yuri Pereira</strong> and the Borderless Coding mentor team,
-          BASE is designed to:
-        </p>
+        <p className="text-gray max-w-6xl">{t("description")}</p>
         <ul className="text-gray my-4 space-y-1 list-disc ml-4">
-          <li>Strengthen your technical foundations</li>
-          <li>Build an international-ready portfolio</li>
-          <li>Improve your English for interviews and collaboration</li>
-          <li>
-            Position you for future entry into the 
-            <strong>PSP Mentorship</strong> program
-          </li>
+          <li>{tl("bullets.0")}</li>
+          <li>{tl("bullets.1")}</li>
+          <li>{tl("bullets.2")}</li>
+          <li>{tl("bullets.3")}</li>
         </ul>
       </div>
 
@@ -29,11 +26,7 @@ export function WhatIsBaseMentorship() {
           className="size-14 flex-center shrink-0 hidden md:flex"
           icon={Trophy}
         />
-        <p className="max-w-6xl font-semibold">
-          This is not a generic bootcamp or online course — it is a guided path
-          to transform you from a talented local developer into a globally
-          competitive candidate
-        </p>
+        <p className="max-w-6xl font-semibold">{rich("highlight")}</p>
       </div>
     </section>
   );

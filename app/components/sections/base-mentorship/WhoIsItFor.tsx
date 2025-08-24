@@ -4,8 +4,12 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { RequirementsCard } from "../../ui/RequirementsCard";
 import { SectionHeader } from "../../ui/SectionHeader";
+import { useTranslations } from "next-intl";
+import { useRichText } from "@/app/hooks/useRichText";
 
 export function WhoIsItFor() {
+  const t = useTranslations("BaseMentorship.WhoIsItFor");
+  const { rich } = useRichText("BaseMentorship.WhoIsItFor");
   useGSAP(() => {
     gsap.fromTo(
       ".requirements-card",
@@ -27,31 +31,21 @@ export function WhoIsItFor() {
   return (
     <section className="py-[10svh] space-y-8">
       <SectionHeader
-        preTitle="Who is it for?"
-        title={
-          <>
-            The BASE Mentorship is built for{" "}
-            <span className="font-ivy">junior to early mid-level</span> tech
-            professionals:
-          </>
-        }
+        preTitle={t("preTitle")}
+        title={<>{rich("title")}</>}
       />
 
       <div className="grid md:grid-cols-2 gap-2">
         <RequirementsCard
-          title="Tech Roles"
-          items={[
-            "Frontend, Backend, Fullstack Developers",
-            "QA, Data Analysts",
-            "Support Engineers",
-          ]}
+          title={t("techRoles.title")}
+          items={[t("techRoles.items.0"), t("techRoles.items.1"), t("techRoles.items.2")]}
         />
         <RequirementsCard
-          title="Requirements"
+          title={t("requirements.title")}
           items={[
-            "1-2 years of professional experience or recently graduated",
-            "English level: A1 to B1 (goal: B2 for international readiness)",
-            "Ready to work hard, follow a clear plan, and join a high-performance community",
+            t("requirements.items.0"),
+            t("requirements.items.1"),
+            t("requirements.items.2"),
           ]}
         />
       </div>

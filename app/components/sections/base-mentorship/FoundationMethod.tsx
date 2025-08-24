@@ -5,35 +5,35 @@ import gsap from "gsap";
 import { Code, Map, MessageSquare, User } from "lucide-react";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
-
-const methods = [
-  {
-    title: "Technical Level-Up",
-    description:
-      "Structured learning plan to fill technical gaps and build portfolio projects that stand out",
-    icon: Code,
-  },
-  {
-    title: "Profile Foundations",
-    description:
-      "Create your LinkedIn, GitHub, and résumé with international positioning from day one",
-    icon: User,
-  },
-  {
-    title: "English Upgrade",
-    description:
-      "3x/week classes focused on tech vocabulary, interviews, and work scenarios",
-    icon: MessageSquare,
-  },
-  {
-    title: "Career Roadmap",
-    description:
-      "Define your growth strategy, milestones, and transition plan to PSP Mentorship",
-    icon: Map,
-  },
-];
+import { useTranslations } from "next-intl";
+import { useRichText } from "@/app/hooks/useRichText";
 
 export function FoundationMethod() {
+  const t = useTranslations("BaseMentorship.FoundationMethod");
+  const { rich } = useRichText("BaseMentorship.FoundationMethod");
+
+  const methods = [
+    {
+      title: t("methods.technical.title"),
+      description: t("methods.technical.description"),
+      icon: Code,
+    },
+    {
+      title: t("methods.profile.title"),
+      description: t("methods.profile.description"),
+      icon: User,
+    },
+    {
+      title: t("methods.english.title"),
+      description: t("methods.english.description"),
+      icon: MessageSquare,
+    },
+    {
+      title: t("methods.roadmap.title"),
+      description: t("methods.roadmap.description"),
+      icon: Map,
+    },
+  ];
   useGSAP(() => {
     gsap.fromTo(
       ".global-method-card",
@@ -52,13 +52,8 @@ export function FoundationMethod() {
   return (
     <section className="space-y-8 py-[10svh]">
       <SectionHeader
-        preTitle="The Borderless Career Foundation Method"
-        title={
-          <>
-            Our 4-pillar framework to prepare you for the PSP and the{" "}
-            <span className="font-ivy">global market</span>:
-          </>
-        }
+        preTitle={t("preTitle")}
+        title={<>{rich("title")}</>}
       />
 
       <div className="grid md:grid-cols-2 2xl:grid-cols-4 gap-2">
