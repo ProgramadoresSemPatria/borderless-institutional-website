@@ -946,5 +946,17 @@
         }
       ]
     }
+  },
+  "Header": {
+    "logoAlt": "borderless logo",
+    "links": {
+      "psp": "PSP mentorship",
+      "base": "Base mentorship",
+      "bootcamp": "Bootcamp WEB3 Global Developer",
+      "foundersInvestors": "For founders and Investors",
+      "wantToHire": "I want to hire a professional",
+      "wantToInternationalize": "I want to internationalize",
+      "expansion": "Expansion"
+    }
   }
 }

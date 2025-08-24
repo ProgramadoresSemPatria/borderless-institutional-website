@@ -4,45 +4,27 @@ import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import { IconWrapper } from "../ui/IconWrapper";
 
-const links = [
-  {
-    title: "PSP mentorship",
-    href: "/psp-mentorship",
-  },
-  {
-    title: "Base mentorship",
-    href: "/base-mentorship",
-  },
-  {
-    title: "Bootcamp WEB3 Global Developer",
-    href: "/bootcamp-web3",
-  },
-  {
-    title: "For founders and Investors",
-    href: "/for-founders-and-investors",
-  },
-  {
-    title: "I want to hire a professional",
-    href: "/want-to-hire",
-  },
-  {
-    title: "I want to internatinalize",
-    href: "/want-to-internationalize",
-  },
-  {
-    title: "Expansion",
-    href: "/expansion",
-  },
-];
 
 export function Header() {
+  const t = useTranslations("Header");
   const pathname = usePathname();
   const router = useRouter();
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const links = [
+    { title: t("links.psp"), href: "/psp-mentorship" },
+    { title: t("links.base"), href: "/base-mentorship" },
+    { title: t("links.bootcamp"), href: "/bootcamp-web3" },
+    { title: t("links.foundersInvestors"), href: "/for-founders-and-investors" },
+    { title: t("links.wantToHire"), href: "/want-to-hire" },
+    { title: t("links.wantToInternationalize"), href: "/want-to-internationalize" },
+    { title: t("links.expansion"), href: "/expansion" },
+  ] as const;
 
   const changeLocale = (locale: string) => {
     router.replace(pathname, { locale });
@@ -62,7 +44,7 @@ export function Header() {
           <Image
             width={501}
             height={596}
-            alt="borderless logo"
+            alt={t("logoAlt")}
             src={"/borderless-logo-white.svg"}
             className="w-fit h-full ml-4"
           />
