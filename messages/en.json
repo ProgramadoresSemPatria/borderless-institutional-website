@@ -734,5 +734,60 @@
         { "title": "Global Reach", "description": "International presence: operations and partnerships across Brazil, Europe, and the US" }
       ]
     }
+  },
+  "WantToHire": {
+    "HeroSection": {
+      "title": "Hire Global Tech Talent. <colorful>Zero Fees.</colorful>",
+      "subtitle": "Through Borderless Coding, you get direct access to a pool of highly qualified Brazilian developers, engineers, and data professionals — ready to work for global companies. Unlike traditional consultancies, we don’t charge placement fees.",
+      "cta": "Get Access to Our Talent Pool"
+    },
+    "HowItWorks": {
+      "title": "How it <italic>Works</italic>",
+      "steps": [
+        { "title": "Tell Us Your Needs", "description": "Tell us what you need – role, stack, seniority." },
+        { "title": "Get Matched", "description": "We connect you with pre-vetted professionals from our pool." },
+        { "title": "Hire Directly", "description": "You hire directly – no agency in the middle, no percentage taken." }
+      ]
+    },
+    "PartnerWithBorderless": {
+      "title": "Partner With Borderless",
+      "description": "Skip the consultancy fees. Hire directly from a community of vetted, international-ready tech talent.",
+      "cta": "Get Access to Our Talent Pool"
+    },
+    "TalentPool": {
+      "preTitle": "The talent pool",
+      "title": "Our <italic>network</italic> includes:",
+      "items": [
+        "Backend, Frontend & Fullstack Developers",
+        "Data Engineers & Data Analysts",
+        "DevOps & Cloud Specialists",
+        "AI & Blockchain Professionals"
+      ],
+      "paragraph": "All trained under our Go Global™ Method, ensuring not only technical skill but also the ability to thrive in international teams."
+    },
+    "WhyBorderless": {
+      "title": "Why Borderless Coding?",
+      "bullets": [
+        "Zero Hiring Fees – no commissions, no hidden costs.",
+        "Pre-vetted Talent – every professional has gone through our mentorship or incubation programs.",
+        "International-Ready – fluent in English, experienced in remote work, and trained for global culture.",
+        "Fast and Direct – connect with candidates immediately through our platform and community."
+      ]
+    },
+    "BorderlessVsConsultancy": {
+      "preTitle": "Why Choose Borderless?",
+      "title": "Compare <italic>Borderless</italic> with Traditional Consultancy",
+      "comparison": {
+        "firstOptionTitle": "Borderless Coding",
+        "secondOptionTitle": "Traditional Consultancy",
+        "features": [
+          { "title": "Hiring Fees", "firstOptionFeature": "$0, we don't charge companies", "secondOptionFeature": "20-35% of annual salary" },
+          { "title": "Talent Quality", "firstOptionFeature": "Pre-vetted, trained through mentorship & global programs", "secondOptionFeature": "Mixed pool, not always pre-qualified" },
+          { "title": "English & Global Readiness", "firstOptionFeature": "Minimum B1 English, trained for international interviews & culture", "secondOptionFeature": "Varies widely, not guaranteed" },
+          { "title": "Speed", "firstOptionFeature": "Fast connection — hire in days", "secondOptionFeature": "Lengthy process, often weeks/months" },
+          { "title": "Transparency", "firstOptionFeature": "Direct contract between company & professional", "secondOptionFeature": "Middleman contracts and restrictions" }
+        ]
+      }
+    }
   }
 }

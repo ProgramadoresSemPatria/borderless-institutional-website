@@ -5,8 +5,12 @@ import gsap from "gsap";
 import { AnimatedText } from "../../ui/AnimatedText";
 import { RequirementsCard } from "../../ui/RequirementsCard";
 import { SectionHeader } from "../../ui/SectionHeader";
+import { useRichText } from "@/app/hooks/useRichText";
+import { useTalentPool } from "./hooks/useTalentPool";
 
 export function TalentPool() {
+  const { rich } = useRichText("WantToHire.TalentPool");
+  const { header, items, paragraph } = useTalentPool();
   useGSAP(() => {
     gsap.fromTo(
       ".requirements-card",
@@ -24,29 +28,11 @@ export function TalentPool() {
 
   return (
     <section className="py-[10svh] space-y-8">
-      <SectionHeader
-        preTitle="The talent pool"
-        title={
-          <>
-            Our <span className="font-ivy">network</span> includes:{" "}
-          </>
-        }
-      />
+      <SectionHeader preTitle={header.preTitle} title={rich(header.titleKey)} />
 
-      <RequirementsCard
-        items={[
-          "Backend, Frontend & Fullstack Developers",
-          "Data Engineers & Data Analysts",
-          "DevOps & Cloud Specialists",
-          "AI & Blockchain Professionals",
-        ]}
-      />
+      <RequirementsCard items={items} />
 
-      <AnimatedText className="text-lg max-w-4xl">
-        All trained under our <strong>Go Global™ Method</strong>, ensuring not
-        only technical skill but also the ability to thrive in international
-        teams.
-      </AnimatedText>
+      <AnimatedText className="text-lg max-w-4xl">{paragraph}</AnimatedText>
     </section>
   );
 }

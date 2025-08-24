@@ -805,5 +805,60 @@
         { "title": "Alcance Global", "description": "Presença internacional: operações e parcerias no Brasil, Europa e Estados Unidos" }
       ]
     }
+  },
+  "WantToHire": {
+    "HeroSection": {
+      "title": "Contrate Talento Tech Global. <colorful>Zero Taxas.</colorful>",
+      "subtitle": "Com a Borderless Coding, você tem acesso direto a um pool de desenvolvedores, engenheiros e profissionais de dados brasileiros altamente qualificados — prontos para trabalhar em empresas globais. Diferente de consultorias tradicionais, não cobramos taxa de contratação.",
+      "cta": "Acessar Nosso Banco de Talentos"
+    },
+    "HowItWorks": {
+      "title": "Como <italic>Funciona</italic>",
+      "steps": [
+        { "title": "Conte sua necessidade", "description": "Diga o que você precisa — vaga, stack, senioridade." },
+        { "title": "Conectamos você", "description": "Conectamos você com profissionais pré-qualificados do nosso pool." },
+        { "title": "Contrate Diretamente", "description": "Você contrata direto — sem agência no meio, sem porcentagem." }
+      ]
+    },
+    "PartnerWithBorderless": {
+      "title": "Seja Parceiro da Borderless",
+      "description": "Pule as taxas de consultoria. Contrate diretamente de uma comunidade de talentos pré-qualificados e prontos para o internacional.",
+      "cta": "Acessar Nosso Banco de Talentos"
+    },
+    "TalentPool": {
+      "preTitle": "O banco de talentos",
+      "title": "Nossa <italic>rede</italic> inclui:",
+      "items": [
+        "Desenvolvedores Backend, Frontend & Fullstack",
+        "Engenheiros de Dados & Analistas de Dados",
+        "DevOps & Especialistas em Cloud",
+        "Profissionais de IA & Blockchain"
+      ],
+      "paragraph": "Todos treinados sob o nosso método Go Global™, garantindo não apenas habilidade técnica, mas também capacidade de prosperar em times internacionais."
+    },
+    "WhyBorderless": {
+      "title": "Por que a Borderless Coding?",
+      "bullets": [
+        "Zero taxas de contratação — sem comissões, sem custos ocultos.",
+        "Talento pré-qualificado — todo profissional passou por nossa mentoria ou programas de incubação.",
+        "Prontos para o internacional — inglês fluente, experiência com trabalho remoto e cultura global.",
+        "Rápido e direto — conecte-se a candidatos imediatamente por nossa plataforma e comunidade."
+      ]
+    },
+    "BorderlessVsConsultancy": {
+      "preTitle": "Por que escolher a Borderless?",
+      "title": "Compare a <italic>Borderless</italic> com Consultorias Tradicionais",
+      "comparison": {
+        "firstOptionTitle": "Borderless Coding",
+        "secondOptionTitle": "Consultoria Tradicional",
+        "features": [
+          { "title": "Taxas de Contratação", "firstOptionFeature": "$0, não cobramos das empresas", "secondOptionFeature": "20–35% do salário anual" },
+          { "title": "Qualidade do Talento", "firstOptionFeature": "Pré-qualificados, treinados via mentoria e programas globais", "secondOptionFeature": "Pool misto, nem sempre pré-qualificado" },
+          { "title": "Inglês & Prontidão Global", "firstOptionFeature": "Inglês mínimo B1, treinados para entrevistas e cultura internacional", "secondOptionFeature": "Varia bastante, não garantido" },
+          { "title": "Velocidade", "firstOptionFeature": "Conexão rápida — contrate em dias", "secondOptionFeature": "Processo demorado, semanas/meses" },
+          { "title": "Transparência", "firstOptionFeature": "Contrato direto entre empresa e profissional", "secondOptionFeature": "Contratos com intermediários e restrições" }
+        ]
+      }
+    }
   }
 }
