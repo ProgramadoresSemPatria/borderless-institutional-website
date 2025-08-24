@@ -1029,5 +1029,49 @@
       "wantToInternationalize": "Quero internacionalizar",
       "expansion": "Expansão"
     }
+  },
+  "Footer": {
+    "TalkToAProfessional": {
+      "left": "Fale com",
+      "right": "um profissional",
+      "yuriAlt": "Foto do Yuri",
+      "logoAlt": "logo da borderless"
+    },
+    "sections": {
+      "company": {
+        "title": "Empresarial",
+        "items": {
+          "howItWorks": "Como funciona a Borderless",
+          "privacyPolicy": "Política de Privacidade",
+          "refundPolicy": "Política de Reembolso",
+          "contact": "Contato"
+        }
+      },
+      "mentorships": {
+        "title": "Mentorias / Bootcamp",
+        "items": {
+          "psp": "Mentoria PSP",
+          "base": "Mentoria A Base",
+          "bootcamp": "Bootcamp WEB3"
+        }
+      },
+      "partnerships": {
+        "title": "Parcerias",
+        "items": {
+          "foundersInvestors": "Para founders e investidores",
+          "hire": "Quero contratar um profissional"
+        }
+      },
+      "evolution": {
+        "title": "Evolução",
+        "items": {
+          "internationalize": "Eu quero internacionalizar",
+          "expansion": "Expansão"
+        }
+      }
+    },
+    "copyright": {
+      "text": "© {year} Borderless Coding. Todos os direitos reservados"
+    }
   }
 }

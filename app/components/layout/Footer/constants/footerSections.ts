@@ -1,36 +1,38 @@
-export const footerSections = [
+export type FooterSectionConfig = {
+  titleKey: string;
+  items: { nameKey: string; href: string }[];
+};
+
+export const footerSections: FooterSectionConfig[] = [
   {
-    title: "Empresarial",
+    titleKey: "company",
     items: [
-      { name: "Como funciona a Borderless", href: "/como-funciona" },
-      { name: "Política de Privacidade", href: "/privacidade" },
-      { name: "Política de Reembolso", href: "/reembolso" },
-      { name: "Contato", href: "/contato" },
+      { nameKey: "howItWorks", href: "/how-it-works" },
+      { nameKey: "privacyPolicy", href: "/privacy" },
+      { nameKey: "refundPolicy", href: "/refund" },
+      { nameKey: "contact", href: "/contact" },
     ],
   },
   {
-    title: "Mentorias / Bootcamp",
+    titleKey: "mentorships",
     items: [
-      { name: "Mentoria PSP", href: "/mentoria-psp" },
-      { name: "Mentoria A Base", href: "/mentoria-a-base" },
-      { name: "Bootcamp WEB3", href: "/bootcamp-web3" },
+      { nameKey: "psp", href: "/psp-mentorship" },
+      { nameKey: "base", href: "/base-mentorship" },
+      { nameKey: "bootcamp", href: "/bootcamp-web3" },
     ],
   },
   {
-    title: "Parcerias",
+    titleKey: "partnerships",
     items: [
-      { name: "Para founders e investidores", href: "/parcerias-founders" },
-      {
-        name: "Quero contratar um profissional",
-        href: "/contratar-profissional",
-      },
+      { nameKey: "foundersInvestors", href: "/for-founders-and-investors" },
+      { nameKey: "hire", href: "/want-to-hire" },
     ],
   },
   {
-    title: "Evolução",
+    titleKey: "evolution",
     items: [
-      { name: "Eu quero internacionalizar", href: "/internacionalizar" },
-      { name: "Expansão", href: "/expansao" },
+      { nameKey: "internationalize", href: "/want-to-internationalize" },
+      { nameKey: "expansion", href: "/expansion" },
     ],
   },
 ];

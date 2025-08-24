@@ -4,8 +4,10 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export function TalkToAProfessional() {
+  const t = useTranslations("Footer.TalkToAProfessional");
   useGSAP(() => {
     const mm = gsap.matchMedia();
 
@@ -42,9 +44,9 @@ export function TalkToAProfessional() {
   return (
     <div className="footer-container w-[90%] max-w-[1800px] flex max-[1350px]:flex-col items-center justify-center text-black gap-12 py-[15svh] max-[1350px]:pt-[8svh] mx-auto">
       <p className="left-text text-center text-4xl sm:text-5xl lg:text-7xl font-semibold">
-        Fale com{" "}
+        {t("left")}{" "}
         <span className="min-[1350px]:hidden font-ivy font-normal">
-          um profissional
+          {t("right")}
         </span>{" "}
       </p>
 
@@ -53,7 +55,7 @@ export function TalkToAProfessional() {
           width={2048}
           height={2731}
           src={"/team/yuri.webp"}
-          alt="yuri"
+          alt={t("yuriAlt")}
           className="w-[15rem] rounded-2xl border-4 border-solid border-white -rotate-2"
         />
 
@@ -63,14 +65,14 @@ export function TalkToAProfessional() {
       </div>
 
       <p className="right-text font-ivy text-7xl hidden min-[1350px]:block">
-        um profissional
+        {t("right")}
       </p>
 
       <Image
         src={"/borderless-logo-white.svg"}
         width={671}
         height={798}
-        alt="borderless logo"
+        alt={t("logoAlt")}
         className="background-footer-img absolute z-[-1] opacity-30 brightness-125 w-auto h-[80%] object-cover"
       />
     </div>
