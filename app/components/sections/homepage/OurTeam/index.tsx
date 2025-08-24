@@ -4,44 +4,14 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Github, Linkedin } from "lucide-react";
 import Image from "next/image";
-import { AnimatedText } from "../../ui/AnimatedText";
-import { Carousel, CarouselContent, CarouselItem } from "../../ui/Carousel";
-import { IconWrapper } from "../../ui/IconWrapper";
-
-const teamPeople = [
-  {
-    name: "Yuri Pereira",
-    role: "Founder e Strategic Tech Advisor",
-    src: "/team/yuri.webp",
-  },
-  {
-    name: "Felipe Meriga",
-    role: "Mentor de Rust",
-    src: "/team/felipe.webp",
-  },
-  {
-    name: "Matheus Avi",
-    role: "Mentor de Algoritmos e estrutura de dados",
-    src: "/team/matheus.webp",
-  },
-  {
-    name: "André Wlodkosvki",
-    role: "Multi-cloud Specialist",
-    src: "/team/andre.webp",
-  },
-  {
-    name: "Alex Miloski",
-    role: "Mentor/Investor Web3",
-    src: "/team/alex.webp",
-  },
-  {
-    name: "Thiago Dantas",
-    role: "Mentor/Head AI ",
-    src: "/team/thiago.webp",
-  },
-];
+import { AnimatedText } from "../../../ui/AnimatedText";
+import { Carousel, CarouselContent, CarouselItem } from "../../../ui/Carousel";
+import { IconWrapper } from "../../../ui/IconWrapper";
+import { useGetOurTeam } from "./hooks/useGetOurTeam";
 
 export function OurTeam() {
+  const { title, members } = useGetOurTeam();
+
   useGSAP(() => {
     gsap.fromTo(
       ".team-card",
@@ -64,12 +34,12 @@ export function OurTeam() {
     <section style={{ minHeight: "fit-content" }}>
       <div className="bg-tertiary py-8 lg:py-16 flex-col rounded-md space-y-12">
         <AnimatedText as="h2" className="w-fit ml-8 lg:ml-16">
-          Nosso <span className="font-ivy">time</span>
+          {title}
         </AnimatedText>
 
         <Carousel className="w-full space-y-4">
           <CarouselContent className="first:ml-4 last:mr-8 lg:first:ml-12 lg:last:mr-16 -ml-4">
-            {teamPeople.map((member) => (
+            {members.map((member) => (
               <CarouselItem
                 key={member.src}
                 className="team-card space-y-4 sm:basis-1/2 lg:basis-1/3 2xl:basis-1/4 pl-4"
