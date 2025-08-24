@@ -181,5 +181,179 @@
       "event3": "Brainstorm durante uma hackthon de AI na França",
       "event4": "Mentorados da borderless receberam o segundo lugar na hackathon da EthCC em Cannes, França"
     }
+  },
+  "PspMentorship": {
+    "HeroSection": {
+      "title": "De Talento Local a <colorful>Profissional Global</colorful> - em 90 dias",
+      "subtitle": "A Mentoria PSP é o programa comprovado de aceleração de carreira para developers seniores brasileiros conquistarem contratos internacionais de alta remuneração, ganhando em USD/EUR, sem depender de sorte, recrutadores ‘milagrosos’ ou aplicações infinitas.",
+      "cta": "Aplicar para a Próxima Turma"
+    },
+    "ApplyNow": {
+      "title": "Aplicar Agora",
+      "description": "Trabalhamos com um número limitado de mentorados por turma para garantir orientação personalizada. Se você está pronto para parar de aplicar às cegas e começar a fechar propostas no mercado global, aplique hoje",
+      "cta": "Aplicar para a Próxima Turma"
+    },
+    "CompareOurMentorships": {
+      "preTitle": "Se você ainda não está pronto",
+      "title": "Compare nossas <italic>mentorias</italic>"
+    },
+    "MentorshipComparison": {
+      "firstOptionTitle": "Mentoria BASE",
+      "secondOptionTitle": "Mentoria PSP",
+      "features": [
+        {
+          "title": "Momento de Carreira",
+          "firstOptionFeature": "Sem experiência prévia → Início de pleno (0–2 anos de experiência)",
+          "secondOptionFeature": "Pleno → Sênior (3+ anos de experiência)"
+        },
+        {
+          "title": "Nível de Inglês",
+          "firstOptionFeature": "A1 → B1 (Meta: B2 para prontidão internacional)",
+          "secondOptionFeature": "B1 ou superior (fluência técnica necessária)"
+        },
+        {
+          "title": "Objetivo",
+          "firstOptionFeature": "Construir base técnica, portfólio e inglês para atingir o nível PSP",
+          "secondOptionFeature": "Fechar contratos internacionais de alta remuneração ($10K–$15K USD/mês)"
+        },
+        {
+          "title": "Foco Principal",
+          "firstOptionFeature": "Evolução técnica, construção de portfólio, upgrade de inglês, plano de carreira",
+          "secondOptionFeature": "Posicionamento estratégico, domínio de entrevistas, networking, negociação de propostas"
+        },
+        {
+          "title": "Duração da Mentoria",
+          "firstOptionFeature": "12 meses",
+          "secondOptionFeature": "6 ou 12 meses"
+        },
+        {
+          "title": "Encontros ao Vivo",
+          "firstOptionFeature": "Chamada mensal com Yuri + chamadas quinzenais com o time BASE",
+          "secondOptionFeature": "Chamadas quinzenais em grupo + feedback direto do Yuri"
+        },
+        {
+          "title": "Mock Interviews",
+          "firstOptionFeature": "Cenários de júnior a pleno",
+          "secondOptionFeature": "Cenários sênior técnicos e de system design com 5 mentores especialistas"
+        },
+        {
+          "title": "Inglês",
+          "firstOptionFeature": "3x/semana – foco do iniciante ao intermediário",
+          "secondOptionFeature": "3x/semana – foco do intermediário ao avançado técnico"
+        },
+        {
+          "title": "Acesso à Borderless Platform",
+          "firstOptionFeature": "Incluído (portfólio, aulas, comunidade)",
+          "secondOptionFeature": "Incluído (networking, aulas, materiais exclusivos da PSP)"
+        },
+        {
+          "title": "Recursos-Chave",
+          "firstOptionFeature": "Templates de projetos de portfólio, currículo de alta conversão para aplicações de entrada",
+          "secondOptionFeature": "Currículo de alta conversão adaptado à sua estratégia, scripts de aplicação, playbook de negociação"
+        },
+        {
+          "title": "Resultado Esperado",
+          "firstOptionFeature": "Prontidão para a PSP em até 12 meses",
+          "secondOptionFeature": "1–3 propostas internacionais em até 120 dias"
+        },
+        {
+          "title": "Resultado Médio dos Alumni",
+          "firstOptionFeature": "Entrada na PSP + primeiro portfólio pronto para o internacional",
+          "secondOptionFeature": "Contratos entre $10K e $15K USD/mês"
+        },
+        {
+          "title": "Melhor Para",
+          "firstOptionFeature": "Iniciantes ou profissionais iniciando o caminho para oportunidades globais",
+          "secondOptionFeature": "Profissionais prontos para competir e vencer no mercado global agora"
+        }
+      ]
+    },
+    "GoGlobalMethod": {
+      "preTitle": "O Método Go Global™",
+      "title": "Nosso framework proprietário de <italic>4 pilares</italic> para a transição de uma carreira nacional para o <italic>sucesso global</italic>:",
+      "methods": [
+        {
+          "title": "Profile Package",
+          "description": "Otimização de LinkedIn, GitHub, CV e marca pessoal para atração global."
+        },
+        {
+          "title": "Interview Engine",
+          "description": "Domine mock interviews, live coding, system design e narrativa de carreira em inglês."
+        },
+        {
+          "title": "Opportunity Pipeline",
+          "description": "Construa um pipeline de vagas ativo + passivo com aplicações direcionadas e interesse de recrutadores inbound."
+        },
+        {
+          "title": "Senior Global Playbook",
+          "description": "Estratégia de carreira e financeira de longo prazo, incluindo equity, planejamento tributário e opções de relocação."
+        }
+      ]
+    },
+    "HowItWorks": {
+      "title": "Como a <italic>Mentoria</italic> funciona?",
+      "items": [
+        { "title": "Duração", "description": "6 ou 12 meses (escolha seu plano)" },
+        { "title": "Formato", "description": "100% online" },
+        { "title": "Encontros ao vivo", "description": "Chamadas estratégicas quinzenais com feedback direto do Yuri" },
+        { "title": "Mentores especialistas", "description": "5 mentores de diferentes áreas para conduzir mock interviews e dar feedback sob medida" },
+        { "title": "Mock Interviews", "description": "Simulações mensais cobrindo os principais formatos de entrevista globais" },
+        { "title": "Inglês", "description": "Aulas 3x/semana do básico à fluência técnica" },
+        { "title": "Acesso à Plataforma Borderless", "description": "Todos os mentorados recebem conta premium na Borderless Platform — centralizando comunidade, aprendizado e networking em um só lugar" },
+        { "title": "Currículo", "description": "Modelos de currículo de alta conversão adaptáveis às estratégias definidas durante a mentoria" },
+        { "title": "Scripts", "description": "Scripts, templates e pipelines comprovados para acelerar resultados" }
+      ]
+    },
+    "ResultsYouCanExpect": {
+      "preTitle": "Nossos alumni relatam",
+      "title": "<italic>Resultados</italic> que você pode esperar",
+      "results": [
+        { "title": "Resultados rápidos", "description": "Primeiras propostas internacionais em 30–90 dias" },
+        { "title": "Salário maior", "description": "Saltos salariais para $12K+ USD/mês para profissionais Tier 3" },
+        { "title": "Independência", "description": "Confiança para negociar propostas e trabalhar globalmente sem depender de terceiros" }
+      ],
+      "success": {
+        "title": "Case real de sucesso",
+        "text": "Thiago, backend sênior de Belo Horizonte, já ganhando $10K USD/mês, conquistou <highlight>um contrato adicional de $9K USD</highlight> em apenas 27 dias de mentoria"
+      }
+    },
+    "WhatIs": {
+      "title": "O que é a Mentoria PSP?",
+      "description": "A Mentoria Programador Sem Pátria (PSP) é um programa de aceleração de carreira de alta performance para profissionais brasileiros experientes de tecnologia prontos para iniciar no mercado global. Liderada por Yuri Pereira, fundador da Borderless Coding, a PSP combina posicionamento estratégico, domínio de entrevistas técnicas, networking e mentoria direta para gerar propostas internacionais previsíveis.",
+      "highlight": "Mais de 105+ ex-alunos já conquistaram vagas em empresas nos EUA, Canadá, Europa e Ásia — muitos com salários entre $5K e $15K/mês."
+    },
+    "WhoIsItFor": {
+      "preTitle": "Para quem é?",
+      "title": "A Mentoria PSP é feita para profissionais de tecnologia de nível <italic>pleno a sênior</italic>:",
+      "roles": {
+        "title": "Funções de Tech",
+        "items": [
+          "Backend, Fullstack, DevOps",
+          "Especialistas em Cloud, Engenheiros de Dados",
+          "Especialistas em IA, Developers Blockchain",
+          "Developers Mobile, Engenheiros de Infra",
+          "Tech Leads, Engineering Managers"
+        ]
+      },
+      "requirements": {
+        "title": "Requisitos",
+        "items": [
+          "Mínimo de 3 anos de experiência profissional",
+          "Inglês: B1 ou superior (te ajudamos a chegar na fluência técnica)",
+          "Pronto para trabalhar remotamente para empresas internacionais",
+          "Ganhar em USD/EUR/CHF/GBP/AED"
+        ]
+      }
+    },
+    "WhyItWorks": {
+      "preTitle": "Por que funciona?",
+      "title": "A maioria dos conselhos de carreira para devs é <italic>genérico, desatualizado ou puramente teórico</italic>. A Mentoria PSP te entrega:",
+      "features": [
+        "Acesso direto a um mentor que pessoalmente escalou de $5K para $90K/mês em contratos de tech",
+        "5 mentores especializados para preparo diverso de entrevistas",
+        "Um sistema claro, passo a passo, validado com 105+ casos de sucesso",
+        "Uma comunidade de alta performance que mantém sua accountability"
+      ]
+    }
   }
 }

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-type Tag = "colorful" | "italic";
+type Tag = "colorful" | "italic" | 'highlight';
 
 type Props = {
   children(tags: Record<Tag, (chunks: ReactNode) => ReactNode>): ReactNode;
@@ -15,6 +15,9 @@ export default function RichText({ children }: Props) {
         ),
         italic: (chunks: ReactNode) => (
           <span className="font-ivy">{chunks}</span>
+        ),
+        highlight: (chunks: ReactNode) => (
+          <span className="text-secondary">{chunks}</span>
         ),
       })}
     </>

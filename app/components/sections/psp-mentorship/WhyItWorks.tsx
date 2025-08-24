@@ -5,15 +5,12 @@ import gsap from "gsap";
 import { Check } from "lucide-react";
 import { IconWrapper } from "../../ui/IconWrapper";
 import { SectionHeader } from "../../ui/SectionHeader";
-
-const features = [
-  "Direct access to a mentor who has personally scaled from $5K to $90K/month in tech contracts",
-  "5 specialized mentors for diverse interview preparation",
-  "A clear, step-by-step system validated with 105+ success stories",
-  "A high-performance community that keeps you accountable",
-];
+import { useWhyItWorks } from "./hooks/useWhyItWorks";
+import { useRichText } from "@/app/hooks/useRichText";
 
 export function WhyItWorks() {
+  const { rich, t } = useRichText("PspMentorship.WhyItWorks");
+  const features = useWhyItWorks();
   useGSAP(() => {
     gsap.fromTo(
       ".why-it-works-card",
@@ -35,16 +32,8 @@ export function WhyItWorks() {
   return (
     <section className="space-y-8 py-[10svh]">
       <SectionHeader
-        preTitle="Why it works ?"
-        title={
-          <>
-            Most career advice for devs is{" "}
-            <span className="font-ivy">
-              generic, outdated, or purely theoretical
-            </span>
-            . The PSP Mentorship gives you:
-          </>
-        }
+        preTitle={t("preTitle")}
+        title={rich("title")}
       />
 
       <div className="bg-tertiary rounded-md p-2 grid lg:grid-cols-2 gap-2">

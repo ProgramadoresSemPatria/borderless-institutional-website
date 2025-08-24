@@ -181,5 +181,179 @@
       "event3": "Brainstorm during an AI hackathon in France",
       "event4": "Borderless mentees won second place at the EthCC hackathon in Cannes, France"
     }
+  },
+  "PspMentorship": {
+    "HeroSection": {
+      "title": "From Local Talent to <colorful>Global Professional</colorful> - in 90 Days",
+      "subtitle": "PSP Mentorship is the proven career acceleration program for senior Brazilian developers to land high-paying international contracts, earning in USD/EUR, without relying on luck, ‘miracle’ recruiters, or endless applications.",
+      "cta": "Apply for the Next Cohort"
+    },
+    "ApplyNow": {
+      "title": "Apply Now",
+      "description": "We work with a limited number of mentees per cohort to ensure personalized guidance. If you’re ready to stop applying blindly and start closing offers in the global market, apply today",
+      "cta": "Apply for the Next Cohort"
+    },
+    "CompareOurMentorships": {
+      "preTitle": "If you are not ready yet",
+      "title": "Compare our <italic>mentorships</italic>"
+    },
+    "MentorshipComparison": {
+      "firstOptionTitle": "BASE Mentorship",
+      "secondOptionTitle": "PSP Mentorship",
+      "features": [
+        {
+          "title": "Career Stage",
+          "firstOptionFeature": "No prior experience → Early Mid-level (0–2 years experience)",
+          "secondOptionFeature": "Mid-level → Senior (3+ years experience)"
+        },
+        {
+          "title": "English Level",
+          "firstOptionFeature": "A1 → B1 (Goal: B2 for international readiness)",
+          "secondOptionFeature": "B1 or higher (technical fluency required)"
+        },
+        {
+          "title": "Goal",
+          "firstOptionFeature": "Build technical, portfolio, and English foundations to reach PSP level",
+          "secondOptionFeature": "Land high-paying international contracts ($10K–$15K USD/month)"
+        },
+        {
+          "title": "Main Focus",
+          "firstOptionFeature": "Technical improvement, portfolio building, English upgrade, career plan",
+          "secondOptionFeature": "Strategic positioning, interview mastery, networking, offer negotiation"
+        },
+        {
+          "title": "Mentorship Duration",
+          "firstOptionFeature": "12 months",
+          "secondOptionFeature": "6 or 12 months"
+        },
+        {
+          "title": "Live Sessions",
+          "firstOptionFeature": "Monthly group call with Yuri + bi-weekly calls with BASE mentor team",
+          "secondOptionFeature": "Bi-weekly group calls + direct feedback from Yuri"
+        },
+        {
+          "title": "Mock Interviews",
+          "firstOptionFeature": "Junior-to-mid-level scenarios",
+          "secondOptionFeature": "Senior-level technical and system design scenarios with 5 expert mentors"
+        },
+        {
+          "title": "English Coaching",
+          "firstOptionFeature": "3x/week – beginner to intermediate focus",
+          "secondOptionFeature": "3x/week – intermediate to advanced technical focus"
+        },
+        {
+          "title": "Borderless Platform Access",
+          "firstOptionFeature": "Included (portfolio, lessons, community)",
+          "secondOptionFeature": "Included (networking, lessons, exclusive PSP resources)"
+        },
+        {
+          "title": "Key Resources",
+          "firstOptionFeature": "Portfolio project templates, high-conversion résumé for entry-level applications",
+          "secondOptionFeature": "High-conversion résumé adapted to your strategy, application scripts, negotiation playbook"
+        },
+        {
+          "title": "Expected Outcome",
+          "firstOptionFeature": "PSP readiness within 12 months",
+          "secondOptionFeature": "1–3 international job offers within 120 days"
+        },
+        {
+          "title": "Average Alumni Result",
+          "firstOptionFeature": "Entry into PSP + first international-ready portfolio",
+          "secondOptionFeature": "Contracts from $10K to $15K USD/month"
+        },
+        {
+          "title": "Best For",
+          "firstOptionFeature": "Beginners or professionals starting the path to global opportunities",
+          "secondOptionFeature": "Professionals ready to compete and win in the global market now"
+        }
+      ]
+    },
+    "GoGlobalMethod": {
+      "preTitle": "The Go Global™ Method",
+      "title": "Our proprietary <italic>4-pillar</italic> framework to transition from a national career to <italic>global success</italic>:",
+      "methods": [
+        {
+          "title": "Profile Package",
+          "description": "Optimize LinkedIn, GitHub, CV, and personal brand for global attraction."
+        },
+        {
+          "title": "Interview Engine",
+          "description": "Master mock interviews, live coding, system design, and career storytelling in English."
+        },
+        {
+          "title": "Opportunity Pipeline",
+          "description": "Build an active + passive job pipeline with targeted applications and inbound recruiter interest."
+        },
+        {
+          "title": "Senior Global Playbook",
+          "description": "Long-term career and financial strategy, including equity, tax planning, and relocation options."
+        }
+      ]
+    },
+    "HowItWorks": {
+      "title": "How the <italic>Mentorship</italic> Works?",
+      "items": [
+        { "title": "Duration", "description": "6 or 12 months (choose your plan)" },
+        { "title": "Format", "description": "100% online" },
+        { "title": "Live Sessions", "description": "Bi-weekly strategy calls with direct feedback from Yuri" },
+        { "title": "Expert Mentors", "description": "5 mentors from different backgrounds to run mock interviews and give tailored feedback" },
+        { "title": "Mock Interviews", "description": "Monthly simulations covering the main global interview formats" },
+        { "title": "English Coaching", "description": "3x/week classes from basic to advanced technical fluency" },
+        { "title": "Borderless Platform Access", "description": "All mentees receive a premium account on the Borderless Platform — centralizing community, learning, and networking in one place" },
+        { "title": "Resumé", "description": "High-conversion résumé templates adaptable to strategies reached during the mentorship" },
+        { "title": "Scripts", "description": "Proven scripts, templates, and pipelines to speed up results" }
+      ]
+    },
+    "ResultsYouCanExpect": {
+      "preTitle": "Our alumni report",
+      "title": "<italic>Results</italic> You Can Expect",
+      "results": [
+        { "title": "Fast Results", "description": "First international job offers within 30–90 days" },
+        { "title": "Salary Jump", "description": "Salary jumps to $12K+ USD/month for Tier 3 professionals" },
+        { "title": "Independence", "description": "Confidence to negotiate offers and work globally without third-party dependency" }
+      ],
+      "success": {
+        "title": "Real Success Story",
+        "text": "Thiago, a senior backend developer from Belo Horizonte, already earning $10K USD/month, secured <highlight>an additional $9K USD contract</highlight> in just 27 days of mentorship"
+      }
+    },
+    "WhatIs": {
+      "title": "What is PSP Mentorship?",
+      "description": "The Programador Sem Pátria (PSP) Mentorship is a high-performance career acceleration program designed for experienced Brazilian tech professionals who are ready to play in the global market. Led by Yuri Pereira, founder of Borderless Coding, PSP combines strategic positioning, technical interview mastery, networking, and direct mentorship to create predictable international job offers.",
+      "highlight": "Over 105+ alumni have already landed roles in companies from the US, Canada, Europe, and Asia — many with salaries ranging from $5K to $15K/month."
+    },
+    "WhoIsItFor": {
+      "preTitle": "Who is it for?",
+      "title": "The PSP Mentorship is built for <italic>mid-to-senior-level</italic> tech professionals:",
+      "roles": {
+        "title": "Tech Roles",
+        "items": [
+          "Backend, Fullstack, DevOps",
+          "Cloud Specialists, Data Engineers",
+          "AI Specialists, Blockchain Developers",
+          "Mobile Developers, Infra Engineers",
+          "Tech Leads, Engineering Managers"
+        ]
+      },
+      "requirements": {
+        "title": "Requirements",
+        "items": [
+          "Minimum 3 years of professional experience",
+          "English level: B1 or higher (we help you get to technical fluency)",
+          "Ready to work remotely for international companies",
+          "Earn in USD/EUR/CHF/GBP/AED"
+        ]
+      }
+    },
+    "WhyItWorks": {
+      "preTitle": "Why it works?",
+      "title": "Most career advice for devs is <italic>generic, outdated, or purely theoretical</italic>. The PSP Mentorship gives you:",
+      "features": [
+        "Direct access to a mentor who has personally scaled from $5K to $90K/month in tech contracts",
+        "5 specialized mentors for diverse interview preparation",
+        "A clear, step-by-step system validated with 105+ success stories",
+        "A high-performance community that keeps you accountable"
+      ]
+    }
   }
 }

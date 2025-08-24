@@ -4,8 +4,13 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { RequirementsCard } from "../../ui/RequirementsCard";
 import { SectionHeader } from "../../ui/SectionHeader";
+import { useWhoIsItFor } from "./hooks/useWhoIsItFor";
+import { useRichText } from "@/app/hooks/useRichText";
 
 export function WhoIsItFor() {
+  const { roles, requirements } = useWhoIsItFor();
+  const { t, rich } = useRichText("PspMentorship.WhoIsItFor");
+
   useGSAP(() => {
     gsap.fromTo(
       ".requirements-card",
@@ -27,35 +32,18 @@ export function WhoIsItFor() {
   return (
     <section className="py-[10svh] space-y-8">
       <SectionHeader
-        preTitle="Who is it for?"
-        title={
-          <>
-            The PSP Mentorship is built for{" "}
-            <span className="font-ivy">mid-to-senior-level</span> tech
-            professionals:
-          </>
-        }
+        preTitle={t("preTitle")}
+        title={rich("title")}
       />
 
       <div className="grid md:grid-cols-2 gap-2">
         <RequirementsCard
-          title="Tech Roles"
-          items={[
-            "Backend, Fullstack, DevOps",
-            "Cloud Specialists, Data Engineers",
-            "AI Specialists, Blockchain Developers",
-            "Mobile Developers, Infra Engineers",
-            "Tech Leads, Engineering Managers",
-          ]}
+          title={roles.title}
+          items={roles.items}
         />
         <RequirementsCard
-          title="Requirements"
-          items={[
-            "Minimum 3 years of professional experience",
-            "English level: B1 or higher (we help you get to technical fluency)",
-            "Ready to work remotely for international companies",
-            "Earn in USD/EUR/CHF/GBP/AED",
-          ]}
+          title={requirements.title}
+          items={requirements.items}
         />
       </div>
     </section>

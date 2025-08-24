@@ -1,29 +1,18 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Star, Users } from "lucide-react";
+import { Star } from "lucide-react";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { IconWrapper } from "../../ui/IconWrapper";
 import { SectionHeader } from "../../ui/SectionHeader";
-
-const results = [
-  {
-    title: "Fast Results",
-    description: "First international job offers within 30–90 days",
-  },
-  {
-    title: "Salary Jump",
-    description: "Salary jumps to $12K+ USD/month for Tier 3 professionals",
-  },
-  {
-    title: "Independence",
-    description:
-      "Confidence to negotiate offers and work globally without third-party dependency",
-  },
-];
+import { useResultsYouCanExpect } from "./hooks/useResultsYouCanExpect";
 
 export function ResultsYouCanExpect() {
+  const { rich, t } = useRichText("PspMentorship.ResultsYouCanExpect");
+  const results = useResultsYouCanExpect();
+  
   useGSAP(() => {
     gsap.fromTo(
       ".result-card",
@@ -42,12 +31,8 @@ export function ResultsYouCanExpect() {
   return (
     <section className="py-[10svh] space-y-8">
       <SectionHeader
-        preTitle="Our alumni report"
-        title={
-          <>
-            <span className="font-ivy">Results</span> You Can Expect
-          </>
-        }
+        preTitle={t("preTitle")}
+        title={rich("title")}
       />
 
       <div className="grid lg:grid-cols-3 gap-2">
@@ -57,22 +42,15 @@ export function ResultsYouCanExpect() {
             key={result.title}
             title={result.title}
             description={result.description}
-            icon={Users}
+            icon={result.icon}
           />
         ))}
 
         <div className="result-card bg-tertiary rounded-md flex gap-4 p-8 lg:col-span-3">
           <IconWrapper className="hidden lg:block" icon={Star} />
           <div className="space-y-2">
-            <p className="text-xl font-bold">Real Sucess Story</p>
-            <p className="max-w-6xl text-gray">
-              Thiago, a senior backend developer from Belo Horizonte, already
-              earning $10K USD/month, secured{" "}
-              <span className="text-secondary">
-                an additional $9K USD contract
-              </span>{" "}
-              in just 27 days of mentorship
-            </p>
+            <p className="text-xl font-bold">{t("success.title")}</p>
+            <p className="max-w-6xl text-gray">{rich("success.text")}</p>
           </div>
         </div>
       </div>
