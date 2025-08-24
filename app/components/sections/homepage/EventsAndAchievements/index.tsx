@@ -3,32 +3,13 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
-import { AnimatedText } from "../../ui/AnimatedText";
-import { Carousel, CarouselContent, CarouselItem } from "../../ui/Carousel";
-
-const events = [
-  {
-    description:
-      "Primeira borderless conf São Paulo, Brasil, para mais de 70 convidados",
-    src: "/events/conference.webp",
-  },
-  {
-    description:
-      "Entrevista do Nosso founder, Yuri Pereira, para a revista Entrepreneur em Dubai, UAE ",
-    src: "/events/interview.webp",
-  },
-  {
-    description: "Brainstorm durante uma hackthon de AI na frança",
-    src: "/events/brainstorm.webp",
-  },
-  {
-    description:
-      "Mentorados da borderless receberam o segundo lugar na hackathon da EthCC em Cannes, França",
-    src: "/events/hackthon.webp",
-  },
-];
+import { AnimatedText } from "../../../ui/AnimatedText";
+import { Carousel, CarouselContent, CarouselItem } from "../../../ui/Carousel";
+import { useGetEventsAndAchievements } from "./hooks/useGetEventsAndAchievements";
 
 export function EventsAndAchievements() {
+  const events = useGetEventsAndAchievements();
+
   useGSAP(() => {
     gsap.fromTo(
       ".event-card",

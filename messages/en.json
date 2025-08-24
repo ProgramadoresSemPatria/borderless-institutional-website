@@ -166,6 +166,20 @@
         "alex": "Mentor/Investor Web3",
         "thiago": "Mentor/Head AI"
       }
+    },
+    "HelpSection": {
+      "title": "How can we help you?",
+      "description": "We offer a complete ecosystem of solutions for developers, startups, and companies looking for top tech professionals.",
+      "mentorship": "Mentorship",
+      "incubator": "Incubator",
+      "platform": "Platform",
+      "community": "Community"
+    },
+    "EventsAndAchievements": {
+      "event1": "First Borderless conference in São Paulo, Brazil, with over 70 guests",
+      "event2": "Interview of our founder, Yuri Pereira, for Entrepreneur magazine in Dubai, UAE",
+      "event3": "Brainstorm during an AI hackathon in France",
+      "event4": "Borderless mentees won second place at the EthCC hackathon in Cannes, France"
     }
   }
 }
