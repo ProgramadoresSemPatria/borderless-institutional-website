@@ -1,12 +1,17 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ClockIcon } from "lucide-react";
-import { SectionHeader } from "../../../ui/SectionHeader";
-import { Module, modules } from "./constants/modules";
+import { useTranslations } from "next-intl";
+import { SectionHeader } from "../../ui/SectionHeader";
+import { useModulesOverview } from "./hooks/useModulesOverview";
 
 export function ModulesOverview() {
+  const { header, modules } = useModulesOverview();
+  const { rich } = useRichText("BootcampWeb3.ModulesOverview");
+
   useGSAP(() => {
     gsap.utils.toArray<HTMLElement>(".module-overview-card").forEach((card) => {
       gsap.fromTo(
@@ -28,15 +33,7 @@ export function ModulesOverview() {
 
   return (
     <section className="space-y-8">
-      <SectionHeader
-        preTitle="Modules Overview"
-        title={
-          <>
-            A comprehensive 12-week journey from blockchain fundamentals to
-            <span className="font-ivy">advanced Web3 development</span>
-          </>
-        }
-      />
+      <SectionHeader preTitle={header.preTitle} title={rich(header.titleKey)} />
 
       <div className="flex flex-col gap-8">
         {modules.map((module, index) => (
@@ -52,14 +49,18 @@ function ModuleOverview({
   weeks,
   goal,
   index,
-}: Module & { index: number }) {
+}: {
+  title: string;
+  weeks: { title: string; content: string[]; length: string; extra?: string }[];
+  goal: string;
+  index: number;
+}) {
+  const t = useTranslations("BootcampWeb3.ModulesOverview");
   return (
     <div className="module-overview-card bg-tertiary rounded-md p-2 space-y-4">
       <div className="space-y-2 p-4">
         <p className="text-xl font-medium">
-          <span className="font-bold font-ivy text-secondary">
-            Module {index + 1}:
-          </span>{" "}
+          <span className="font-bold font-ivy text-secondary">{t("moduleLabel")} {index + 1}:</span>{" "}
           {title}
         </p>
         <p className="text-gray">{goal}</p>
@@ -67,10 +68,7 @@ function ModuleOverview({
 
       <div className="grid lg:grid-cols-2 gap-2">
         {weeks.map((week) => (
-          <div
-            key={week.title}
-            className="flex flex-col bg-[#232322] rounded-md p-4 space-y-6"
-          >
+          <div key={week.title} className="flex flex-col bg-[#232322] rounded-md p-4 space-y-6">
             <div className="flex flex-col-reverse md:flex-row justify-between gap-2">
               <p className="font-medium">{week.title}</p>
               <div className="flex items-center gap-2 text-gray">
@@ -81,10 +79,7 @@ function ModuleOverview({
 
             <ul className="space-y-2 grow">
               {week.content.map((content, index) => (
-                <li
-                  key={`${content[0]}-${index}`}
-                  className="flex items-center gap-4 text-gray"
-                >
+                <li key={`${content}-${index}`} className="flex items-center gap-4 text-gray">
                   <div className="bg-primary shrink-0 size-1.5 rounded-full" />
                   <p className="text-sm md:text-base">{content}</p>
                 </li>

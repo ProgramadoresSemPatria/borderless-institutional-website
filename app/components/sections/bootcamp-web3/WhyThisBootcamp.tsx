@@ -5,37 +5,13 @@ import gsap from "gsap";
 import { Award, Code2, Globe, Users, Zap } from "lucide-react";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
+import { useTranslations } from "next-intl";
+import RichText from "@/app/components/ui/RichText";
 
-const features = [
-  {
-    title: "Intensive & Practical",
-    description: "12 weeks, 100% online, 8–12 hours per week",
-    icon: Zap,
-  },
-  {
-    title: "Global Perspective",
-    description:
-      "Mentors from across Web3 ecosystems (Ethereum, Solana, Cosmos)",
-    icon: Globe,
-  },
-  {
-    title: "Project-First Learning",
-    description: "Deploy dApps, protocols, and integrations from week one",
-    icon: Code2,
-  },
-  {
-    title: "Proof of Graduation",
-    description: "NFT-backed certification issued on-chain",
-    icon: Award,
-  },
-  {
-    title: "Community & Networking",
-    description: "Join a global network of developers, founders, and investors",
-    icon: Users,
-  },
-];
+const icons = [Zap, Globe, Code2, Award, Users];
 
 export function WhyThisBootcamp() {
+  const t = useTranslations("BootcampWeb3.WhyThisBootcamp");
   useGSAP(() => {
     gsap.fromTo(
       ".bootcamp-feature-card",
@@ -54,17 +30,16 @@ export function WhyThisBootcamp() {
   return (
     <section className="space-y-8 py-[10svh]">
       <SectionHeader
-        preTitle="Why This Bootcamp?"
-        title={
-          <>
-            The most comprehensive and practical Web3 development program
-            designed for <span className="font-ivy">global success</span>
-          </>
-        }
+        preTitle={t("preTitle")}
+        title={<RichText>{(tags) => t.rich("title", { ...tags })}</RichText>}
       />
 
       <div className="grid md:grid-cols-2 2xl:grid-cols-3 gap-2">
-        {features.map((features) => (
+        {Array.from({ length: 5 }, (_, i) => ({
+          title: t(`features.${i}.title`),
+          description: t(`features.${i}.description`),
+          icon: icons[i],
+        })).map((features) => (
           <FeatureCard
             key={features.title}
             title={features.title}

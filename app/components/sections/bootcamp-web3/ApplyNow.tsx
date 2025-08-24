@@ -1,14 +1,18 @@
+"use client";
+
 import { ExternalLink } from "../../ui/ExternalLink";
 import { FullWidthCard } from "../../ui/FullWidthCard";
+import { useTranslations } from "next-intl";
 
 export function ApplyNow() {
+  const t = useTranslations("BootcampWeb3.ApplyNow");
   return (
     <section className="pb-[15svh]">
       <FullWidthCard
-        title="Apply Now"
-        description="Spots are limited to ensure a high-quality experience with direct mentorship. If you want to master Web3 and join a global network of builders, apply today."
+        title={t("title")}
+        description={t("description")}
       >
-        <ExternalLink>Apply for the Next Cohort</ExternalLink>
+        <ExternalLink>{t("cta")}</ExternalLink>
       </FullWidthCard>
     </section>
   );

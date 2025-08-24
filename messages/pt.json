@@ -373,6 +373,196 @@
       ]
     }
   },
+  "BootcampWeb3": {
+    "HeroSection": {
+      "title": "Torne-se um <colorful>Web3 Global Developer</colorful> em 12 semanas",
+      "subtitle": "Bootcamp intensivo e prático para desenvolver habilidades reais em Web3 — dos fundamentos de blockchain ao deploy de dApps de produção.",
+      "cta": "Aplicar para a Próxima Turma"
+    },
+    "BootcampComparator": {
+      "preTitle": "Por que escolher o Borderless Bootcamp?",
+      "title": "Compare nosso <italic>bootcamp</italic> com um curso online genérico",
+      "firstOptionTitle": "Borderless Web3 Bootcamp",
+      "secondOptionTitle": "Curso Online genérico",
+      "features": [
+        { "title": "Estilo de Aprendizado", "first": "Programa imersivo de 12 semanas, em cohort", "second": "Auto-ritmo, aulas gravadas" },
+        { "title": "Currículo", "first": "Web3 full-stack: Solidity, Rust, Cosmos, DeFi, NFTs, integrações com IA", "second": "Foco estreito, geralmente limitado a uma linguagem ou tópico" },
+        { "title": "Projetos", "first": "Vários builds práticos + Projeto final em equipe (Demo Day)", "second": "Exercícios pequenos ou tutoriais, sem projetos de portfólio" },
+        { "title": "Mentoria", "first": "Acesso direto a mentores da indústria, feedback e mock interviews", "second": "Sem mentoria, apenas conteúdo pré-gravado" },
+        { "title": "Comunidade", "first": "Rede ativa com 500+ developers e founders globais", "second": "Estudo solo, sem accountability da comunidade" },
+        { "title": "Certificação", "first": "Comprovante de graduação on-chain com NFT", "second": "Certificado PDF padrão" },
+        { "title": "Portfólio", "first": "dApps prontos para GitHub em múltiplos ecossistemas (Ethereum, Solana, Cosmos)", "second": "Limitado, geralmente repositórios baseados em tutoriais" },
+        { "title": "Networking", "first": "Exposição no Demo Day + conexões com investidores/founders", "second": "Nenhum" },
+        { "title": "Prontidão Global", "first": "Foco em padrões internacionais, comunicação em inglês e trabalho remoto", "second": "Localizado, não adaptado para carreira global" },
+        { "title": "Resultados", "first": "Aceleração de carreira + possibilidade de incubação de startup", "second": "Apenas conhecimento, sem resultados de carreira estruturados" }
+      ]
+    },
+    "ResultsYouCanExpect": {
+      "preTitle": "Resultados que você pode esperar",
+      "title": "Alunos do bootcamp <italic>tipicamente</italic>:",
+      "results": [
+        { "title": "Publicam dApps reais", "description": "Constroem e fazem deploy de aplicações descentralizadas ponta a ponta com ferramentas modernas" },
+        { "title": "Dominam o stack Web3", "description": "Entendem as camadas: protocolos, smart contracts, indexação e frontends" },
+        { "title": "Portfólio que se destaca", "description": "Um GitHub com projetos relevantes para recrutadores e founders" },
+        { "title": "Oportunidades globais", "description": "Ficam posicionados para vagas e bounties em times Web3 internacionais" }
+      ]
+    },
+    "WhyThisBootcamp": {
+      "preTitle": "Por que este bootcamp?",
+      "title": "O que torna este programa <italic>diferente</italic>",
+      "features": [
+        { "title": "Intenso e prático", "description": "Sprints rápidos focados em construir, entregar e aprender fazendo" },
+        { "title": "Mentalidade global-first", "description": "Conteúdo, projetos e feedback alinhados às expectativas internacionais" },
+        { "title": "Código nível produção", "description": "Dos contratos aos frontends, com qualidade, testes e padrões reais" },
+        { "title": "Foco em resultados", "description": "Projetos pensados para gerar sinal de portfólio e destravar entrevistas" },
+        { "title": "Comunidade e mentores", "description": "Apoio de uma comunidade de alta performance e mentores experientes" }
+      ]
+    },
+    "WhoShouldJoin": {
+      "preTitle": "Para quem é?",
+      "title": "Este bootcamp foi feito para <italic>profissionais de tecnologia ambiciosos</italic> prontos para entrar em Web3",
+      "audience": [
+        { "title": "Developers (Backend/Fullstack)", "description": "Prontos para expandir para blockchain/Web3" },
+        { "title": "Startup Builders & Empreendedores", "description": "Explorando tecnologias descentralizadas" },
+        { "title": "Pesquisadores/Alunos", "description": "Que querem um treinamento Web3 estruturado e prático" }
+      ],
+      "requirements": {
+        "title": "Requisitos mínimos",
+        "items": [
+          "1 ano de experiência com qualquer linguagem de programação",
+          "Inglês intermediário (as aulas são conduzidas em inglês)"
+        ]
+      }
+    },
+    "ModulesOverview": {
+      "preTitle": "Visão Geral dos Módulos",
+      "title": "Uma jornada completa de 12 semanas, dos fundamentos de blockchain ao <italic>desenvolvimento Web3 avançado</italic>",
+      "moduleLabel": "Módulo",
+      "modules": [
+        {
+          "title": "Fundamentos de Web3 (Semanas 1-4)",
+          "goal": "Conhecimento conceitual sobre registros descentralizados e criptoativos",
+          "weeks": [
+            {
+              "title": "Semana 1: Blockchain e Fundamentos de Cripto",
+              "content": [
+                "Blocks, chains, hashing, signatures, Merkle Trees",
+                "PoW vs PoS consensus",
+                "Bitcoin & UTXO model"
+              ],
+              "length": "4h",
+          "extra": "📖 Self-study: Satoshi Whitepaper"
+            },
+            {
+              "title": "Semana 2: Ethereum, EVM e Smart Contracts",
+              "content": [
+               "Ethereum accounts, transactions, gas",
+               "Solidity intro"
+              ],
+              "length": "6h",
+              "extra": "💻 Tarefa: Deploy do 'Hello World' com Remix IDE"
+            },
+            {
+              "title": "Weeks 3–4: Token Standards + Core Primitives",
+              "content": [
+                "ERC-20, ERC-721, ERC-1155",
+                "Oracles, IPFS, Arweave, Filecoin",
+                "L2 vs L3 (Arbitrum, Optimism, StarkNet, zkSync)",
+                "ZK proofs: SNARKs vs STARKs"
+              ],
+              "length": "5h",
+              "extra": "✅ Mini Projeto: Deploy de ERC-20 + frontend básico em testnet L2"
+            }
+          ]
+        },
+        {
+          "title": "Trilhas de Desenvolvimento (Semanas 5-8)",
+          "goal": "Sair da teoria para construir lógica on-chain",
+          "weeks": [
+            {
+              "title": "Solidity (40%)",
+              "content": [
+                "Advanced patterns & security (reentrancy, overflow)",
+                "DeFi primitives: AMMs, lending, staking"
+              ],
+              "length": "12h",
+              "extra": "💻 Build: Token swap dApp + DAO voting contract"
+            },
+            {
+              "title": "Rust (40%) – Foco em Solana",
+              "content": [
+               "Anchor framework & Solana accounts model"
+              ],
+              "length": "12h",
+             "extra": "💻 Build: NFT minting + auction dApp"
+            },
+            {
+              "title": "GoLang (10%) – Introdução a Cosmos",
+              "content": [
+                 "Tendermint / Cosmos SDK basics"
+              ],
+              "length": "3h",
+              "extra": "💻 Build: Minimal blockchain node"
+            },
+            {
+              "title": "Front-end Integration (10%)",
+              "content": [
+                "Wallets (MetaMask, Phantom), events, transactions",
+                "Ethers.js, Web3.js"
+              ],
+              "length": "3h",
+              "extra": "💻 Mini projeto: Cross-chain dApp or protocol simulator"
+            }
+          ]
+        },
+        {
+          "title": "Ecossistema e Fronteira (Semanas 9-12)",
+          "goal": "Explorar aplicações práticas e direções futuras",
+          "weeks": [
+            {
+              "title": "Semana 9: DeFi + NFTs",
+              "content": [
+                "AMMs, stablecoins, staking",
+                 "NFT metadata, royalties, marketplaces"
+              ],
+              "length": "5h"
+            },
+            {
+              "title": "Semana 10: Setores Emergentes de Web3",
+              "content": [
+               "DePIN (Helium, Render, Akash)",
+                "DeSci (VitaDAO, Molecule)",
+                "Meme tokens & culture"
+              ],
+              "length": "2h"
+            },
+            {
+              "title": "Semana 11: IA em Web3",
+              "content": [
+               "Bittensor, Ocean, autonomous agents",
+                "Prompt engineering meets smart contracts"
+              ],
+              "length": "5h"
+            },
+            {
+              "title": "Semana 12: Sprint do Projeto Final",
+              "content": [
+                "Teams of 3 build a full-stack dApp in chosen vertical (DeFi, DeSci, AI, GameFi, DePIN, NFT, Meme)",
+                "Demo Day (3h) + GitHub submission",
+                "NFT-backed certificate of graduation"
+              ],
+              "length": "Semana de Sprint"
+            }
+          ]
+        }
+      ]
+    },
+    "ApplyNow": {
+      "title": "Aplicar Agora",
+      "description": "Vagas limitadas para garantir acompanhamento prático e feedback de qualidade. Se você quer entrar em times globais de Web3, aplique hoje.",
+      "cta": "Aplicar para a Próxima Turma"
+    }
+  },
   "PspMentorship": {
     "HeroSection": {
       "title": "De Talento Local a <colorful>Profissional Global</colorful> - em 90 dias",

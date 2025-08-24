@@ -5,34 +5,13 @@ import gsap from "gsap";
 import { Award, Code2, Github, Layers } from "lucide-react";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
+import { useTranslations } from "next-intl";
+import RichText from "@/app/components/ui/RichText";
 
-export const results = [
-  {
-    title: "Multi-chain dApps",
-    description:
-      "Build and deploy multiple dApps across Ethereum, Solana, and Cosmos",
-    icon: Code2,
-  },
-  {
-    title: "Hands-on Web3",
-    description:
-      "Gain hands-on experience in DeFi, NFTs, DAOs, ZK proofs, and AI-Web3 integration",
-    icon: Layers,
-  },
-  {
-    title: "Portfolio Ready",
-    description:
-      "Have a GitHub-ready portfolio of projects and a demo-day presentation",
-    icon: Github,
-  },
-  {
-    title: "NFT Certificate",
-    description: "Earn an NFT certificate recognized globally",
-    icon: Award,
-  },
-];
+const icons = [Code2, Layers, Github, Award];
 
 export function ResultsYouCanExpect() {
+  const t = useTranslations("BootcampWeb3.ResultsYouCanExpect");
   useGSAP(() => {
     gsap.fromTo(
       ".result-card",
@@ -51,17 +30,16 @@ export function ResultsYouCanExpect() {
   return (
     <section className="py-[10svh] space-y-8">
       <SectionHeader
-        preTitle="Outcomes You Can Expect"
-        title={
-          <>
-            By the end of the <span className="font-ivy">bootcamp</span>,
-            participants will:
-          </>
-        }
+        preTitle={t("preTitle")}
+        title={<RichText>{(tags) => t.rich("title", { ...tags })}</RichText>}
       />
 
       <div className="grid lg:grid-cols-2 gap-2">
-        {results.map((result) => (
+        {Array.from({ length: 4 }, (_, i) => ({
+          title: t(`results.${i}.title`),
+          description: t(`results.${i}.description`),
+          icon: icons[i],
+        })).map((result) => (
           <FeatureCard
             className="result-card"
             key={result.title}
