@@ -121,6 +121,33 @@
           "testimony": "Name: Thiago Valverde de Souza\nPrevious role: Backend Developer\nSalary before mentorship: USD 13k\nCurrent role: Web3 Developer / Backend Developer\nCurrent salary: $22k\nExperience: 24 years old\nMentorship length: 1 month\nStrategies: Job through applications. Created some repos but didn’t share on code up yet.\n4 hours/day applying with customized CV and cover letter.\nWeb3 study, aligning speech to get a job abroad - Self learner talking about other career shifts.\nIn 1 month there were 19 processes where I passed the initial screening, 3 offers declined because they were not the desired rate or were web2."
         }
       ]
+    },
+    "StartupIncubator": {
+      "title": "Within the <italic>ecosystem</italic> members can look for <italic>partners</italic> to start businesses together or seek <italic>investors</italic>",
+      "subtitle": "What is the startup incubator like?",
+      "caption": "(In the photo above, our SaaS acts as a Super-App encompassing everything from social network to member area)"
+    },
+    "GlobalTalentConnector": {
+      "title": "The only company connecting developers with global companies WITHOUT FEES",
+      "description": "Full-stack, ML Engineer, GoLang Dev and more",
+      "cta": "Hire a professional"
+    },
+    "IncubatedStartups": {
+      "title": "Startups in <italic>Incubation</italic>:",
+      "startups": [
+        {
+          "src": "/startups/rampix.png",
+          "title": "Rampix",
+          "description": "A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure.",
+          "buttonText": "Learn more"
+        },
+        {
+          "src": "/startups/borderless-community.webp",
+          "title": "Borderless Community",
+          "description": "The super app from Borderless Coding: combining social network, members area, and forum for global tech professionals.",
+          "buttonText": "Members Only"
+        }
+      ]
     }
   }
 }

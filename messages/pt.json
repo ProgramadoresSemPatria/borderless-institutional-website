@@ -121,6 +121,33 @@
           "testimony": "Nome: Thiago Valverde de Souza\nVaga anterior: Backend Developer\nQuanto ganhava antes da mentoria: USD 13k\nVaga Atual: Web3 Developer / Backend Developer\nSalário atual: $22k\nExperiência: 24 anos\nTempo de mentoria: 1 mês\nEstratégias: Vaga através de aplicações. Criei alguns repos mas não compartilhei no code up ainda.\n4 horas por dia de aplicação com currículo e cover letter personalizados.\nEstudo de Web3, Alinhamento do discurso para conseguir uma vaga fora do meu domínio - Self learner falando sobre outros career shifts.\nEm 1 mês foram 19 processos onde passei do initial screening, 3 offers recusadas pois não eram do rate desejado ou eram web2."
         }
       ]
+    },
+    "StartupIncubator": {
+      "title": "Dentro do <italic>ecossistema</italic> os membros podem buscar desde <italic>parceiros</italic> para iniciar negócios juntos até buscar <italic>investidores</italic>",
+      "subtitle": "Como é a incubadora de startups ?",
+      "caption": "(Na foto acima é o nosso SaaS que atua como um Super-App englobando desde rede social a área de membros)"
+    },
+    "GlobalTalentConnector": {
+      "title": "A única empresa que conecta developers com empresas globais SEM TAXA",
+      "description": "Full-stack, ML Engineer, GoLang Dev e muito mais",
+      "cta": "Contratar um profissional"
+    },
+    "IncubatedStartups": {
+      "title": "Startups em <italic>Incubação</italic>:",
+      "startups": [
+        {
+          "src": "/startups/rampix.png",
+          "title": "Rampix",
+          "description": "Uma exchange 100% brasileira para comprar e vender criptomoedas via PIX, rápido e seguro.",
+          "buttonText": "Saiba mais"
+        },
+        {
+          "src": "/startups/borderless-community.webp",
+          "title": "Borderless Community",
+          "description": "O super app da Borderless Coding: combinando rede social, área de membros e fórum para profissionais globais de tecnologia.",
+          "buttonText": "Exclusivo para membros"
+        }
+      ]
     }
   }
 }

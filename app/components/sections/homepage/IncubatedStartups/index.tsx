@@ -2,29 +2,15 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Bitcoin, Users, Zap } from "lucide-react";
+import { Zap } from "lucide-react";
 import Image from "next/image";
-import { AnimatedText } from "../../ui/AnimatedText";
-import { ExternalLink } from "../../ui/ExternalLink";
-
-const startups = [
-  {
-    src: "/startups/rampix.png",
-    title: "Rampix",
-    description:
-      "Exchange 100% brasileira para comprar e vender criptomoedas via Pix, de maneira rápida e segura.",
-    icon: Bitcoin,
-  },
-  {
-    src: "/startups/borderless-community.webp",
-    title: "Borderless Community",
-    description: "Super-app Borderless Coding",
-    buttonText: "Exclusivo para membros",
-    icon: Users,
-  },
-];
+import { AnimatedText } from "../../../ui/AnimatedText";
+import { ExternalLink } from "../../../ui/ExternalLink";
+import { useIncubatedStartups } from "./hooks/useIncubatedStartups";
 
 export function IncubatedStartups() {
+  const { title, startups } = useIncubatedStartups();
+
   useGSAP(() => {
     gsap.fromTo(
       ".startup-card",
@@ -45,9 +31,7 @@ export function IncubatedStartups() {
 
   return (
     <section className="py-[10svh] space-y-6 incubated-startups-section  border-b border-solid border-white/20 ">
-      <AnimatedText as="h2">
-        Startups em <span className="font-ivy">Incubação</span>{" "}
-      </AnimatedText>
+      <AnimatedText as="h2">{title}</AnimatedText>
       <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/20 rounded-full px-4 py-2 mb-6">
         <Zap className="w-4 h-4 text-purple-400" />
         <span className="text-purple-300 text-sm font-medium">
@@ -79,7 +63,7 @@ export function IncubatedStartups() {
             </div>
 
             <div className="w-full flex justify-end">
-              <ExternalLink>{startup.buttonText || "Visitar"}</ExternalLink>
+              <ExternalLink>{startup.buttonText}</ExternalLink>
             </div>
           </div>
         ))}

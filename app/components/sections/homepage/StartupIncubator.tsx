@@ -1,5 +1,6 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import { AnimatedGrid } from "../../ui/AnimatedGrid";
 import { AnimatedText } from "../../ui/AnimatedText";
 
 export function StartupIncubator() {
+  const { t, rich } = useRichText("HomePage.StartupIncubator");
+
   useGSAP(() => {
     gsap.fromTo(
       ".borderless-app",
@@ -32,16 +35,11 @@ export function StartupIncubator() {
       <div className="space-y-4">
         <div className="flex items-center gap-2">
           <span className="size-2 bg-primary rounded-full" />
-          <p className="text-sm md:text-xl font-medium">
-            Como é a incubadora de startups ?
-          </p>
+          <p className="text-sm md:text-xl font-medium">{t("subtitle")}</p>
         </div>
 
         <AnimatedText className="text-2xl md:text-4xl 2xl:text-5xl font-semibold leading-snug md:leading-tight">
-          Dentro do <span className="font-ivy">ecossistema</span> os membros
-          podem buscar desde <span className="font-ivy">parceiros</span> para
-          iniciar negócios juntos até buscar{" "}
-          <span className="font-ivy">investidores</span>
+          {rich("title")}
         </AnimatedText>
       </div>
 
@@ -53,10 +51,7 @@ export function StartupIncubator() {
           src={"/super-app-borderless.webp"}
           alt="borderless app"
         />
-        <p className="text-xs md:text-base font-medium">
-          (Na foto acima é o nosso SaaS que atua como um Super-App englobando
-          desde rede social a área de membros)
-        </p>
+        <p className="text-xs md:text-base font-medium">{t("caption")}</p>
 
         <div className="absolute left-0 -translate-x-1/2 -translate-y-1/4 z-[-1]">
           <AnimatedGrid />

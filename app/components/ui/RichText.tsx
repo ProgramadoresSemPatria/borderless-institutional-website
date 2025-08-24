@@ -8,7 +8,7 @@ type Props = {
 
 export default function RichText({ children }: Props) {
   return (
-    <div className="prose">
+    <>
       {children({
         colorful: (chunks: ReactNode) => (
           <span className="font-ivy text-secondary">{chunks}</span>
@@ -17,6 +17,6 @@ export default function RichText({ children }: Props) {
           <span className="font-ivy">{chunks}</span>
         ),
       })}
-    </div>
+    </>
   );
 }

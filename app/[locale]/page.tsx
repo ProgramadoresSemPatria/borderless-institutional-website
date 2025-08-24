@@ -1,11 +1,11 @@
 import { setRequestLocale } from "next-intl/server";
-import { IncubatedStartups } from "../components/sections/expansion/IncubatedStartups";
 import { AccelerationPrograms } from "../components/sections/homepage/AccelerationPrograms";
 import { EventsAndAchievements } from "../components/sections/homepage/EventsAndAchievements";
 import { GlobalTalentConnector } from "../components/sections/homepage/GlobalTalentConnector";
 import { GuaranteeSection } from "../components/sections/homepage/GuaranteeSection";
 import { HelpSection } from "../components/sections/homepage/HelpSection";
 import { HeroSection } from "../components/sections/homepage/HeroSection";
+import { IncubatedStartups } from "../components/sections/homepage/IncubatedStartups";
 import { OurHistory } from "../components/sections/homepage/OurHistory";
 import { OurServices } from "../components/sections/homepage/OurServices";
 import { OurTeam } from "../components/sections/homepage/OurTeam";
