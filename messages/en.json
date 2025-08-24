@@ -1,0 +1,12 @@
+{
+  "HomePage": {
+    "HeroSection": {
+      "logoAlt": "logo",
+      "TopSection": {
+        "tagline": "Global tech starts here",
+        "headline": "The bridge between <highlight>Brazilian tech talents</highlight> and the <highlight>international market</highlight> — with educational products, our own platform, and incubated startups.",
+        "button": "I want to internationalize"
+      }
+    }
+  }
+}

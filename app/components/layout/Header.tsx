@@ -1,10 +1,10 @@
 "use client";
 
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import { IconWrapper } from "../ui/IconWrapper";
 
@@ -40,7 +40,13 @@ const links = [
 ];
 
 export function Header() {
+  const pathname = usePathname();
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const changeLocale = (locale: string) => {
+    router.replace(pathname, { locale });
+  };
 
   useGSAP(() => {
     gsap.from(".header-buttons-container", {
@@ -85,6 +91,21 @@ export function Header() {
                 {link.title}
               </Link>
             ))}
+
+            <div className="flex gap-2">
+              <button
+                className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer"
+                onClick={() => changeLocale("pt")}
+              >
+                PT-BR
+              </button>
+              <button
+                className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer"
+                onClick={() => changeLocale("en")}
+              >
+                US-EN
+              </button>
+            </div>
           </div>
         )}
       </div>
