@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
 import { Montserrat } from "next/font/google";
 import localFont from "next/font/local";
 import { GSAPWrapper } from "./components/features/wrappers/GSAPWrapper";
@@ -31,9 +32,13 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} ${ivyPresto.variable} antialiased`}
       >
-        <Header />
-        <GSAPWrapper>{children}</GSAPWrapper>
-        <Footer />
+        <NextIntlClientProvider>
+          <GSAPWrapper>
+            <Header />
+            {children}
+            <Footer />
+          </GSAPWrapper>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
