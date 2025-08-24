@@ -1,35 +1,16 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Code, Smartphone, Users, Video } from "lucide-react";
-import { AnimatedText } from "../../ui/AnimatedText";
-import { FeatureCard } from "../../ui/FeatureCard";
-
-const features = [
-  {
-    icon: Code,
-    title: "Aulas de implementação",
-    description: "Aprenda fazendo com projetos práticos e reais",
-  },
-  {
-    icon: Users,
-    title: "Comunidade & Networking",
-    description: "Rede de contatos global para sua carreira",
-  },
-  {
-    icon: Video,
-    title: "Encontros ao vivo",
-    description: "Interação direta com mentores especialistas",
-  },
-  {
-    icon: Smartphone,
-    title: "Mini-apps para acompanhamento",
-    description: "Tecnologia para acompanhar sua evolução",
-  },
-];
+import { AnimatedText } from "../../../ui/AnimatedText";
+import { FeatureCard } from "../../../ui/FeatureCard";
+import { useGuaranteeFeatures } from "./hooks/useGuaranteeFeatures";
 
 export function GuaranteeSection() {
+  const { rich } = useRichText("HomePage.GuaranteeSection");
+  const features = useGuaranteeFeatures();
+
   useGSAP(() => {
     gsap.fromTo(
       ".feature-card",
@@ -51,8 +32,7 @@ export function GuaranteeSection() {
   return (
     <section className="py-[10svh] space-y-6">
       <AnimatedText as="h2" className="max-w-5xl">
-        Consiga um <span className="font-ivy">emprego</span> em tech ou seu{" "}
-        <span className="font-ivy">dinheiro de volta</span>
+        {rich("title")}
       </AnimatedText>
 
       <div className="grid md:grid-cols-2 xl:grid-cols-2 gap-2">

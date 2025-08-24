@@ -69,6 +69,58 @@
           }
         }
       }
+    },
+    "GuaranteeSection": {
+      "title": "Consiga um <italic>emprego</italic> em tech ou seu <italic>dinheiro de volta</italic>",
+      "features": {
+        "implementation": {
+          "title": "Aulas de implementação",
+          "description": "Aprenda fazendo com projetos práticos e reais"
+        },
+        "community": {
+          "title": "Comunidade & Networking",
+          "description": "Rede de contatos global para sua carreira"
+        },
+        "live": {
+          "title": "Encontros ao vivo",
+          "description": "Interação direta com mentores especialistas"
+        },
+        "miniapps": {
+          "title": "Mini-apps para acompanhamento",
+          "description": "Tecnologia para acompanhar sua evolução"
+        }
+      }
+    },
+    "Testimonials": {
+      "title": "<italic>105+ Cases de sucesso</italic> – profissionais agora trabalhando nos EUA, Europa e Ásia.",
+      "list": [
+        {
+          "img": "/testimonials/arthur.png",
+          "name": "Caíque",
+          "role": "Mentorado da PSP",
+          "iframeSrc": "https://player.vimeo.com/video/1108946498?h=3f9f4bb648&api=1",
+          "description": "Saiu de 8k BRL do Brasil para mais de 60k BRL (11k usd/month) em 6 meses."
+        },
+        {
+          "img": "/testimonials/arthur.png",
+          "name": "Lucas",
+          "role": "Mentorado da PSP",
+          "iframeSrc": "https://player.vimeo.com/video/1108946473?h=669d1e58ee&api=1",
+          "description": "Saiu de 3k BRL do Brasil para mais de 25k BRL (5k usd/month + equity em uma startup no AZ, USA)."
+        },
+        {
+          "img": "/testimonials/arthur.png",
+          "name": "Arthur Duarte",
+          "role": "Mentorado da Base",
+          "testimony": "Esqueça o mercado de ações – invista seu dinheiro em acesso a pessoas e conhecimento, em vez disso.\nNo ano passado, paguei para participar de uma comunidade de programação com outros desenvolvedores brasileiros, e isso mudou completamente a minha vida.\nEstar perto de pessoas diferentes que tinham os mesmos objetivos e procuravam as mesmas coisas me fez perceber o quanto a comunidade e a orientação certa são importantes.\nSinto de verdade que pagar pelo acesso a pessoas é o melhor investimento que você pode fazer.\nColoque seu dinheiro em conhecimento e acesso a pessoas e lugares."
+        },
+        {
+          "img": "/testimonials/thiago.png",
+          "name": "Thiago Valverde",
+          "role": "Mentorado da PSP",
+          "testimony": "Nome: Thiago Valverde de Souza\nVaga anterior: Backend Developer\nQuanto ganhava antes da mentoria: USD 13k\nVaga Atual: Web3 Developer / Backend Developer\nSalário atual: $22k\nExperiência: 24 anos\nTempo de mentoria: 1 mês\nEstratégias: Vaga através de aplicações. Criei alguns repos mas não compartilhei no code up ainda.\n4 horas por dia de aplicação com currículo e cover letter personalizados.\nEstudo de Web3, Alinhamento do discurso para conseguir uma vaga fora do meu domínio - Self learner falando sobre outros career shifts.\nEm 1 mês foram 19 processos onde passei do initial screening, 3 offers recusadas pois não eram do rate desejado ou eram web2."
+        }
+      ]
     }
   }
 }

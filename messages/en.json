@@ -69,6 +69,58 @@
           }
         }
       }
+    },
+    "GuaranteeSection": {
+      "title": "Get a <italic>tech job</italic> or your <italic>money back</italic>",
+      "features": {
+        "implementation": {
+          "title": "Implementation classes",
+          "description": "Learn by doing with real practical projects"
+        },
+        "community": {
+          "title": "Community & Networking",
+          "description": "Global network to grow your career"
+        },
+        "live": {
+          "title": "Live sessions",
+          "description": "Direct interaction with expert mentors"
+        },
+        "miniapps": {
+          "title": "Mini-apps for tracking",
+          "description": "Technology to track your progress"
+        }
+      }
+    },
+    "Testimonials": {
+      "title": "<italic>105+ Success Stories</italic> – professionals now working in the US, Europe, and Asia.",
+      "list": [
+        {
+          "img": "/testimonials/arthur.png",
+          "name": "Caíque",
+          "role": "PSP mentee",
+          "iframeSrc": "https://player.vimeo.com/video/1108946498?h=3f9f4bb648&api=1",
+          "description": "Went from 8k BRL in Brazil to over 60k BRL (11k usd/month) in 6 months."
+        },
+        {
+          "img": "/testimonials/arthur.png",
+          "name": "Lucas",
+          "role": "PSP mentee",
+          "iframeSrc": "https://player.vimeo.com/video/1108946473?h=669d1e58ee&api=1",
+          "description": "Went from 3k BRL in Brazil to over 25k BRL (5k usd/month + equity in a startup in AZ, USA)."
+        },
+        {
+          "img": "/testimonials/arthur.png",
+          "name": "Arthur Duarte",
+          "role": "Base mentee",
+          "testimony": "Forget the stock market - invest your money in access to people and knowledge instead.\nLast year I paid to join a coding community with fellow Brazilian developers, and it completely changed my life.\nBeing around different people who all had the same goals and were looking for the same things made me realize how important community and the right guidance really are.\nI genuinely feel like paying for access to people is the best investment you can make.\nPut your money towards knowledge and access to people and places."
+        },
+        {
+          "img": "/testimonials/thiago.png",
+          "name": "Thiago Valverde",
+          "role": "PSP mentee",
+          "testimony": "Name: Thiago Valverde de Souza\nPrevious role: Backend Developer\nSalary before mentorship: USD 13k\nCurrent role: Web3 Developer / Backend Developer\nCurrent salary: $22k\nExperience: 24 years old\nMentorship length: 1 month\nStrategies: Job through applications. Created some repos but didn’t share on code up yet.\n4 hours/day applying with customized CV and cover letter.\nWeb3 study, aligning speech to get a job abroad - Self learner talking about other career shifts.\nIn 1 month there were 19 processes where I passed the initial screening, 3 offers declined because they were not the desired rate or were web2."
+        }
+      ]
     }
   }
 }

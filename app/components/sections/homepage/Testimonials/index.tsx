@@ -1,5 +1,6 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import Image from "next/image";
 import { AnimatedText } from "../../../ui/AnimatedText";
 import {
@@ -9,16 +10,24 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../../../ui/Carousel";
-import { testimonials } from "./constants/testimonials";
+import { useTestimonials } from "./hooks/useTestimonials";
 
 export function Testimonials() {
+  const testimonials = useTestimonials();
+  const { rich } = useRichText("HomePage.Testimonials");
+
+  function formatTestimony(testimony: string) {
+    return testimony
+      .split("\n")
+      .map((line, index) => <p key={index}>{line}</p>);
+  }
+
   return (
     <section className="py-[10svh] border-b border-solid border-white/20 space-y-12">
       <Carousel className="flex flex-col gap-4 lg:gap-8">
         <div className="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-12">
           <AnimatedText as="h2" className="max-w-4xl">
-            <span className="font-ivy">105+ Success Stories</span> –
-            professionals now working in the US, Europe, and Asia.
+            {rich("title")}
           </AnimatedText>
           <div className="flex gap-2">
             <CarouselPrevious />
@@ -49,8 +58,8 @@ export function Testimonials() {
                 </div>
 
                 {testimonial.testimony && (
-                  <div className="text-base text-gray">
-                    {testimonial.testimony}
+                  <div className="text-base text-gray space-y-4">
+                    {formatTestimony(testimonial.testimony)}
                   </div>
                 )}
 
