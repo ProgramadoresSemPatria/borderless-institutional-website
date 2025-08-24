@@ -710,8 +710,8 @@
       "preTitle": "Featured Startups",
       "title": "Meet some of the ventures emerging from our <italic>ecosystem</italic>:",
       "startups": [
-        { "src": "/startups/rampix.png", "title": "Rampix", "description": "A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure'.", "buttonText": "Learn more" },
-        { "src": "/startups/borderless-community.webp", "title": "Borderless Community", "description": "The super app from Borderless Coding: combining social network, members area, and forum for global tech professionals", "buttonText": "Members only" }
+        { "src": "/startups/rampix.png", "title": "Rampix", "description": "A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure'.", "buttonText": "Learn more", "href": "https://www.rampix.xyz/" },
+        { "src": "/startups/borderless-community.webp", "title": "Borderless Community", "description": "The super app from Borderless Coding: combining social network, members area, and forum for global tech professionals", "buttonText": "Members only", "href": "https://community.borderlesscoding.com/" }
       ],
       "moreCard": {
         "title": "More Startups Coming Soon",
@@ -881,13 +881,15 @@
           "src": "/startups/rampix.png",
           "title": "Rampix",
           "description": "A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure.",
-          "buttonText": "Learn more"
+          "buttonText": "Learn more",
+           "href": "https://www.rampix.xyz/"
         },
         {
           "src": "/startups/borderless-community.webp",
           "title": "Borderless Community",
           "description": "The super app from Borderless Coding: combining social network, members area, and forum for global tech professionals.",
-          "buttonText": "Members Only"
+          "buttonText": "Members Only",
+          "href": "https://community.borderlesscoding.com/"
         }
       ]
     },
@@ -962,7 +964,7 @@
   "Footer": {
     "TalkToAProfessional": {
       "left": "Talk to",
-      "right": "a professional",
+      "right": "an expert",
       "yuriAlt": "Yuri photo",
       "logoAlt": "borderless logo"
     },

@@ -781,8 +781,8 @@
       "preTitle": "Startups em Destaque",
       "title": "Conheça algumas das ventures que emergem do nosso <italic>ecossistema</italic>:",
       "startups": [
-        { "src": "/startups/rampix.png", "title": "Rampix", "description": "Exchange 100% brasileira para comprar e vender cripto via PIX, com rapidez e segurança.", "buttonText": "Saiba mais" },
-        { "src": "/startups/borderless-community.webp", "title": "Borderless Community", "description": "O super app da Borderless Coding: rede social, área de membros e fórum para profissionais globais de tecnologia", "buttonText": "Exclusivo para membros" }
+        { "src": "/startups/rampix.png", "title": "Rampix", "description": "Exchange 100% brasileira para comprar e vender cripto via PIX, com rapidez e segurança.", "buttonText": "Saiba mais",  "href": "https://www.rampix.xyz/" },
+        { "src": "/startups/borderless-community.webp", "title": "Borderless Community", "description": "O super app da Borderless Coding: rede social, área de membros e fórum para profissionais globais de tecnologia", "buttonText": "Exclusivo para membros", "href": "https://community.borderlesscoding.com/" }
       ],
       "moreCard": {
         "title": "Mais Startups em Breve",
@@ -952,13 +952,15 @@
           "src": "/startups/rampix.png",
           "title": "Rampix",
           "description": "Uma exchange 100% brasileira para comprar e vender criptomoedas via PIX, de forma rápida e segura.",
-          "buttonText": "Saiba mais"
+          "buttonText": "Saiba mais",
+          "href": "https://www.rampix.xyz/"
         },
         {
           "src": "/startups/borderless-community.webp",
           "title": "Borderless Community",
           "description": "O super app da Borderless Coding: combinando rede social, área de membros e fórum para profissionais globais de tecnologia.",
-          "buttonText": "Exclusivo para membros"
+          "buttonText": "Exclusivo para membros",
+          "href": "https://community.borderlesscoding.com/"
         }
       ]
     },

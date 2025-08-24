@@ -1,11 +1,11 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import { ExternalLink } from "../../ui/ExternalLink";
 import { SectionHeader } from "../../ui/SectionHeader";
-import { useRichText } from "@/app/hooks/useRichText";
 import { useIncubatedStartups } from "./hooks/useIncubatedStartups";
 
 export function IncubatedStartups() {
@@ -61,7 +61,7 @@ export function IncubatedStartups() {
               </div>
 
               <div className="w-full flex justify-end">
-                <ExternalLink>{startup.buttonText || "Visit"}</ExternalLink>
+                <ExternalLink target="_blank" href={startup.href} >{startup.buttonText || "Visit"}</ExternalLink>
               </div>
             </div>
           ))}

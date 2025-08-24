@@ -7,6 +7,7 @@ export interface StartupItem {
   title: string;
   description: string;
   buttonText?: string;
+  href: string;
 }
 
 export function useIncubatedStartups() {
@@ -17,6 +18,7 @@ export function useIncubatedStartups() {
     title: t(`items.${i}.title`),
     description: t(`items.${i}.description`),
     buttonText: t(`items.${i}.buttonText`),
+    href: t(`items.${i}.href`),
   }));
   return { header, items } as const;
 }

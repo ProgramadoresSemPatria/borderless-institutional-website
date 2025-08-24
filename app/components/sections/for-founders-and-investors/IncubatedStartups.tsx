@@ -1,5 +1,6 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Zap } from "lucide-react";
@@ -8,7 +9,6 @@ import { ExternalLink } from "../../ui/ExternalLink";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
 import { useIncubatedStartups } from "./hooks/useIncubatedStartups";
-import { useRichText } from "@/app/hooks/useRichText";
 
 export function IncubatedStartups() {
   const { header, startups, moreCard, visitLabel } = useIncubatedStartups();
@@ -60,7 +60,7 @@ export function IncubatedStartups() {
               </div>
 
               <div className="w-full flex justify-end">
-                <ExternalLink>{startup.buttonText || visitLabel}</ExternalLink>
+                <ExternalLink target="_blank" href={startup.href} >{startup.buttonText || visitLabel}</ExternalLink>
               </div>
             </div>
           ))}

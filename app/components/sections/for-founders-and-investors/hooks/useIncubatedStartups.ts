@@ -1,7 +1,7 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import { Bitcoin, Users } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function useIncubatedStartups() {
   const t = useTranslations("ForFoundersAndInvestors.IncubatedStartups");
@@ -17,6 +17,7 @@ export function useIncubatedStartups() {
     description: t(`startups.${i}.description`),
     buttonText: t(`startups.${i}.buttonText`),
     icon: icons[i] ?? Bitcoin,
+    href: t(`startups.${i}.href`),
   }));
 
   const moreCard = {
