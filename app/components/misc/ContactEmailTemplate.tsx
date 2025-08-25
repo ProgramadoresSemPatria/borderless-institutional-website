@@ -1,6 +1,6 @@
 import { ContactFormData } from "@/app/[locale]/(subpages)/contact/schema/contactFormSchema";
 
-export function EmailTemplate({
+export function ContactEmailTemplate({
   message,
   name,
   email,

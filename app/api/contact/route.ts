@@ -1,4 +1,4 @@
-import { EmailTemplate } from "@/app/components/misc/EmailTemplate";
+import { ContactEmailTemplate } from "@/app/components/misc/ContactEmailTemplate";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
@@ -13,7 +13,7 @@ export async function POST(req: Request) {
       to: "contato@borderlesscoding.com",
       subject: `Contact from borderless website by ${json.name}`,
       replyTo: json.email,
-      react: EmailTemplate({
+      react: ContactEmailTemplate({
         email: json.email,
         name: json.name,
         topic: json.topic,
