@@ -1,11 +1,10 @@
 "use client";
 
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import AutoScroll from "embla-carousel-auto-scroll";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { AnimatedGrid } from "../../ui/AnimatedGrid";
 import { AnimatedText } from "../../ui/AnimatedText";
+import { Carousel, CarouselContent, CarouselItem } from "../../ui/Carousel";
 import RichText from "../../ui/RichText";
 
 const logosSrc = [
@@ -24,47 +23,36 @@ const logosSrc = [
 export function TalentCompanies() {
   const t = useTranslations("HomePage.TalentCompanies");
 
-  useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".brand-card",
-        start: "top 95%",
-      },
-    });
-
-    tl.fromTo(
-      ".brand-card",
-      { y: "15%", opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        ease: "back.inOut",
-        stagger: 0.05,
-        duration: "0.5",
-      }
-    );
-  });
-
   return (
-    <section className="py-[10svh] space-y-6">
+    <section className="py-[10svh] pb-[5svh] space-y-6">
       <AnimatedText as="h2" className="max-w-5xl">
         <RichText>{(tags) => t.rich("title", { ...tags })}</RichText>
       </AnimatedText>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-8 gap-2 relative">
-        {logosSrc.map((src, index) => (
-          <div
-            key={`brand-logo-${index}`}
-            className="brand-card bg-tertiary rounded-xl p-8 flex-center"
-          >
-            <Image width={800} height={800} src={src} alt="brand logo" />
-          </div>
-        ))}
-
-        <div className="absolute z-[-1] -translate-x-1/2 bottom-0 translate-y-1/2">
-          <AnimatedGrid />
-        </div>
-      </div>
+      <Carousel
+        opts={{ loop: true, dragFree: true }}
+        plugins={[
+          AutoScroll({
+            startDelay: 0,
+            stopOnInteraction: false,
+            stopOnMouseEnter: true,
+          }),
+        ]}
+        className="bg-tertiary rounded-md p-2"
+      >
+        <CarouselContent className="-ml-2">
+          {logosSrc.map((src, index) => (
+            <CarouselItem
+              key={`brand-logo-${index}`}
+              className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 2xl:basis-1/8 pl-2"
+            >
+              <div className="brand-card bg-background rounded-xl p-8 flex-center h-full select-none">
+                <Image width={800} height={800} src={src} alt="brand logo" />
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
     </section>
   );
 }
