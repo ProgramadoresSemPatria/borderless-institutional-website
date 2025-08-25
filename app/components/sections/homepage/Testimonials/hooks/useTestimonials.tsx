@@ -30,16 +30,28 @@ export function useTestimonials(): Testimonial[] {
       description: t("list.1.description"),
     },
     {
-      img: "/testimonials/arthur.png",
+      img: "/testimonials/yuri.png",
       name: t("list.2.name"),
       role: t("list.2.role"),
       testimony: t("list.2.testimony"),
     },
     {
-      img: "/testimonials/thiago.png",
+      img: "/testimonials/eduardo.png",
       name: t("list.3.name"),
       role: t("list.3.role"),
       testimony: t("list.3.testimony"),
+    },
+    {
+      img: "/testimonials/arthur.png",
+      name: t("list.4.name"),
+      role: t("list.4.role"),
+      testimony: t("list.4.testimony"),
+    },
+    {
+      img: "/testimonials/thiago.png",
+      name: t("list.5.name"),
+      role: t("list.5.role"),
+      testimony: t("list.5.testimony"),
     },
   ];
 }
