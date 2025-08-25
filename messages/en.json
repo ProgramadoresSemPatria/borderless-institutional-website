@@ -179,9 +179,10 @@
       "event1": "First Borderless conference in São Paulo, Brazil, with over 70 guests",
       "event2": "Interview of our founder, Yuri Pereira, for Entrepreneur magazine in Dubai, UAE",
       "event3": "Brainstorm during an AI hackathon in France",
-      "event4": "Borderless mentees won second place at the EthCC hackathon in Cannes, France"
+    "event4": "Borderless mentees won second place at the EthCC hackathon in Cannes, France"
     }
   },
+  
   "BaseMentorship": {
     "HeroSection": {
       "title": "Build Your Global Career Foundation – <colorful>From Zero to Ready</colorful> in 12 Months",
@@ -1052,6 +1053,28 @@
       "s11Body": "We may update this policy from time to time. Material changes will be announced via email or in‑app notice. <strong>Effective date:</strong> {date}",
       "s12Title": "12. Contact",
       "s12Body": "<strong>Email:</strong> contato@borderlesscoding.com"
+    },
+    "RefundPolicy": {
+      "metadataTitle": "Refund & Cancellation Policy – Borderless Coding",
+      "h1": "Refund & Cancellation Policy",
+      "standardTitle": "Standard (mentorship cohorts)",
+      "standardItems": [
+        "Cooling‑off: Full refund within 7 days of purchase if you haven’t accessed paid content or attended live sessions.",
+        "After 7 days or after accessing content/live calls: All sales are final for cohorts and mentorships (your seat is reserved and capacity‑limited)."
+      ],
+      "generalTitle": "General Terms",
+      "generalItems": [
+        "Payment plans: You are committing to the full program price; installments continue unless a refund is approved under the rules above.",
+        "Chargebacks: Please contact support first; friendly chargebacks may lead to account suspension.",
+        "Digital products (templates, recordings): Non‑refundable after download/access.",
+        "Scheduling fees or third‑party costs: Non‑refundable if already incurred."
+      ],
+      "processTitle": "How to request a refund",
+      "processBody": "Email contato@borderlesscoding.com with your order ID and reason. We respond within 5 business days.",
+      "methodTitle": "Refund method & timing",
+      "methodBody": "Returned to the original payment method within 5–10 business days after approval (processor dependent).",
+      "abuseTitle": "Abuse prevention",
+      "abuseBody": "We may deny repeated refund requests by the same customer."
     }
   },
   "HowItWorks": {

@@ -1123,6 +1123,28 @@
       "s11Body": "Podemos atualizar esta política periodicamente. Mudanças materiais serão comunicadas por e-mail ou aviso no app. <strong>Data de vigência:</strong> {date}",
       "s12Title": "12. Contato",
       "s12Body": "<strong>E-mail:</strong> contato@borderlesscoding.com"
+    },
+    "RefundPolicy": {
+      "metadataTitle": "Política de Reembolso e Cancelamento – Borderless Coding",
+      "h1": "Política de Reembolso e Cancelamento",
+      "standardTitle": "Padrão (turmas de mentoria)",
+      "standardItems": [
+        "Período de arrependimento: Reembolso integral em até 7 dias da compra se você não tiver acessado conteúdo pago ou participado de sessões ao vivo.",
+        "Após 7 dias ou após acessar conteúdo/chamadas ao vivo: Todas as vendas são finais para turmas e mentorias (sua vaga é reservada e com capacidade limitada)."
+      ],
+      "generalTitle": "Termos Gerais",
+      "generalItems": [
+        "Planos de pagamento: Você se compromete com o preço total do programa; as parcelas continuam a menos que um reembolso seja aprovado conforme as regras acima.",
+        "Chargebacks: Por favor, contate o suporte primeiro; chargebacks indevidos podem levar à suspensão da conta.",
+        "Produtos digitais (templates, gravações): Não reembolsáveis após download/acesso.",
+        "Taxas de agendamento ou custos de terceiros: Não reembolsáveis se já incorridos."
+      ],
+      "processTitle": "Como solicitar reembolso",
+      "processBody": "Envie e-mail para contato@borderlesscoding.com com seu ID do pedido e motivo. Respondemos em até 5 dias úteis.",
+      "methodTitle": "Forma e prazo do reembolso",
+      "methodBody": "Devolução para o método de pagamento original em 5–10 dias úteis após aprovação (dependente do processador).",
+      "abuseTitle": "Prevenção de abuso",
+      "abuseBody": "Podemos negar solicitações de reembolso repetidas pelo mesmo cliente."
     }
   },
   "HowItWorks": {
