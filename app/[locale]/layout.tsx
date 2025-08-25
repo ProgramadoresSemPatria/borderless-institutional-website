@@ -5,9 +5,10 @@ import { setRequestLocale } from "next-intl/server";
 import { Montserrat } from "next/font/google";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
-import { GSAPWrapper } from "../components/features/wrappers/GSAPWrapper";
+import { Toaster } from "sonner";
 import { Footer } from "../components/layout/Footer";
 import { Header } from "../components/layout/Header";
+import { GSAPWrapper } from "../components/misc/GSAPWrapper";
 import "../globals.css";
 
 const montserrat = Montserrat({
@@ -58,6 +59,7 @@ export default async function RootLayout({
             {children}
             <Footer />
           </GSAPWrapper>
+          <Toaster richColors className="select-none" closeButton />
         </NextIntlClientProvider>
       </body>
     </html>

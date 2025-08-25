@@ -33,12 +33,12 @@ export function Footer() {
         <div className="h-[1px] bg-black/10 w-full" />
 
         <div className="flex flex-col-reverse gap-4 md:flex-row md:items-center justify-between">
-          <p className="text-[#b2b2b2] text-sm md:text-base">
-            {t("copyright.text", { year })}.<br />
+          <div className="text-[#b2b2b2] text-sm md:text-base">
+            <p>{t("copyright.text", { year })}</p> <br />
             <p>Borderless Coding LLC.</p>
             <p>30 N Gould St, STE R, Sheridan, WY 82801</p>
             <p>Wyoming, USA</p>
-          </p>
+          </div>
 
           <div className="flex gap-2">
             <a

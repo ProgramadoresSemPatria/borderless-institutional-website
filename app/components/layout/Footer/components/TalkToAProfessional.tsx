@@ -1,10 +1,11 @@
 "use client";
 
+import { Link } from "@/i18n/navigation";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ArrowUpRight } from "lucide-react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export function TalkToAProfessional() {
   const t = useTranslations("Footer.TalkToAProfessional");
@@ -50,7 +51,7 @@ export function TalkToAProfessional() {
         </span>{" "}
       </p>
 
-      <div className="relative cursor-pointer">
+      <Link href={"/contact"} className="relative cursor-pointer">
         <Image
           width={2048}
           height={2731}
@@ -62,7 +63,7 @@ export function TalkToAProfessional() {
         <div className="absolute bg-primary rounded-md p-4 bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
           <ArrowUpRight className="text-white size-10" />
         </div>
-      </div>
+      </Link>
 
       <p className="right-text font-ivy text-7xl hidden min-[1350px]:block">
         {t("right")}
