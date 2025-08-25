@@ -20,32 +20,11 @@ import { Spinner } from "@/app/components/ui/Spinner";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
-import z from "zod";
-
-const topics = [
-  "General",
-  "Technical",
-  "Billing",
-  "Mentorship",
-  "Refund",
-  "Partnership",
-  "Other",
-] as const;
-
-export const contactFormSchema = z.object({
-  name: z
-    .string()
-    .min(2, { message: "Name must be at least 2 characters long" })
-    .max(120, { message: "Name must be under 120 characters long" }),
-  email: z.email({ message: "Invalid email address" }),
-  topic: z.enum(topics),
-  message: z
-    .string()
-    .min(10, { message: "Message must be at least 10 characters long" })
-    .max(3000, { message: "Message must be under 3000 characters long" }),
-});
-
-export type ContactFormData = z.infer<typeof contactFormSchema>;
+import {
+  ContactFormData,
+  contactFormSchema,
+  contactTopics,
+} from "./schema/contactFormSchema";
 
 export default function Page() {
   const form = useForm<ContactFormData>({
@@ -90,9 +69,9 @@ export default function Page() {
       </p>
 
       <div className="grid gap-4 xl:grid-cols-[30%_1fr] bg-tertiary p-2 rounded-md mb-8">
-        <aside className="space-y-4 bg-[#212121] p-4 mb-8 min-h-full">
+        <aside className="flex flex-col space-y-4 bg-[#212121] p-4 mb-8 min-h-full">
           <div className="text-xl font-semibold">Contact details</div>
-          <div className="space-y-6">
+          <div className="space-y-6 grow">
             <p>
               <span className="block font-bold">Direct email: </span>
               <a
@@ -103,6 +82,10 @@ export default function Page() {
               </a>
             </p>
             <p>
+              <span className="block font-bold">Phone: </span>
+              <span className="text-secondary">+5521971417218</span>
+            </p>
+            <p>
               <span className="block font-bold">Office hours: </span>
               Mon–Fri, 9:00–18:00 BRT
             </p>
@@ -110,6 +93,11 @@ export default function Page() {
               <span className="block font-bold">Response time: </span>
               within 1 business day
             </p>
+          </div>
+
+          <div className="text-gray text-sm">
+            Borderless Coding LLC. 30 N Gould St, STE R, Sheridan, WY 82801
+            Wyoming, USA
           </div>
         </aside>
 
@@ -161,7 +149,7 @@ export default function Page() {
                         <SelectValue placeholder="Select a topic" />
                       </SelectTrigger>
                       <SelectContent className="border-0">
-                        {topics.map((topic) => (
+                        {contactTopics.map((topic) => (
                           <SelectItem key={topic} value={topic}>
                             {topic}
                           </SelectItem>
