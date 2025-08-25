@@ -16,14 +16,14 @@ export function useTestimonials(): Testimonial[] {
 
   return [
     {
-      img: "/testimonials/arthur.png",
+      img: "/testimonials/caique.png",
       name: t("list.0.name"),
       role: t("list.0.role"),
       iframeSrc: t("list.0.iframeSrc"),
       description: t("list.0.description"),
     },
     {
-      img: "/testimonials/arthur.png",
+      img: "/testimonials/lucas.png",
       name: t("list.1.name"),
       role: t("list.1.role"),
       iframeSrc: t("list.1.iframeSrc"),

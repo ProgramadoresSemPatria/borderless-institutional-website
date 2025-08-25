@@ -24,7 +24,12 @@ export function Testimonials() {
 
   return (
     <section className="py-[10svh] border-b border-solid border-white/20 space-y-12">
-      <Carousel className="flex flex-col gap-4 lg:gap-8">
+      <Carousel
+        opts={{
+          align: "start",
+        }}
+        className="flex flex-col gap-4 lg:gap-8"
+      >
         <div className="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-12">
           <AnimatedText as="h2" className="max-w-4xl">
             {rich("title")}
