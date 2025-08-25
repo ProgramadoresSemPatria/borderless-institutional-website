@@ -1,0 +1,1189 @@
+{
+  "HomePage": {
+    "HeroSection": {
+      "logoAlt": "logo",
+      "TopSection": {
+        "tagline": "Global tech starts here",
+        "headline": "A ponte entre <colorful>talentos tech brasileiros</colorful> e o <colorful>mercado internacional</colorful> — com produtos educacionais, plataforma própria e startups em incubação.",
+        "button": "Quero internacionalizar"
+      },
+      "BottomSection": {
+        "description": "O único ecossistema do Brasil que prepara, forma e conecta profissionais de tech com os mercados globais.",
+        "discoverMore": "Descubra mais"
+      },
+      "NumbersHighlightCard": {
+        "stats": "500 alunos, 105 internacionalizados e 2 startups encubadas",
+        "name": "Borderless Coding",
+        "logoAlt": "logo da borderless"
+      }
+    },
+    "ServicesSection": {
+      "preTitle": "O que oferecemos ?",
+      "title": "Desde <italic>Mobile development</italic> até Machine Learning Engineering",
+      "education": {
+        "title": "Educação",
+        "description": "Programas de aceleração e mentoria especializada"
+      },
+      "tech": {
+        "title": "Tech",
+        "description": "Desenvolvimento de soluções inovadoras"
+      },
+      "people": {
+        "title": "People",
+        "description": "Conexão com mercados globais"
+      }
+    },
+    "TalentCompanies": {
+      "title": "Empresas onde nossos <italic>talentos</italic> já trabalharam ou trabalham"
+    },
+    "AccelerationPrograms": {
+      "preTitle": "Impulsione sua jornada",
+      "title": "Conheça nossos <italic>programas de aceleração</italic>",
+      "buttonText": "Saiba mais",
+      "programs": {
+        "psp": {
+          "title": "Mentoria PSP",
+          "description": "Programa de mentorias estruturado para acelerar sua carreira em tecnologia",
+          "features": {
+            "mentoring": "Mentoria especializada",
+            "projects": "Projetos práticos",
+            "network": "Network global"
+          }
+        },
+        "base": {
+          "title": "Mentoria BASE",
+          "description": "Fundamentos sólidos para sua jornada em tecnologia e mercados internacionais",
+          "features": {
+            "tech": "Base técnica",
+            "softSkills": "Soft skills",
+            "global": "Preparação global"
+          }
+        },
+        "bootcamp": {
+          "title": "Bootcamp: Web3 Global Developer",
+          "description": "Bootcamp intensivo focado em tecnologias Web3 e desenvolvimento descentralizado",
+          "features": {
+            "stack": "Web3 Stack",
+            "dapps": "DApps",
+            "blockchain": "Blockchain"
+          }
+        }
+      }
+    },
+    "GuaranteeSection": {
+      "title": "Consiga um <italic>emprego</italic> em tech ou seu <italic>dinheiro de volta</italic>",
+      "features": {
+        "implementation": {
+          "title": "Aulas de implementação",
+          "description": "Aprenda fazendo com projetos práticos e reais"
+        },
+        "community": {
+          "title": "Comunidade & Networking",
+          "description": "Rede de contatos global para sua carreira"
+        },
+        "live": {
+          "title": "Encontros ao vivo",
+          "description": "Interação direta com mentores especialistas"
+        },
+        "miniapps": {
+          "title": "Mini-apps para acompanhamento",
+          "description": "Tecnologia para acompanhar sua evolução"
+        }
+      }
+    },
+    "Testimonials": {
+      "title": "<italic>105+ Cases de sucesso</italic> – profissionais agora trabalhando nos EUA, Europa e Ásia.",
+      "list": [
+        {
+          "img": "/testimonials/arthur.png",
+          "name": "Caíque",
+          "role": "Mentorado da PSP",
+          "iframeSrc": "https://player.vimeo.com/video/1108946498?h=3f9f4bb648&api=1",
+          "description": "Saiu de 8k BRL do Brasil para mais de 60k BRL (11k usd/month) em 6 meses."
+        },
+        {
+          "img": "/testimonials/arthur.png",
+          "name": "Lucas",
+          "role": "Mentorado da PSP",
+          "iframeSrc": "https://player.vimeo.com/video/1108946473?h=669d1e58ee&api=1",
+          "description": "Saiu de 3k BRL do Brasil para mais de 25k BRL (5k usd/month + equity em uma startup no AZ, USA)."
+        },
+        {
+          "img": "/testimonials/arthur.png",
+          "name": "Arthur Duarte",
+          "role": "Mentorado da Base",
+          "testimony": "Esqueça o mercado de ações – invista seu dinheiro em acesso a pessoas e conhecimento, em vez disso.\nNo ano passado, paguei para participar de uma comunidade de programação com outros desenvolvedores brasileiros, e isso mudou completamente a minha vida.\nEstar perto de pessoas diferentes que tinham os mesmos objetivos e procuravam as mesmas coisas me fez perceber o quanto a comunidade e a orientação certa são importantes.\nSinto de verdade que pagar pelo acesso a pessoas é o melhor investimento que você pode fazer.\nColoque seu dinheiro em conhecimento e acesso a pessoas e lugares."
+        },
+        {
+          "img": "/testimonials/thiago.png",
+          "name": "Thiago Valverde",
+          "role": "Mentorado da PSP",
+          "testimony": "Nome: Thiago Valverde de Souza\nVaga anterior: Backend Developer\nQuanto ganhava antes da mentoria: USD 13k\nVaga Atual: Web3 Developer / Backend Developer\nSalário atual: $22k\nExperiência: 24 anos\nTempo de mentoria: 1 mês\nEstratégias: Vaga através de aplicações. Criei alguns repos mas não compartilhei no code up ainda.\n4 horas por dia de aplicação com currículo e cover letter personalizados.\nEstudo de Web3, Alinhamento do discurso para conseguir uma vaga fora do meu domínio - Self learner falando sobre outros career shifts.\nEm 1 mês foram 19 processos onde passei do initial screening, 3 offers recusadas pois não eram do rate desejado ou eram web2."
+        }
+      ]
+    },
+    "StartupIncubator": {
+      "title": "Dentro do <italic>ecossistema</italic> os membros podem buscar desde <italic>parceiros</italic> para iniciar negócios juntos até buscar <italic>investidores</italic>",
+      "subtitle": "Como é a incubadora de startups ?",
+      "caption": "(Na foto acima é o nosso SaaS que atua como um Super-App englobando desde rede social a área de membros)"
+    },
+    "GlobalTalentConnector": {
+      "title": "A única empresa que conecta developers com empresas globais SEM TAXA",
+      "description": "Full-stack, ML Engineer, GoLang Dev e muito mais",
+      "cta": "Contratar um profissional"
+    },
+    "IncubatedStartups": {
+      "title": "Startups em <italic>Incubação</italic>:",
+      "startups": [
+        {
+          "src": "/startups/rampix.png",
+          "title": "Rampix",
+          "description": "Uma exchange 100% brasileira para comprar e vender criptomoedas via PIX, rápido e seguro.",
+          "buttonText": "Saiba mais"
+        },
+        {
+          "src": "/startups/borderless-community.webp",
+          "title": "Borderless Community",
+          "description": "O super app da Borderless Coding: combinando rede social, área de membros e fórum para profissionais globais de tecnologia.",
+          "buttonText": "Exclusivo para membros"
+        }
+      ]
+    },
+    "OurHistory": {
+      "title": "Nossa <italic>História</italic>",
+      "paragraphs": [
+        "Criada em 2023 por Yuri Pereira somente como uma mentoria que conectava developers com o mercado, hoje se tornou um ecossistema com professores de Tech, Inglês, CTO's, Managers, Cybersecurity e diversos áreas do mercado tech.",
+        "Hoje, a Borderless já contribuiu para a internacionalização de mais de 105 profissionais — desde iniciantes em início de carreira até especialistas com mais de 10 anos de experiência."
+      ]
+    },
+    "OurTeam": {
+      "title": "Nosso <italic>time</italic>",
+      "roles": {
+        "yuri": "Founder e Strategic Tech Advisor",
+        "felipe": "Mentor de Rust",
+        "matheus": "Mentor de Algoritmos e Estrutura de Dados",
+        "andre": "Multi-cloud Specialist",
+        "alex": "Mentor/Investor Web3",
+        "thiago": "Mentor/Head AI"
+      }
+    },
+    "HelpSection": {
+      "title": "Como podemos te ajudar ?",
+      "description": "Oferecemos um ecossistema completo de soluções para desenvolvedores, startups e empresas que buscam profissionais de excelência em tecnologia.",
+      "mentorship": "Mentoria",
+      "incubator": "Incubadora",
+      "platform": "Plataforma",
+      "community": "Comunidade"
+    },
+    "EventsAndAchievements": {
+      "event1": "Primeira borderless conf São Paulo, Brasil, para mais de 70 convidados",
+      "event2": "Entrevista do Nosso founder, Yuri Pereira, para a revista Entrepreneur em Dubai, UAE",
+      "event3": "Brainstorm durante uma hackthon de AI na França",
+      "event4": "Mentorados da borderless receberam o segundo lugar na hackathon da EthCC em Cannes, França"
+    }
+  },
+  "BaseMentorship": {
+    "HeroSection": {
+      "title": "Construa sua base para uma carreira global – <colorful>Do Zero ao Pronto</colorful> em 12 meses",
+      "subtitle": "A Mentoria BASE é o programa de fundamentos de carreira para profissionais brasileiros ambiciosos de tecnologia que querem se preparar para vagas internacionais de alta remuneração. Desenvolva as habilidades, o portfólio e a confiança para entrar no mercado global — e ficar pronto para a Mentoria PSP",
+      "cta": "Aplicar para a Próxima Turma"
+    },
+    "WhatIs": {
+      "title": "O que é a Mentoria BASE?",
+      "description": "A Mentoria BASE é um programa estruturado e prático para profissionais de tecnologia em início de carreira que querem sair do mercado nacional e se preparar para oportunidades globais. Liderada por Yuri Pereira e pelo time de mentores da Borderless Coding, a BASE foi desenhada para:",
+      "bullets": [
+        "Fortalecer suas bases técnicas",
+        "Construir um portfólio pronto para o internacional",
+        "Melhorar seu inglês para entrevistas e colaboração",
+        "Te posicionar para a futura entrada na Mentoria PSP"
+      ],
+      "highlight": "Isto não é um bootcamp genérico ou curso online — é um <highlight>caminho guiado</highlight> para te transformar de um talento local em um candidato competitivo globalmente"
+    },
+    "ApplyNow": {
+      "title": "Aplicar Agora",
+      "description": "As vagas na BASE são limitadas para garantir feedback personalizado e engajamento na comunidade. Se você quer se preparar para entrar no mercado global de tecnologia — e futuramente na Mentoria PSP — aplique hoje.",
+      "cta": "Aplicar para a Próxima Turma"
+    },
+    "FoundationMethod": {
+      "preTitle": "O Método de Fundamentos de Carreira Borderless",
+      "title": "Nosso framework de 4 pilares para te preparar para o PSP e o <italic>mercado global</italic>:",
+      "methods": {
+        "technical": {
+          "title": "Evolução Técnica",
+          "description": "Plano estruturado para cobrir gaps técnicos e construir projetos de portfólio que se destacam"
+        },
+        "profile": {
+          "title": "Fundação de Perfil",
+          "description": "Crie seu LinkedIn, GitHub e currículo com posicionamento internacional desde o dia um"
+        },
+        "english": {
+          "title": "Inglês na Prática",
+          "description": "Aulas 3x/semana focadas em vocabulário técnico, entrevistas e cenários de trabalho"
+        },
+        "roadmap": {
+          "title": "Roteiro de Carreira",
+          "description": "Defina sua estratégia de crescimento, marcos e plano de transição para a Mentoria PSP"
+        }
+      }
+    },
+    "HowItWorks": {
+      "title": "Como a <italic>Mentoria</italic> Funciona?",
+      "items": {
+        "duration": { "title": "Duração", "description": "12 meses" },
+        "format": { "title": "Formato", "description": "100% online" },
+        "live": { "title": "Sessões ao Vivo", "description": "Chamadas semanais em grupo com embaixadores" },
+        "qna": { "title": "Sessão de Q&A", "description": "Encontros mensais com Yuri Pereira" },
+        "mocks": { "title": "Simulações de Entrevista", "description": "Práticas com cenários de júnior a pleno para ganhar confiança" },
+        "english": { "title": "Acompanhamento de Inglês", "description": "3x/semana, voltado para profissionais de tecnologia iniciando a jornada global" },
+        "platform": { "title": "Acesso à Plataforma Borderless", "description": "Conta premium com aulas, comunidade e acompanhamento de progresso" },
+        "portfolio": { "title": "Portfólio", "description": "Modelos de projetos para impressionar recrutadores internacionais" },
+        "resume": { "title": "Currículo", "description": "Currículo de alta conversão adaptado ao seu momento de carreira" },
+        "milestones": { "title": "Marcos", "description": "Marcos passo a passo até estar pronto para o PSP" }
+      }
+    },
+    "ResultsYouCanExpect": {
+      "preTitle": "Resultados que você pode esperar",
+      "title": "Nossos ex-alunos da BASE <italic>tipicamente</italic>:",
+      "results": {
+        "higherPay": {
+          "title": "Cargos com maior remuneração",
+          "description": "Migram de posições júnior/pleno locais para vagas remotas com melhor salário"
+        },
+        "english": {
+          "title": "Inglês Proficiente",
+          "description": "Atingem proficiência e confiança para entrevistas internacionais"
+        },
+        "portfolio": {
+          "title": "Portfólio Global",
+          "description": "Constroem um portfólio que atrai recrutadores de fora"
+        },
+        "pspReadiness": {
+          "title": "Pronto para o PSP",
+          "description": "Chegam à Mentoria PSP prontos para fechar contratos de $7K+ USD/mês"
+        }
+      },
+      "case": {
+        "title": "Caso Real",
+        "description": "Amanda, desenvolvedora fullstack júnior de São Paulo, entrou na BASE sem portfólio e com inglês B1. Após 6 meses, tinha 3 projetos sólidos, um LinkedIn lapidado e entrou no PSP — fechando seu primeiro contrato de $7.500/mês em 4 meses após a graduação."
+      }
+    },
+    "WhoIsItFor": {
+      "preTitle": "Para quem é?",
+      "title": "A Mentoria BASE é feita para profissionais de tecnologia <italic>de júnior a pleno inicial</italic>:",
+      "techRoles": {
+        "title": "Cargos de Tech",
+        "items": [
+          "Developers Frontend, Backend, Fullstack",
+          "QA, Analistas de Dados",
+          "Engenheiros de Suporte"
+        ]
+      },
+      "requirements": {
+        "title": "Requisitos",
+        "items": [
+          "1-2 anos de experiência profissional ou recém-formado",
+          "Inglês: A1 a B1 (meta: B2 para prontidão internacional)",
+          "Pronto para trabalhar duro, seguir um plano claro e entrar em uma comunidade de alta performance"
+        ]
+      }
+    },
+    "WhyItWorks": {
+      "preTitle": "Por que funciona?",
+      "title": "Diferente de cursos aleatórios ou estudo sozinho, a <italic>BASE oferece</italic>:",
+      "features": [
+        "Mentoria direta e acompanhamento de progresso",
+        "Um caminho comprovado de júnior/pleno para prontidão internacional",
+        "Acesso a uma comunidade de tecnologia de alta performance",
+        "Integração com a Plataforma Borderless para manter responsabilidade e conexão"
+      ]
+    },
+    "CompareOurMentorships": {
+      "preTitle": "Seu próximo passo após a BASE...",
+      "title": "Compare nossas <italic>mentorias</italic>"
+    },
+    "MentorshipComparison": {
+      "firstOptionTitle": "Mentoria BASE",
+      "secondOptionTitle": "Mentoria PSP",
+      "features": [
+        {
+          "title": "Momento de Carreira",
+          "firstOptionFeature": "Sem experiência prévia → Pleno inicial (0–2 anos de experiência)",
+          "secondOptionFeature": "Pleno → Sênior (3+ anos de experiência)"
+        },
+        {
+          "title": "Nível de Inglês",
+          "firstOptionFeature": "A1 → B1 (Meta: B2 para prontidão internacional)",
+          "secondOptionFeature": "B1 ou superior (fluência técnica necessária)"
+        },
+        {
+          "title": "Objetivo",
+          "firstOptionFeature": "Construir bases técnicas, de portfólio e de inglês para atingir o nível PSP",
+          "secondOptionFeature": "Conquistar contratos internacionais de alta remuneração ($10K–$15K USD/mês)"
+        },
+        {
+          "title": "Foco Principal",
+          "firstOptionFeature": "Melhoria técnica, construção de portfólio, evolução do inglês, plano de carreira",
+          "secondOptionFeature": "Posicionamento estratégico, domínio de entrevistas, networking, negociação de ofertas"
+        },
+        {
+          "title": "Duração da Mentoria",
+          "firstOptionFeature": "12 meses",
+          "secondOptionFeature": "6 ou 12 meses"
+        },
+        {
+          "title": "Sessões ao Vivo",
+          "firstOptionFeature": "Chamada mensal em grupo com o Yuri + chamadas quinzenais com o time de mentores da BASE",
+          "secondOptionFeature": "Chamadas quinzenais em grupo + feedback direto do Yuri"
+        },
+        {
+          "title": "Simulações de Entrevista",
+          "firstOptionFeature": "Cenários de júnior a pleno",
+          "secondOptionFeature": "Cenários técnicos de sênior e system design com 5 mentores especialistas"
+        },
+        {
+          "title": "Acompanhamento de Inglês",
+          "firstOptionFeature": "3x/semana – foco de iniciante a intermediário",
+          "secondOptionFeature": "3x/semana – foco de intermediário a avançado técnico"
+        },
+        {
+          "title": "Acesso à Plataforma Borderless",
+          "firstOptionFeature": "Incluído (portfólio, aulas, comunidade)",
+          "secondOptionFeature": "Incluído (networking, aulas, recursos exclusivos do PSP)"
+        },
+        {
+          "title": "Recursos-Chave",
+          "firstOptionFeature": "Modelos de projetos de portfólio, currículo de alta conversão para aplicações de entrada",
+          "secondOptionFeature": "Currículo de alta conversão adaptado à sua estratégia, scripts de aplicação, playbook de negociação"
+        },
+        {
+          "title": "Resultado Esperado",
+          "firstOptionFeature": "Prontidão para o PSP em até 12 meses",
+          "secondOptionFeature": "1–3 ofertas internacionais em até 120 dias"
+        },
+        {
+          "title": "Resultado Médio de Alumni",
+          "firstOptionFeature": "Entrada no PSP + primeiro portfólio pronto para o mercado internacional",
+          "secondOptionFeature": "Contratos de $10K a $15K USD/mês"
+        },
+        {
+          "title": "Melhor Para",
+          "firstOptionFeature": "Iniciantes ou profissionais iniciando o caminho para oportunidades globais",
+          "secondOptionFeature": "Profissionais prontos para competir e vencer no mercado global agora"
+        }
+      ]
+    }
+  },
+  "BootcampWeb3": {
+    "HeroSection": {
+      "title": "Torne-se um <colorful>Web3 Global Developer</colorful> em 12 semanas",
+      "subtitle": "Bootcamp intensivo e prático para desenvolver habilidades reais em Web3 — dos fundamentos de blockchain ao deploy de dApps de produção.",
+      "cta": "Aplicar para a Próxima Turma"
+    },
+    "BootcampComparator": {
+      "preTitle": "Por que escolher o Borderless Bootcamp?",
+      "title": "Compare nosso <italic>bootcamp</italic> com um curso online genérico",
+      "firstOptionTitle": "Borderless Web3 Bootcamp",
+      "secondOptionTitle": "Curso Online genérico",
+      "features": [
+        { "title": "Estilo de Aprendizado", "first": "Programa imersivo de 12 semanas, em cohort", "second": "Auto-ritmo, aulas gravadas" },
+        { "title": "Currículo", "first": "Web3 full-stack: Solidity, Rust, Cosmos, DeFi, NFTs, integrações com IA", "second": "Foco estreito, geralmente limitado a uma linguagem ou tópico" },
+        { "title": "Projetos", "first": "Vários builds práticos + Projeto final em equipe (Demo Day)", "second": "Exercícios pequenos ou tutoriais, sem projetos de portfólio" },
+        { "title": "Mentoria", "first": "Acesso direto a mentores da indústria, feedback e mock interviews", "second": "Sem mentoria, apenas conteúdo pré-gravado" },
+        { "title": "Comunidade", "first": "Rede ativa com 500+ developers e founders globais", "second": "Estudo solo, sem accountability da comunidade" },
+        { "title": "Certificação", "first": "Comprovante de graduação on-chain com NFT", "second": "Certificado PDF padrão" },
+        { "title": "Portfólio", "first": "dApps prontos para GitHub em múltiplos ecossistemas (Ethereum, Solana, Cosmos)", "second": "Limitado, geralmente repositórios baseados em tutoriais" },
+        { "title": "Networking", "first": "Exposição no Demo Day + conexões com investidores/founders", "second": "Nenhum" },
+        { "title": "Prontidão Global", "first": "Foco em padrões internacionais, comunicação em inglês e trabalho remoto", "second": "Localizado, não adaptado para carreira global" },
+        { "title": "Resultados", "first": "Aceleração de carreira + possibilidade de incubação de startup", "second": "Apenas conhecimento, sem resultados de carreira estruturados" }
+      ]
+    },
+    "ResultsYouCanExpect": {
+      "preTitle": "Resultados que você pode esperar",
+      "title": "Alunos do bootcamp <italic>tipicamente</italic>:",
+      "results": [
+        { "title": "Publicam dApps reais", "description": "Constroem e fazem deploy de aplicações descentralizadas ponta a ponta com ferramentas modernas" },
+        { "title": "Dominam o stack Web3", "description": "Entendem as camadas: protocolos, smart contracts, indexação e frontends" },
+        { "title": "Portfólio que se destaca", "description": "Um GitHub com projetos relevantes para recrutadores e founders" },
+        { "title": "Oportunidades globais", "description": "Ficam posicionados para vagas e bounties em times Web3 internacionais" }
+      ]
+    },
+    "WhyThisBootcamp": {
+      "preTitle": "Por que este bootcamp?",
+      "title": "O que torna este programa <italic>diferente</italic>",
+      "features": [
+        { "title": "Intenso e prático", "description": "Sprints rápidos focados em construir, entregar e aprender fazendo" },
+        { "title": "Mentalidade global-first", "description": "Conteúdo, projetos e feedback alinhados às expectativas internacionais" },
+        { "title": "Código nível produção", "description": "Dos contratos aos frontends, com qualidade, testes e padrões reais" },
+        { "title": "Foco em resultados", "description": "Projetos pensados para gerar sinal de portfólio e destravar entrevistas" },
+        { "title": "Comunidade e mentores", "description": "Apoio de uma comunidade de alta performance e mentores experientes" }
+      ]
+    },
+    "WhoShouldJoin": {
+      "preTitle": "Para quem é?",
+      "title": "Este bootcamp foi feito para <italic>profissionais de tecnologia ambiciosos</italic> prontos para entrar em Web3",
+      "audience": [
+        { "title": "Developers (Backend/Fullstack)", "description": "Prontos para expandir para blockchain/Web3" },
+        { "title": "Startup Builders & Empreendedores", "description": "Explorando tecnologias descentralizadas" },
+        { "title": "Pesquisadores/Alunos", "description": "Que querem um treinamento Web3 estruturado e prático" }
+      ],
+      "requirements": {
+        "title": "Requisitos mínimos",
+        "items": [
+          "1 ano de experiência com qualquer linguagem de programação",
+          "Inglês intermediário (as aulas são conduzidas em inglês)"
+        ]
+      }
+    },
+    "ModulesOverview": {
+      "preTitle": "Visão Geral dos Módulos",
+      "title": "Uma jornada completa de 12 semanas, dos fundamentos de blockchain ao <italic>desenvolvimento Web3 avançado</italic>",
+      "moduleLabel": "Módulo",
+      "modules": [
+        {
+          "title": "Fundamentos de Web3 (Semanas 1-4)",
+          "goal": "Conhecimento conceitual sobre registros descentralizados e criptoativos",
+          "weeks": [
+            {
+              "title": "Semana 1: Blockchain e Fundamentos de Cripto",
+              "content": [
+                "Blocks, chains, hashing, signatures, Merkle Trees",
+                "PoW vs PoS consensus",
+                "Bitcoin & UTXO model"
+              ],
+              "length": "4h",
+          "extra": "📖 Self-study: Satoshi Whitepaper"
+            },
+            {
+              "title": "Semana 2: Ethereum, EVM e Smart Contracts",
+              "content": [
+               "Ethereum accounts, transactions, gas",
+               "Solidity intro"
+              ],
+              "length": "6h",
+              "extra": "💻 Tarefa: Deploy do 'Hello World' com Remix IDE"
+            },
+            {
+              "title": "Weeks 3–4: Token Standards + Core Primitives",
+              "content": [
+                "ERC-20, ERC-721, ERC-1155",
+                "Oracles, IPFS, Arweave, Filecoin",
+                "L2 vs L3 (Arbitrum, Optimism, StarkNet, zkSync)",
+                "ZK proofs: SNARKs vs STARKs"
+              ],
+              "length": "5h",
+              "extra": "✅ Mini Projeto: Deploy de ERC-20 + frontend básico em testnet L2"
+            }
+          ]
+        },
+        {
+          "title": "Trilhas de Desenvolvimento (Semanas 5-8)",
+          "goal": "Sair da teoria para construir lógica on-chain",
+          "weeks": [
+            {
+              "title": "Solidity (40%)",
+              "content": [
+                "Advanced patterns & security (reentrancy, overflow)",
+                "DeFi primitives: AMMs, lending, staking"
+              ],
+              "length": "12h",
+              "extra": "💻 Build: Token swap dApp + DAO voting contract"
+            },
+            {
+              "title": "Rust (40%) – Foco em Solana",
+              "content": [
+               "Anchor framework & Solana accounts model"
+              ],
+              "length": "12h",
+             "extra": "💻 Build: NFT minting + auction dApp"
+            },
+            {
+              "title": "GoLang (10%) – Introdução a Cosmos",
+              "content": [
+                 "Tendermint / Cosmos SDK basics"
+              ],
+              "length": "3h",
+              "extra": "💻 Build: Minimal blockchain node"
+            },
+            {
+              "title": "Front-end Integration (10%)",
+              "content": [
+                "Wallets (MetaMask, Phantom), events, transactions",
+                "Ethers.js, Web3.js"
+              ],
+              "length": "3h",
+              "extra": "💻 Mini projeto: Cross-chain dApp or protocol simulator"
+            }
+          ]
+        },
+        {
+          "title": "Ecossistema e Fronteira (Semanas 9-12)",
+          "goal": "Explorar aplicações práticas e direções futuras",
+          "weeks": [
+            {
+              "title": "Semana 9: DeFi + NFTs",
+              "content": [
+                "AMMs, stablecoins, staking",
+                 "NFT metadata, royalties, marketplaces"
+              ],
+              "length": "5h"
+            },
+            {
+              "title": "Semana 10: Setores Emergentes de Web3",
+              "content": [
+               "DePIN (Helium, Render, Akash)",
+                "DeSci (VitaDAO, Molecule)",
+                "Meme tokens & culture"
+              ],
+              "length": "2h"
+            },
+            {
+              "title": "Semana 11: IA em Web3",
+              "content": [
+               "Bittensor, Ocean, autonomous agents",
+                "Prompt engineering meets smart contracts"
+              ],
+              "length": "5h"
+            },
+            {
+              "title": "Semana 12: Sprint do Projeto Final",
+              "content": [
+                "Teams of 3 build a full-stack dApp in chosen vertical (DeFi, DeSci, AI, GameFi, DePIN, NFT, Meme)",
+                "Demo Day (3h) + GitHub submission",
+                "NFT-backed certificate of graduation"
+              ],
+              "length": "Semana de Sprint"
+            }
+          ]
+        }
+      ]
+    },
+    "ApplyNow": {
+      "title": "Aplicar Agora",
+      "description": "Vagas limitadas para garantir acompanhamento prático e feedback de qualidade. Se você quer entrar em times globais de Web3, aplique hoje.",
+      "cta": "Aplicar para a Próxima Turma"
+    }
+  },
+  "PspMentorship": {
+    "HeroSection": {
+      "title": "De Talento Local a <colorful>Profissional Global</colorful> - em 90 dias",
+      "subtitle": "A Mentoria PSP é o programa comprovado de aceleração de carreira para developers seniores brasileiros conquistarem contratos internacionais de alta remuneração, ganhando em USD/EUR, sem depender de sorte, recrutadores ‘milagrosos’ ou aplicações infinitas.",
+      "cta": "Aplicar para a Próxima Turma"
+    },
+    "ApplyNow": {
+      "title": "Aplicar Agora",
+      "description": "Trabalhamos com um número limitado de mentorados por turma para garantir orientação personalizada. Se você está pronto para parar de aplicar às cegas e começar a fechar propostas no mercado global, aplique hoje",
+      "cta": "Aplicar para a Próxima Turma"
+    },
+    "CompareOurMentorships": {
+      "preTitle": "Se você ainda não está pronto",
+      "title": "Compare nossas <italic>mentorias</italic>"
+    },
+    "MentorshipComparison": {
+      "firstOptionTitle": "Mentoria BASE",
+      "secondOptionTitle": "Mentoria PSP",
+      "features": [
+        {
+          "title": "Momento de Carreira",
+          "firstOptionFeature": "Sem experiência prévia → Início de pleno (0–2 anos de experiência)",
+          "secondOptionFeature": "Pleno → Sênior (3+ anos de experiência)"
+        },
+        {
+          "title": "Nível de Inglês",
+          "firstOptionFeature": "A1 → B1 (Meta: B2 para prontidão internacional)",
+          "secondOptionFeature": "B1 ou superior (fluência técnica necessária)"
+        },
+        {
+          "title": "Objetivo",
+          "firstOptionFeature": "Construir base técnica, portfólio e inglês para atingir o nível PSP",
+          "secondOptionFeature": "Fechar contratos internacionais de alta remuneração ($10K–$15K USD/mês)"
+        },
+        {
+          "title": "Foco Principal",
+          "firstOptionFeature": "Evolução técnica, construção de portfólio, upgrade de inglês, plano de carreira",
+          "secondOptionFeature": "Posicionamento estratégico, domínio de entrevistas, networking, negociação de propostas"
+        },
+        {
+          "title": "Duração da Mentoria",
+          "firstOptionFeature": "12 meses",
+          "secondOptionFeature": "6 ou 12 meses"
+        },
+        {
+          "title": "Encontros ao Vivo",
+          "firstOptionFeature": "Chamada mensal com Yuri + chamadas quinzenais com o time BASE",
+          "secondOptionFeature": "Chamadas quinzenais em grupo + feedback direto do Yuri"
+        },
+        {
+          "title": "Mock Interviews",
+          "firstOptionFeature": "Cenários de júnior a pleno",
+          "secondOptionFeature": "Cenários sênior técnicos e de system design com 5 mentores especialistas"
+        },
+        {
+          "title": "Inglês",
+          "firstOptionFeature": "3x/semana – foco do iniciante ao intermediário",
+          "secondOptionFeature": "3x/semana – foco do intermediário ao avançado técnico"
+        },
+        {
+          "title": "Acesso à Borderless Platform",
+          "firstOptionFeature": "Incluído (portfólio, aulas, comunidade)",
+          "secondOptionFeature": "Incluído (networking, aulas, materiais exclusivos da PSP)"
+        },
+        {
+          "title": "Recursos-Chave",
+          "firstOptionFeature": "Templates de projetos de portfólio, currículo de alta conversão para aplicações de entrada",
+          "secondOptionFeature": "Currículo de alta conversão adaptado à sua estratégia, scripts de aplicação, playbook de negociação"
+        },
+        {
+          "title": "Resultado Esperado",
+          "firstOptionFeature": "Prontidão para a PSP em até 12 meses",
+          "secondOptionFeature": "1–3 propostas internacionais em até 120 dias"
+        },
+        {
+          "title": "Resultado Médio dos Alumni",
+          "firstOptionFeature": "Entrada na PSP + primeiro portfólio pronto para o internacional",
+          "secondOptionFeature": "Contratos entre $10K e $15K USD/mês"
+        },
+        {
+          "title": "Melhor Para",
+          "firstOptionFeature": "Iniciantes ou profissionais iniciando o caminho para oportunidades globais",
+          "secondOptionFeature": "Profissionais prontos para competir e vencer no mercado global agora"
+        }
+      ]
+    },
+    "GoGlobalMethod": {
+      "preTitle": "O Método Go Global™",
+      "title": "Nosso framework proprietário de <italic>4 pilares</italic> para a transição de uma carreira nacional para o <italic>sucesso global</italic>:",
+      "methods": [
+        {
+          "title": "Profile Package",
+          "description": "Otimização de LinkedIn, GitHub, CV e marca pessoal para atração global."
+        },
+        {
+          "title": "Interview Engine",
+          "description": "Domine mock interviews, live coding, system design e narrativa de carreira em inglês."
+        },
+        {
+          "title": "Opportunity Pipeline",
+          "description": "Construa um pipeline de vagas ativo + passivo com aplicações direcionadas e interesse de recrutadores inbound."
+        },
+        {
+          "title": "Senior Global Playbook",
+          "description": "Estratégia de carreira e financeira de longo prazo, incluindo equity, planejamento tributário e opções de relocação."
+        }
+      ]
+    },
+    "HowItWorks": {
+      "title": "Como a <italic>Mentoria</italic> funciona?",
+      "items": [
+        { "title": "Duração", "description": "6 ou 12 meses (escolha seu plano)" },
+        { "title": "Formato", "description": "100% online" },
+        { "title": "Encontros ao vivo", "description": "Chamadas estratégicas quinzenais com feedback direto do Yuri" },
+        { "title": "Mentores especialistas", "description": "5 mentores de diferentes áreas para conduzir mock interviews e dar feedback sob medida" },
+        { "title": "Mock Interviews", "description": "Simulações mensais cobrindo os principais formatos de entrevista globais" },
+        { "title": "Inglês", "description": "Aulas 3x/semana do básico à fluência técnica" },
+        { "title": "Acesso à Plataforma Borderless", "description": "Todos os mentorados recebem conta premium na Borderless Platform — centralizando comunidade, aprendizado e networking em um só lugar" },
+        { "title": "Currículo", "description": "Modelos de currículo de alta conversão adaptáveis às estratégias definidas durante a mentoria" },
+        { "title": "Scripts", "description": "Scripts, templates e pipelines comprovados para acelerar resultados" }
+      ]
+    },
+    "ResultsYouCanExpect": {
+      "preTitle": "Nossos alumni relatam",
+      "title": "<italic>Resultados</italic> que você pode esperar",
+      "results": [
+        { "title": "Resultados rápidos", "description": "Primeiras propostas internacionais em 30–90 dias" },
+        { "title": "Salário maior", "description": "Saltos salariais para $12K+ USD/mês para profissionais Tier 3" },
+        { "title": "Independência", "description": "Confiança para negociar propostas e trabalhar globalmente sem depender de terceiros" }
+      ],
+      "success": {
+        "title": "Case real de sucesso",
+        "text": "Thiago, backend sênior de Belo Horizonte, já ganhando $10K USD/mês, conquistou <highlight>um contrato adicional de $9K USD</highlight> em apenas 27 dias de mentoria"
+      }
+    },
+    "WhatIs": {
+      "title": "O que é a Mentoria PSP?",
+      "description": "A Mentoria Programador Sem Pátria (PSP) é um programa de aceleração de carreira de alta performance para profissionais brasileiros experientes de tecnologia prontos para iniciar no mercado global. Liderada por Yuri Pereira, fundador da Borderless Coding, a PSP combina posicionamento estratégico, domínio de entrevistas técnicas, networking e mentoria direta para gerar propostas internacionais previsíveis.",
+      "highlight": "Mais de 105+ ex-alunos já conquistaram vagas em empresas nos EUA, Canadá, Europa e Ásia — muitos com salários entre $5K e $15K/mês."
+    },
+    "WhoIsItFor": {
+      "preTitle": "Para quem é?",
+      "title": "A Mentoria PSP é feita para profissionais de tecnologia de nível <italic>pleno a sênior</italic>:",
+      "roles": {
+        "title": "Funções de Tech",
+        "items": [
+          "Backend, Fullstack, DevOps",
+          "Especialistas em Cloud, Engenheiros de Dados",
+          "Especialistas em IA, Developers Blockchain",
+          "Developers Mobile, Engenheiros de Infra",
+          "Tech Leads, Engineering Managers"
+        ]
+      },
+      "requirements": {
+        "title": "Requisitos",
+        "items": [
+          "Mínimo de 3 anos de experiência profissional",
+          "Inglês: B1 ou superior (te ajudamos a chegar na fluência técnica)",
+          "Pronto para trabalhar remotamente para empresas internacionais",
+          "Ganhar em USD/EUR/CHF/GBP/AED"
+        ]
+      }
+    },
+    "WhyItWorks": {
+      "preTitle": "Por que funciona?",
+      "title": "A maioria dos conselhos de carreira para devs é <italic>genérico, desatualizado ou puramente teórico</italic>. A Mentoria PSP te entrega:",
+      "features": [
+        "Acesso direto a um mentor que pessoalmente escalou de $5K para $90K/mês em contratos de tech",
+        "5 mentores especializados para preparo diverso de entrevistas",
+        "Um sistema claro, passo a passo, validado com 105+ casos de sucesso",
+        "Uma comunidade de alta performance que mantém sua accountability"
+      ]
+    }
+  },
+  "ForFoundersAndInvestors": {
+    "ForFoundersHero": {
+      "title": "Borderless Hub – Onde <colorful>Talento Global</colorful> Encontra Capital",
+      "subtitle": "Empoderamos a próxima geração de founders internacionais por meio de mentoria, incubação e acesso a uma rede global de investidores.",
+      "cta": "Seja nosso parceiro"
+    },
+    "ForFounders": {
+      "preTitle": "Para Founders",
+      "title": "Você é um builder com <italic>ambição global</italic>?",
+      "description": "Na Borderless Hub, ajudamos profissionais de tecnologia de alto nível a fazerem a transição de talento para founder. No nosso ecossistema, founders têm acesso a:",
+      "features": [
+        { "title": "Comunidade Global de Devs", "description": "Uma comunidade com 500+ developers e engenheiros internacionalizados" },
+        { "title": "Mentoria de Especialistas", "description": "Mentoria de operadores experientes em tecnologia, growth e captação" },
+        { "title": "Direção Estratégica", "description": "Orientação em produto, arquitetura técnica e estratégias de go-to-market" },
+        { "title": "Rede de Investidores", "description": "Conexões diretas com investidores e parceiros nos EUA, UE e LATAM" }
+      ]
+    },
+    "ForInvestors": {
+      "preTitle": "Para Investidores",
+      "title": "Buscando dealflow de <italic>alta qualidade</italic>?",
+      "description": "Através do Borderless Hub, investidores têm acesso a ventures early-stage desenhadas para escalabilidade, transparência e proteção. Nosso modelo de incubação combina talento global com execução enxuta, garantindo que as ventures já nasçam fortes.",
+      "incubationTitle": "Nosso Modelo de <italic>Incubação</italic>:",
+      "incubation": [
+        { "title": "Estrutura Independente", "description": "Empresas lideradas por founders – cada startup é estruturada como uma entidade independente, garantindo clareza e proteção ao investidor." },
+        { "title": "Acesso Internacional", "description": "Veículo global de captação – nossa estrutura nos EUA permite participação fluida de investidores internacionais." },
+        { "title": "Pipeline Validado", "description": "Pipeline diversificado – ventures surgem do nosso ecossistema comprovado de educação e mentoria, com apoio de hackathons e incubação seletiva." },
+        { "title": "Capital Inteligente", "description": "Eficiência de capital – startups começam com talento e distribuição antes de captar rodadas externas, reduzindo risco inicial e maximizando o potencial de crescimento." }
+      ],
+      "hubTitle": "Através do <italic>Borderless Hub</italic>, investidores acessam:",
+      "hub": [
+        { "title": "Execução Validada", "description": "Ventures lideradas por founders com mindset internacional e execução validada" },
+        { "title": "Pipeline Exclusivo", "description": "Pipeline exclusivo de incubação de startups nascidas do nosso ecossistema de mentoria e hackathons" },
+        { "title": "Setores Diversificados", "description": "Oportunidades diversificadas em SaaS, IA, fintech e ferramentas para developers" },
+        { "title": "Operações Escaláveis", "description": "Operações preparadas para o global, desenhadas para escalabilidade e transparência" }
+      ],
+      "banner": {
+        "title": "Conectando Talento da América Latina com Capital Global",
+        "description": "Construímos startups enxutas, resilientes e posicionadas para crescimento exponencial."
+      }
+    },
+    "IncubatedStartups": {
+      "preTitle": "Startups em Destaque",
+      "title": "Conheça algumas das ventures que emergem do nosso <italic>ecossistema</italic>:",
+      "startups": [
+        { "src": "/startups/rampix.png", "title": "Rampix", "description": "Exchange 100% brasileira para comprar e vender cripto via PIX, com rapidez e segurança.", "buttonText": "Saiba mais",  "href": "https://www.rampix.xyz/" },
+        { "src": "/startups/borderless-community.webp", "title": "Borderless Community", "description": "O super app da Borderless Coding: rede social, área de membros e fórum para profissionais globais de tecnologia", "buttonText": "Exclusivo para membros", "href": "https://community.borderlesscoding.com/" }
+      ],
+      "moreCard": {
+        "title": "Mais Startups em Breve",
+        "description": "Como parte do nosso pipeline de incubação, novas ventures surgem constantemente do nosso ecossistema."
+      },
+      "visitLabel": "Visitar"
+    },
+    "JoinUs": {
+      "title": "Junte-se a Nós",
+      "description": "Seja você um founder pronto para lançar sua startup ou um investidor em busca de oportunidades early-stage, a Borderless é a ponte entre talento e capital.",
+      "cta": "Seja nosso parceiro"
+    },
+    "WhyBorderless": {
+      "preTitle": "Por que a Borderless?",
+      "title": "Nosso histórico fala por si — <italic>entregamos resultados</italic> para founders e investidores",
+      "results": [
+        { "title": "Sucesso Comprovado", "description": "Histórico validado: 95+ profissionais internacionalizados por meio da nossa mentoria" },
+        { "title": "Crescimento de Receita", "description": "Ecossistema sustentado por receita: $1,7M nos últimos 12 meses com educação financiando a incubação" },
+        { "title": "Talento Validado", "description": "Dealflow com comunidade em primeiro lugar: startups crescem com base em talento técnico já validado" },
+        { "title": "Alcance Global", "description": "Presença internacional: operações e parcerias no Brasil, Europa e Estados Unidos" }
+      ]
+    }
+  },
+  "WantToHire": {
+    "HeroSection": {
+      "title": "Contrate Talento Tech Global. <colorful>Zero Taxas.</colorful>",
+      "subtitle": "Com a Borderless Coding, você tem acesso direto a um pool de desenvolvedores, engenheiros e profissionais de dados brasileiros altamente qualificados — prontos para trabalhar em empresas globais. Diferente de consultorias tradicionais, não cobramos taxa de contratação.",
+      "cta": "Acessar Nosso Banco de Talentos"
+    },
+    "HowItWorks": {
+      "title": "Como <italic>Funciona</italic>",
+      "steps": [
+        { "title": "Conte sua necessidade", "description": "Diga o que você precisa — vaga, stack, senioridade." },
+        { "title": "Conectamos você", "description": "Conectamos você com profissionais pré-qualificados do nosso pool." },
+        { "title": "Contrate Diretamente", "description": "Você contrata direto — sem agência no meio, sem porcentagem." }
+      ]
+    },
+    "PartnerWithBorderless": {
+      "title": "Seja Parceiro da Borderless",
+      "description": "Pule as taxas de consultoria. Contrate diretamente de uma comunidade de talentos pré-qualificados e prontos para o internacional.",
+      "cta": "Acessar Nosso Banco de Talentos"
+    },
+    "TalentPool": {
+      "preTitle": "O banco de talentos",
+      "title": "Nossa <italic>rede</italic> inclui:",
+      "items": [
+        "Desenvolvedores Backend, Frontend & Fullstack",
+        "Engenheiros de Dados & Analistas de Dados",
+        "DevOps & Especialistas em Cloud",
+        "Profissionais de IA & Blockchain"
+      ],
+      "paragraph": "Todos treinados sob o nosso método Go Global™, garantindo não apenas habilidade técnica, mas também capacidade de prosperar em times internacionais."
+    },
+    "WhyBorderless": {
+      "title": "Por que a Borderless Coding?",
+      "bullets": [
+        "Zero taxas de contratação — sem comissões, sem custos ocultos.",
+        "Talento pré-qualificado — todo profissional passou por nossa mentoria ou programas de incubação.",
+        "Prontos para o internacional — inglês fluente, experiência com trabalho remoto e cultura global.",
+        "Rápido e direto — conecte-se a candidatos imediatamente por nossa plataforma e comunidade."
+      ]
+    },
+    "BorderlessVsConsultancy": {
+      "preTitle": "Por que escolher a Borderless?",
+      "title": "Compare a <italic>Borderless</italic> com Consultorias Tradicionais",
+      "comparison": {
+        "firstOptionTitle": "Borderless Coding",
+        "secondOptionTitle": "Consultoria Tradicional",
+        "features": [
+          { "title": "Taxas de Contratação", "firstOptionFeature": "$0, não cobramos das empresas", "secondOptionFeature": "20–35% do salário anual" },
+          { "title": "Qualidade do Talento", "firstOptionFeature": "Pré-qualificados, treinados via mentoria e programas globais", "secondOptionFeature": "Pool misto, nem sempre pré-qualificado" },
+          { "title": "Inglês & Prontidão Global", "firstOptionFeature": "Inglês mínimo B1, treinados para entrevistas e cultura internacional", "secondOptionFeature": "Varia bastante, não garantido" },
+          { "title": "Velocidade", "firstOptionFeature": "Conexão rápida — contrate em dias", "secondOptionFeature": "Processo demorado, semanas/meses" },
+          { "title": "Transparência", "firstOptionFeature": "Contrato direto entre empresa e profissional", "secondOptionFeature": "Contratos com intermediários e restrições" }
+        ]
+      }
+    }
+  },
+  "WantToInternationalize": {
+    "Hero": {
+      "title": "Pronto para Levar sua <colorful>Carreira em Tech</colorful> ao Mundo?",
+      "subtitle": "A Borderless Coding já ajudou 100+ desenvolvedores brasileiros a conquistarem vagas internacionais pagando $10K+ USD/mês. Você pode ser o próximo.",
+      "cta": "Agendar uma Chamada de Estratégia Gratuita"
+    },
+    "WhyInternationalize": {
+      "title": "Por que <italic>Internacionalizar?</italic>",
+      "features": [
+        { "title": "Moedas Fortes", "description": "Receba em USD/EUR/GBP/CHF/AED em vez de BRL" },
+        { "title": "Liberdade Remota", "description": "Ganhe liberdade para trabalhar de qualquer lugar" },
+        { "title": "Reconhecimento Real", "description": "Seja reconhecido pelo seu valor técnico real" },
+        { "title": "Rede Global", "description": "Junte-se a uma comunidade com 500+ profissionais globais" }
+      ]
+    },
+    "BorderlessAdvantage": {
+      "preTitle": "O Diferencial Borderless",
+      "title": "Diferente de cursos genéricos ou consultorias, <italic>nós te entregamos</italic>:",
+      "features": [
+        { "title": "Um sistema comprovado (Go Global™)", "description": "LinkedIn, CV, GitHub, preparo para entrevistas, Networking" },
+        { "title": "Mentoria direta", "description": "De profissionais que já escalaram globalmente" },
+        { "title": "Entrevistas simuladas", "description": "Treine exatamente como empresas de fora vão te testar" },
+        { "title": "Suporte da comunidade", "description": "Mantenha motivação, accountability e conexões" }
+      ]
+    },
+    "HowItWorks": {
+      "title": "Como <italic>Funciona</italic> (Seus Próximos 90–120 Dias)",
+      "stepLabel": "Etapa",
+      "steps": [
+        { "title": "Profile Package", "description": "Otimizamos seu LinkedIn, CV e GitHub para atração global." },
+        { "title": "Interview Engine", "description": "Você treina entrevistas em inglês + técnicas até estar pronto para performar." },
+        { "title": "Opportunity Pipeline", "description": "Criamos um fluxo previsível de ofertas de trabalho internacionais." },
+        { "title": "Global Playbook", "description": "Você aprende estratégias de longo prazo (equity, planejamento tributário, relocação)." }
+      ]
+    },
+    "BorderlessVsGoingAlone": {
+      "preTitle": "Comparativo",
+      "title": "<italic>Borderless</italic> vs Caminho Sozinho",
+      "comparison": {
+        "firstOptionTitle": "Borderless Coding",
+        "secondOptionTitle": "Caminho Sozinho",
+        "features": [
+          { "title": "Método", "firstOptionFeature": "Go Global™ – comprovado, passo a passo", "secondOptionFeature": "Tentativa e erro" },
+          { "title": "Mentoria", "firstOptionFeature": "Feedback direto de profissionais globais", "secondOptionFeature": "Sem orientação" },
+          { "title": "Velocidade", "firstOptionFeature": "90 dias até as primeiras propostas", "secondOptionFeature": "12–24 meses (se acontecer)" },
+          { "title": "Comunidade", "firstOptionFeature": "500+ profissionais te apoiando", "secondOptionFeature": "Sozinho" },
+          { "title": "ROI", "firstOptionFeature": "Contratos de $10k+ USD", "secondOptionFeature": "Imprevisível" }
+        ]
+      }
+    },
+    "ReadyToGoGlobal": {
+      "preTitle": "Pronto para ir global?",
+      "title": "Você já viu como funciona. Já viu <italic>os resultados</italic>. A única pergunta é:",
+      "card": {
+        "title": "Você será o próximo?",
+        "description": "Agende sua chamada de estratégia gratuita agora — fale diretamente com nosso time, receba um diagnóstico de carreira e veja se você está pronto para o PSP ou BASE",
+        "cta": "Agendar Chamada de Estratégia"
+      }
+    }
+  },
+  "Expansion": {
+    "Hero": {
+      "title": "A <colorful>Expansão</colorful> Borderless",
+      "subtitle": "De mentoria e plataforma à incubação de startups e acesso a investidores — este é nosso roadmap para escalar impacto.",
+      "cta": "Entrar na Expansão"
+    },
+    "WhyItMatters": {
+      "title": "Por que a <italic>Expansão Borderless</italic> Importa",
+      "results": [
+        {
+          "title": "Histórico comprovado",
+          "description": "+$1.5M em receita nos últimos 12 meses, 105+ cases de sucesso"
+        },
+        {
+          "title": "Dealflow forte",
+          "description": "500+ membros na comunidade entre LATAM e Europa"
+        },
+        {
+          "title": "Estrutura global",
+          "description": "Conectando talento latino-americano com capital internacional"
+        }
+      ]
+    },
+    "IncubatedStartups": {
+      "preTitle": "Startups em Destaque",
+      "title": "Exemplos de negócios já nascidos do <italic>nosso ecossistema</italic>:",
+      "items": [
+        {
+          "src": "/startups/rampix.png",
+          "title": "Rampix",
+          "description": "Uma exchange 100% brasileira para comprar e vender criptomoedas via PIX, de forma rápida e segura.",
+          "buttonText": "Saiba mais",
+          "href": "https://www.rampix.xyz/"
+        },
+        {
+          "src": "/startups/borderless-community.webp",
+          "title": "Borderless Community",
+          "description": "O super app da Borderless Coding: combinando rede social, área de membros e fórum para profissionais globais de tecnologia.",
+          "buttonText": "Exclusivo para membros",
+          "href": "https://community.borderlesscoding.com/"
+        }
+      ]
+    },
+    "JoinExpansion": {
+      "title": "Junte-se a Expansão",
+      "description": "Se você é um founder em busca de incubação ou um investidor em busca de fluxo de negócios de alta qualidade, a Borderless é seu ponto de entrada para a próxima onda de empreendimentos globais",
+      "cta": "Explore oportunidades"
+    },
+    "BorderlessEvolution": {
+      "title": "A <italic>evolução</italic> Borderless",
+      "status": { "completed": "Concluído", "inProgress": "Em progresso", "next": "Próximo" },
+      "stages": [
+        {
+          "title": "Fundação de Talentos",
+          "timeline": "2023–2025",
+          "description": "A Borderless começou destravando o mercado global para desenvolvedores brasileiros.",
+          "goals": [
+            "Mentoria PSP: 100+ profissionais internacionalizados",
+            "Mentoria BASE: preparando iniciantes e plenos iniciais para o palco global",
+            "Bootcamps: programas especializados (ex.: Web3 Global Developer) alimentando novos mercados"
+          ],
+          "outcome": "Isso criou um pipeline de talentos pré-validados e prontos para o global."
+        },
+        {
+          "title": "Escala da Plataforma",
+          "timeline": "Final de 2025",
+          "description": "Em seguida, estamos consolidando a nossa Borderless Platform — um super app para profissionais:",
+          "goals": [
+            "Comunidade, fórum e módulos de aprendizagem",
+            "Onboarding e dashboards de carreira",
+            "Hub de networking e contratação"
+          ],
+          "outcome": "A plataforma transforma os resultados das mentorias em infraestrutura escalável, onde talento e oportunidade se encontram em escala."
+        },
+        {
+          "title": "Incubação de Startups",
+          "timeline": "2026",
+          "description": "Com talento validado e plataforma no ar, a expansão natural é via startups lideradas por founders. Todos os anos, hackathons e ciclos de incubação dentro da Borderless vão gerar novos negócios.",
+          "goals": [
+            "Modelo de SPV (LLCs separadas) – garantindo proteção ao investidor e crescimento limpo",
+            "Setores foco: SaaS, IA, DevTools e fintech",
+            "Suporte: estratégia de produto, growth e arquitetura técnica"
+          ],
+          "outcome": ""
+        },
+        {
+          "title": "Acesso a Investimento",
+          "timeline": "2026 em diante",
+          "description": "A Borderless Ventures conecta investidores globais ao nosso dealflow.",
+          "goals": [
+            "Veículo voltado aos EUA – participação simples para investidores internacionais",
+            "Pipeline diversificado – negócios nascidos de mentorias, plataforma e hackathons",
+            "Eficiência de capital – startups bootstrap com talento da comunidade antes de captar"
+          ],
+          "outcome": "Essa expansão garante que investidores acessem um pipeline pré-qualificado e founders captem com confiança."
+        }
+      ]
+    }
+  },
+  "Header": {
+    "logoAlt": "logo da borderless",
+    "links": {
+      "psp": "Mentoria PSP",
+      "base": "Mentoria BASE",
+      "bootcamp": "Bootcamp WEB3 Global Developer",
+      "foundersInvestors": "Para founders e investidores",
+      "wantToHire": "Quero contratar um profissional",
+      "wantToInternationalize": "Quero internacionalizar",
+      "expansion": "Expansão"
+    }
+  },
+  "Footer": {
+    "TalkToAProfessional": {
+      "left": "Fale com",
+      "right": "um profissional",
+      "yuriAlt": "Foto do Yuri",
+      "logoAlt": "logo da borderless"
+    },
+    "sections": {
+      "company": {
+        "title": "Empresarial",
+        "items": {
+          "howItWorks": "Como funciona a Borderless",
+          "privacyPolicy": "Política de Privacidade",
+          "refundPolicy": "Política de Reembolso",
+          "contact": "Contato"
+        }
+      },
+      "mentorships": {
+        "title": "Mentorias / Bootcamp",
+        "items": {
+          "psp": "Mentoria PSP",
+          "base": "Mentoria A Base",
+          "bootcamp": "Bootcamp WEB3"
+        }
+      },
+      "partnerships": {
+        "title": "Parcerias",
+        "items": {
+          "foundersInvestors": "Para founders e investidores",
+          "hire": "Quero contratar um profissional"
+        }
+      },
+      "evolution": {
+        "title": "Evolução",
+        "items": {
+          "internationalize": "Eu quero internacionalizar",
+          "expansion": "Expansão"
+        }
+      }
+    },
+    "copyright": {
+      "text": "© {year} Borderless Coding. Todos os direitos reservados"
+    }
+  },
+  "Legal": {
+    "PrivacyPolicy": {
+      "metadataTitle": "Política de Privacidade – Borderless Coding",
+      "h1": "Política de Privacidade",
+      "updated": "Última atualização: {date}",
+      "s1Title": "1. Introdução",
+      "s1Body": "Somos a Borderless Coding. Esta Política de Privacidade explica como coletamos, usamos, compartilhamos e protegemos suas informações quando você utiliza nossos sites, programas, mentorias e plataforma (coletivamente, os Serviços).",
+      "s2Title": "2. Dados que coletamos",
+      "s2Items": {
+        "account": "<strong>Conta e Contato:</strong> nome, e-mail, hash da senha, telefone (opcional), localização (cidade/país).",
+        "billing": "<strong>Faturamento:</strong> nome do pagador, endereço, identificações fiscais (se fornecidas), detalhes parciais de pagamento tratados por processadores (Stripe/Appmax) — não armazenamos números completos de cartão.",
+        "usage": "<strong>Uso e Dispositivo:</strong> páginas visualizadas, cliques, IP, localização aproximada, dispositivo, navegador — via cookies ou tecnologia similar.",
+        "content": "<strong>Conteúdo e Envios:</strong> mensagens enviadas via formulários, posts em fórum, tarefas, arquivos enviados.",
+        "mentorship": "<strong>Mentorias/Programas:</strong> informações de agendamento, progresso, feedback, gravações/notas (se houver consentimento).",
+        "marketing": "<strong>Preferências de marketing:</strong> opt-ins de e-mail, atribuição (UTM), indicações."
+      },
+      "s3Title": "3. Como usamos os dados (finalidades e bases legais)",
+      "s3Items": {
+        "provide": "Fornecer os Serviços (contrato) – criação de conta, autenticação, acesso a cursos/mentorias, pagamentos, recibos.",
+        "improve": "Operar e Melhorar (interesses legítimos) – analytics, depuração, prevenção de abusos, treinamento de qualidade.",
+        "comms": "Comunicações (consentimento/interesses legítimos) – e-mails de onboarding, atualizações de produto; e-mails de marketing apenas com opt‑in e fácil opt‑out.",
+        "compliance": "Conformidade (obrigação legal) – registros fiscais/auditoria, prevenção a fraudes, ordens judiciais.",
+        "personalization": "Personalização (consentimento/interesses legítimos) – conteúdo recomendado, lembretes."
+      },
+      "s4Title": "4. Compartilhamento",
+      "s4Body": "Compartilhamos dados com provedores/operadores estritamente para operar os Serviços: Stripe, Appmax, Resend (e-mail), Vimeo (vídeo), Notion (documentos internos), Analytics/Ads (Google/Meta) e outros fornecedores aprovados listados em: /legal/vendors. Podemos compartilhar conforme exigido por lei, durante fusão/aquisição ou para prevenir fraudes/abusos.",
+      "s5Title": "5. Cookies e rastreamento",
+      "s5Body": "Utilizamos cookies essenciais (login, sessão) e cookies opcionais de analytics/anúncios. Você pode gerenciar preferências via nosso banner de cookies (Granular: Essencial / Analytics / Marketing). Veja /legal/cookies para detalhes.",
+      "s6Title": "6. Transferências internacionais",
+      "s6Body": "Atuamos internacionalmente. Quando as leis (ex.: GDPR/LGPD) exigirem, utilizamos salvaguardas aprovadas (ex.: SCCs, cláusulas contratuais) para transferências transfronteiriças.",
+      "s7Title": "7. Retenção de dados",
+      "s7Items": {
+        "account": "<strong>Dados de conta:</strong> durante a vida da conta + até 7 anos para fins financeiros/auditoria.",
+        "program": "<strong>Registros de programas:</strong> 24 meses após a conclusão, a menos que você solicite exclusão antes (sujeito a obrigações legais).",
+        "marketing": "<strong>Dados de marketing:</strong> até que você retire o consentimento."
+      },
+      "s8Title": "8. Seus direitos",
+      "s8Body1": "Dependendo de onde você mora (ex.: EEE/Reino Unido – GDPR, Brasil – LGPD, Califórnia – CPRA), você pode ter direitos de acesso, correção, exclusão, portabilidade de dados, objeção/restrição de processamento e retirada de consentimento.",
+      "s8Body2": "Para exercer direitos: envie e-mail para contato@borderlesscoding.com. Verificaremos sua identidade e responderemos dentro do prazo legal.",
+      "s9Title": "9. Crianças",
+      "s9Body": "Nossos Serviços são destinados a pessoas com 16 anos ou mais (ou idade local de consentimento digital). Não coletamos, conscientemente, dados de crianças.",
+      "s10Title": "10. Segurança",
+      "s10Body": "Utilizamos controles padrão de mercado: criptografia em trânsito, controles de acesso, privilégio mínimo, logs de auditoria, avaliação de fornecedores e backups regulares. Nenhum método é 100% seguro.",
+      "s11Title": "11. Alterações nesta política",
+      "s11Body": "Podemos atualizar esta política periodicamente. Mudanças materiais serão comunicadas por e-mail ou aviso no app. <strong>Data de vigência:</strong> {date}",
+      "s12Title": "12. Contato",
+      "s12Body": "<strong>E-mail:</strong> contato@borderlesscoding.com"
+    },
+    "RefundPolicy": {
+      "metadataTitle": "Política de Reembolso e Cancelamento – Borderless Coding",
+      "h1": "Política de Reembolso e Cancelamento",
+      "standardTitle": "Padrão (turmas de mentoria)",
+      "standardItems": [
+        "Período de arrependimento: Reembolso integral em até 7 dias da compra se você não tiver acessado conteúdo pago ou participado de sessões ao vivo.",
+        "Após 7 dias ou após acessar conteúdo/chamadas ao vivo: Todas as vendas são finais para turmas e mentorias (sua vaga é reservada e com capacidade limitada)."
+      ],
+      "generalTitle": "Termos Gerais",
+      "generalItems": [
+        "Planos de pagamento: Você se compromete com o preço total do programa; as parcelas continuam a menos que um reembolso seja aprovado conforme as regras acima.",
+        "Chargebacks: Por favor, contate o suporte primeiro; chargebacks indevidos podem levar à suspensão da conta.",
+        "Produtos digitais (templates, gravações): Não reembolsáveis após download/acesso.",
+        "Taxas de agendamento ou custos de terceiros: Não reembolsáveis se já incorridos."
+      ],
+      "processTitle": "Como solicitar reembolso",
+      "processBody": "Envie e-mail para contato@borderlesscoding.com com seu ID do pedido e motivo. Respondemos em até 5 dias úteis.",
+      "methodTitle": "Forma e prazo do reembolso",
+      "methodBody": "Devolução para o método de pagamento original em 5–10 dias úteis após aprovação (dependente do processador).",
+      "abuseTitle": "Prevenção de abuso",
+      "abuseBody": "Podemos negar solicitações de reembolso repetidas pelo mesmo cliente."
+    }
+  },
+  "HowItWorks": {
+    "metadataTitle": "How Borderless Coding Works",
+    "h1": "Como a Borderless Coding funciona",
+    "overviewTitle": "Visão geral",
+    "overviewBody": "A Borderless Coding oferece serviços digitais: mentorias, programas em cohort e acesso a uma plataforma online. Nada físico é enviado.",
+    "stepsTitle": "Passo a passo",
+    "purchaseTitle": "Compra e Confirmação",
+    "purchaseItems": [
+      "Pague via Stripe ou Appmax.",
+      "Você receberá um recibo por e-mail e um link para ativação da conta."
+    ],
+    "activationTitle": "Ativação da Conta",
+    "activationItems": [
+      "Verifique seu e-mail → função provisionada automaticamente (Free, Starter, BASE, PSP).",
+      "Você verá a página de Onboarding com os próximos passos."
+    ],
+    "accessTitle": "Acesso e Agendamento",
+    "accessItems": [
+      "Acesso imediato aos módulos/conteúdos disponíveis.",
+      "Chamadas de mentoria agendadas pelo nosso calendário; opções amigáveis ao fuso horário."
+    ],
+    "deliveryTitle": "Entrega do Programa",
+    "deliveryItems": [
+      "Aulas em vídeo hospedadas no Vimeo; recursos para download.",
+      "Chamadas ao vivo via Meet; gravações disponíveis se incluídas no seu plano.",
+      "Acesso à comunidade/fórum se incluído no seu plano."
+    ],
+    "supportTitle": "Suporte",
+    "supportItems": [
+      "E-mail contato@borderlesscoding.com ou use o widget de ajuda no app.",
+      "Primeira resposta típica: em até 1 dia útil (seg–sex, BRT).",
+      "Incidentes técnicos priorizados por severidade."
+    ],
+    "cancellationsTitle": "Cancelamentos e Reagendamentos",
+    "cancellationsItems": [
+      "Você pode remarcar sessões 1:1 até 24 horas antes do horário de início.",
+      "Cancelamentos tardios/ausências podem ser descontados da sua cota de sessões."
+    ]
+  }
+}
