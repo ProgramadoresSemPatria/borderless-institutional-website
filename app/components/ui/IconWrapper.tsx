@@ -10,8 +10,13 @@ export function IconWrapper({
 }) {
   const IconComponent = icon;
   return (
-    <div className={twMerge("p-2.5 size-fit rounded-sm bg-primary", className)}>
-      <IconComponent className="size-5 text-white" />
+    <div
+      className={twMerge(
+        "p-2.5 size-fit rounded-sm bg-primary text-white",
+        className
+      )}
+    >
+      <IconComponent className="size-5" />
     </div>
   );
 }

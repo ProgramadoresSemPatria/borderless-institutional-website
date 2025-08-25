@@ -19,9 +19,15 @@ export function Header() {
     { title: t("links.psp"), href: "/psp-mentorship" },
     { title: t("links.base"), href: "/base-mentorship" },
     { title: t("links.bootcamp"), href: "/bootcamp-web3" },
-    { title: t("links.foundersInvestors"), href: "/for-founders-and-investors" },
+    {
+      title: t("links.foundersInvestors"),
+      href: "/for-founders-and-investors",
+    },
     { title: t("links.wantToHire"), href: "/want-to-hire" },
-    { title: t("links.wantToInternationalize"), href: "/want-to-internationalize" },
+    {
+      title: t("links.wantToInternationalize"),
+      href: "/want-to-internationalize",
+    },
     { title: t("links.expansion"), href: "/expansion" },
   ] as const;
 
@@ -61,7 +67,7 @@ export function Header() {
         />
       )}
       <nav className="sticky w-full top-8 left-0 right-0 z-50">
-        <div className="w-[90%] max-w-[1800px] mx-auto bg-tertiary rounded-lg p-2 flex justify-between items-center h-16 relative">
+        <div className="w-[90%] max-w-[1800px] mx-auto bg-[#2a2a2b] rounded-lg p-2 flex justify-between items-center h-16 relative shadow-2xl">
           <Link href={"/"} className="flex items-center gap-3 h-full py-2">
             <Image
               width={501}
@@ -84,8 +90,8 @@ export function Header() {
           </button>
 
           {isOpen && (
-            <div className="header-buttons-container absolute bg-tertiary rounded-lg p-2 w-full left-0 bottom-0 translate-y-[calc(100%+1rem)] flex flex-col gap-2 max-h-[calc(100vh-16rem)] overflow-y-auto scrollbar-hide">
-               <div className="grid grid-cols-2 gap-2">
+            <div className="header-buttons-container absolute bg-[#2a2a2b] rounded-lg p-2 w-full left-0 bottom-0 translate-y-[calc(100%+1rem)] flex flex-col gap-2 max-h-[calc(100vh-16rem)] overflow-y-auto scrollbar-hide">
+              <div className="grid grid-cols-2 gap-2">
                 <button
                   className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150"
                   onClick={() => changeLocale("pt")}
@@ -100,8 +106,6 @@ export function Header() {
                 </button>
               </div>
 
-              <div className="h-px bg-white/20 w-full my-2" />
-
               {links.map((link) => (
                 <Link
                   href={link.href}
@@ -112,7 +116,6 @@ export function Header() {
                   {link.title}
                 </Link>
               ))}
-
             </div>
           )}
         </div>
