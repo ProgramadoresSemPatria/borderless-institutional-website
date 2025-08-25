@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 Borderless Coding – Institutional Website
 
-## Getting Started
+## 📚 Introduction
 
-First, run the development server:
+This repository contains the institutional website of **Borderless Coding**, a company dedicated to promoting innovation, inclusion, and global collaboration through technology and education.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The website it was developed to present the company, its vision, and its programs in a modern, responsive, and SEO-friendly way. Supports internationalization (i18n), offering both Portuguese (PT) and English (EN) versions, ensuring accessibility for a global audience.
+
+Built with Next.js, it delivers optimized performance, excellent SEO practices, and a smooth user experience with animations and interactivity.
+
+## 📑 Table of Contents
+
+- [Introduction](#-introduction)
+- [Features](#-features)
+- [Technologies Used](#-technologies-used)
+- [Installation](#-installation)
+- [Deployed Version](#-deployed-version)
+- [Contact](#-contact)
+
+---
+
+## ✅ Features
+
+- 🌐 **Internationalization (i18n)** Portuguese (PT) and English (EN) support
+- ⚡ **High-performance SEO-friendly architecture** with Next.js
+- 🎨 **Modern UI** built with Tailwind CSS
+- 🎬 **Smooth animations** with GSAP
+- 🎠 **Interactive sliders** powered by Embla Carousel
+- 📱 **Responsive design** for desktop and mobile
+- 🚀 **Optimized for fast loading** and global accessibility
+
+---
+
+## 🛠 Technologies Used
+
+- **Next.js** – React framework with SSR and SEO optimization
+- **React** – Component-based UI
+- **Tailwind CSS** – Utility-first styling
+- **GSAP** – Animations and transitions
+- **Embla Carousel** – Carousels and interactive sliders
+
+---
+
+## 📥 Installation
+
+Before you start, make sure you have `Node.js` and `npm` installed and.
+
+1. **Clone the repository**:
+
+```
+git clone https://github.com/ProgramadoresSemPatria/borderless-institutional-website.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Navigate to the frontend directory**:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+cd borderless-institutional-website
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Install dependencies**:
 
-## Learn More
+```
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Run the application locally**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The app should now be running at `http://localhost:3000`.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Deployed Version
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out the live version [here](https://borderlesscoding.net/)
+
+## 📫 Contact
+
+Made with ❤️ by [Carlos Henryck](https://github.com/carloshenryck)

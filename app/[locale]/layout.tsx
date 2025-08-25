@@ -23,6 +23,9 @@ const ivyPresto = localFont({
 export const metadata: Metadata = {
   title: "Borderless Coding",
   description: "Global tech starts here",
+  icons: {
+    icon: "/borderless-logo.svg",
+  },
 };
 
 export function generateStaticParams() {
