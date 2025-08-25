@@ -1124,5 +1124,44 @@
       "s12Title": "12. Contato",
       "s12Body": "<strong>E-mail:</strong> contato@borderlesscoding.com"
     }
+  },
+  "HowItWorks": {
+    "metadataTitle": "How Borderless Coding Works",
+    "h1": "Como a Borderless Coding funciona",
+    "overviewTitle": "Visão geral",
+    "overviewBody": "A Borderless Coding oferece serviços digitais: mentorias, programas em cohort e acesso a uma plataforma online. Nada físico é enviado.",
+    "stepsTitle": "Passo a passo",
+    "purchaseTitle": "Compra e Confirmação",
+    "purchaseItems": [
+      "Pague via Stripe ou Appmax.",
+      "Você receberá um recibo por e-mail e um link para ativação da conta."
+    ],
+    "activationTitle": "Ativação da Conta",
+    "activationItems": [
+      "Verifique seu e-mail → função provisionada automaticamente (Free, Starter, BASE, PSP).",
+      "Você verá a página de Onboarding com os próximos passos."
+    ],
+    "accessTitle": "Acesso e Agendamento",
+    "accessItems": [
+      "Acesso imediato aos módulos/conteúdos disponíveis.",
+      "Chamadas de mentoria agendadas pelo nosso calendário; opções amigáveis ao fuso horário."
+    ],
+    "deliveryTitle": "Entrega do Programa",
+    "deliveryItems": [
+      "Aulas em vídeo hospedadas no Vimeo; recursos para download.",
+      "Chamadas ao vivo via Meet; gravações disponíveis se incluídas no seu plano.",
+      "Acesso à comunidade/fórum se incluído no seu plano."
+    ],
+    "supportTitle": "Suporte",
+    "supportItems": [
+      "E-mail contato@borderlesscoding.com ou use o widget de ajuda no app.",
+      "Primeira resposta típica: em até 1 dia útil (seg–sex, BRT).",
+      "Incidentes técnicos priorizados por severidade."
+    ],
+    "cancellationsTitle": "Cancelamentos e Reagendamentos",
+    "cancellationsItems": [
+      "Você pode remarcar sessões 1:1 até 24 horas antes do horário de início.",
+      "Cancelamentos tardios/ausências podem ser descontados da sua cota de sessões."
+    ]
   }
 }

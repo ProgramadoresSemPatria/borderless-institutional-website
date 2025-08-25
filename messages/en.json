@@ -1053,5 +1053,44 @@
       "s12Title": "12. Contact",
       "s12Body": "<strong>Email:</strong> contato@borderlesscoding.com"
     }
+  },
+  "HowItWorks": {
+    "metadataTitle": "How Borderless Coding Works",
+    "h1": "How Borderless Coding Works",
+    "overviewTitle": "Overview",
+    "overviewBody": "Borderless Coding provides digital services: mentorships, cohort programs, and access to an online platform. Nothing physical is shipped.",
+    "stepsTitle": "Step‑by‑step",
+    "purchaseTitle": "Purchase & Confirmation",
+    "purchaseItems": [
+      "Pay via Stripe or Appmax.",
+      "You’ll receive an email receipt and account‑activation link."
+    ],
+    "activationTitle": "Account Activation",
+    "activationItems": [
+      "Verify your email → automatically provisioned role (Free, Starter, BASE, PSP).",
+      "You’ll see the Onboarding page with next steps."
+    ],
+    "accessTitle": "Access & Scheduling",
+    "accessItems": [
+      "Immediate access to available modules/content.",
+      "Mentorship calls scheduled via our calendar tool; time-zone friendly options."
+    ],
+    "deliveryTitle": "Program Delivery",
+    "deliveryItems": [
+      "Video lessons hosted on Vimeo; resources downloadable.",
+      "Live calls via Meet; replays available if included in your plan.",
+      "Community/forum access if included in your plan."
+    ],
+    "supportTitle": "Support",
+    "supportItems": [
+      "Email contato@borderlesscoding.com or use the in‑app help widget.",
+      "Typical first response: within 1 business day (Mon–Fri, BRT).",
+      "Tech incidents prioritized by severity."
+    ],
+    "cancellationsTitle": "Cancellations & Rescheduling",
+    "cancellationsItems": [
+      "You may reschedule 1:1 sessions up to 24 hours before the start time.",
+      "Late cancellations/no‑shows may be deducted from your session quota."
+    ]
   }
 }
