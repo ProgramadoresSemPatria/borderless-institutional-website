@@ -1004,5 +1004,54 @@
     "copyright": {
       "text": "© {year} Borderless Coding. All rights reserved"
     }
+  },
+  "Legal": {
+    "PrivacyPolicy": {
+      "metadataTitle": "Privacy Policy – Borderless Coding",
+      "h1": "Privacy Policy",
+      "updated": "Last updated: {date}",
+      "s1Title": "1. Introduction",
+      "s1Body": "We are Borderless Coding. This Privacy Policy explains how we collect, use, share, and protect your information when you use our websites, programs, mentorships, and platform (collectively, the Services).",
+      "s2Title": "2. Data we collect",
+      "s2Items": {
+        "account": "<strong>Account & Contact:</strong> name, email, password hash, phone (optional), location (city/country).",
+        "billing": "<strong>Billing:</strong> payer name, address, tax IDs (if provided), partial payment details handled by processors (Stripe/Appmax)—we do not store full card numbers.",
+        "usage": "<strong>Usage & Device:</strong> pages viewed, clicks, IP, approximate location, device, browser—via cookies or similar tech.",
+        "content": "<strong>Content & Submissions:</strong> messages sent via forms, forum posts, assignments, uploaded files.",
+        "mentorship": "<strong>Mentorship/Programs:</strong> scheduling info, progress, feedback, recordings/notes (if consented).",
+        "marketing": "<strong>Marketing preferences:</strong> email opt-ins, attribution (UTM), referrals."
+      },
+      "s3Title": "3. How we use data (purposes & legal bases)",
+      "s3Items": {
+        "provide": "Provide the Services (contract) – account creation, authentication, course/mentorship access, payments, receipts.",
+        "improve": "Operate & Improve (legitimate interests) – analytics, debugging, preventing abuse, training quality.",
+        "comms": "Communications (consent/legitimate interests) – onboarding emails, product updates; marketing emails only with opt‑in and easy opt‑out.",
+        "compliance": "Compliance (legal obligation) – tax/audit records, fraud prevention, court orders.",
+        "personalization": "Personalization (consent/legitimate interests) – recommended content, reminders."
+      },
+      "s4Title": "4. Sharing",
+      "s4Body": "We share data with service providers/processors strictly to run the Services: Stripe, Appmax, Resend (email), Vimeo (video), Notion (internal docs), Analytics/Ads (Google/Meta), and other vetted vendors listed here: /legal/vendors. We may share as required by law, during a merger/acquisition, or to prevent fraud/abuse.",
+      "s5Title": "5. Cookies & tracking",
+      "s5Body": "We use essential cookies (login, session) and optional analytics/ads cookies. You can manage preferences via our cookie banner (Granular: Essential / Analytics / Marketing). See /legal/cookies for details.",
+      "s6Title": "6. International transfers",
+      "s6Body": "We operate internationally. Where laws (e.g., GDPR/LGPD) require, we use approved safeguards (e.g., SCCs, contractual clauses) for cross‑border transfers.",
+      "s7Title": "7. Data retention",
+      "s7Items": {
+        "account": "<strong>Account data:</strong> for the life of the account + up to 7 years for finance/audit.",
+        "program": "<strong>Program records:</strong> 24 months after completion unless you request deletion earlier (subject to legal obligations).",
+        "marketing": "<strong>Marketing data:</strong> until you withdraw consent."
+      },
+      "s8Title": "8. Your rights",
+      "s8Body1": "Depending on where you live (e.g., EEA/UK – GDPR, Brazil – LGPD, California – CPRA), you may have rights to access, correct, delete, port data, object/restrict processing, and withdraw consent.",
+      "s8Body2": "To exercise rights: email contato@borderlesscoding.com. We will verify your identity and respond within the legally required time.",
+      "s9Title": "9. Children",
+      "s9Body": "Our Services are for individuals 16+ (or local age of digital consent). We don’t knowingly collect data from children.",
+      "s10Title": "10. Security",
+      "s10Body": "We use industry standard controls: encryption in transit, access controls, least‑privilege, audit logs, vendor reviews, and regular backups. No method is 100% secure.",
+      "s11Title": "11. Changes to this policy",
+      "s11Body": "We may update this policy from time to time. Material changes will be announced via email or in‑app notice. <strong>Effective date:</strong> {date}",
+      "s12Title": "12. Contact",
+      "s12Body": "<strong>Email:</strong> contato@borderlesscoding.com"
+    }
   }
 }

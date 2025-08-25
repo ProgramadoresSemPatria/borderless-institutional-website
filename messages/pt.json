@@ -1075,5 +1075,54 @@
     "copyright": {
       "text": "© {year} Borderless Coding. Todos os direitos reservados"
     }
+  },
+  "Legal": {
+    "PrivacyPolicy": {
+      "metadataTitle": "Política de Privacidade – Borderless Coding",
+      "h1": "Política de Privacidade",
+      "updated": "Última atualização: {date}",
+      "s1Title": "1. Introdução",
+      "s1Body": "Somos a Borderless Coding. Esta Política de Privacidade explica como coletamos, usamos, compartilhamos e protegemos suas informações quando você utiliza nossos sites, programas, mentorias e plataforma (coletivamente, os Serviços).",
+      "s2Title": "2. Dados que coletamos",
+      "s2Items": {
+        "account": "<strong>Conta e Contato:</strong> nome, e-mail, hash da senha, telefone (opcional), localização (cidade/país).",
+        "billing": "<strong>Faturamento:</strong> nome do pagador, endereço, identificações fiscais (se fornecidas), detalhes parciais de pagamento tratados por processadores (Stripe/Appmax) — não armazenamos números completos de cartão.",
+        "usage": "<strong>Uso e Dispositivo:</strong> páginas visualizadas, cliques, IP, localização aproximada, dispositivo, navegador — via cookies ou tecnologia similar.",
+        "content": "<strong>Conteúdo e Envios:</strong> mensagens enviadas via formulários, posts em fórum, tarefas, arquivos enviados.",
+        "mentorship": "<strong>Mentorias/Programas:</strong> informações de agendamento, progresso, feedback, gravações/notas (se houver consentimento).",
+        "marketing": "<strong>Preferências de marketing:</strong> opt-ins de e-mail, atribuição (UTM), indicações."
+      },
+      "s3Title": "3. Como usamos os dados (finalidades e bases legais)",
+      "s3Items": {
+        "provide": "Fornecer os Serviços (contrato) – criação de conta, autenticação, acesso a cursos/mentorias, pagamentos, recibos.",
+        "improve": "Operar e Melhorar (interesses legítimos) – analytics, depuração, prevenção de abusos, treinamento de qualidade.",
+        "comms": "Comunicações (consentimento/interesses legítimos) – e-mails de onboarding, atualizações de produto; e-mails de marketing apenas com opt‑in e fácil opt‑out.",
+        "compliance": "Conformidade (obrigação legal) – registros fiscais/auditoria, prevenção a fraudes, ordens judiciais.",
+        "personalization": "Personalização (consentimento/interesses legítimos) – conteúdo recomendado, lembretes."
+      },
+      "s4Title": "4. Compartilhamento",
+      "s4Body": "Compartilhamos dados com provedores/operadores estritamente para operar os Serviços: Stripe, Appmax, Resend (e-mail), Vimeo (vídeo), Notion (documentos internos), Analytics/Ads (Google/Meta) e outros fornecedores aprovados listados em: /legal/vendors. Podemos compartilhar conforme exigido por lei, durante fusão/aquisição ou para prevenir fraudes/abusos.",
+      "s5Title": "5. Cookies e rastreamento",
+      "s5Body": "Utilizamos cookies essenciais (login, sessão) e cookies opcionais de analytics/anúncios. Você pode gerenciar preferências via nosso banner de cookies (Granular: Essencial / Analytics / Marketing). Veja /legal/cookies para detalhes.",
+      "s6Title": "6. Transferências internacionais",
+      "s6Body": "Atuamos internacionalmente. Quando as leis (ex.: GDPR/LGPD) exigirem, utilizamos salvaguardas aprovadas (ex.: SCCs, cláusulas contratuais) para transferências transfronteiriças.",
+      "s7Title": "7. Retenção de dados",
+      "s7Items": {
+        "account": "<strong>Dados de conta:</strong> durante a vida da conta + até 7 anos para fins financeiros/auditoria.",
+        "program": "<strong>Registros de programas:</strong> 24 meses após a conclusão, a menos que você solicite exclusão antes (sujeito a obrigações legais).",
+        "marketing": "<strong>Dados de marketing:</strong> até que você retire o consentimento."
+      },
+      "s8Title": "8. Seus direitos",
+      "s8Body1": "Dependendo de onde você mora (ex.: EEE/Reino Unido – GDPR, Brasil – LGPD, Califórnia – CPRA), você pode ter direitos de acesso, correção, exclusão, portabilidade de dados, objeção/restrição de processamento e retirada de consentimento.",
+      "s8Body2": "Para exercer direitos: envie e-mail para contato@borderlesscoding.com. Verificaremos sua identidade e responderemos dentro do prazo legal.",
+      "s9Title": "9. Crianças",
+      "s9Body": "Nossos Serviços são destinados a pessoas com 16 anos ou mais (ou idade local de consentimento digital). Não coletamos, conscientemente, dados de crianças.",
+      "s10Title": "10. Segurança",
+      "s10Body": "Utilizamos controles padrão de mercado: criptografia em trânsito, controles de acesso, privilégio mínimo, logs de auditoria, avaliação de fornecedores e backups regulares. Nenhum método é 100% seguro.",
+      "s11Title": "11. Alterações nesta política",
+      "s11Body": "Podemos atualizar esta política periodicamente. Mudanças materiais serão comunicadas por e-mail ou aviso no app. <strong>Data de vigência:</strong> {date}",
+      "s12Title": "12. Contato",
+      "s12Body": "<strong>E-mail:</strong> contato@borderlesscoding.com"
+    }
   }
 }
