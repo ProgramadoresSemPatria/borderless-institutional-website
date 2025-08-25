@@ -1,5 +1,6 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
@@ -8,6 +9,7 @@ import { Carousel, CarouselContent, CarouselItem } from "../../../ui/Carousel";
 import { useGetEventsAndAchievements } from "./hooks/useGetEventsAndAchievements";
 
 export function EventsAndAchievements() {
+  const { rich } = useRichText("HomePage.EventsAndAchievements");
   const events = useGetEventsAndAchievements();
 
   useGSAP(() => {
@@ -31,7 +33,7 @@ export function EventsAndAchievements() {
   return (
     <section className="flex flex-col gap-8 py-12 bg-tertiary">
       <AnimatedText as="h2" className="px-8 lg:px-16">
-        Eventos e <span className="font-ivy">conquistas</span>
+        {rich("title")}
       </AnimatedText>
 
       <Carousel>

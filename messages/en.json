@@ -176,13 +176,14 @@
       "community": "Community"
     },
     "EventsAndAchievements": {
+      "title": "Events and <italic>achievements</italic>",
       "event1": "First Borderless conference in São Paulo, Brazil, with over 70 guests",
       "event2": "Interview of our founder, Yuri Pereira, for Entrepreneur magazine in Dubai, UAE",
       "event3": "Brainstorm during an AI hackathon in France",
-    "event4": "Borderless mentees won second place at the EthCC hackathon in Cannes, France"
+      "event4": "Borderless mentees won second place at the EthCC hackathon in Cannes, France"
     }
   },
-  
+
   "BaseMentorship": {
     "HeroSection": {
       "title": "Build Your Global Career Foundation – <colorful>From Zero to Ready</colorful> in 12 Months",
@@ -232,14 +233,38 @@
       "items": {
         "duration": { "title": "Duration", "description": "12 months" },
         "format": { "title": "Format", "description": "100% online" },
-        "live": { "title": "Live Sessions", "description": "Weekly group calls with ambassadors" },
-        "qna": { "title": "Q&A Session", "description": "Monthly sessions with Yuri Pereira" },
-        "mocks": { "title": "Mock Interviews", "description": "Practice sessions with junior-to-mid-level scenarios to build confidence" },
-        "english": { "title": "English Coaching", "description": "3x/week, tailored to technology professionals starting their global journey" },
-        "platform": { "title": "Borderless Platform Access", "description": "Premium account with lessons, community, and progress tracking" },
-        "portfolio": { "title": "Portfolio", "description": "Project templates to impress international recruiters" },
-        "resume": { "title": "Resumé", "description": "A high-conversion résumé tailored to your career stage" },
-        "milestones": { "title": "Milestones", "description": "Step-by-step milestones to reach PSP readiness" }
+        "live": {
+          "title": "Live Sessions",
+          "description": "Weekly group calls with ambassadors"
+        },
+        "qna": {
+          "title": "Q&A Session",
+          "description": "Monthly sessions with Yuri Pereira"
+        },
+        "mocks": {
+          "title": "Mock Interviews",
+          "description": "Practice sessions with junior-to-mid-level scenarios to build confidence"
+        },
+        "english": {
+          "title": "English Coaching",
+          "description": "3x/week, tailored to technology professionals starting their global journey"
+        },
+        "platform": {
+          "title": "Borderless Platform Access",
+          "description": "Premium account with lessons, community, and progress tracking"
+        },
+        "portfolio": {
+          "title": "Portfolio",
+          "description": "Project templates to impress international recruiters"
+        },
+        "resume": {
+          "title": "Resumé",
+          "description": "A high-conversion résumé tailored to your career stage"
+        },
+        "milestones": {
+          "title": "Milestones",
+          "description": "Step-by-step milestones to reach PSP readiness"
+        }
       }
     },
     "ResultsYouCanExpect": {
@@ -414,24 +439,57 @@
     "HowItWorks": {
       "title": "How the <italic>Mentorship</italic> Works?",
       "items": [
-        { "title": "Duration", "description": "6 or 12 months (choose your plan)" },
+        {
+          "title": "Duration",
+          "description": "6 or 12 months (choose your plan)"
+        },
         { "title": "Format", "description": "100% online" },
-        { "title": "Live Sessions", "description": "Bi-weekly strategy calls with direct feedback from Yuri" },
-        { "title": "Expert Mentors", "description": "5 mentors from different backgrounds to run mock interviews and give tailored feedback" },
-        { "title": "Mock Interviews", "description": "Monthly simulations covering the main global interview formats" },
-        { "title": "English Coaching", "description": "3x/week classes from basic to advanced technical fluency" },
-        { "title": "Borderless Platform Access", "description": "All mentees receive a premium account on the Borderless Platform — centralizing community, learning, and networking in one place" },
-        { "title": "Resumé", "description": "High-conversion résumé templates adaptable to strategies reached during the mentorship" },
-        { "title": "Scripts", "description": "Proven scripts, templates, and pipelines to speed up results" }
+        {
+          "title": "Live Sessions",
+          "description": "Bi-weekly strategy calls with direct feedback from Yuri"
+        },
+        {
+          "title": "Expert Mentors",
+          "description": "5 mentors from different backgrounds to run mock interviews and give tailored feedback"
+        },
+        {
+          "title": "Mock Interviews",
+          "description": "Monthly simulations covering the main global interview formats"
+        },
+        {
+          "title": "English Coaching",
+          "description": "3x/week classes from basic to advanced technical fluency"
+        },
+        {
+          "title": "Borderless Platform Access",
+          "description": "All mentees receive a premium account on the Borderless Platform — centralizing community, learning, and networking in one place"
+        },
+        {
+          "title": "Resumé",
+          "description": "High-conversion résumé templates adaptable to strategies reached during the mentorship"
+        },
+        {
+          "title": "Scripts",
+          "description": "Proven scripts, templates, and pipelines to speed up results"
+        }
       ]
     },
     "ResultsYouCanExpect": {
       "preTitle": "Our alumni report",
       "title": "<italic>Results</italic> You Can Expect",
       "results": [
-        { "title": "Fast Results", "description": "First international job offers within 30–90 days" },
-        { "title": "Salary Jump", "description": "Salary jumps to $12K+ USD/month for Tier 3 professionals" },
-        { "title": "Independence", "description": "Confidence to negotiate offers and work globally without third-party dependency" }
+        {
+          "title": "Fast Results",
+          "description": "First international job offers within 30–90 days"
+        },
+        {
+          "title": "Salary Jump",
+          "description": "Salary jumps to $12K+ USD/month for Tier 3 professionals"
+        },
+        {
+          "title": "Independence",
+          "description": "Confidence to negotiate offers and work globally without third-party dependency"
+        }
       ],
       "success": {
         "title": "Real Success Story",
@@ -489,46 +547,122 @@
       "firstOptionTitle": "Borderless Web3 Bootcamp",
       "secondOptionTitle": "Typical Online Course",
       "features": [
-        { "title": "Learning Style", "first": "12-week immersive, cohort-based program", "second": "Self-paced, recorded lectures" },
-        { "title": "Curriculum", "first": "Full-stack Web3: Solidity, Rust, Cosmos, DeFi, NFTs, AI integrations", "second": "Narrow focus, often limited to one language or topic" },
-        { "title": "Projects", "first": "Multiple hands-on builds + Final team project (Demo Day)", "second": "Small exercises or tutorials, no portfolio-level projects" },
-        { "title": "Mentorship", "first": "Direct access to industry mentors, feedback, and mock interviews", "second": "No mentorship, only pre-recorded content" },
-        { "title": "Community", "first": "Active network of 500+ global developers and founders", "second": "Solo learning, no community accountability" },
-        { "title": "Certification", "first": "NFT-backed proof of graduation on-chain", "second": "Standard PDF certificate" },
-        { "title": "Portfolio", "first": "GitHub-ready dApps across ecosystems (Ethereum, Solana, Cosmos)", "second": "Limited, often tutorial-based repos" },
-        { "title": "Networking", "first": "Demo Day exposure + investor/founder connections", "second": "None" },
-        { "title": "Global Readiness", "first": "Focus on international standards, English communication, and remote work", "second": "Localized, not adapted for global career" },
-        { "title": "Outcomes", "first": "Career acceleration + potential startup incubation", "second": "Only knowledge, no structured career outcomes" }
+        {
+          "title": "Learning Style",
+          "first": "12-week immersive, cohort-based program",
+          "second": "Self-paced, recorded lectures"
+        },
+        {
+          "title": "Curriculum",
+          "first": "Full-stack Web3: Solidity, Rust, Cosmos, DeFi, NFTs, AI integrations",
+          "second": "Narrow focus, often limited to one language or topic"
+        },
+        {
+          "title": "Projects",
+          "first": "Multiple hands-on builds + Final team project (Demo Day)",
+          "second": "Small exercises or tutorials, no portfolio-level projects"
+        },
+        {
+          "title": "Mentorship",
+          "first": "Direct access to industry mentors, feedback, and mock interviews",
+          "second": "No mentorship, only pre-recorded content"
+        },
+        {
+          "title": "Community",
+          "first": "Active network of 500+ global developers and founders",
+          "second": "Solo learning, no community accountability"
+        },
+        {
+          "title": "Certification",
+          "first": "NFT-backed proof of graduation on-chain",
+          "second": "Standard PDF certificate"
+        },
+        {
+          "title": "Portfolio",
+          "first": "GitHub-ready dApps across ecosystems (Ethereum, Solana, Cosmos)",
+          "second": "Limited, often tutorial-based repos"
+        },
+        {
+          "title": "Networking",
+          "first": "Demo Day exposure + investor/founder connections",
+          "second": "None"
+        },
+        {
+          "title": "Global Readiness",
+          "first": "Focus on international standards, English communication, and remote work",
+          "second": "Localized, not adapted for global career"
+        },
+        {
+          "title": "Outcomes",
+          "first": "Career acceleration + potential startup incubation",
+          "second": "Only knowledge, no structured career outcomes"
+        }
       ]
     },
     "ResultsYouCanExpect": {
       "preTitle": "Results you can expect",
       "title": "Bootcamp graduates <italic>typically</italic>:",
       "results": [
-        { "title": "Ship real dApps", "description": "Build and deploy end-to-end decentralized applications with modern tooling" },
-        { "title": "Master the Web3 stack", "description": "Understand the layers: protocols, smart contracts, indexing, frontends" },
-        { "title": "Portfolio that stands out", "description": "A GitHub with impactful projects recruiters and founders care about" },
-        { "title": "Global opportunities", "description": "Be positioned for roles and bounties across international Web3 teams" }
+        {
+          "title": "Ship real dApps",
+          "description": "Build and deploy end-to-end decentralized applications with modern tooling"
+        },
+        {
+          "title": "Master the Web3 stack",
+          "description": "Understand the layers: protocols, smart contracts, indexing, frontends"
+        },
+        {
+          "title": "Portfolio that stands out",
+          "description": "A GitHub with impactful projects recruiters and founders care about"
+        },
+        {
+          "title": "Global opportunities",
+          "description": "Be positioned for roles and bounties across international Web3 teams"
+        }
       ]
     },
     "WhyThisBootcamp": {
       "preTitle": "Why this bootcamp?",
       "title": "What makes this program <italic>different</italic>",
       "features": [
-        { "title": "Intense and practical", "description": "Fast-paced sprints focused on building, shipping and learning by doing" },
-        { "title": "Global-first mindset", "description": "Content, projects and feedback aligned with international expectations" },
-        { "title": "Production-grade code", "description": "From contracts to frontends, with quality, tests and real-world patterns" },
-        { "title": "Outcome-driven", "description": "Projects designed to create portfolio signal and unlock interviews" },
-        { "title": "Community & mentors", "description": "Support from a high-performance community and experienced mentors" }
+        {
+          "title": "Intense and practical",
+          "description": "Fast-paced sprints focused on building, shipping and learning by doing"
+        },
+        {
+          "title": "Global-first mindset",
+          "description": "Content, projects and feedback aligned with international expectations"
+        },
+        {
+          "title": "Production-grade code",
+          "description": "From contracts to frontends, with quality, tests and real-world patterns"
+        },
+        {
+          "title": "Outcome-driven",
+          "description": "Projects designed to create portfolio signal and unlock interviews"
+        },
+        {
+          "title": "Community & mentors",
+          "description": "Support from a high-performance community and experienced mentors"
+        }
       ]
     },
     "WhoShouldJoin": {
       "preTitle": "Who should join?",
       "title": "This bootcamp is designed for <italic>ambitious tech professionals</italic> ready to enter the Web3 space",
       "audience": [
-        { "title": "Developers (Backend/Fullstack)", "description": "Ready to expand into blockchain/Web3" },
-        { "title": "Startup Builders & Entrepreneurs", "description": "Exploring decentralized technologies" },
-        { "title": "Researchers/Students", "description": "Who want structured, practical Web3 training" }
+        {
+          "title": "Developers (Backend/Fullstack)",
+          "description": "Ready to expand into blockchain/Web3"
+        },
+        {
+          "title": "Startup Builders & Entrepreneurs",
+          "description": "Exploring decentralized technologies"
+        },
+        {
+          "title": "Researchers/Students",
+          "description": "Who want structured, practical Web3 training"
+        }
       ],
       "requirements": {
         "title": "Minimum Requirements",
@@ -594,17 +728,13 @@
             },
             {
               "title": "Rust (40%) – Solana Focus",
-              "content": [
-                "Anchor framework & Solana accounts model"
-              ],
+              "content": ["Anchor framework & Solana accounts model"],
               "length": "12h",
               "extra": "💻 Build: NFT minting + auction dApp"
             },
             {
               "title": "GoLang (10%) – Cosmos Intro",
-              "content": [
-                "Tendermint / Cosmos SDK basics"
-              ],
+              "content": ["Tendermint / Cosmos SDK basics"],
               "length": "3h",
               "extra": "💻 Build: Minimal blockchain node"
             },
@@ -678,10 +808,22 @@
       "title": "Are you a builder with <italic>global ambition</italic>?",
       "description": "At Borderless Hub, we help top tech professionals transition from talent to founder. Through our ecosystem, founders gain:",
       "features": [
-        { "title": "Global Developer Community", "description": "A community of 500+ internationalized developers and engineers" },
-        { "title": "Expert Mentorship", "description": "Mentorship from experienced operators in tech, growth, and fundraising" },
-        { "title": "Strategic Guidance", "description": "Guidance on product, technical architecture, and go-to-market strategies" },
-        { "title": "Investor Network", "description": "Direct connections to investors and partners across the US, EU, and LATAM" }
+        {
+          "title": "Global Developer Community",
+          "description": "A community of 500+ internationalized developers and engineers"
+        },
+        {
+          "title": "Expert Mentorship",
+          "description": "Mentorship from experienced operators in tech, growth, and fundraising"
+        },
+        {
+          "title": "Strategic Guidance",
+          "description": "Guidance on product, technical architecture, and go-to-market strategies"
+        },
+        {
+          "title": "Investor Network",
+          "description": "Direct connections to investors and partners across the US, EU, and LATAM"
+        }
       ]
     },
     "ForInvestors": {
@@ -690,17 +832,41 @@
       "description": "Through Borderless Hub, investors gain access to early-stage ventures designed for scalability, transparency, and protection. Our incubation model combines global talent with lean execution, ensuring ventures are born strong.",
       "incubationTitle": "Our <italic>Incubation</italic> Model:",
       "incubation": [
-        { "title": "Independent Structure", "description": "Founder-led companies – each startup is structured as an independent entity, ensuring clarity and investor protection." },
-        { "title": "International Access", "description": "Global fundraising vehicle – our US-based structure enables seamless participation for international investors." },
-        { "title": "Proven Pipeline", "description": "Diversified pipeline – ventures emerge from our proven education and mentorship ecosystem, supported by hackathons and selective incubation." },
-        { "title": "Smart Capital", "description": "Capital efficiency – startups bootstrap with talent and distribution before raising external rounds, reducing early risk and maximizing growth potential." }
+        {
+          "title": "Independent Structure",
+          "description": "Founder-led companies – each startup is structured as an independent entity, ensuring clarity and investor protection."
+        },
+        {
+          "title": "International Access",
+          "description": "Global fundraising vehicle – our US-based structure enables seamless participation for international investors."
+        },
+        {
+          "title": "Proven Pipeline",
+          "description": "Diversified pipeline – ventures emerge from our proven education and mentorship ecosystem, supported by hackathons and selective incubation."
+        },
+        {
+          "title": "Smart Capital",
+          "description": "Capital efficiency – startups bootstrap with talent and distribution before raising external rounds, reducing early risk and maximizing growth potential."
+        }
       ],
       "hubTitle": "Through <italic>Borderless Hub</italic>, investors access:",
       "hub": [
-        { "title": "Validated Execution", "description": "Founder-led ventures with international mindset and validated execution" },
-        { "title": "Exclusive Pipeline", "description": "Exclusive incubation pipeline of startups born from our mentorship and hackathon ecosystem" },
-        { "title": "Diverse Sectors", "description": "Diversified opportunities in SaaS, AI, fintech, and developer tools" },
-        { "title": "Scalable Operations", "description": "Global-ready operations designed for scalability and transparency" }
+        {
+          "title": "Validated Execution",
+          "description": "Founder-led ventures with international mindset and validated execution"
+        },
+        {
+          "title": "Exclusive Pipeline",
+          "description": "Exclusive incubation pipeline of startups born from our mentorship and hackathon ecosystem"
+        },
+        {
+          "title": "Diverse Sectors",
+          "description": "Diversified opportunities in SaaS, AI, fintech, and developer tools"
+        },
+        {
+          "title": "Scalable Operations",
+          "description": "Global-ready operations designed for scalability and transparency"
+        }
       ],
       "banner": {
         "title": "Connecting Latin American Talent with Global Capital",
@@ -711,8 +877,20 @@
       "preTitle": "Featured Startups",
       "title": "Meet some of the ventures emerging from our <italic>ecosystem</italic>:",
       "startups": [
-        { "src": "/startups/rampix.png", "title": "Rampix", "description": "A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure'.", "buttonText": "Learn more", "href": "https://www.rampix.xyz/" },
-        { "src": "/startups/borderless-community.webp", "title": "Borderless Community", "description": "The super app from Borderless Coding: combining social network, members area, and forum for global tech professionals", "buttonText": "Members only", "href": "https://community.borderlesscoding.com/" }
+        {
+          "src": "/startups/rampix.png",
+          "title": "Rampix",
+          "description": "A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure'.",
+          "buttonText": "Learn more",
+          "href": "https://www.rampix.xyz/"
+        },
+        {
+          "src": "/startups/borderless-community.webp",
+          "title": "Borderless Community",
+          "description": "The super app from Borderless Coding: combining social network, members area, and forum for global tech professionals",
+          "buttonText": "Members only",
+          "href": "https://community.borderlesscoding.com/"
+        }
       ],
       "moreCard": {
         "title": "More Startups Coming Soon",
@@ -729,10 +907,22 @@
       "preTitle": "Why Borderless?",
       "title": "Our track record speaks for itself - <italic>we deliver results</italic> for founders and investors",
       "results": [
-        { "title": "Proven Success", "description": "Proven track record: 95+ professionals internationalized through our mentorship" },
-        { "title": "Revenue Growth", "description": "Revenue-backed ecosystem: $1.7M in the last 12 months from education products fueling incubation" },
-        { "title": "Validated Talent", "description": "Community-first dealflow: startups grow from a base of already-validated tech talent" },
-        { "title": "Global Reach", "description": "International presence: operations and partnerships across Brazil, Europe, and the US" }
+        {
+          "title": "Proven Success",
+          "description": "Proven track record: 95+ professionals internationalized through our mentorship"
+        },
+        {
+          "title": "Revenue Growth",
+          "description": "Revenue-backed ecosystem: $1.7M in the last 12 months from education products fueling incubation"
+        },
+        {
+          "title": "Validated Talent",
+          "description": "Community-first dealflow: startups grow from a base of already-validated tech talent"
+        },
+        {
+          "title": "Global Reach",
+          "description": "International presence: operations and partnerships across Brazil, Europe, and the US"
+        }
       ]
     }
   },
@@ -745,9 +935,18 @@
     "HowItWorks": {
       "title": "How it <italic>Works</italic>",
       "steps": [
-        { "title": "Tell Us Your Needs", "description": "Tell us what you need – role, stack, seniority." },
-        { "title": "Get Matched", "description": "We connect you with pre-vetted professionals from our pool." },
-        { "title": "Hire Directly", "description": "You hire directly – no agency in the middle, no percentage taken." }
+        {
+          "title": "Tell Us Your Needs",
+          "description": "Tell us what you need – role, stack, seniority."
+        },
+        {
+          "title": "Get Matched",
+          "description": "We connect you with pre-vetted professionals from our pool."
+        },
+        {
+          "title": "Hire Directly",
+          "description": "You hire directly – no agency in the middle, no percentage taken."
+        }
       ]
     },
     "PartnerWithBorderless": {
@@ -782,11 +981,31 @@
         "firstOptionTitle": "Borderless Coding",
         "secondOptionTitle": "Traditional Consultancy",
         "features": [
-          { "title": "Hiring Fees", "firstOptionFeature": "$0, we don't charge companies", "secondOptionFeature": "20-35% of annual salary" },
-          { "title": "Talent Quality", "firstOptionFeature": "Pre-vetted, trained through mentorship & global programs", "secondOptionFeature": "Mixed pool, not always pre-qualified" },
-          { "title": "English & Global Readiness", "firstOptionFeature": "Minimum B1 English, trained for international interviews & culture", "secondOptionFeature": "Varies widely, not guaranteed" },
-          { "title": "Speed", "firstOptionFeature": "Fast connection — hire in days", "secondOptionFeature": "Lengthy process, often weeks/months" },
-          { "title": "Transparency", "firstOptionFeature": "Direct contract between company & professional", "secondOptionFeature": "Middleman contracts and restrictions" }
+          {
+            "title": "Hiring Fees",
+            "firstOptionFeature": "$0, we don't charge companies",
+            "secondOptionFeature": "20-35% of annual salary"
+          },
+          {
+            "title": "Talent Quality",
+            "firstOptionFeature": "Pre-vetted, trained through mentorship & global programs",
+            "secondOptionFeature": "Mixed pool, not always pre-qualified"
+          },
+          {
+            "title": "English & Global Readiness",
+            "firstOptionFeature": "Minimum B1 English, trained for international interviews & culture",
+            "secondOptionFeature": "Varies widely, not guaranteed"
+          },
+          {
+            "title": "Speed",
+            "firstOptionFeature": "Fast connection — hire in days",
+            "secondOptionFeature": "Lengthy process, often weeks/months"
+          },
+          {
+            "title": "Transparency",
+            "firstOptionFeature": "Direct contract between company & professional",
+            "secondOptionFeature": "Middleman contracts and restrictions"
+          }
         ]
       }
     }
@@ -800,30 +1019,66 @@
     "WhyInternationalize": {
       "title": "Why <italic>Internationalize?</italic>",
       "features": [
-        { "title": "Strong Currencies", "description": "Earn in USD/EUR/GBP/CHF/AED instead of BRL" },
-        { "title": "Remote Freedom", "description": "Gain freedom to work from anywhere" },
-        { "title": "Real Recognition", "description": "Be recognized for your real technical value" },
-        { "title": "Global Network", "description": "Join a community of 500+ global professionals" }
+        {
+          "title": "Strong Currencies",
+          "description": "Earn in USD/EUR/GBP/CHF/AED instead of BRL"
+        },
+        {
+          "title": "Remote Freedom",
+          "description": "Gain freedom to work from anywhere"
+        },
+        {
+          "title": "Real Recognition",
+          "description": "Be recognized for your real technical value"
+        },
+        {
+          "title": "Global Network",
+          "description": "Join a community of 500+ global professionals"
+        }
       ]
     },
     "BorderlessAdvantage": {
       "preTitle": "The Borderless Advantage",
       "title": "Unlike generic courses or consultancies, <italic>we give you</italic>:",
       "features": [
-        { "title": "A proven system (Go Global™)", "description": "LinkedIn, CV, GitHub, Interview prep, Networking" },
-        { "title": "Direct mentorship", "description": "from professionals who already scaled globally" },
-        { "title": "Mock interviews", "description": "train exactly how companies abroad will test you" },
-        { "title": "Community support", "description": "stay motivated, accountable, and connected" }
+        {
+          "title": "A proven system (Go Global™)",
+          "description": "LinkedIn, CV, GitHub, Interview prep, Networking"
+        },
+        {
+          "title": "Direct mentorship",
+          "description": "from professionals who already scaled globally"
+        },
+        {
+          "title": "Mock interviews",
+          "description": "train exactly how companies abroad will test you"
+        },
+        {
+          "title": "Community support",
+          "description": "stay motivated, accountable, and connected"
+        }
       ]
     },
     "HowItWorks": {
       "title": "How It <italic>Works</italic> (Your Next 90–120 Days)",
       "stepLabel": "Step",
       "steps": [
-        { "title": "Profile Package", "description": "We optimize your LinkedIn, CV, and GitHub for global attraction." },
-        { "title": "Interview Engine", "description": "You train English + technical interviews until you're ready to perform." },
-        { "title": "Opportunity Pipeline", "description": "We create a predictable flow of international job offers." },
-        { "title": "Global Playbook", "description": "You learn long-term strategies (equity, tax planning, relocation)." }
+        {
+          "title": "Profile Package",
+          "description": "We optimize your LinkedIn, CV, and GitHub for global attraction."
+        },
+        {
+          "title": "Interview Engine",
+          "description": "You train English + technical interviews until you're ready to perform."
+        },
+        {
+          "title": "Opportunity Pipeline",
+          "description": "We create a predictable flow of international job offers."
+        },
+        {
+          "title": "Global Playbook",
+          "description": "You learn long-term strategies (equity, tax planning, relocation)."
+        }
       ]
     },
     "BorderlessVsGoingAlone": {
@@ -833,11 +1088,31 @@
         "firstOptionTitle": "Borderless Coding",
         "secondOptionTitle": "On Your Own",
         "features": [
-          { "title": "Method", "firstOptionFeature": "Go Global™ – proven, step-by-step", "secondOptionFeature": "Trial and error" },
-          { "title": "Mentorship", "firstOptionFeature": "Direct feedback from global professionals", "secondOptionFeature": "No guidance" },
-          { "title": "Speed", "firstOptionFeature": "90 days to first offers", "secondOptionFeature": "12–24 months (if ever)" },
-          { "title": "Community", "firstOptionFeature": "500+ professionals supporting you", "secondOptionFeature": "Alone" },
-          { "title": "ROI", "firstOptionFeature": "$10k+ USD contracts", "secondOptionFeature": "Unpredictable" }
+          {
+            "title": "Method",
+            "firstOptionFeature": "Go Global™ – proven, step-by-step",
+            "secondOptionFeature": "Trial and error"
+          },
+          {
+            "title": "Mentorship",
+            "firstOptionFeature": "Direct feedback from global professionals",
+            "secondOptionFeature": "No guidance"
+          },
+          {
+            "title": "Speed",
+            "firstOptionFeature": "90 days to first offers",
+            "secondOptionFeature": "12–24 months (if ever)"
+          },
+          {
+            "title": "Community",
+            "firstOptionFeature": "500+ professionals supporting you",
+            "secondOptionFeature": "Alone"
+          },
+          {
+            "title": "ROI",
+            "firstOptionFeature": "$10k+ USD contracts",
+            "secondOptionFeature": "Unpredictable"
+          }
         ]
       }
     },
@@ -883,7 +1158,7 @@
           "title": "Rampix",
           "description": "A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure.",
           "buttonText": "Learn more",
-           "href": "https://www.rampix.xyz/"
+          "href": "https://www.rampix.xyz/"
         },
         {
           "src": "/startups/borderless-community.webp",
@@ -901,7 +1176,11 @@
     },
     "BorderlessEvolution": {
       "title": "The Borderless <italic>evolution</italic>",
-      "status": { "completed": "Completed", "inProgress": "In Progress", "next": "Next" },
+      "status": {
+        "completed": "Completed",
+        "inProgress": "In Progress",
+        "next": "Next"
+      },
       "stages": [
         {
           "title": "Talent Foundation",
@@ -934,7 +1213,7 @@
             "Focus sectors: SaaS, AI, DevTools, and fintech",
             "Support: product strategy, growth expertise, and technical architecture"
           ],
-           "outcome": ""
+          "outcome": ""
         },
         {
           "title": "Investment Access",
