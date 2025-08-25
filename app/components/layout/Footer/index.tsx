@@ -34,14 +34,25 @@ export function Footer() {
 
         <div className="flex flex-col-reverse gap-4 md:flex-row md:items-center justify-between">
           <p className="text-[#b2b2b2] text-sm md:text-base">
-            {t("copyright.text", { year })}
+            {t("copyright.text", { year })}.<br />
+            <p>Borderless Coding LLC.</p>
+            <p>30 N Gould St, STE R, Sheridan, WY 82801</p>
+            <p>Wyoming, USA</p>
           </p>
 
-         <div className="flex gap-2"> 
-            <a href="https://www.instagram.com/borderlesscoding" target="_blank" className="bg-[#f3f3f3] size-fit p-4 rounded-md cursor-pointer hover:opacity-70 hover:scale-110 transition-all duration-150">
+          <div className="flex gap-2">
+            <a
+              href="https://www.instagram.com/borderlesscoding"
+              target="_blank"
+              className="bg-[#f3f3f3] size-fit p-4 rounded-md cursor-pointer hover:opacity-70 hover:scale-110 transition-all duration-150"
+            >
               <Instagram className="text-black/70" />
             </a>
-            <a href="https://www.linkedin.com/company/borderless-coding" target="_blank" className="bg-[#f3f3f3] size-fit p-4 rounded-md cursor-pointer hover:opacity-70 hover:scale-110 transition-all duration-150">
+            <a
+              href="https://www.linkedin.com/company/borderless-coding"
+              target="_blank"
+              className="bg-[#f3f3f3] size-fit p-4 rounded-md cursor-pointer hover:opacity-70 hover:scale-110 transition-all duration-150"
+            >
               <Linkedin className="text-black/70" />
             </a>
           </div>
