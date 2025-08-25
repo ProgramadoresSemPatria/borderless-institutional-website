@@ -8,8 +8,8 @@ export const footerSections: FooterSectionConfig[] = [
     titleKey: "company",
     items: [
       { nameKey: "howItWorks", href: "/how-it-works" },
-      { nameKey: "privacyPolicy", href: "/privacy" },
-      { nameKey: "refundPolicy", href: "/refund" },
+      { nameKey: "privacyPolicy", href: "/legal/privacy-policy" },
+      { nameKey: "refundPolicy", href: "/legal/refund-policy" },
       { nameKey: "contact", href: "/contact" },
     ],
   },
