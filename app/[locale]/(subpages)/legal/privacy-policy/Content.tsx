@@ -37,23 +37,12 @@ export default function Content({ effectiveDate }: { effectiveDate: string }) {
 
       <div className="space-y-3">
         <h3 className="text-2xl font-semibold">{t("s4Title")}</h3>
-        <p>
-          {t("s4Body")} {" "}
-          <a className="text-secondary underline" href="/legal/vendors">
-            /legal/vendors
-          </a>
-          .
-        </p>
+        <p>{t("s4Body")}</p>
       </div>
 
       <div className="space-y-3">
         <h3 className="text-2xl font-semibold">{t("s5Title")}</h3>
-        <p>
-          {t("s5Body")} {" "}
-          <a className="text-secondary underline" href="/legal/cookies">
-            /legal/cookies
-          </a>
-        </p>
+        <p>{t("s5Body")} </p>
       </div>
 
       <div className="space-y-3">
