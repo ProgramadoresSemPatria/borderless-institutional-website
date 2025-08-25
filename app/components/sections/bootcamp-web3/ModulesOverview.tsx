@@ -1,6 +1,7 @@
 "use client";
 
 import { useRichText } from "@/app/hooks/useRichText";
+import { cn } from "@/app/lib/utils";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ClockIcon } from "lucide-react";
@@ -60,15 +61,25 @@ function ModuleOverview({
     <div className="module-overview-card bg-tertiary rounded-md p-2 space-y-4">
       <div className="space-y-2 p-4">
         <p className="text-xl font-medium">
-          <span className="font-bold font-ivy text-secondary">{t("moduleLabel")} {index + 1}:</span>{" "}
+          <span className="font-bold font-ivy text-secondary">
+            {t("moduleLabel")} {index + 1}:
+          </span>{" "}
           {title}
         </p>
         <p className="text-gray">{goal}</p>
       </div>
 
       <div className="grid lg:grid-cols-2 gap-2">
-        {weeks.map((week) => (
-          <div key={week.title} className="flex flex-col bg-[#232322] rounded-md p-4 space-y-6">
+        {weeks.map((week, index) => (
+          <div
+            key={week.title}
+            className={cn(
+              "flex flex-col bg-[#232322] rounded-md p-4 space-y-6",
+              index === weeks.length - 1 &&
+                (index + 1) % 2 !== 0 &&
+                "lg:col-span-2"
+            )}
+          >
             <div className="flex flex-col-reverse md:flex-row justify-between gap-2">
               <p className="font-medium">{week.title}</p>
               <div className="flex items-center gap-2 text-gray">
@@ -79,7 +90,10 @@ function ModuleOverview({
 
             <ul className="space-y-2 grow">
               {week.content.map((content, index) => (
-                <li key={`${content}-${index}`} className="flex items-center gap-4 text-gray">
+                <li
+                  key={`${content}-${index}`}
+                  className="flex items-center gap-4 text-gray"
+                >
                   <div className="bg-primary shrink-0 size-1.5 rounded-full" />
                   <p className="text-sm md:text-base">{content}</p>
                 </li>
