@@ -1,4 +1,4 @@
-import { HireFormData } from "../../[locale]/(subpages)/want-to-hire/schemas/hireSchema";
+import { HireFormData } from "@/app/[locale]/(subpages)/want-to-hire/schemas/useHireFormSchema";
 
 export function HireEmailTemplate({
   name,

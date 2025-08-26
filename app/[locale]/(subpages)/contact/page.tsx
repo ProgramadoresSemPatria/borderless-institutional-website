@@ -57,7 +57,7 @@ export default function Page() {
 
       toast.success(t("Form.successToast"));
       form.reset();
-    } catch (err) {
+    } catch {
       toast.error(t("Form.errorToast"));
     }
   };
@@ -169,7 +169,7 @@ export default function Page() {
                       </SelectTrigger>
                       <SelectContent className="border-0">
                         {contactTopics.map((topic) => {
-                          const label = t(`Form.topics.${topic}` as any);
+                          const label = t(`Form.topics.${topic}`);
                           return (
                             <SelectItem key={topic} value={topic}>
                               {label}

@@ -1,10 +1,6 @@
 "use client";
 
 import {
-  HireFormData,
-  useHireFormSchema,
-} from "@/app/[locale]/(subpages)/want-to-hire/schemas/useHireFormSchema";
-import {
   Form,
   FormControl,
   FormField,
@@ -18,6 +14,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
+import { HireFormData, useHireFormSchema } from "../schemas/useHireFormSchema";
 
 export default function Page() {
   const t = useTranslations("HirePage");
@@ -52,7 +49,7 @@ export default function Page() {
 
       toast.success(t("Form.successToast"));
       form.reset();
-    } catch (err) {
+    } catch {
       toast.error(t("Form.errorToast"));
     }
   };
@@ -62,9 +59,7 @@ export default function Page() {
       <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-2">
         {t("h1")}
       </h1>
-      <p className="text-gray mb-8">
-        {t("subtitle")}
-      </p>
+      <p className="text-gray mb-8">{t("subtitle")}</p>
 
       <div className="bg-tertiary p-2 rounded-md">
         <Form {...form}>

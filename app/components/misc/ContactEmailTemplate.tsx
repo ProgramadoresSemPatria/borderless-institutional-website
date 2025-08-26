@@ -1,4 +1,4 @@
-import { ContactFormData } from "@/app/[locale]/(subpages)/contact/schema/contactFormSchema";
+import { ContactFormData } from "@/app/[locale]/(subpages)/contact/schema/useContactFormSchema";
 
 export function ContactEmailTemplate({
   message,
