@@ -1,6 +1,7 @@
 "use client";
 
 import { useRichText } from "@/app/hooks/useRichText";
+import AutoHeight from "embla-carousel-auto-height";
 import Image from "next/image";
 import { AnimatedText } from "../../../ui/AnimatedText";
 import {
@@ -29,6 +30,15 @@ export function Testimonials() {
           align: "start",
         }}
         className="flex flex-col gap-4 lg:gap-8"
+        plugins={[
+          AutoHeight({
+            breakpoints: {
+              "(min-width: 768px)": {
+                active: false,
+              },
+            },
+          }),
+        ]}
       >
         <div className="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-12">
           <AnimatedText as="h2" className="max-w-4xl">
@@ -40,13 +50,13 @@ export function Testimonials() {
           </div>
         </div>
 
-        <CarouselContent className="-ml-2">
+        <CarouselContent className="-ml-2 items-start">
           {testimonials.map((testimonial, index) => (
             <CarouselItem
               key={`testimonial-${index}`}
               className="md:basis-1/2 xl:basis-1/3 pl-2"
             >
-              <div className="bg-tertiary rounded-md min-h-[30rem] p-6 select-none flex flex-col gap-6">
+              <div className="bg-tertiary rounded-md p-6 select-none flex flex-col gap-6">
                 <div className="flex items-center gap-4">
                   <div className="relative size-16">
                     <Image
