@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { IconWrapper } from "../ui/IconWrapper";
 
 export function Header() {
@@ -35,26 +35,47 @@ export function Header() {
     router.replace(pathname, { locale });
   };
 
-  useGSAP(() => {
-    gsap.fromTo(
-      ".header-buttons-container",
-      { opacity: 0 },
-      { opacity: 1, ease: "power4.in", duration: 0.5 }
-    );
-    gsap.fromTo(
-      ".header-backdrop",
-      { opacity: 0 },
-      { opacity: 1, ease: "power4.in", duration: 0.5 }
-    );
-  }, [isOpen]);
-
-  useEffect(() => {
-    if (!isOpen) return;
-    const prevOverflow = document.body.style.overflow;
+  const showMenu = () => {
     document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = prevOverflow;
-    };
+
+    const tl = gsap.timeline();
+
+    tl.to(".header-backdrop", {
+      opacity: 1,
+      ease: "power4.in",
+      duration: 0.25,
+    });
+
+    tl.to(
+      ".header-buttons-container",
+      { opacity: 1, ease: "power4.in", duration: 0.25 },
+      "<"
+    );
+  };
+
+  const hideMenu = () => {
+    const tl = gsap.timeline();
+    document.body.style.overflow = "auto";
+
+    tl.to(".header-buttons-container", {
+      opacity: 0,
+      ease: "power4.out",
+      duration: 0.25,
+    });
+
+    tl.to(
+      ".header-backdrop",
+      { opacity: 0, ease: "power4.out", duration: 0.25 },
+      "<"
+    );
+
+    tl.call(() => setIsOpen(false));
+  };
+
+  useGSAP(() => {
+    if (isOpen) {
+      showMenu();
+    }
   }, [isOpen]);
 
   return (
@@ -62,8 +83,8 @@ export function Header() {
       {isOpen && (
         <button
           aria-label="Close menu"
-          className="header-backdrop fixed inset-0 bg-black/50 backdrop-blur-[1px] z-40 cursor-pointer"
-          onClick={() => setIsOpen(false)}
+          className="header-backdrop fixed inset-0 bg-black/50 backdrop-blur-[1px] z-40 cursor-pointer opacity-0"
+          onClick={hideMenu}
         />
       )}
       <nav className="sticky w-full top-8 left-0 right-0 z-50">
@@ -81,7 +102,7 @@ export function Header() {
 
           <button
             className="cursor-pointer h-full"
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={isOpen ? hideMenu : () => setIsOpen(true)}
           >
             <IconWrapper
               className="aspect-square h-full p-0 flex-center"
@@ -90,7 +111,7 @@ export function Header() {
           </button>
 
           {isOpen && (
-            <div className="header-buttons-container absolute bg-[#2a2a2b] rounded-lg p-2 w-full left-0 bottom-0 translate-y-[calc(100%+1rem)] flex flex-col gap-2 max-h-[calc(100vh-16rem)] overflow-y-auto scrollbar-hide">
+            <div className="header-buttons-container absolute bg-[#2a2a2b] rounded-lg p-2 w-full left-0 bottom-0 translate-y-[calc(100%+1rem)] flex flex-col gap-2 max-h-[calc(100vh-16rem)] overflow-y-auto scrollbar-hide opacity-0">
               <div className="grid grid-cols-2 gap-2">
                 <button
                   className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150"
