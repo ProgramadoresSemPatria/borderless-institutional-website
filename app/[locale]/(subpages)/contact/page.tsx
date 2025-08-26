@@ -70,7 +70,7 @@ export default function Page() {
       <p className="text-gray mb-8">{t("subtitle")}</p>
 
       <div className="grid gap-4 xl:grid-cols-[30%_1fr] bg-tertiary p-2 rounded-md mb-8">
-        <aside className="flex flex-col space-y-4 bg-[#212121] p-4 mb-8 min-h-full">
+        <aside className="flex flex-col space-y-4 bg-[#212121] p-4 mb-8 xl:min-h-full">
           <div className="text-xl font-semibold">
             {t("aside.contactDetails")}
           </div>
@@ -109,7 +109,9 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="text-gray text-sm">{t("aside.address")}</div>
+          <div className="text-gray text-sm mt-12 xl:mt-0">
+            {t("aside.address")}
+          </div>
         </aside>
 
         <Form {...form}>
