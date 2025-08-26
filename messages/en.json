@@ -1436,5 +1436,39 @@
       "successToast": "Message sent successfully!",
       "errorToast": "Error sending email"
     }
+  },
+  "HirePage": {
+    "h1": "Get access to our talent pool",
+    "subtitle": "Fill out the form and we’ll get back to you as soon as possible.",
+    "Form": {
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "company": "Company",
+        "needs": "Needs",
+        "desiredSalary": "Desired salary",
+        "comments": "Comments"
+      },
+      "placeholders": {
+        "name": "John Doe",
+        "email": "email@example.com",
+        "company": "Acme Inc.",
+        "needs": "e.g. Senior React developer, 3+ months",
+        "desiredSalary": "e.g. $4,000 – $6,000/mo",
+        "comments": "Additional details (optional)"
+      },
+      "validation": {
+        "nameMin": "Name must be at least 2 characters long",
+        "nameMax": "Name must be under 120 characters long",
+        "emailInvalid": "Invalid email address",
+        "companyRequired": "Company is required",
+        "needsRequired": "Needs is required",
+        "desiredSalaryRequired": "Desired salary is required",
+        "commentsMax": "Comments must be under 3000 characters long"
+      },
+      "submit": "Send Email",
+      "successToast": "Message sent successfully!",
+      "errorToast": "Error sending email"
+    }
   }
 }

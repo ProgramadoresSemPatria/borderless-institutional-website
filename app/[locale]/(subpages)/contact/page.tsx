@@ -21,9 +21,11 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
-import { contactTopics } from "./schema/contactFormSchema";
 import type { ContactFormData } from "./schema/useContactFormSchema";
-import { useContactFormSchema } from "./schema/useContactFormSchema";
+import {
+  contactTopics,
+  useContactFormSchema,
+} from "./schema/useContactFormSchema";
 
 export default function Page() {
   const t = useTranslations("ContactPage");

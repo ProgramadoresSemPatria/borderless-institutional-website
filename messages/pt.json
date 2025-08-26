@@ -1492,7 +1492,7 @@
         "message": "Mensagem"
       },
       "placeholders": {
-        "name": "Jhon Doe",
+        "name": "John Doe",
         "email": "email@exemplo.com",
         "topic": "Selecione um assunto",
         "message": "Escreva sua mensagem aqui..."
@@ -1512,6 +1512,40 @@
         "emailInvalid": "E-mail inválido",
         "messageMin": "A mensagem deve ter pelo menos 10 caracteres",
         "messageMax": "A mensagem deve ter no máximo 3000 caracteres"
+      },
+      "submit": "Enviar e-mail",
+      "successToast": "Mensagem enviada com sucesso!",
+      "errorToast": "Erro ao enviar o e-mail"
+    }
+  },
+  "HirePage": {
+    "h1": "Acesse nosso banco de talentos",
+    "subtitle": "Preencha o formulário e entraremos em contato o quanto antes.",
+    "Form": {
+      "labels": {
+        "name": "Nome",
+        "email": "E-mail",
+        "company": "Empresa",
+        "needs": "Necessidade",
+        "desiredSalary": "Salário desejado",
+        "comments": "Comentários"
+      },
+      "placeholders": {
+        "name": "John Doe",
+        "email": "email@exemplo.com",
+        "company": "Acme Ltda.",
+        "needs": "ex.: Desenvolvedor React Sênior, 3+ meses",
+        "desiredSalary": "ex.: R$ 20.000 – R$ 30.000/mês",
+        "comments": "Detalhes adicionais (opcional)"
+      },
+      "validation": {
+        "nameMin": "O nome deve ter pelo menos 2 caracteres",
+        "nameMax": "O nome deve ter no máximo 120 caracteres",
+        "emailInvalid": "E-mail inválido",
+        "companyRequired": "Empresa é obrigatória",
+        "needsRequired": "Necessidade é obrigatória",
+        "desiredSalaryRequired": "Salário desejado é obrigatório",
+        "commentsMax": "Comentários devem ter no máximo 3000 caracteres"
       },
       "submit": "Enviar e-mail",
       "successToast": "Mensagem enviada com sucesso!",

@@ -1,9 +1,18 @@
 "use client";
 
-import { useMemo } from "react";
 import { useTranslations } from "next-intl";
+import { useMemo } from "react";
 import z from "zod";
-import { contactTopics } from "./contactFormSchema";
+
+export const contactTopics = [
+  "General",
+  "Technical",
+  "Billing",
+  "Mentorship",
+  "Refund",
+  "Partnership",
+  "Other",
+] as const;
 
 export type ContactFormData = {
   name: string;

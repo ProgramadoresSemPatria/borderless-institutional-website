@@ -2,8 +2,8 @@
 
 import {
   HireFormData,
-  hireSchema,
-} from "@/app/[locale]/(subpages)/want-to-hire/schemas/hireSchema";
+  useHireFormSchema,
+} from "@/app/[locale]/(subpages)/want-to-hire/schemas/useHireFormSchema";
 import {
   Form,
   FormControl,
@@ -15,12 +15,16 @@ import {
 import { Input } from "@/app/components/ui/Input";
 import { Spinner } from "@/app/components/ui/Spinner";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 
 export default function Page() {
+  const t = useTranslations("HirePage");
+  const schema = useHireFormSchema();
+
   const form = useForm<HireFormData>({
-    resolver: zodResolver(hireSchema),
+    resolver: zodResolver(schema),
     defaultValues: {
       name: "",
       company: "",
@@ -42,24 +46,24 @@ export default function Page() {
       });
 
       if (!res.ok) {
-        toast.error("Error sending email");
+        toast.error(t("Form.errorToast"));
         return;
       }
 
-      toast.success("Message sent successfully!");
+      toast.success(t("Form.successToast"));
       form.reset();
     } catch (err) {
-      toast.error("Error sending email");
+      toast.error(t("Form.errorToast"));
     }
   };
 
   return (
     <section className="pt-[10svh] pb-[20svh]">
       <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-2">
-        Get access to our talent pool
+        {t("h1")}
       </h1>
       <p className="text-gray mb-8">
-        Fill out the form and we’ll get back to you as soon as possible.
+        {t("subtitle")}
       </p>
 
       <div className="bg-tertiary p-2 rounded-md">
@@ -73,9 +77,12 @@ export default function Page() {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel>{t("Form.labels.name")}</FormLabel>
                   <FormControl>
-                    <Input placeholder="John Doe" {...field} />
+                    <Input
+                      placeholder={t("Form.placeholders.name")}
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -87,9 +94,12 @@ export default function Page() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email</FormLabel>
+                  <FormLabel>{t("Form.labels.email")}</FormLabel>
                   <FormControl>
-                    <Input placeholder="email@example.com" {...field} />
+                    <Input
+                      placeholder={t("Form.placeholders.email")}
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -101,9 +111,12 @@ export default function Page() {
               name="company"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Company</FormLabel>
+                  <FormLabel>{t("Form.labels.company")}</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input
+                      placeholder={t("Form.placeholders.company")}
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -115,9 +128,12 @@ export default function Page() {
               name="needs"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Needs</FormLabel>
+                  <FormLabel>{t("Form.labels.needs")}</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input
+                      placeholder={t("Form.placeholders.needs")}
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -129,9 +145,12 @@ export default function Page() {
               name="desiredSalary"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Desired salary</FormLabel>
+                  <FormLabel>{t("Form.labels.desiredSalary")}</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input
+                      placeholder={t("Form.placeholders.desiredSalary")}
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -143,9 +162,13 @@ export default function Page() {
               name="comments"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Comments</FormLabel>
+                  <FormLabel>{t("Form.labels.comments")}</FormLabel>
                   <FormControl>
-                    <textarea className="w-full bg-background rounded-md resize-none h-[10rem] p-4" />
+                    <textarea
+                      className="w-full bg-background rounded-md resize-none h-[10rem] p-4"
+                      placeholder={t("Form.placeholders.comments")}
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -157,7 +180,7 @@ export default function Page() {
               type="submit"
               className="bg-primary w-full xl:w-[10rem] h-10 flex-center rounded-sm font-medium hover:bg-primary/80 disabled:opacity-50 transition-colors duration-150 cursor-pointer"
             >
-              {form.formState.isSubmitting ? <Spinner /> : "Send Email"}
+              {form.formState.isSubmitting ? <Spinner /> : t("Form.submit")}
             </button>
           </form>
         </Form>
