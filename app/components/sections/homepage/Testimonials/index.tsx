@@ -64,6 +64,7 @@ export function Testimonials() {
                       src={testimonial.img}
                       alt="profile picture"
                       className="rounded-full object-cover"
+                      sizes="100%"
                     />
                   </div>
                   <div>

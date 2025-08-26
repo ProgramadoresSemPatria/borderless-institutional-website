@@ -44,7 +44,7 @@ export function HeroSection() {
             height={798}
             src={"/borderless-logo-black.svg"}
             alt="logo"
-            className="opacity-10 size-full"
+            className="size-full"
           />
         </div>
       </div>

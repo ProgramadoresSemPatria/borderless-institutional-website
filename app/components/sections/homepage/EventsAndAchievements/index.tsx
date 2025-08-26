@@ -49,6 +49,7 @@ export function EventsAndAchievements() {
                   src={event.src}
                   alt="event"
                   className="object-cover rounded-md"
+                  sizes="100%"
                 />
               </div>
               <p className="text-gray mt-6 text-sm md:text-base font-medium">

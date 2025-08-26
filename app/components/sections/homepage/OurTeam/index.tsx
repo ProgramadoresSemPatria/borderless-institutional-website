@@ -50,6 +50,7 @@ export function OurTeam() {
                     src={member.src}
                     alt="team member"
                     className="object-cover rounded-md"
+                    sizes="100%"
                   />
 
                   <div className="absolute flex gap-2 right-2 bottom-2 bg-tertiary p-2 rounded-md">
