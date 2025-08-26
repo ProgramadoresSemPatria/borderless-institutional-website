@@ -140,7 +140,7 @@ export default function BioPage() {
           }
           target="_blank"
         >
-          <div className="bg-tertiary rounded-md p-2 flex gap-8 border border-white/5 flex-col w-full sm:max-w-[20rem]">
+          <div className="bg-tertiary rounded-md p-2 flex gap-8 border border-white/5 flex-col max-w-[15rem]">
             <Image
               src="/yuri-book.png"
               alt="Capa do livro O Guia Definitivo do Autodidata"
@@ -153,13 +153,11 @@ export default function BioPage() {
             <div className="space-y-2 px-2 pb-2">
               <div className="flex gap-1 text-yellow-400">
                 {new Array(5).fill(undefined).map((_, idx) => (
-                  <Star className="fill-yellow-400" key={idx} />
+                  <Star className="fill-yellow-400 size-4" key={idx} />
                 ))}
               </div>
               <div>
-                <h4 className="font-semibold">
-                  O Guia Definitivo do Autodidata
-                </h4>
+                <h4 className="font-semibold">O Guia Autodidata</h4>
                 <p className="text-sm text-gray">Yuri Pereira</p>
               </div>
             </div>
