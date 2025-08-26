@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useMessages } from "next-intl";
 
 export interface Testimonial {
   img: string;
@@ -12,46 +12,7 @@ export interface Testimonial {
 }
 
 export function useTestimonials(): Testimonial[] {
-  const t = useTranslations("HomePage.Testimonials");
-
-  return [
-    {
-      img: "/testimonials/caique.png",
-      name: t("list.0.name"),
-      role: t("list.0.role"),
-      iframeSrc: t("list.0.iframeSrc"),
-      description: t("list.0.description"),
-    },
-    {
-      img: "/testimonials/lucas.png",
-      name: t("list.1.name"),
-      role: t("list.1.role"),
-      iframeSrc: t("list.1.iframeSrc"),
-      description: t("list.1.description"),
-    },
-    {
-      img: "/testimonials/yuri.png",
-      name: t("list.2.name"),
-      role: t("list.2.role"),
-      testimony: t("list.2.testimony"),
-    },
-    {
-      img: "/testimonials/eduardo.png",
-      name: t("list.3.name"),
-      role: t("list.3.role"),
-      testimony: t("list.3.testimony"),
-    },
-    {
-      img: "/testimonials/arthur.png",
-      name: t("list.4.name"),
-      role: t("list.4.role"),
-      testimony: t("list.4.testimony"),
-    },
-    {
-      img: "/testimonials/thiago.png",
-      name: t("list.5.name"),
-      role: t("list.5.role"),
-      testimony: t("list.5.testimony"),
-    },
-  ];
+  const messages = useMessages();
+  const testimonials = messages.HomePage.Testimonials.list as Testimonial[];
+  return testimonials;
 }
