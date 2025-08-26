@@ -18,17 +18,18 @@ import {
 } from "@/app/components/ui/Select";
 import { Spinner } from "@/app/components/ui/Spinner";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
-import {
-  ContactFormData,
-  contactFormSchema,
-  contactTopics,
-} from "./schema/contactFormSchema";
+import { contactTopics } from "./schema/contactFormSchema";
+import type { ContactFormData } from "./schema/useContactFormSchema";
+import { useContactFormSchema } from "./schema/useContactFormSchema";
 
 export default function Page() {
+  const t = useTranslations("ContactPage");
+  const schema = useContactFormSchema();
   const form = useForm<ContactFormData>({
-    resolver: zodResolver(contactFormSchema),
+    resolver: zodResolver(schema),
     defaultValues: {
       name: "",
       email: "",
@@ -48,32 +49,34 @@ export default function Page() {
       });
 
       if (!res.ok) {
-        toast.error("Error sending email");
+        toast.error(t("Form.errorToast"));
         return;
       }
 
-      toast.success("Message sent successfully!");
+      toast.success(t("Form.successToast"));
       form.reset();
     } catch (err) {
-      toast.error("Error sending email");
+      toast.error(t("Form.errorToast"));
     }
   };
 
   return (
     <section className="pt-[10svh] pb-[20svh]">
       <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-2">
-        Contact Borderless Coding
+        {t("h1")}
       </h1>
-      <p className="text-gray mb-8">
-        Fill out the form and we’ll get back to you as soon as possible.
-      </p>
+      <p className="text-gray mb-8">{t("subtitle")}</p>
 
       <div className="grid gap-4 xl:grid-cols-[30%_1fr] bg-tertiary p-2 rounded-md mb-8">
         <aside className="flex flex-col space-y-4 bg-[#212121] p-4 mb-8 min-h-full">
-          <div className="text-xl font-semibold">Contact details</div>
+          <div className="text-xl font-semibold">
+            {t("aside.contactDetails")}
+          </div>
           <div className="space-y-6 grow">
             <p>
-              <span className="block font-bold">Direct email: </span>
+              <span className="block font-bold">
+                {t("aside.directEmailLabel")}
+              </span>
               <a
                 href="mailto:contato@borderlesscoding.com"
                 className="text-secondary hover:underline break-normal"
@@ -82,23 +85,29 @@ export default function Page() {
               </a>
             </p>
             <p>
-              <span className="block font-bold">Phone: </span>
-              <span className="text-secondary">+5521971417218</span>
+              <span className="block font-bold">{t("aside.phoneLabel")}</span>
+              <a
+                href="tel:+5521971417218"
+                className="text-secondary hover:underline break-normal"
+              >
+                +5521971417218
+              </a>
             </p>
             <p>
-              <span className="block font-bold">Office hours: </span>
-              Mon–Fri, 9:00–18:00 BRT
+              <span className="block font-bold">
+                {t("aside.officeHoursLabel")}
+              </span>
+              {t("aside.officeHoursValue")}
             </p>
             <p>
-              <span className="block font-bold">Response time: </span>
-              within 1 business day
+              <span className="block font-bold">
+                {t("aside.responseTimeLabel")}
+              </span>
+              {t("aside.responseTimeValue")}
             </p>
           </div>
 
-          <div className="text-gray text-sm">
-            Borderless Coding LLC. 30 N Gould St, STE R, Sheridan, WY 82801
-            Wyoming, USA
-          </div>
+          <div className="text-gray text-sm">{t("aside.address")}</div>
         </aside>
 
         <Form {...form}>
@@ -111,9 +120,12 @@ export default function Page() {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel>{t("Form.labels.name")}</FormLabel>
                   <FormControl>
-                    <Input placeholder="John Doe" {...field} />
+                    <Input
+                      placeholder={t("Form.placeholders.name")}
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -125,9 +137,12 @@ export default function Page() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email</FormLabel>
+                  <FormLabel>{t("Form.labels.email")}</FormLabel>
                   <FormControl>
-                    <Input placeholder="email@example.com" {...field} />
+                    <Input
+                      placeholder={t("Form.placeholders.email")}
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -139,21 +154,26 @@ export default function Page() {
               name="topic"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Topic</FormLabel>
+                  <FormLabel>{t("Form.labels.topic")}</FormLabel>
                   <FormControl>
                     <Select
                       onValueChange={field.onChange}
                       defaultValue={field.value}
                     >
                       <SelectTrigger className="w-full bg-background border-0 py-5">
-                        <SelectValue placeholder="Select a topic" />
+                        <SelectValue
+                          placeholder={t("Form.placeholders.topic")}
+                        />
                       </SelectTrigger>
                       <SelectContent className="border-0">
-                        {contactTopics.map((topic) => (
-                          <SelectItem key={topic} value={topic}>
-                            {topic}
-                          </SelectItem>
-                        ))}
+                        {contactTopics.map((topic) => {
+                          const label = t(`Form.topics.${topic}` as any);
+                          return (
+                            <SelectItem key={topic} value={topic}>
+                              {label}
+                            </SelectItem>
+                          );
+                        })}
                       </SelectContent>
                     </Select>
                   </FormControl>
@@ -167,10 +187,10 @@ export default function Page() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Message</FormLabel>
+                  <FormLabel>{t("Form.labels.message")}</FormLabel>
                   <FormControl>
                     <textarea
-                      placeholder="Write your message here..."
+                      placeholder={t("Form.placeholders.message")}
                       className="min-h-[100px] bg-background p-4 rounded-md h-[10rem] resize-none"
                       {...field}
                     />
@@ -185,7 +205,7 @@ export default function Page() {
               type="submit"
               className="bg-primary w-full xl:w-[10rem] h-10 flex-center rounded-sm font-medium hover:bg-primary/80 disabled:opacity-50 transition-colors duration-150 cursor-pointer"
             >
-              {form.formState.isSubmitting ? <Spinner /> : "Send Email"}
+              {form.formState.isSubmitting ? <Spinner /> : t("Form.submit")}
             </button>
           </form>
         </Form>

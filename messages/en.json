@@ -1388,17 +1388,53 @@
       "Video lessons hosted on Vimeo; resources downloadable.",
       "Live calls via Meet; replays available if included in your plan.",
       "Community/forum access if included in your plan."
-    ],
-    "supportTitle": "Support",
-    "supportItems": [
-      "Email contato@borderlesscoding.com or use the in‑app help widget.",
-      "Typical first response: within 1 business day (Mon–Fri, BRT).",
-      "Tech incidents prioritized by severity."
-    ],
-    "cancellationsTitle": "Cancellations & Rescheduling",
-    "cancellationsItems": [
-      "You may reschedule 1:1 sessions up to 24 hours before the start time.",
-      "Late cancellations/no‑shows may be deducted from your session quota."
     ]
+  },
+  "ContactPage": {
+    "h1": "Contact Borderless Coding",
+    "subtitle": "Fill out the form and we’ll get back to you as soon as possible.",
+    "aside": {
+      "contactDetails": "Contact details",
+      "directEmailLabel": "Direct email:",
+      "phoneLabel": "Phone:",
+      "officeHoursLabel": "Office hours:",
+      "officeHoursValue": "Mon–Fri, 9:00–18:00 BRT",
+      "responseTimeLabel": "Response time:",
+      "responseTimeValue": "within 1 business day",
+      "address": "Borderless Coding LLC. 30 N Gould St, STE R, Sheridan, WY 82801 Wyoming, USA"
+    },
+    "Form": {
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "topic": "Topic",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "John Doe",
+        "email": "email@example.com",
+        "topic": "Select a topic",
+        "message": "Write your message here..."
+      },
+      "topics": {
+        "General": "General",
+        "Technical": "Technical",
+        "Billing": "Billing",
+        "Mentorship": "Mentorship",
+        "Refund": "Refund",
+        "Partnership": "Partnership",
+        "Other": "Other"
+      },
+      "validation": {
+        "nameMin": "Name must be at least 2 characters long",
+        "nameMax": "Name must be under 120 characters long",
+        "emailInvalid": "Invalid email address",
+        "messageMin": "Message must be at least 10 characters long",
+        "messageMax": "Message must be under 3000 characters long"
+      },
+      "submit": "Send Email",
+      "successToast": "Message sent successfully!",
+      "errorToast": "Error sending email"
+    }
   }
 }

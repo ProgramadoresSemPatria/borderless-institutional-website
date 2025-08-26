@@ -1470,5 +1470,52 @@
       "Você pode remarcar sessões 1:1 até 24 horas antes do horário de início.",
       "Cancelamentos tardios/ausências podem ser descontados da sua cota de sessões."
     ]
+  },
+  "ContactPage": {
+    "h1": "Fale com a Borderless Coding",
+    "subtitle": "Preencha o formulário e retornaremos o contato o mais rápido possível.",
+    "aside": {
+      "contactDetails": "Detalhes de contato",
+      "directEmailLabel": "E-mail direto:",
+      "phoneLabel": "Telefone:",
+      "officeHoursLabel": "Horário de atendimento:",
+      "officeHoursValue": "Seg–Sex, 9:00–18:00 BRT",
+      "responseTimeLabel": "Tempo de resposta:",
+      "responseTimeValue": "em até 1 dia útil",
+      "address": "Borderless Coding LLC. 30 N Gould St, STE R, Sheridan, WY 82801 Wyoming, EUA"
+    },
+    "Form": {
+      "labels": {
+        "name": "Nome",
+        "email": "E-mail",
+        "topic": "Assunto",
+        "message": "Mensagem"
+      },
+      "placeholders": {
+        "name": "Jhon Doe",
+        "email": "email@exemplo.com",
+        "topic": "Selecione um assunto",
+        "message": "Escreva sua mensagem aqui..."
+      },
+      "topics": {
+        "General": "Geral",
+        "Technical": "Técnico",
+        "Billing": "Cobrança",
+        "Mentorship": "Mentoria",
+        "Refund": "Reembolso",
+        "Partnership": "Parceria",
+        "Other": "Outro"
+      },
+      "validation": {
+        "nameMin": "O nome deve ter pelo menos 2 caracteres",
+        "nameMax": "O nome deve ter no máximo 120 caracteres",
+        "emailInvalid": "E-mail inválido",
+        "messageMin": "A mensagem deve ter pelo menos 10 caracteres",
+        "messageMax": "A mensagem deve ter no máximo 3000 caracteres"
+      },
+      "submit": "Enviar e-mail",
+      "successToast": "Mensagem enviada com sucesso!",
+      "errorToast": "Erro ao enviar o e-mail"
+    }
   }
 }
