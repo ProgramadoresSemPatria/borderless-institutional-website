@@ -132,7 +132,7 @@ export function Header() {
                   href={link.href}
                   key={link.title}
                   className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150"
-                  onClick={() => setIsOpen(false)}
+                  onClick={hideMenu}
                 >
                   {link.title}
                 </Link>
