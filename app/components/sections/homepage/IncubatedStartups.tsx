@@ -4,8 +4,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Zap } from "lucide-react";
 import Image from "next/image";
-import { AnimatedText } from "../../../ui/AnimatedText";
-import { ExternalLink } from "../../../ui/ExternalLink";
+import { AnimatedText } from "../../ui/AnimatedText";
+import { ExternalLink } from "../../ui/ExternalLink";
 import { useIncubatedStartups } from "./hooks/useIncubatedStartups";
 
 export function IncubatedStartups() {
@@ -63,7 +63,9 @@ export function IncubatedStartups() {
             </div>
 
             <div className="w-full flex justify-end">
-              <ExternalLink target="_blank" href={startup.href}>{startup.buttonText}</ExternalLink>
+              <ExternalLink target="_blank" href={startup.href}>
+                {startup.buttonText}
+              </ExternalLink>
             </div>
           </div>
         ))}

@@ -4,9 +4,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Github, Linkedin } from "lucide-react";
 import Image from "next/image";
-import { AnimatedText } from "../../../ui/AnimatedText";
-import { Carousel, CarouselContent, CarouselItem } from "../../../ui/Carousel";
-import { IconWrapper } from "../../../ui/IconWrapper";
+import { AnimatedText } from "../../ui/AnimatedText";
+import { Carousel, CarouselContent, CarouselItem } from "../../ui/Carousel";
+import { IconWrapper } from "../../ui/IconWrapper";
 import { useGetOurTeam } from "./hooks/useGetOurTeam";
 
 export function OurTeam() {

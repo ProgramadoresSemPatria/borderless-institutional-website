@@ -5,8 +5,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { AnimatedGrid } from "../../../ui/AnimatedGrid";
 import { AnimatedText } from "../../../ui/AnimatedText";
+import { useAccelerationPrograms } from "../hooks/useAccelerationPrograms";
 import { AccelerationCard } from "./components/AccelerationCard";
-import { useAccelerationPrograms } from "./hooks/useAccelerationPrograms";
 
 export function AccelerationPrograms() {
   const { t, rich } = useRichText("HomePage.AccelerationPrograms");

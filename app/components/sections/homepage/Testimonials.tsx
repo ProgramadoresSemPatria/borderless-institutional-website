@@ -3,14 +3,14 @@
 import { useRichText } from "@/app/hooks/useRichText";
 import AutoHeight from "embla-carousel-auto-height";
 import Image from "next/image";
-import { AnimatedText } from "../../../ui/AnimatedText";
+import { AnimatedText } from "../../ui/AnimatedText";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../../../ui/Carousel";
+} from "../../ui/Carousel";
 import { useTestimonials } from "./hooks/useTestimonials";
 
 export function Testimonials() {

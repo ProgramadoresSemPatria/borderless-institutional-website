@@ -2,14 +2,14 @@ import { ExternalLink } from "@/app/components/ui/ExternalLink";
 import { IconWrapper } from "@/app/components/ui/IconWrapper";
 import { useTranslations } from "next-intl";
 import { twMerge } from "tailwind-merge";
-import { Program } from "../hooks/useAccelerationPrograms";
+import { Program } from "../../hooks/useAccelerationPrograms";
 
 export function AccelerationCard({
   description,
   features,
   title,
   className,
-  href
+  href,
 }: Program & { className?: string }) {
   const t = useTranslations("HomePage.AccelerationPrograms");
 

@@ -20,18 +20,23 @@
     "ServicesSection": {
       "preTitle": "O que oferecemos ?",
       "title": "Desde <italic>Mobile development</italic> até Machine Learning Engineering",
-      "education": {
-        "title": "Educação",
-        "description": "Programas de aceleração e mentoria especializada"
-      },
-      "tech": {
-        "title": "Tech",
-        "description": "Desenvolvimento de soluções inovadoras"
-      },
-      "people": {
-        "title": "People",
-        "description": "Conexão com mercados globais"
-      }
+      "services": [
+        {
+          "title": "Educação",
+          "description": "Programas de aceleração e mentoria especializada",
+          "icon": "graduationCap"
+        },
+        {
+          "title": "Tech",
+          "description": "Desenvolvimento de soluções inovadoras",
+          "icon": "code"
+        },
+        {
+          "title": "People",
+          "description": "Conexão com mercados globais",
+          "icon": "users"
+        }
+      ]
     },
     "TalentCompanies": {
       "title": "Empresas onde nossos <italic>talentos</italic> já trabalharam ou trabalham"
@@ -40,56 +45,60 @@
       "preTitle": "Impulsione sua jornada",
       "title": "Conheça nossos <italic>programas de aceleração</italic>",
       "buttonText": "Saiba mais",
-      "programs": {
-        "psp": {
+      "programs": [
+        {
           "title": "Mentoria PSP",
           "description": "Programa de mentorias estruturado para acelerar sua carreira em tecnologia",
-          "features": {
-            "mentoring": "Mentoria especializada",
-            "projects": "Projetos práticos",
-            "network": "Network global"
-          }
+          "features": [
+            { "title": "Mentoria especializada", "icon": "user" },
+            { "title": "Projetos práticos", "icon": "code" },
+            { "title": "Network global", "icon": "users" }
+          ]
         },
-        "base": {
+        {
           "title": "Mentoria BASE",
           "description": "Fundamentos sólidos para sua jornada em tecnologia e mercados internacionais",
-          "features": {
-            "tech": "Base técnica",
-            "softSkills": "Soft skills",
-            "global": "Preparação global"
-          }
+          "features": [
+            { "title": "Base técnica", "icon": "code" },
+            { "title": "Soft skills", "icon": "speech" },
+            { "title": "Preparação global", "icon": "earth" }
+          ]
         },
-        "bootcamp": {
+        {
           "title": "Bootcamp: Web3 Global Developer",
           "description": "Bootcamp intensivo focado em tecnologias Web3 e desenvolvimento descentralizado",
-          "features": {
-            "stack": "Web3 Stack",
-            "dapps": "DApps",
-            "blockchain": "Blockchain"
-          }
+          "features": [
+            { "title": "Web3 Stack", "icon": "code" },
+            { "title": "DApps", "icon": "network" },
+            { "title": "Blockchain", "icon": "bitcoin" }
+          ]
         }
-      }
+      ]
     },
     "GuaranteeSection": {
       "title": "Consiga um <italic>emprego</italic> em tech ou seu <italic>dinheiro de volta</italic>",
-      "features": {
-        "implementation": {
+      "features": [
+        {
           "title": "Aulas de implementação",
-          "description": "Aprenda fazendo com projetos práticos e reais"
+          "description": "Aprenda fazendo com projetos práticos e reais",
+          "icon": "code"
         },
-        "community": {
+        {
           "title": "Comunidade & Networking",
-          "description": "Rede de contatos global para sua carreira"
+          "description": "Rede de contatos global para sua carreira",
+          "icon": "users"
         },
-        "live": {
+        {
           "title": "Encontros ao vivo",
-          "description": "Interação direta com mentores especialistas"
+          "description": "Interação direta com mentores especialistas",
+          "icon": "video"
         },
-        "miniapps": {
+        {
           "title": "Mini-apps para acompanhamento",
-          "description": "Tecnologia para acompanhar sua evolução"
+          "description": "Tecnologia para acompanhar sua evolução",
+          "icon": "smartphone"
         }
-      }
+      ]
     },
     "Testimonials": {
       "title": "<italic>105+ Cases de sucesso</italic> – profissionais agora trabalhando nos EUA, Europa e Ásia.",
@@ -151,13 +160,15 @@
           "src": "/startups/rampix.png",
           "title": "Rampix",
           "description": "Uma exchange 100% brasileira para comprar e vender criptomoedas via PIX, rápido e seguro.",
-          "buttonText": "Saiba mais"
+          "buttonText": "Saiba mais",
+          "href": "https://www.rampix.xyz/"
         },
         {
           "src": "/startups/borderless-community.webp",
           "title": "Borderless Community",
           "description": "O super app da Borderless Coding: combinando rede social, área de membros e fórum para profissionais globais de tecnologia.",
-          "buttonText": "Exclusivo para membros"
+          "buttonText": "Exclusivo para membros",
+          "href": "https://community.borderlesscoding.com/"
         }
       ]
     },
@@ -189,10 +200,24 @@
     },
     "EventsAndAchievements": {
       "title": "Eventos e <italic>conquistas</italic>",
-      "event1": "Primeira borderless conf São Paulo, Brasil, para mais de 70 convidados",
-      "event2": "Entrevista do Nosso founder, Yuri Pereira, para a revista Entrepreneur em Dubai, UAE",
-      "event3": "Brainstorm durante uma hackthon de AI na França",
-      "event4": "Mentorados da borderless receberam o segundo lugar na hackathon da EthCC em Cannes, França"
+      "events": [
+        {
+          "description": "Primeira borderless conf São Paulo, Brasil, para mais de 70 convidados",
+          "src": "/events/conference.webp"
+        },
+        {
+          "description": "Entrevista do Nosso founder, Yuri Pereira, para a revista Entrepreneur em Dubai, UAE",
+          "src": "/events/interview.webp"
+        },
+        {
+          "description": "Brainstorm durante uma hackthon de AI na França",
+          "src": "/events/brainstorm.webp"
+        },
+        {
+          "description": "Mentorados da borderless receberam o segundo lugar na hackathon da EthCC em Cannes, França",
+          "src": "/events/hackthon.webp"
+        }
+      ]
     }
   },
   "BaseMentorship": {
@@ -891,14 +916,14 @@
         {
           "src": "/startups/rampix.png",
           "title": "Rampix",
-          "description": "Exchange 100% brasileira para comprar e vender cripto via PIX, com rapidez e segurança.",
+          "description": "Exchange 100% brasileira para comprar e vender criptomoedas via PIX, com rapidez e segurança.",
           "buttonText": "Saiba mais",
           "href": "https://www.rampix.xyz/"
         },
         {
           "src": "/startups/borderless-community.webp",
           "title": "Borderless Community",
-          "description": "O super app da Borderless Coding: rede social, área de membros e fórum para profissionais globais de tecnologia",
+          "description": "O super app da Borderless Coding: rede social, área de membros e fórum para profissionais globais de tecnologia.",
           "buttonText": "Exclusivo para membros",
           "href": "https://community.borderlesscoding.com/"
         }
@@ -911,7 +936,7 @@
     },
     "JoinUs": {
       "title": "Junte-se a Nós",
-      "description": "Seja você um founder pronto para lançar sua startup ou um investidor em busca de oportunidades early-stage, a Borderless é a ponte entre talento e capital.",
+      "description": "Se você é um founder pronto para lançar sua startup ou um investidor em busca de oportunidades early-stage, a Borderless é seu ponto de entrada para a próxima onda de empreendimentos globais",
       "cta": "Seja nosso parceiro"
     },
     "WhyBorderless": {
@@ -1293,7 +1318,7 @@
       }
     },
     "copyright": {
-      "text": "© {year} Borderless Coding. Todos os direitos reservados"
+      "text": " Borderless Coding. Todos os direitos reservados"
     }
   },
   "Legal": {

@@ -4,8 +4,8 @@ import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
-import { AnimatedText } from "../../../ui/AnimatedText";
-import { Carousel, CarouselContent, CarouselItem } from "../../../ui/Carousel";
+import { AnimatedText } from "../../ui/AnimatedText";
+import { Carousel, CarouselContent, CarouselItem } from "../../ui/Carousel";
 import { useGetEventsAndAchievements } from "./hooks/useGetEventsAndAchievements";
 
 export function EventsAndAchievements() {

@@ -3,8 +3,8 @@
 import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { AnimatedText } from "../../../ui/AnimatedText";
-import { FeatureCard } from "../../../ui/FeatureCard";
+import { AnimatedText } from "../../ui/AnimatedText";
+import { FeatureCard } from "../../ui/FeatureCard";
 import { useGuaranteeFeatures } from "./hooks/useGuaranteeFeatures";
 
 export function GuaranteeSection() {

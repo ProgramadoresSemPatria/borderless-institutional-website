@@ -4,9 +4,9 @@ import RichText from "@/app/components/ui/RichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useTranslations } from "next-intl";
-import { AnimatedGrid } from "../../../ui/AnimatedGrid";
-import { AnimatedText } from "../../../ui/AnimatedText";
-import { FeatureCard } from "../../../ui/FeatureCard";
+import { AnimatedGrid } from "../../ui/AnimatedGrid";
+import { AnimatedText } from "../../ui/AnimatedText";
+import { FeatureCard } from "../../ui/FeatureCard";
 import { useOurServices } from "./hooks/useOurServices";
 
 export function OurServices() {

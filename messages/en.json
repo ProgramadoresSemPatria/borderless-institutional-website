@@ -20,18 +20,23 @@
     "ServicesSection": {
       "preTitle": "What we offer?",
       "title": "From <italic>Mobile development</italic> to Machine Learning Engineering",
-      "education": {
-        "title": "Education",
-        "description": "Acceleration programs and specialized mentorship"
-      },
-      "tech": {
-        "title": "Tech",
-        "description": "Development of innovative solutions"
-      },
-      "people": {
-        "title": "People",
-        "description": "Connection with global markets"
-      }
+      "services": [
+        {
+          "title": "Education",
+          "description": "Acceleration programs and specialized mentorship",
+          "icon": "graduationCap"
+        },
+        {
+          "title": "Tech",
+          "description": "Development of innovative solutions",
+          "icon": "code"
+        },
+        {
+          "title": "People",
+          "description": "Connection with global markets",
+          "icon": "users"
+        }
+      ]
     },
     "TalentCompanies": {
       "title": "Companies where our <italic>talents</italic> have already worked or currently work"
@@ -40,56 +45,60 @@
       "preTitle": "Boost your journey",
       "title": "Discover our <italic>acceleration programs</italic>",
       "buttonText": "Learn more",
-      "programs": {
-        "psp": {
+      "programs": [
+        {
           "title": "PSP Mentoring",
           "description": "Structured mentoring program to accelerate your career in technology",
-          "features": {
-            "mentoring": "Specialized mentoring",
-            "projects": "Practical projects",
-            "network": "Global network"
-          }
+          "features": [
+            { "title": "Specialized mentoring", "icon": "user" },
+            { "title": "Practical projects", "icon": "code" },
+            { "title": "Global network", "icon": "users" }
+          ]
         },
-        "base": {
+        {
           "title": "BASE Mentoring",
           "description": "Solid foundations for your journey in technology and international markets",
-          "features": {
-            "tech": "Technical base",
-            "softSkills": "Soft skills",
-            "global": "Global preparation"
-          }
+          "features": [
+            { "title": "Technical base", "icon": "code" },
+            { "title": "Soft skills", "icon": "speech" },
+            { "title": "Global preparation", "icon": "earth" }
+          ]
         },
-        "bootcamp": {
+        {
           "title": "Bootcamp: Web3 Global Developer",
           "description": "Intensive bootcamp focused on Web3 technologies and decentralized development",
-          "features": {
-            "stack": "Web3 Stack",
-            "dapps": "DApps",
-            "blockchain": "Blockchain"
-          }
+          "features": [
+            { "title": "Web3 Stack", "icon": "code" },
+            { "title": "DApps", "icon": "network" },
+            { "title": "Blockchain", "icon": "bitcoin" }
+          ]
         }
-      }
+      ]
     },
     "GuaranteeSection": {
       "title": "Get a <italic>tech job</italic> or your <italic>money back</italic>",
-      "features": {
-        "implementation": {
+      "features": [
+        {
           "title": "Implementation classes",
-          "description": "Learn by doing with real practical projects"
+          "description": "Learn by doing with real practical projects",
+          "icon": "code"
         },
-        "community": {
+        {
           "title": "Community & Networking",
-          "description": "Global network to grow your career"
+          "description": "Global network to grow your career",
+          "icon": "users"
         },
-        "live": {
+        {
           "title": "Live sessions",
-          "description": "Direct interaction with expert mentors"
+          "description": "Direct interaction with expert mentors",
+          "icon": "video"
         },
-        "miniapps": {
+        {
           "title": "Mini-apps for tracking",
-          "description": "Technology to track your progress"
+          "description": "Technology to track your progress",
+          "icon": "smartphone"
         }
-      }
+      ]
     },
     "Testimonials": {
       "title": "<italic>105+ Success Stories</italic> – professionals now working in the US, Europe, and Asia.",
@@ -151,13 +160,15 @@
           "src": "/startups/rampix.png",
           "title": "Rampix",
           "description": "A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure.",
-          "buttonText": "Learn more"
+          "buttonText": "Learn more",
+          "href": "https://www.rampix.xyz/"
         },
         {
           "src": "/startups/borderless-community.webp",
           "title": "Borderless Community",
           "description": "The super app from Borderless Coding: combining social network, members area, and forum for global tech professionals.",
-          "buttonText": "Members Only"
+          "buttonText": "Members Only",
+          "href": "https://community.borderlesscoding.com/"
         }
       ]
     },
@@ -189,10 +200,24 @@
     },
     "EventsAndAchievements": {
       "title": "Events and <italic>achievements</italic>",
-      "event1": "First Borderless conference in São Paulo, Brazil, with over 70 guests",
-      "event2": "Interview of our founder, Yuri Pereira, for Entrepreneur magazine in Dubai, UAE",
-      "event3": "Brainstorm during an AI hackathon in France",
-      "event4": "Borderless mentees won second place at the EthCC hackathon in Cannes, France"
+      "events": [
+        {
+          "description": "First Borderless conference in São Paulo, Brazil, with over 70 guests",
+          "src": "/events/conference.webp"
+        },
+        {
+          "description": "Interview of our founder, Yuri Pereira, for Entrepreneur magazine in Dubai, UAE",
+          "src": "/events/interview.webp"
+        },
+        {
+          "description": "Brainstorm during an AI hackathon in France",
+          "src": "/events/brainstorm.webp"
+        },
+        {
+          "description": "Borderless mentees won second place at the EthCC hackathon in Cannes, France",
+          "src": "/events/hackthon.webp"
+        }
+      ]
     }
   },
 
@@ -1294,7 +1319,7 @@
       }
     },
     "copyright": {
-      "text": "© {year} Borderless Coding. All rights reserved"
+      "text": " 2023 Borderless Coding. All rights reserved"
     }
   },
   "Legal": {
