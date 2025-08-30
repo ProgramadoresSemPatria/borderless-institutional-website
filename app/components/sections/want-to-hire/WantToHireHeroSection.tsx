@@ -8,7 +8,7 @@ import { AnimatedText } from "../../ui/AnimatedText";
 export function WantToHireHeroSection() {
   const { rich, t } = useRichText("WantToHire.HeroSection");
   return (
-    <section className="py-[10svh] space-y-12">
+    <section className="pt-36 pb-[10svh] space-y-12">
       <div className="space-y-6">
         <AnimatedText
           tweenVars={{

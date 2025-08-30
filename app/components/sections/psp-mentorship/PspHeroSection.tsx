@@ -1,14 +1,14 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
-import { AnimatedText } from "../../ui/AnimatedText";
-import { useTranslations } from "next-intl";
 import RichText from "@/app/components/ui/RichText";
+import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { AnimatedText } from "../../ui/AnimatedText";
 
 export function PspHeroSection() {
   const t = useTranslations("PspMentorship.HeroSection");
   return (
-    <section className="py-[10svh] space-y-12">
+    <section className="pt-36 pb-[10svh] space-y-12">
       <div className="space-y-6">
         <AnimatedText
           tweenVars={{

@@ -1,15 +1,15 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { ArrowRight } from "lucide-react";
 import { AnimatedText } from "../../ui/AnimatedText";
-import { useRichText } from "@/app/hooks/useRichText";
 import { useExpansionHero } from "./hooks/useExpansionHero";
 
 export function ExpansionHeroSection() {
   const { rich } = useRichText("Expansion.Hero");
   const { header, subtitle, cta } = useExpansionHero();
   return (
-    <section className="py-[10svh] space-y-12">
+    <section className="pt-36 pb-[10svh] space-y-12">
       <div className="space-y-6">
         <AnimatedText
           tweenVars={{

@@ -39,7 +39,7 @@ export function IncubatedStartups() {
         <div className="grid md:grid-cols-2 gap-2 ">
           {startups.map((startup, index: number) => (
             <div
-              className="startup-card flex flex-col justify-between bg-tertiary rounded-md p-6 gap-6"
+              className="startup-card flex flex-col justify-between bg-tertiary rounded-md p-6 gap-6 opacity-0"
               key={`startup-${index}`}
             >
               <div className="space-y-4">
@@ -60,13 +60,16 @@ export function IncubatedStartups() {
               </div>
 
               <div className="w-full flex justify-end">
-                <ExternalLink target="_blank" href={startup.href} >{startup.buttonText || visitLabel}</ExternalLink>
+                <ExternalLink target="_blank" href={startup.href}>
+                  {startup.buttonText || visitLabel}
+                </ExternalLink>
               </div>
             </div>
           ))}
         </div>
 
         <FeatureCard
+          className="opacity-100"
           title={moreCard.title}
           description={moreCard.description}
           icon={Zap}

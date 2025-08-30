@@ -13,7 +13,9 @@ export default async function HowItWorksPage() {
 
   const readList = (key: string): string[] => {
     const value = t.raw(key);
-    return Array.isArray(value) ? (value.filter((v): v is string => typeof v === "string")) : [];
+    return Array.isArray(value)
+      ? value.filter((v): v is string => typeof v === "string")
+      : [];
   };
 
   const purchaseItems = readList("purchaseItems");
@@ -24,7 +26,7 @@ export default async function HowItWorksPage() {
   const cancellationsItems = readList("cancellationsItems");
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="pt-36 pb-[10svh]">
       <div className="max-w-3xl mx-auto space-y-10">
         <header className="space-y-4">
           <h1 className="text-3xl md:text-5xl font-semibold">{t("h1")}</h1>
@@ -85,7 +87,9 @@ export default async function HowItWorksPage() {
             </div>
 
             <div className="space-y-3">
-              <h4 className="text-xl font-semibold">{t("cancellationsTitle")}</h4>
+              <h4 className="text-xl font-semibold">
+                {t("cancellationsTitle")}
+              </h4>
               <ul className="list-disc pl-6 space-y-2">
                 {cancellationsItems.map((item: string, idx: number) => (
                   <li key={idx}>{item}</li>

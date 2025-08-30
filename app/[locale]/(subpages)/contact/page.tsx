@@ -63,7 +63,7 @@ export default function Page() {
   };
 
   return (
-    <section className="pt-[10svh] pb-[20svh]">
+    <section className="pt-36 pb-[10svh]">
       <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-2">
         {t("h1")}
       </h1>

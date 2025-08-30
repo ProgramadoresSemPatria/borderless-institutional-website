@@ -14,11 +14,13 @@ export default async function PrivacyPolicyPage() {
   const effectiveDate = "08/13/2025";
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="pt-36 pb-[10svh]">
       <div className="max-w-3xl mx-auto space-y-10">
         <header className="space-y-4">
           <h1 className="text-3xl md:text-5xl font-semibold">{t("h1")}</h1>
-          <p className="text-gray/90">{t("updated", { date: effectiveDate })}</p>
+          <p className="text-gray/90">
+            {t("updated", { date: effectiveDate })}
+          </p>
         </header>
 
         <Content effectiveDate={effectiveDate} />

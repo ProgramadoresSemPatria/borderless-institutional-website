@@ -24,7 +24,7 @@ export default function BioPage() {
   });
 
   return (
-    <section className="py-[10svh] flex flex-col gap-12">
+    <section className="pt-36 pb-[10svh] flex flex-col gap-12">
       {/* Header */}
       <header className="flex flex-col items-center text-center gap-4">
         <Image

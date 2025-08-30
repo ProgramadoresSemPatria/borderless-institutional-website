@@ -22,7 +22,7 @@ export default async function RefundPolicyPage() {
   const generalItems = readList("generalItems");
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="pt-36 pb-[10svh]">
       <div className="max-w-3xl mx-auto space-y-10">
         <header className="space-y-4">
           <h1 className="text-3xl md:text-5xl font-semibold">{t("h1")}</h1>

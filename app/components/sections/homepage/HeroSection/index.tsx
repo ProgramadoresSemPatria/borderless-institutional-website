@@ -23,8 +23,15 @@ export function HeroSection() {
 
     gsap.fromTo(
       ".background-hero-img",
-      { opacity: 0, scale: 0.9 },
-      { opacity: 1, scale: 1, delay: 0.5, duration: 1.5, ease: "power4.out" }
+      { opacity: 0, scale: 0.9, y: "30%" },
+      {
+        opacity: 1,
+        scale: 1,
+        y: "30%",
+        delay: 0.5,
+        duration: 1.5,
+        ease: "power4.out",
+      }
     );
   }, [show]);
 
@@ -34,7 +41,7 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative flex flex-col lg:justify-between gap-8 pt-[8svh] md:pt-[10svh] pb-[5svh] border-b border-solid border-white/20 min-h-[calc(100svh_-_4rem)]">
+    <section className="relative flex flex-col lg:justify-between gap-8 pt-32 md:pt-36 pb-[5svh] border-b border-solid border-white/20 min-h-svh">
       <TopSection />
       <BottomSection />
 
@@ -44,7 +51,7 @@ export function HeroSection() {
 
       {/* Background image */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-[-1]">
-        <div className="absolute left-0 lg:left-1/2 bottom-0 lg:translate-y-[20%] z-0 w-full lg:w-1/2 background-hero-img">
+        <div className="absolute left-0 lg:left-1/2 bottom-0 z-0 w-full lg:w-1/2 background-hero-img">
           <Image
             width={671}
             height={798}

@@ -9,7 +9,7 @@ export function InternationalizeHeroSection() {
   const { rich } = useRichText("WantToInternationalize.Hero");
   const { header, subtitle, cta } = useInternationalizeHero();
   return (
-    <section className="py-[10svh] space-y-12">
+    <section className="pt-36 pb-[10svh] space-y-12">
       <div className="space-y-6">
         <AnimatedText
           tweenVars={{

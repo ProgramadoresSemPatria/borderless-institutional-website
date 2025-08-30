@@ -87,7 +87,7 @@ export function Header() {
           onClick={hideMenu}
         />
       )}
-      <nav className="sticky w-full top-8 left-0 right-0 z-50">
+      <nav className="fixed w-full top-8 left-0 right-0 z-50">
         <div className="w-[90%] max-w-[1800px] mx-auto bg-[#2a2a2b] rounded-lg p-2 flex justify-between items-center h-16 relative shadow-2xl">
           <Link href={"/"} className="flex items-center gap-3 h-full py-2">
             <Image

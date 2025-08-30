@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useRichText } from "@/app/hooks/useRichText";
 import { ArrowRight } from "lucide-react";
@@ -9,7 +9,7 @@ export function ForFoundersHeroSection() {
   const subtitle = t("subtitle");
   const cta = t("cta");
   return (
-    <section className="py-[10svh] space-y-12">
+    <section className="pt-36 pb-[10svh] space-y-12">
       <div className="space-y-6">
         <AnimatedText
           tweenVars={{
@@ -18,7 +18,7 @@ export function ForFoundersHeroSection() {
           as="h1"
           className="text-2xl md:text-4xl 2xl:text-6xl font-semibold max-w-6xl 2xl:max-w-7xl leading-snug md:leading-tight"
         >
-          {rich('title')}
+          {rich("title")}
         </AnimatedText>
 
         <div className="space-y-12">
