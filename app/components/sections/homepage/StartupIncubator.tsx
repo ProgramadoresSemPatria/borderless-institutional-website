@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import { AnimatedGrid } from "../../ui/AnimatedGrid";
-import { AnimatedText } from "../../ui/AnimatedText";
+import { SectionHeader } from "../../ui/SectionHeader";
 
 export function StartupIncubator() {
   const { t, rich } = useRichText("HomePage.StartupIncubator");
@@ -32,16 +32,7 @@ export function StartupIncubator() {
 
   return (
     <section className="py-[10svh] space-y-6 grid xl:grid-cols-2 gap-8 items-center">
-      <div className="space-y-4">
-        <div className="flex items-center gap-2">
-          <span className="size-2 bg-primary rounded-full" />
-          <p className="text-sm md:text-xl font-medium">{t("subtitle")}</p>
-        </div>
-
-        <AnimatedText className="text-2xl md:text-4xl 2xl:text-5xl font-semibold leading-snug md:leading-tight">
-          {rich("title")}
-        </AnimatedText>
-      </div>
+      <SectionHeader title={rich("title")} preTitle={t("subtitle")} />
 
       <div className="w-full flex flex-col items-center xl:mt-0 gap-4 relative">
         <Image

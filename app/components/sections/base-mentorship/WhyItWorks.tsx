@@ -1,12 +1,12 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Check } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { IconWrapper } from "../../ui/IconWrapper";
 import { SectionHeader } from "../../ui/SectionHeader";
-import { useTranslations } from "next-intl";
-import { useRichText } from "@/app/hooks/useRichText";
 
 export function WhyItWorks() {
   const t = useTranslations("BaseMentorship.WhyItWorks");
@@ -37,16 +37,13 @@ export function WhyItWorks() {
 
   return (
     <section className="space-y-8 py-[10svh]">
-      <SectionHeader
-        preTitle={t("preTitle")}
-        title={<>{rich("title")}</>}
-      />
+      <SectionHeader preTitle={t("preTitle")} title={<>{rich("title")}</>} />
 
       <div className="bg-tertiary rounded-md p-2 grid lg:grid-cols-2 gap-2">
         {features.map((feature) => (
           <div
             key={feature}
-            className="why-it-works-card bg-[#212121] px-6 rounded-md flex gap-4 items-center py-6"
+            className="why-it-works-card bg-[#212121] px-6 rounded-md flex gap-4 items-center py-6 opacity-0"
           >
             <IconWrapper
               className="size-8 flex-center p-0 shrink-0"

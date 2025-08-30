@@ -8,7 +8,7 @@ export function BottomSection() {
   const t = useTranslations("HomePage.HeroSection.BottomSection");
 
   return (
-    <div className="w-full flex flex-col lg:flex-row justify-between items-start lg:items-end gap-20 grow">
+    <div className="w-full flex flex-col lg:flex-row justify-between items-start lg:items-end gap-20 grow z-10">
       <div className="space-y-12">
         <AnimatedText
           tweenVars={{

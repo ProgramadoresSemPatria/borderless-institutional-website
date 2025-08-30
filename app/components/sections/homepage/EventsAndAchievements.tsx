@@ -41,7 +41,7 @@ export function EventsAndAchievements() {
           {events.map((event) => (
             <CarouselItem
               key={event.src}
-              className="event-card sm:basis-1/2 xl:basis-1/3"
+              className="event-card sm:basis-1/2 xl:basis-1/3 opacity-0"
             >
               <div className="relative w-full aspect-[9/10]">
                 <Image

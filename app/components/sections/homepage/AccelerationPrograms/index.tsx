@@ -1,10 +1,10 @@
 "use client";
 
+import { SectionHeader } from "@/app/components/ui/SectionHeader";
 import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { AnimatedGrid } from "../../../ui/AnimatedGrid";
-import { AnimatedText } from "../../../ui/AnimatedText";
 import { useAccelerationPrograms } from "../hooks/useAccelerationPrograms";
 import { AccelerationCard } from "./components/AccelerationCard";
 
@@ -38,19 +38,15 @@ export function AccelerationPrograms() {
             <AccelerationCard
               {...program}
               key={program.title}
-              className={`acceleration-card ${index === 2 && "md:col-span-2"}`}
+              className={`acceleration-card opacity-0 ${
+                index === 2 && "md:col-span-2"
+              }`}
             />
           );
         })}
       </div>
 
-      <div className="space-y-6 mb-0">
-        <div className="flex items-center gap-2">
-          <div className="size-2 rounded-full bg-primary" />
-          <p className="text-sm md:text-xl font-medium">{t("preTitle")}</p>
-        </div>
-        <AnimatedText as="h2">{rich("title")}</AnimatedText>
-      </div>
+      <SectionHeader title={rich("title")} preTitle={t("preTitle")} />
 
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 z-[-1]">
         <AnimatedGrid />

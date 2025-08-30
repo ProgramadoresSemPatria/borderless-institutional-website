@@ -3,14 +3,20 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ReactNode, useRef } from "react";
+import { twMerge } from "tailwind-merge";
 import { AnimatedText } from "./AnimatedText";
 
 interface SectionHeaderProps {
   title: ReactNode;
   preTitle: string;
+  className?: string;
 }
 
-export function SectionHeader({ title, preTitle }: SectionHeaderProps) {
+export function SectionHeader({
+  title,
+  preTitle,
+  className,
+}: SectionHeaderProps) {
   const sectionHeaderRef = useRef<HTMLDivElement>(null);
 
   useGSAP(
@@ -32,7 +38,7 @@ export function SectionHeader({ title, preTitle }: SectionHeaderProps) {
   );
 
   return (
-    <div ref={sectionHeaderRef} className="space-y-4">
+    <div ref={sectionHeaderRef} className={twMerge("space-y-4", className)}>
       <div className="flex items-center gap-2">
         <div className="header-dot size-2 rounded-full bg-primary" />
         <AnimatedText className="text-sm md:text-xl font-medium">

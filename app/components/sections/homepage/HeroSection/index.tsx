@@ -20,6 +20,12 @@ export function HeroSection() {
       { y: "100%" },
       { y: 0, delay: 0.5, duration: 0.5, ease: "power4.out" }
     );
+
+    gsap.fromTo(
+      ".background-hero-img",
+      { opacity: 0, scale: 0.9 },
+      { opacity: 1, scale: 1, delay: 0.5, duration: 1.5, ease: "power4.out" }
+    );
   }, [show]);
 
   if (!show) {
@@ -28,7 +34,7 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative flex flex-col lg:justify-between gap-8 pt-[8svh] md:pt-[10svh] pb-[5svh] border-b border-solid border-white/20 min-h-[calc(100svh_-_3.5rem)]">
+    <section className="relative flex flex-col lg:justify-between gap-8 pt-[8svh] md:pt-[10svh] pb-[5svh] border-b border-solid border-white/20 min-h-[calc(100svh_-_4rem)]">
       <TopSection />
       <BottomSection />
 
@@ -37,14 +43,14 @@ export function HeroSection() {
       </div>
 
       {/* Background image */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute left-0 lg:left-1/2 bottom-0 lg:translate-y-[20%] z-[-1] w-full lg:w-1/2">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-[-1]">
+        <div className="absolute left-0 lg:left-1/2 bottom-0 lg:translate-y-[20%] z-0 w-full lg:w-1/2 background-hero-img">
           <Image
             width={671}
             height={798}
             src={"/borderless-logo-black.svg"}
             alt="logo"
-            className="size-full"
+            className="size-full opacity-80"
           />
         </div>
       </div>

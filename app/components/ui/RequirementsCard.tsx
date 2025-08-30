@@ -8,7 +8,7 @@ interface RequirementsCardProps {
 
 export function RequirementsCard({ title, items }: RequirementsCardProps) {
   return (
-    <div className="requirements-card bg-tertiary rounded-md p-8 space-y-4">
+    <div className="requirements-card bg-tertiary rounded-md p-8 space-y-4 opacity-0">
       {title && <p className="text-xl font-bold">{title}</p>}
       <div className="text-gray space-y-4">
         {items.map((item, index) => (

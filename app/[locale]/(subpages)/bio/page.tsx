@@ -199,7 +199,7 @@ export default function BioPage() {
           href="/contact"
           className="flex items-center justify-between w-full bg-tertiary rounded-xl border border-white/5 p-4 hover:opacity-80 transition-opacity"
         >
-          <span>Contact</span>
+          <span>Contato</span>
           <span className="text-white/60">
             <ArrowUpRight />
           </span>

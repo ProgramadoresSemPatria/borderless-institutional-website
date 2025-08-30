@@ -42,7 +42,7 @@ export function IncubatedStartups() {
       <div className="grid md:grid-cols-2 gap-2 ">
         {startups.map((startup, index) => (
           <div
-            className="startup-card flex flex-col justify-between bg-tertiary rounded-md p-6 gap-6"
+            className="startup-card flex flex-col justify-between bg-tertiary rounded-md p-6 gap-6 opacity-0"
             key={`startup-${index}`}
           >
             <div className="space-y-4">

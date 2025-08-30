@@ -7,13 +7,12 @@ import { ScrollSmoother, ScrollTrigger, SplitText } from "gsap/all";
 gsap.registerPlugin(useGSAP, SplitText, ScrollTrigger, ScrollSmoother);
 
 export function GSAPWrapper({ children }: { children: React.ReactNode }) {
-  /*   useGSAP(() => {
+  useGSAP(() => {
     ScrollSmoother.create({
       smooth: 1,
       effects: true,
-      smoothTouch: 0.1,
     });
-  }); */
+  });
 
   return (
     <div id="smooth-wrapper">

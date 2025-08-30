@@ -32,7 +32,8 @@ export function AnimatedGrid({ className }: { className?: string }) {
   return (
     <div
       ref={gridContainerRef}
-      className={twMerge("w-36 md:w-48 pointer-events-none", className)}
+      className={twMerge("w-28 md:w-48 pointer-events-none", className)}
+      data-speed="0.9"
     >
       <div className="w-full grid grid-cols-4">
         {[...Array(16)].map((_, index) => (

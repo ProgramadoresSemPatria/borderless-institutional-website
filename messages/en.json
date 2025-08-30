@@ -50,27 +50,54 @@
           "title": "PSP Mentoring",
           "description": "Structured mentoring program to accelerate your career in technology",
           "features": [
-            { "title": "Specialized mentoring", "icon": "user" },
-            { "title": "Practical projects", "icon": "code" },
-            { "title": "Global network", "icon": "users" }
+            {
+              "title": "Specialized mentoring",
+              "icon": "user"
+            },
+            {
+              "title": "Practical projects",
+              "icon": "code"
+            },
+            {
+              "title": "Global network",
+              "icon": "users"
+            }
           ]
         },
         {
           "title": "BASE Mentoring",
           "description": "Solid foundations for your journey in technology and international markets",
           "features": [
-            { "title": "Technical base", "icon": "code" },
-            { "title": "Soft skills", "icon": "speech" },
-            { "title": "Global preparation", "icon": "earth" }
+            {
+              "title": "Technical base",
+              "icon": "code"
+            },
+            {
+              "title": "Soft skills",
+              "icon": "speech"
+            },
+            {
+              "title": "Global preparation",
+              "icon": "earth"
+            }
           ]
         },
         {
           "title": "Bootcamp: Web3 Global Developer",
           "description": "Intensive bootcamp focused on Web3 technologies and decentralized development",
           "features": [
-            { "title": "Web3 Stack", "icon": "code" },
-            { "title": "DApps", "icon": "network" },
-            { "title": "Blockchain", "icon": "bitcoin" }
+            {
+              "title": "Web3 Stack",
+              "icon": "code"
+            },
+            {
+              "title": "DApps",
+              "icon": "network"
+            },
+            {
+              "title": "Blockchain",
+              "icon": "bitcoin"
+            }
           ]
         }
       ]
@@ -220,7 +247,6 @@
       ]
     }
   },
-
   "BaseMentorship": {
     "HeroSection": {
       "title": "Build Your Global Career Foundation – <colorful>From Zero to Ready</colorful> in 12 Months",
@@ -268,8 +294,14 @@
     "HowItWorks": {
       "title": "How the <italic>Mentorship</italic> Works?",
       "items": {
-        "duration": { "title": "Duration", "description": "12 months" },
-        "format": { "title": "Format", "description": "100% online" },
+        "duration": {
+          "title": "Duration",
+          "description": "12 months"
+        },
+        "format": {
+          "title": "Format",
+          "description": "100% online"
+        },
         "live": {
           "title": "Live Sessions",
           "description": "Weekly group calls with ambassadors"
@@ -480,7 +512,10 @@
           "title": "Duration",
           "description": "6 or 12 months (choose your plan)"
         },
-        { "title": "Format", "description": "100% online" },
+        {
+          "title": "Format",
+          "description": "100% online"
+        },
         {
           "title": "Live Sessions",
           "description": "Bi-weekly strategy calls with direct feedback from Yuri"
@@ -1419,6 +1454,17 @@
       "Video lessons hosted on Vimeo; resources downloadable.",
       "Live calls via Meet; replays available if included in your plan.",
       "Community/forum access if included in your plan."
+    ],
+    "supportTitle": "Support",
+    "supportItems": [
+      "Email contato@borderlesscoding.com or use the in-app help widget.",
+      "Typical first response: within 1 business day (Mon–Fri, BRT).",
+      "Tech incidents prioritized by severity."
+    ],
+    "cancellationsTitle": "Cancellations & Rescheduling",
+    "cancellationsItems": [
+      "You may reschedule 1:1 sessions up to 24 hours before the start time.",
+      "Late cancellations/no-shows may be deducted from your session quota."
     ]
   },
   "ContactPage": {

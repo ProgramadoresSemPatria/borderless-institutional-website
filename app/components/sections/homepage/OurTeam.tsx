@@ -42,7 +42,7 @@ export function OurTeam() {
             {members.map((member) => (
               <CarouselItem
                 key={member.src}
-                className="team-card space-y-4 sm:basis-1/2 lg:basis-1/3 2xl:basis-1/4 pl-4"
+                className="team-card space-y-4 sm:basis-1/2 lg:basis-1/3 2xl:basis-1/4 pl-4 opacity-0"
               >
                 <div className="w-full aspect-[9/12] relative">
                   <Image
