@@ -2,14 +2,19 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Zap } from "lucide-react";
 import Image from "next/image";
-import { AnimatedText } from "../../ui/AnimatedText";
+import { ReactNode } from "react";
 import { ExternalLink } from "../../ui/ExternalLink";
+import { SectionHeader } from "../../ui/SectionHeader";
 import { useIncubatedStartups } from "./hooks/useIncubatedStartups";
 
-export function IncubatedStartups() {
-  const { title, startups } = useIncubatedStartups();
+interface IncubatedStartupsProps {
+  title: ReactNode;
+  preTitle: string;
+}
+
+export function IncubatedStartups({ title, preTitle }: IncubatedStartupsProps) {
+  const startups = useIncubatedStartups();
 
   useGSAP(() => {
     gsap.fromTo(
@@ -30,14 +35,8 @@ export function IncubatedStartups() {
   });
 
   return (
-    <section className="py-[10svh] space-y-6 incubated-startups-section  border-b border-solid border-white/20 ">
-      <AnimatedText as="h2">{title}</AnimatedText>
-      <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/20 rounded-full px-4 py-2 mb-6">
-        <Zap className="w-4 h-4 text-purple-400" />
-        <span className="text-purple-300 text-sm font-medium">
-          Powered by Borderless Hub
-        </span>
-      </div>
+    <div className="space-y-6">
+      <SectionHeader preTitle={preTitle} title={title} />
 
       <div className="grid md:grid-cols-2 gap-2 ">
         {startups.map((startup, index) => (
@@ -70,6 +69,6 @@ export function IncubatedStartups() {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

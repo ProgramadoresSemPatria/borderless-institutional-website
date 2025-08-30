@@ -4,7 +4,7 @@ import { GlobalTalentConnector } from "../components/sections/homepage/GlobalTal
 import { GuaranteeSection } from "../components/sections/homepage/GuaranteeSection";
 import { HelpSection } from "../components/sections/homepage/HelpSection";
 import { HeroSection } from "../components/sections/homepage/HeroSection";
-import { IncubatedStartups } from "../components/sections/homepage/IncubatedStartups";
+import { IncubatedStartupsWrapper } from "../components/sections/homepage/IncubatedStartupsWrapper";
 import { OurHistory } from "../components/sections/homepage/OurHistory";
 import { OurServices } from "../components/sections/homepage/OurServices";
 import { OurTeam } from "../components/sections/homepage/OurTeam";
@@ -23,7 +23,7 @@ export default function Page() {
       <Testimonials />
       <StartupIncubator />
       <GlobalTalentConnector />
-      <IncubatedStartups />
+      <IncubatedStartupsWrapper />
       <div className="space-y-4 mb-40">
         <OurHistory />
         <OurTeam />

@@ -1,6 +1,5 @@
 "use client";
 
-import { useRichText } from "@/app/hooks/useRichText";
 import { useMessages } from "next-intl";
 
 interface Startup {
@@ -12,12 +11,8 @@ interface Startup {
 }
 
 export function useIncubatedStartups() {
-  const { rich } = useRichText("HomePage.IncubatedStartups");
   const messages = useMessages();
-  const startups = messages.HomePage.IncubatedStartups.startups as Startup[];
+  const startups = messages.IncubatedStartups as Startup[];
 
-  return {
-    title: rich("title"),
-    startups,
-  };
+  return startups;
 }

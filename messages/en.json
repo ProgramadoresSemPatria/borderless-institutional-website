@@ -181,23 +181,7 @@
       "cta": "Hire a professional"
     },
     "IncubatedStartups": {
-      "title": "Startups in <italic>Incubation</italic>:",
-      "startups": [
-        {
-          "src": "/startups/rampix.png",
-          "title": "Rampix",
-          "description": "A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure.",
-          "buttonText": "Learn more",
-          "href": "https://www.rampix.xyz/"
-        },
-        {
-          "src": "/startups/borderless-community.webp",
-          "title": "Borderless Community",
-          "description": "The super app from Borderless Coding: combining social network, members area, and forum for global tech professionals.",
-          "buttonText": "Members Only",
-          "href": "https://community.borderlesscoding.com/"
-        }
-      ]
+      "title": "Startups in <italic>Incubation</italic>:"
     },
     "OurHistory": {
       "title": "Our <italic>History</italic>",
@@ -948,22 +932,6 @@
     "IncubatedStartups": {
       "preTitle": "Featured Startups",
       "title": "Meet some of the ventures emerging from our <italic>ecosystem</italic>:",
-      "startups": [
-        {
-          "src": "/startups/rampix.png",
-          "title": "Rampix",
-          "description": "A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure'.",
-          "buttonText": "Learn more",
-          "href": "https://www.rampix.xyz/"
-        },
-        {
-          "src": "/startups/borderless-community.webp",
-          "title": "Borderless Community",
-          "description": "The super app from Borderless Coding: combining social network, members area, and forum for global tech professionals",
-          "buttonText": "Members only",
-          "href": "https://community.borderlesscoding.com/"
-        }
-      ],
       "moreCard": {
         "title": "More Startups Coming Soon",
         "description": "As part of our incubation pipeline, new ventures are constantly emerging from our ecosystem."
@@ -1223,27 +1191,11 @@
     },
     "IncubatedStartups": {
       "preTitle": "Featured Startups",
-      "title": "Examples of ventures already born from <italic>our ecosystem</italic>:",
-      "items": [
-        {
-          "src": "/startups/rampix.png",
-          "title": "Rampix",
-          "description": "A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure.",
-          "buttonText": "Learn more",
-          "href": "https://www.rampix.xyz/"
-        },
-        {
-          "src": "/startups/borderless-community.webp",
-          "title": "Borderless Community",
-          "description": "The super app from Borderless Coding: combining social network, members area, and forum for global tech professionals.",
-          "buttonText": "Members Only",
-          "href": "https://community.borderlesscoding.com/"
-        }
-      ]
+      "title": "Examples of ventures already born from <italic>our ecosystem</italic>:"
     },
     "JoinExpansion": {
       "title": "Join the Expansion",
-      "description": "If you are a founder looking for incubation or an investor seeking high-quality dealflow, Borderless is your entry point into the next wave of global ventures.",
+      "description": "If you are a founder looking for incubation or an investor seeking high-quality dealflow, Borderless is your entry point into the next wave of global ventures.",
       "cta": "Explore Opportunities"
     },
     "BorderlessEvolution": {
@@ -1547,5 +1499,21 @@
       "successToast": "Message sent successfully!",
       "errorToast": "Error sending email"
     }
-  }
+  },
+  "IncubatedStartups": [
+    {
+      "src": "/startups/rampix.png",
+      "title": "Rampix",
+      "description": "A 100% Brazilian exchange to buy and sell cryptocurrencies via PIX, fast and secure.",
+      "buttonText": "Learn more",
+      "href": "https://www.rampix.xyz/"
+    },
+    {
+      "src": "/startups/borderless-community.webp",
+      "title": "Borderless Community",
+      "description": "The super app from Borderless Coding: combining social network, members area, and forum for global tech professionals.",
+      "buttonText": "Members Only",
+      "href": "https://community.borderlesscoding.com/"
+    }
+  ]
 }
