@@ -2,17 +2,18 @@
 
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useGSAP } from "@gsap/react";
+import clsx from "clsx";
 import gsap from "gsap";
-import { Menu, X } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
-import { IconWrapper } from "../ui/IconWrapper";
+import NavItems from "./components/NavItems";
 
 export function Header() {
   const t = useTranslations("Header");
   const pathname = usePathname();
   const router = useRouter();
+  const locale = useLocale();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const links = [
@@ -87,9 +88,14 @@ export function Header() {
           onClick={hideMenu}
         />
       )}
+
       <nav className="fixed w-full top-8 left-0 right-0 z-50">
         <div className="w-[90%] max-w-[1800px] mx-auto bg-[#2a2a2b] rounded-lg p-2 flex justify-between items-center h-16 relative shadow-2xl">
-          <Link href={"/"} className="flex items-center gap-3 h-full py-2">
+          <Link
+            href={"/"}
+            className="flex items-center gap-3 h-full py-2"
+            onClick={hideMenu}
+          >
             <Image
               width={501}
               height={596}
@@ -97,46 +103,59 @@ export function Header() {
               src={"/borderless-logo-white.svg"}
               className="w-fit h-full ml-4"
             />
-            <p className="font-bold text-xl">Borderless</p>
+            <p className="font-bold text-lg">Borderless</p>
           </Link>
 
           <button
-            className="cursor-pointer h-full"
+            className="cursor-pointer bg-primary h-full aspect-square rounded-sm"
             onClick={isOpen ? hideMenu : () => setIsOpen(true)}
           >
-            <IconWrapper
-              className="aspect-square h-full p-0 flex-center"
-              icon={isOpen ? X : Menu}
-            />
+            <div className="grid justify-items-center gap-1">
+              <span
+                className={clsx(
+                  "h-0.5 w-5 rounded-full bg-white transition duration-500",
+                  isOpen && "rotate-45 translate-y-[0.4rem]"
+                )}
+              />
+              <span
+                className={clsx(
+                  "h-0.5 w-5 rounded-full bg-white transition duration-500",
+                  isOpen && "scale-x-0"
+                )}
+              />
+              <span
+                className={clsx(
+                  "h-0.5 w-5 rounded-full bg-white transition duration-500",
+                  isOpen && "-rotate-45 -translate-y-1.5"
+                )}
+              />
+            </div>
           </button>
 
           {isOpen && (
-            <div className="header-buttons-container absolute bg-[#2a2a2b] rounded-lg p-2 w-full left-0 bottom-0 translate-y-[calc(100%+1rem)] flex flex-col gap-2 max-h-[calc(100vh-16rem)] overflow-y-auto scrollbar-hide opacity-0">
+            <div className="header-buttons-container absolute bg-[#2a2a2b] rounded-lg p-2 w-full left-0 bottom-0 translate-y-[calc(100%+1rem)] flex flex-col gap-2 max-h-[calc(100vh-1rem)] overflow-y-auto scrollbar-hide opacity-0">
               <div className="grid grid-cols-2 gap-2">
                 <button
-                  className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150"
+                  className={clsx(
+                    "bg-[#212121] p-4 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150 rounded-sm",
+                    locale === "pt" && "bg-tertiary"
+                  )}
                   onClick={() => changeLocale("pt")}
                 >
-                  PT-BR
+                  PT
                 </button>
                 <button
-                  className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150"
+                  className={clsx(
+                    "bg-[#212121] p-4 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150 rounded-sm",
+                    locale === "en" && "bg-tertiary"
+                  )}
                   onClick={() => changeLocale("en")}
                 >
-                  US-EN
+                  US
                 </button>
               </div>
 
-              {links.map((link) => (
-                <Link
-                  href={link.href}
-                  key={link.title}
-                  className="bg-[#212121] p-4 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150"
-                  onClick={hideMenu}
-                >
-                  {link.title}
-                </Link>
-              ))}
+              <NavItems onClick={hideMenu} />
             </div>
           )}
         </div>
