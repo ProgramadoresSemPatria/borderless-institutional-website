@@ -94,7 +94,7 @@ export default function DesktopHeader() {
           </NavigationMenu>
 
           <button
-            className="bg-background text-sm font-bold uppercase cursor-pointer hover:opacity-70 transition-opacity duration-150 px-2 rounded-sm"
+            className="bg-background text-sm font-bold uppercase cursor-pointer hover:opacity-70 transition-opacity duration-150 px-3 rounded-sm"
             onClick={() => changeLocale(locale === "pt" ? "en" : "pt")}
           >
             {locale === "pt" ? "EN" : "PT"}

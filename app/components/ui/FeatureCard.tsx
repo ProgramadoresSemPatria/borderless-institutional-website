@@ -54,7 +54,7 @@ export function FeatureCard({
       onMouseLeave={() => setHovered(false)}
     >
       <h3 className="text-xl font-bold">{title}</h3>
-      <div className="flex items-center justify-between gap-4 group">
+      <div className="w-full flex items-center justify-between gap-4 group">
         <p className="text-sm md:text-base font-medium max-w-xs text-gray">
           {description}
         </p>

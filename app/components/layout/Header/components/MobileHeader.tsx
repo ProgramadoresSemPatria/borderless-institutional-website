@@ -21,18 +21,24 @@ export function MobileHeader() {
 
   const showMenu = () => {
     document.body.style.overflow = "hidden";
-
     const tl = gsap.timeline();
 
     tl.to(".header-backdrop", {
       opacity: 1,
-      ease: "power4.in",
-      duration: 0.25,
+      ease: "power4.out",
+      duration: 0.8,
     });
 
     tl.to(
-      ".header-buttons-container",
-      { opacity: 1, ease: "power4.in", duration: 0.25 },
+      ".header-content",
+      {
+        opacity: 1,
+        ease: "power4.out",
+        stagger: 0.05,
+        duration: 0.8,
+        y: 0,
+        rotate: 0,
+      },
       "<"
     );
   };
@@ -41,15 +47,18 @@ export function MobileHeader() {
     const tl = gsap.timeline();
     document.body.style.overflow = "auto";
 
-    tl.to(".header-buttons-container", {
+    tl.to(".header-content", {
       opacity: 0,
-      ease: "power4.out",
-      duration: 0.25,
+      ease: "power4.inOut",
+      stagger: 0.05,
+      duration: 0.4,
+      y: 24,
+      rotate: 1,
     });
 
     tl.to(
       ".header-backdrop",
-      { opacity: 0, ease: "power4.out", duration: 0.25 },
+      { opacity: 0, ease: "power4.inOut", duration: 0.4 },
       "<"
     );
 
@@ -116,11 +125,15 @@ export function MobileHeader() {
           </button>
 
           {isOpen && (
-            <div className="header-buttons-container absolute bg-[#2a2a2b] rounded-lg p-2 w-full left-0 bottom-0 translate-y-[calc(100%+1rem)] flex flex-col gap-2 max-h-[calc(100vh-1rem)] overflow-y-auto scrollbar-hide opacity-0">
-              <div className="grid grid-cols-2 gap-2">
+            <div className="absolute flex flex-col translate-y-[calc(100%+1rem)] left-0 bottom-0 w-full max-h-[80svh]">
+              <div className="header-content bg-[#2a2a2b] rounded-lg p-2 w-full flex flex-col gap-2 opacity-0 translate-y-16 rotate-1 overflow-y-scroll scrollbar-hide">
+                <NavItems onClick={hideMenu} />
+              </div>
+
+              <div className="header-content bg-[#2a2a2b] p-2 rounded-lg grid grid-cols-2 gap-2 mt-2 opacity-0 translate-y-16 rotate-1">
                 <button
                   className={clsx(
-                    "bg-[#212121] p-4 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150 rounded-sm",
+                    "bg-[#212121] p-4 py-2 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150 rounded-sm",
                     locale === "pt" && "bg-tertiary"
                   )}
                   onClick={() => changeLocale("pt")}
@@ -129,7 +142,7 @@ export function MobileHeader() {
                 </button>
                 <button
                   className={clsx(
-                    "bg-[#212121] p-4 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150 rounded-sm",
+                    "bg-[#212121] p-4 py-2 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150 rounded-sm",
                     locale === "en" && "bg-tertiary"
                   )}
                   onClick={() => changeLocale("en")}
@@ -137,8 +150,6 @@ export function MobileHeader() {
                   US
                 </button>
               </div>
-
-              <NavItems onClick={hideMenu} />
             </div>
           )}
         </div>

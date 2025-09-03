@@ -4,8 +4,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/app/components/ui/Accordion";
+import { FeatureCard } from "@/app/components/ui/FeatureCard";
 import { IconWrapper } from "@/app/components/ui/IconWrapper";
-import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { navItems } from "../constants/navItems";
 
@@ -44,11 +44,14 @@ export default function NavItems({ onClick }: { onClick: () => void }) {
               <Link
                 key={subItem.title}
                 href={subItem.href || "/"}
-                className="bg-[#212121] pl-4 p-2 rounded-md flex items-center justify-between"
                 onClick={onClick}
               >
-                <p>{subItem.title}</p>
-                <IconWrapper icon={ArrowUpRight} />
+                <FeatureCard
+                  title={subItem.title}
+                  description={subItem.description}
+                  className="opacity-100 p-4"
+                  variant="secondary"
+                />
               </Link>
             ))}
           </AccordionContent>
