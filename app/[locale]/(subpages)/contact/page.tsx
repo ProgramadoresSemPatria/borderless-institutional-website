@@ -89,10 +89,10 @@ export default function Page() {
             <p>
               <span className="block font-bold">{t("aside.phoneLabel")}</span>
               <a
-                href="tel:+5521971417218"
+                href="tel:+5521971417220"
                 className="text-secondary hover:underline break-normal"
               >
-                +5521971417218
+                +55 21 97141-7220
               </a>
             </p>
             <p>
