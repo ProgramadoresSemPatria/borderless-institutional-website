@@ -1,15 +1,11 @@
+"use client";
+
+import { useMediaQuery } from "@/app/hooks/useMediaQuery";
 import DesktopHeader from "./components/DesktopHeader";
 import { MobileHeader } from "./components/MobileHeader";
 
 export function Header() {
-  return (
-    <div>
-      <div className="hidden lg:block">
-        <DesktopHeader />
-      </div>
-      <div className="lg:hidden">
-        <MobileHeader />
-      </div>
-    </div>
-  );
+  const isMobile = useMediaQuery("(max-width: 1024px)");
+
+  return <>{isMobile ? <MobileHeader /> : <DesktopHeader />}</>;
 }
