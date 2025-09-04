@@ -11,6 +11,7 @@ import { useState } from "react";
 import NavItems from "./NavItems";
 
 export function MobileHeader() {
+  const [isOpenAnimation, setIsOpenAnimation] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const t = useTranslations("Header");
   const locale = useLocale();
@@ -22,6 +23,7 @@ export function MobileHeader() {
   };
 
   const showMenu = () => {
+    setIsOpenAnimation(true);
     document.body.style.overflow = "hidden";
     const tl = gsap.timeline();
 
@@ -46,6 +48,7 @@ export function MobileHeader() {
   };
 
   const hideMenu = () => {
+    setIsOpenAnimation(false);
     const tl = gsap.timeline();
     document.body.style.overflow = "auto";
 
@@ -108,19 +111,19 @@ export function MobileHeader() {
               <span
                 className={clsx(
                   "h-0.5 w-5 rounded-full bg-white transition duration-500",
-                  isOpen && "rotate-45 translate-y-[0.4rem]"
+                  isOpenAnimation && "rotate-45 translate-y-[0.4rem]"
                 )}
               />
               <span
                 className={clsx(
                   "h-0.5 w-5 rounded-full bg-white transition duration-500",
-                  isOpen && "scale-x-0"
+                  isOpenAnimation && "scale-x-0"
                 )}
               />
               <span
                 className={clsx(
                   "h-0.5 w-5 rounded-full bg-white transition duration-500",
-                  isOpen && "-rotate-45 -translate-y-1.5"
+                  isOpenAnimation && "-rotate-45 -translate-y-1.5"
                 )}
               />
             </div>

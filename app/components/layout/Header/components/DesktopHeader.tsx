@@ -9,7 +9,9 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "@/app/components/ui/NavigationMenu";
+import { cn } from "@/app/lib/utils";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import Image from "next/image";
@@ -48,7 +50,7 @@ export default function DesktopHeader() {
           <p className="font-bold text-xl">Borderless</p>
         </Link>
 
-        <div className="flex gap-2">
+        <div className="flex gap-1">
           <NavigationMenu
             skipDelayDuration={0}
             delayDuration={0}
@@ -65,14 +67,19 @@ export default function DesktopHeader() {
               {items.map((item) => (
                 <NavigationMenuItem key={item.title}>
                   {item.subItems ? (
-                    <NavigationMenuTrigger className="h-full">
-                      {item.title}
-                    </NavigationMenuTrigger>
+                    <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
                   ) : (
-                    <Link href={item.href || "/"} className="font-medium px-4">
+                    <Link
+                      className={cn(
+                        navigationMenuTriggerStyle,
+                        "hover:opacity-80 transition-opacity duration-150"
+                      )}
+                      href={item.href || "/"}
+                    >
                       {item.title}
                     </Link>
                   )}
+
                   <NavigationMenuContent className="bg-tertiary flex w-[900px]">
                     {item.subItems?.map((subItem) => (
                       <NavigationMenuLink
