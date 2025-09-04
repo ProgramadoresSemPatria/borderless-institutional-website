@@ -1255,15 +1255,57 @@
   },
   "Header": {
     "logoAlt": "borderless logo",
-    "links": {
-      "psp": "PSP mentorship",
-      "base": "Base mentorship",
-      "bootcamp": "Bootcamp WEB3 Global Developer",
-      "foundersInvestors": "For founders and Investors",
-      "wantToHire": "I want to hire a professional",
-      "wantToInternationalize": "I want to internationalize",
-      "expansion": "Expansion"
-    }
+    "navItems": [
+      { "title": "Bootcamp", "href": "/bootcamp-web3", "icon": "globe" },
+      {
+        "title": "Mentorships",
+        "icon": "users",
+        "subItems": [
+          {
+            "title": "PSP",
+            "href": "/psp-mentorship",
+            "description": "Career acceleration program for senior developers"
+          },
+          {
+            "title": "BASE",
+            "href": "/base-mentorship",
+            "description": "Career acceleration program for Junior/Entry mid level developers"
+          }
+        ]
+      },
+      {
+        "title": "Partnerships",
+        "icon": "briefcaseBusiness",
+        "subItems": [
+          {
+            "title": "Founders & Investors",
+            "href": "/for-founders-and-investors",
+            "description": "We empower the next generation of international tech founders"
+          },
+          {
+            "title": "Hire",
+            "href": "/want-to-hire",
+            "description": "Get direct access to a pool of highly qualified Brazilian developers"
+          }
+        ]
+      },
+      {
+        "title": "Evolution",
+        "icon": "trendingUp",
+        "subItems": [
+          {
+            "title": "Internationalize",
+            "href": "/want-to-internationalize",
+            "description": "Proven system for internationalization"
+          },
+          {
+            "title": "Expansion",
+            "href": "/expansion",
+            "description": "Take a look at our expansion roadmap"
+          }
+        ]
+      }
+    ]
   },
   "Footer": {
     "TalkToAProfessional": {

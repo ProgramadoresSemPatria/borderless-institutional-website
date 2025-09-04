@@ -1,3 +1,4 @@
+import { useNavItems } from "@/app/components/layout/Header/hooks/useNavItems";
 import {
   Accordion,
   AccordionContent,
@@ -7,9 +8,9 @@ import {
 import { FeatureCard } from "@/app/components/ui/FeatureCard";
 import { IconWrapper } from "@/app/components/ui/IconWrapper";
 import Link from "next/link";
-import { navItems } from "../constants/navItems";
 
 export default function NavItems({ onClick }: { onClick: () => void }) {
+  const navItems = useNavItems();
   return (
     <Accordion type="single" collapsible className="space-y-2">
       {navItems.map((item) => (
@@ -30,7 +31,7 @@ export default function NavItems({ onClick }: { onClick: () => void }) {
             </AccordionTrigger>
           ) : (
             <Link
-              className="flex items-center gap-4 bg-[#212121] p-2 pr-4"
+              className="flex items-center gap-4 bg-[#212121] p-2 pr-4 text-sm"
               href={item.href || "/"}
               onClick={onClick}
             >

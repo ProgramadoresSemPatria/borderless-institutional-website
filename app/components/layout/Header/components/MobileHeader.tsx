@@ -1,3 +1,5 @@
+"use client";
+
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { useGSAP } from "@gsap/react";
 import clsx from "clsx";

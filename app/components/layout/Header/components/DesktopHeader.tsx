@@ -1,3 +1,6 @@
+"use client";
+
+import { useNavItems } from "@/app/components/layout/Header/hooks/useNavItems";
 import { FeatureCard } from "@/app/components/ui/FeatureCard";
 import {
   NavigationMenu,
@@ -12,7 +15,6 @@ import { useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { navItems } from "../constants/navItems";
 
 export default function DesktopHeader() {
   const locale = useLocale();
@@ -20,6 +22,7 @@ export default function DesktopHeader() {
   const router = useRouter();
 
   const [dimmed, setDimmed] = useState(false);
+  const items = useNavItems();
 
   const changeLocale = (locale: string) => {
     router.replace(pathname, { locale });
@@ -59,7 +62,7 @@ export default function DesktopHeader() {
             }}
           >
             <NavigationMenuList>
-              {navItems.map((item) => (
+              {items.map((item) => (
                 <NavigationMenuItem key={item.title}>
                   {item.subItems ? (
                     <NavigationMenuTrigger className="h-full">

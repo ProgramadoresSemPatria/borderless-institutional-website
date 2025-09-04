@@ -1219,15 +1219,57 @@
   },
   "Header": {
     "logoAlt": "logo da borderless",
-    "links": {
-      "psp": "Mentoria PSP",
-      "base": "Mentoria BASE",
-      "bootcamp": "Bootcamp WEB3 Global Developer",
-      "foundersInvestors": "Para founders e investidores",
-      "wantToHire": "Quero contratar um profissional",
-      "wantToInternationalize": "Quero internacionalizar",
-      "expansion": "Expansão"
-    }
+    "navItems": [
+      { "title": "Bootcamp", "href": "/bootcamp-web3", "icon": "globe" },
+      {
+        "title": "Mentorias",
+        "icon": "users",
+        "subItems": [
+          {
+            "title": "PSP",
+            "href": "/psp-mentorship",
+            "description": "Programa de aceleração de carreira para seniors"
+          },
+          {
+            "title": "BASE",
+            "href": "/base-mentorship",
+            "description": "Programa de aceleração de carreira para desenvolvedores junior/entry mid level"
+          }
+        ]
+      },
+      {
+        "title": "Parcerias",
+        "icon": "briefcaseBusiness",
+        "subItems": [
+          {
+            "title": "Founders & Investidores",
+            "href": "/for-founders-and-investors",
+            "description": "Potencializamos a próxima geração de founders de tecnologia internacional"
+          },
+          {
+            "title": "Contratar",
+            "href": "/want-to-hire",
+            "description": "Acesso direto a um pool de developers brasileiros altamente qualificados"
+          }
+        ]
+      },
+      {
+        "title": "Evolução",
+        "icon": "trendingUp",
+        "subItems": [
+          {
+            "title": "Internacionalizar",
+            "href": "/want-to-internationalize",
+            "description": "Sistema comprovado de internacionalização"
+          },
+          {
+            "title": "Expansão",
+            "href": "/expansion",
+            "description": "Confira nosso roadmap de expansão"
+          }
+        ]
+      }
+    ]
   },
   "Footer": {
     "TalkToAProfessional": {
