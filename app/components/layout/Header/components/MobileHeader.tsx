@@ -138,20 +138,34 @@ export function MobileHeader() {
               <div className="header-content bg-[#2a2a2b] p-2 rounded-lg grid grid-cols-2 gap-2 mt-2 opacity-0 translate-y-16 rotate-1">
                 <button
                   className={clsx(
-                    "bg-[#212121] p-4 py-2 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150 rounded-sm",
+                    "bg-[#212121] p-4 py-2 text-lg flex items-center gap-2 justify-center font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150 rounded-sm",
                     locale === "pt" && "bg-tertiary"
                   )}
                   onClick={() => changeLocale("pt")}
                 >
+                  <Image
+                    width={150}
+                    height={150}
+                    alt="Flag"
+                    className="size-4"
+                    src={"/flags/PT.svg"}
+                  />
                   PT
                 </button>
                 <button
                   className={clsx(
-                    "bg-[#212121] p-4 py-2 text-lg font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150 rounded-sm",
+                    "bg-[#212121] p-4 py-2 text-lg flex items-center gap-2 justify-center font-semibold cursor-pointer hover:opacity-70 transition-opacity duration-150 rounded-sm",
                     locale === "en" && "bg-tertiary"
                   )}
                   onClick={() => changeLocale("en")}
                 >
+                  <Image
+                    width={150}
+                    height={150}
+                    alt="Flag"
+                    className="size-4"
+                    src={"/flags/US.svg"}
+                  />
                   US
                 </button>
               </div>

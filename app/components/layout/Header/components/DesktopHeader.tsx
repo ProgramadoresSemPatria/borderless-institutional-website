@@ -104,10 +104,17 @@ export default function DesktopHeader() {
           </NavigationMenu>
 
           <button
-            className="bg-background text-sm font-bold uppercase cursor-pointer hover:opacity-70 transition-opacity duration-150 px-3 rounded-sm"
+            className="bg-background text-sm font-bold uppercase cursor-pointer hover:opacity-70 transition-opacity duration-150 px-3 rounded-sm flex items-center gap-2"
             onClick={() => changeLocale(locale === "pt" ? "en" : "pt")}
           >
-            {locale === "pt" ? "EN" : "PT"}
+            <Image
+              width={150}
+              height={150}
+              alt="Flag"
+              className="size-4"
+              src={locale === "pt" ? "/flags/PT.svg" : "/flags/US.svg"}
+            />
+            {locale === "pt" ? "PT" : "EN"}
           </button>
         </div>
       </div>
