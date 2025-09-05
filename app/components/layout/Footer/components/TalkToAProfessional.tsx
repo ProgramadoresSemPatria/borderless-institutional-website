@@ -44,23 +44,21 @@ export function TalkToAProfessional() {
 
   return (
     <div className="footer-container w-[90%] max-w-[1800px] flex max-[1350px]:flex-col items-center justify-center text-black gap-12 py-[15svh] max-[1350px]:pt-[8svh] mx-auto">
-      <p className="left-text text-center text-4xl sm:text-5xl lg:text-7xl font-semibold">
+      <p className="left-text text-center text-4xl sm:text-5xl lg:text-7xl font-medium">
         {t("left")}{" "}
-        <span className="min-[1350px]:hidden font-ivy font-normal">
-          {t("right")}
-        </span>{" "}
+        <span className="min-[1350px]:hidden font-ivy">{t("right")}</span>{" "}
       </p>
 
-      <Link href={"/contact"} className="relative cursor-pointer">
+      <Link href={"/contact"} className="relative cursor-pointer group">
         <Image
           width={2048}
           height={2731}
           src={"/team/yuri.webp"}
           alt={t("yuriAlt")}
-          className="w-[15rem] rounded-2xl border-4 border-solid border-white -rotate-2"
+          className="w-[15rem] rounded-2xl border-4 border-solid border-white -rotate-2 group-hover:-rotate-6 ease-bouncy transition-all duration-400"
         />
 
-        <div className="absolute bg-primary rounded-md p-4 bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+        <div className="absolute bg-primary rounded-md p-4 bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 group-hover:rotate-6 ease-bouncy transition-all duration-400">
           <ArrowUpRight className="text-white size-10" />
         </div>
       </Link>

@@ -13,6 +13,7 @@
   --color-secondary: #2debb1;
   --color-tertiary: #191919;
   --color-gray: #ffffffcc;
+  --ease-bouncy: cubic-bezier(0.35, 1.5, 0.6, 1);
 }
 
 body {

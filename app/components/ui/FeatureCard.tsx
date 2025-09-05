@@ -1,3 +1,5 @@
+"use client";
+
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ArrowUpRight, LucideIcon } from "lucide-react";
@@ -46,7 +48,7 @@ export function FeatureCard({
     <div
       ref={ref}
       className={twMerge(
-        "rounded-md md:h-64 p-6 flex flex-col justify-between gap-8 opacity-0 group",
+        "rounded-md md:h-64 p-6 flex flex-col justify-between gap-8 opacity-0",
         variant === "primary" ? "bg-tertiary" : "bg-[#212121]",
         className
       )}
@@ -54,7 +56,7 @@ export function FeatureCard({
       onMouseLeave={() => setHovered(false)}
     >
       <h3 className="text-xl font-bold">{title}</h3>
-      <div className="w-full flex items-center justify-between gap-4 group">
+      <div className="w-full flex items-center justify-between gap-4">
         <p className="text-sm md:text-base font-medium max-w-xs text-gray">
           {description}
         </p>
