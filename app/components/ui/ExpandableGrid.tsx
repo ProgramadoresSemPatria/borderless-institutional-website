@@ -102,7 +102,7 @@ export default function ExpandableGrid(props: ExpandingGridProps) {
   return (
     <div
       ref={ref}
-      className={"w-full flex flex-col justify-center"}
+      className={"w-full flex flex-col justify-center overflow-hidden"}
       style={{
         height: `${containerHeightRem}rem`,
         gap: `${gap}rem`,

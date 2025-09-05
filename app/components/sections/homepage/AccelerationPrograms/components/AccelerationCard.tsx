@@ -14,8 +14,13 @@ export function AccelerationCard({
   const t = useTranslations("HomePage.AccelerationPrograms");
 
   return (
-    <div className={twMerge("bg-tertiary rounded-md p-8", className)}>
-      <div className="space-y-6">
+    <div
+      className={twMerge(
+        "bg-tertiary rounded-md p-8 size-full flex flex-col",
+        className
+      )}
+    >
+      <div className="space-y-6 grow">
         <h3 className="text-xl md:text-2xl font-bold">{title}</h3>
         <p className="text-sm md:text-base text-gray">{description}</p>
 
@@ -31,7 +36,7 @@ export function AccelerationCard({
         </div>
       </div>
 
-      <div className="w-full flex justify-end mt-8">
+      <div className="w-full flex justify-end">
         <ExternalLink href={href}>{t("buttonText")}</ExternalLink>
       </div>
     </div>

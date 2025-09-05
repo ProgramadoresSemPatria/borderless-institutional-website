@@ -4,6 +4,7 @@ import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { AnimatedText } from "../../ui/AnimatedText";
+import ExpandableGrid from "../../ui/ExpandableGrid";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { useGuaranteeFeatures } from "./hooks/useGuaranteeFeatures";
 
@@ -35,7 +36,7 @@ export function GuaranteeSection() {
         {rich("title")}
       </AnimatedText>
 
-      <div className="grid md:grid-cols-2 xl:grid-cols-2 gap-2">
+      {/*       <div className="grid md:grid-cols-2 xl:grid-cols-2 gap-2">
         {features.map((feature, index) => {
           return (
             <FeatureCard
@@ -47,7 +48,28 @@ export function GuaranteeSection() {
             />
           );
         })}
-      </div>
+      </div> */}
+
+      <ExpandableGrid
+        itemHeight={10}
+        itemsPerRow={1}
+        items={features.map((feature, index) => {
+          return (
+            <FeatureCard
+              title={feature.title}
+              description={feature.description}
+              icon={feature.icon}
+              key={`feature-${index}`}
+            />
+          );
+        })}
+        breakpoints={{
+          md: {
+            itemsPerRow: 2,
+            itemHeight: 16,
+          },
+        }}
+      />
     </section>
   );
 }

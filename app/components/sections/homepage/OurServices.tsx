@@ -26,12 +26,11 @@ export function OurServices() {
             title={service.title}
             description={service.description}
             icon={service.icon}
-            className={`service-card h-full md:h-full`}
             key={`service-${index}`}
           />
         ))}
         breakpoints={{
-          lg: {
+          md: {
             itemsPerRow: 2,
             itemHeight: 16,
           },
