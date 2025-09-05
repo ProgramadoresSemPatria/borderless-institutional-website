@@ -7,7 +7,7 @@ import {
 } from "@/app/components/ui/Accordion";
 import { AnimatedIconWrapper } from "@/app/components/ui/AnimatedIconWrapper";
 import { FeatureCard } from "@/app/components/ui/FeatureCard";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 export default function NavItems({ onClick }: { onClick: () => void }) {
   const navItems = useNavItems();
