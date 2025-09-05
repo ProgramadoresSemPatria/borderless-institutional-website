@@ -62,7 +62,8 @@
               "title": "Global network",
               "icon": "users"
             }
-          ]
+          ],
+          "href": "/psp-mentorship"
         },
         {
           "title": "BASE Mentoring",
@@ -80,7 +81,8 @@
               "title": "Global preparation",
               "icon": "earth"
             }
-          ]
+          ],
+          "href": "/base-mentorship"
         },
         {
           "title": "Bootcamp: Web3 Global Developer",
@@ -98,7 +100,8 @@
               "title": "Blockchain",
               "icon": "bitcoin"
             }
-          ]
+          ],
+          "href": "/bootcamp-web3"
         }
       ]
     },

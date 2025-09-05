@@ -1,14 +1,18 @@
 "use client";
 
+import { AnimatedIconWrapper } from "@/app/components/ui/AnimatedIconWrapper";
 import { Link } from "@/i18n/navigation";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useState } from "react";
 
 export function TalkToAProfessional() {
+  const [hovered, setHovered] = useState(false);
   const t = useTranslations("Footer.TalkToAProfessional");
+
   useGSAP(() => {
     const mm = gsap.matchMedia();
 
@@ -49,7 +53,12 @@ export function TalkToAProfessional() {
         <span className="min-[1350px]:hidden font-ivy">{t("right")}</span>{" "}
       </p>
 
-      <Link href={"/contact"} className="relative cursor-pointer group">
+      <Link
+        href={"/contact"}
+        className="relative cursor-pointer group"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
         <Image
           width={2048}
           height={2731}
@@ -58,9 +67,12 @@ export function TalkToAProfessional() {
           className="w-[15rem] rounded-2xl border-4 border-solid border-white -rotate-2 group-hover:-rotate-6 ease-bouncy transition-all duration-400"
         />
 
-        <div className="absolute bg-primary rounded-md p-4 bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 group-hover:rotate-6 ease-bouncy transition-all duration-400">
-          <ArrowUpRight className="text-white size-10" />
-        </div>
+        <AnimatedIconWrapper
+          hovered={hovered}
+          icon={ArrowUpRight}
+          className="absolute bg-primary rounded-md p-4 bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 group-hover:rotate-6 ease-bouncy transition-all duration-400"
+          iconClassName="text-white size-10"
+        />
       </Link>
 
       <p className="right-text font-ivy text-7xl hidden min-[1350px]:block">

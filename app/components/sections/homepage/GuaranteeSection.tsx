@@ -36,20 +36,6 @@ export function GuaranteeSection() {
         {rich("title")}
       </AnimatedText>
 
-      {/*       <div className="grid md:grid-cols-2 xl:grid-cols-2 gap-2">
-        {features.map((feature, index) => {
-          return (
-            <FeatureCard
-              title={feature.title}
-              description={feature.description}
-              icon={feature.icon}
-              className={`feature-card`}
-              key={`feature-${index}`}
-            />
-          );
-        })}
-      </div> */}
-
       <ExpandableGrid
         itemHeight={10}
         itemsPerRow={1}

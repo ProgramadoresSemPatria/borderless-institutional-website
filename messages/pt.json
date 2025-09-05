@@ -53,7 +53,8 @@
             { "title": "Mentoria especializada", "icon": "user" },
             { "title": "Projetos práticos", "icon": "code" },
             { "title": "Network global", "icon": "users" }
-          ]
+          ],
+          "href": "/psp-mentorship"
         },
         {
           "title": "Mentoria BASE",
@@ -62,7 +63,8 @@
             { "title": "Base técnica", "icon": "code" },
             { "title": "Soft skills", "icon": "speech" },
             { "title": "Preparação global", "icon": "earth" }
-          ]
+          ],
+          "href": "/base-mentorship"
         },
         {
           "title": "Bootcamp: Web3 Global Developer",
@@ -71,7 +73,8 @@
             { "title": "Web3 Stack", "icon": "code" },
             { "title": "DApps", "icon": "network" },
             { "title": "Blockchain", "icon": "bitcoin" }
-          ]
+          ],
+          "href": "/bootcamp-web3"
         }
       ]
     },

@@ -10,12 +10,16 @@ export function AnimatedIconWrapper({
   icon,
   className,
   iconClassName,
+  onHoverBackground,
+  onHoverIconColor,
   hovered,
 }: {
   icon: LucideIcon;
   className?: string;
   iconClassName?: string;
   hovered?: boolean;
+  onHoverBackground?: string;
+  onHoverIconColor?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const IconComponent = icon;
@@ -60,13 +64,17 @@ export function AnimatedIconWrapper({
           className={twMerge(
             "size-5 transition-transform translate-y-[200%] -translate-x-[200%] duration-300 delay-100 text-black ease-in-out",
             hovered && "translate-y-0 translate-x-0",
-            iconClassName
+            iconClassName,
+            onHoverIconColor
           )}
         />
       </div>
 
       <div
-        className="circle-path inset-0 size-full absolute bg-secondary z-0"
+        className={twMerge(
+          "circle-path inset-0 size-full absolute bg-secondary z-0",
+          onHoverBackground
+        )}
         style={{
           clipPath: "circle(0% at 0% 100%)",
         }}
