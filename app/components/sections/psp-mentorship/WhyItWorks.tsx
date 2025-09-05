@@ -1,12 +1,12 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Check } from "lucide-react";
-import { IconWrapper } from "../../ui/IconWrapper";
+import { AnimatedIconWrapper } from "../../ui/AnimatedIconWrapper";
 import { SectionHeader } from "../../ui/SectionHeader";
 import { useWhyItWorks } from "./hooks/useWhyItWorks";
-import { useRichText } from "@/app/hooks/useRichText";
 
 export function WhyItWorks() {
   const { rich, t } = useRichText("PspMentorship.WhyItWorks");
@@ -31,10 +31,7 @@ export function WhyItWorks() {
 
   return (
     <section className="space-y-8 py-[10svh]">
-      <SectionHeader
-        preTitle={t("preTitle")}
-        title={rich("title")}
-      />
+      <SectionHeader preTitle={t("preTitle")} title={rich("title")} />
 
       <div className="bg-tertiary rounded-md p-2 grid lg:grid-cols-2 gap-2">
         {features.map((feature) => (
@@ -42,7 +39,7 @@ export function WhyItWorks() {
             key={feature}
             className="why-it-works-card bg-[#212121] px-6 rounded-md flex gap-4 items-center py-6"
           >
-            <IconWrapper
+            <AnimatedIconWrapper
               className="size-8 flex-center p-0 shrink-0"
               icon={Check}
             />

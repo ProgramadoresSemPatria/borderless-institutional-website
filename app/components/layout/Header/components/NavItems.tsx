@@ -5,8 +5,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/app/components/ui/Accordion";
+import { AnimatedIconWrapper } from "@/app/components/ui/AnimatedIconWrapper";
 import { FeatureCard } from "@/app/components/ui/FeatureCard";
-import { IconWrapper } from "@/app/components/ui/IconWrapper";
 import Link from "next/link";
 
 export default function NavItems({ onClick }: { onClick: () => void }) {
@@ -25,7 +25,7 @@ export default function NavItems({ onClick }: { onClick: () => void }) {
               className="w-full items-center rounded-md bg-[#212121] p-2 pr-4"
             >
               <div className="flex items-center gap-4">
-                {item.icon && <IconWrapper icon={item.icon} />}
+                {item.icon && <AnimatedIconWrapper icon={item.icon} />}
                 <p className="font-medium">{item.title}</p>
               </div>
             </AccordionTrigger>
@@ -35,7 +35,7 @@ export default function NavItems({ onClick }: { onClick: () => void }) {
               href={item.href || "/"}
               onClick={onClick}
             >
-              {item.icon && <IconWrapper icon={item.icon} />}
+              {item.icon && <AnimatedIconWrapper icon={item.icon} />}
               <p className="font-medium">{item.title}</p>
             </Link>
           )}

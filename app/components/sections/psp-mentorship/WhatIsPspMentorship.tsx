@@ -1,8 +1,8 @@
 "use client";
 
-import { Trophy } from "lucide-react";
-import { IconWrapper } from "../../ui/IconWrapper";
 import { useRichText } from "@/app/hooks/useRichText";
+import { Trophy } from "lucide-react";
+import { AnimatedIconWrapper } from "../../ui/AnimatedIconWrapper";
 
 export function WhatIsPspMentorship() {
   const { t, rich } = useRichText("PspMentorship.WhatIs");
@@ -12,7 +12,7 @@ export function WhatIsPspMentorship() {
       <p className="text-gray max-w-6xl">{t("description")}</p>
 
       <div className="bg-[#212121] p-4 rounded-md font-medium flex gap-4 mt-12 items-start md:items-center">
-        <IconWrapper
+        <AnimatedIconWrapper
           className="size-14 flex-center shrink-0 hidden md:flex"
           icon={Trophy}
         />

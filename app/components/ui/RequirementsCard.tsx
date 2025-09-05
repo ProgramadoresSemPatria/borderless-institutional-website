@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import { IconWrapper } from "./IconWrapper";
+import { AnimatedIconWrapper } from "./AnimatedIconWrapper";
 
 interface RequirementsCardProps {
   title?: string;
@@ -13,7 +13,7 @@ export function RequirementsCard({ title, items }: RequirementsCardProps) {
       <div className="text-gray space-y-4">
         {items.map((item, index) => (
           <div key={index} className="flex items-center gap-4">
-            <IconWrapper
+            <AnimatedIconWrapper
               className="shrink-0 size-7 flex-center p-0"
               icon={Check}
             />

@@ -1,3 +1,5 @@
+"use client";
+
 import RichText from "@/app/components/ui/RichText";
 import { SectionHeader } from "@/app/components/ui/SectionHeader";
 import { useTranslations } from "next-intl";
@@ -7,7 +9,7 @@ import { useMentorshipComparison } from "./hooks/useMentorshipComparison";
 export function CompareOurMentorships() {
   const t = useTranslations("PspMentorship.CompareOurMentorships");
   const comparisonData = useMentorshipComparison();
-  
+
   return (
     <section className="pt-[10svh] pb-2 space-y-8">
       <SectionHeader

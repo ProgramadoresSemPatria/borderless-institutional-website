@@ -4,9 +4,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Github, Linkedin } from "lucide-react";
 import Image from "next/image";
+import { AnimatedIconWrapper } from "../../ui/AnimatedIconWrapper";
 import { AnimatedText } from "../../ui/AnimatedText";
 import { Carousel, CarouselContent, CarouselItem } from "../../ui/Carousel";
-import { IconWrapper } from "../../ui/IconWrapper";
 import { useGetOurTeam } from "./hooks/useGetOurTeam";
 
 export function OurTeam() {
@@ -55,10 +55,10 @@ export function OurTeam() {
 
                   <div className="absolute flex gap-2 right-2 bottom-2 bg-tertiary p-2 rounded-md">
                     <a href={member.github} target="_blank">
-                      <IconWrapper icon={Github} />
+                      <AnimatedIconWrapper icon={Github} />
                     </a>
                     <a href={member.linkedin} target="_blank">
-                      <IconWrapper icon={Linkedin} />
+                      <AnimatedIconWrapper icon={Linkedin} />
                     </a>
                   </div>
                 </div>

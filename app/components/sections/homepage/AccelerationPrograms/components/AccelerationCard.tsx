@@ -1,5 +1,5 @@
+import { AnimatedIconWrapper } from "@/app/components/ui/AnimatedIconWrapper";
 import { ExternalLink } from "@/app/components/ui/ExternalLink";
-import { IconWrapper } from "@/app/components/ui/IconWrapper";
 import { useTranslations } from "next-intl";
 import { twMerge } from "tailwind-merge";
 import { Program } from "../../hooks/useAccelerationPrograms";
@@ -22,7 +22,7 @@ export function AccelerationCard({
         <div className="space-y-3 text-white/90">
           {features.map((feature) => (
             <div key={feature.title} className="flex items-center gap-4">
-              <IconWrapper className="p-1.5" icon={feature.icon} />
+              <AnimatedIconWrapper className="p-1.5" icon={feature.icon} />
               <p className="font-medium text-sm md:text-base">
                 {feature.title}
               </p>

@@ -4,15 +4,15 @@ import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Star } from "lucide-react";
+import { AnimatedIconWrapper } from "../../ui/AnimatedIconWrapper";
 import { FeatureCard } from "../../ui/FeatureCard";
-import { IconWrapper } from "../../ui/IconWrapper";
 import { SectionHeader } from "../../ui/SectionHeader";
 import { useResultsYouCanExpect } from "./hooks/useResultsYouCanExpect";
 
 export function ResultsYouCanExpect() {
   const { rich, t } = useRichText("PspMentorship.ResultsYouCanExpect");
   const results = useResultsYouCanExpect();
-  
+
   useGSAP(() => {
     gsap.fromTo(
       ".result-card",
@@ -30,10 +30,7 @@ export function ResultsYouCanExpect() {
 
   return (
     <section className="py-[10svh] space-y-8">
-      <SectionHeader
-        preTitle={t("preTitle")}
-        title={rich("title")}
-      />
+      <SectionHeader preTitle={t("preTitle")} title={rich("title")} />
 
       <div className="grid lg:grid-cols-3 gap-2">
         {results.map((result) => (
@@ -47,7 +44,7 @@ export function ResultsYouCanExpect() {
         ))}
 
         <div className="result-card bg-tertiary rounded-md flex gap-4 p-8 lg:col-span-3">
-          <IconWrapper className="hidden lg:block" icon={Star} />
+          <AnimatedIconWrapper className="hidden lg:block" icon={Star} />
           <div className="space-y-2">
             <p className="text-xl font-bold">{t("success.title")}</p>
             <p className="max-w-6xl text-gray">{rich("success.text")}</p>

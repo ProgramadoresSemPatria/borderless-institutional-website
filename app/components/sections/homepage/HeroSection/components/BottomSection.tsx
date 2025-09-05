@@ -1,5 +1,5 @@
+import { AnimatedIconWrapper } from "@/app/components/ui/AnimatedIconWrapper";
 import { AnimatedText } from "@/app/components/ui/AnimatedText";
-import { IconWrapper } from "@/app/components/ui/IconWrapper";
 import { ArrowDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { NumbersHighlightCard } from "./NumbersHighlightCard";
@@ -22,7 +22,7 @@ export function BottomSection() {
 
         <div className="hidden lg:flex items-center gap-4">
           <p className="font-semibold">{t("discoverMore")}</p>
-          <IconWrapper icon={ArrowDown} />
+          <AnimatedIconWrapper icon={ArrowDown} />
         </div>
       </div>
 

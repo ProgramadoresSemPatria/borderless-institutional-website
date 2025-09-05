@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Check } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { IconWrapper } from "../../ui/IconWrapper";
+import { AnimatedIconWrapper } from "../../ui/AnimatedIconWrapper";
 import { SectionHeader } from "../../ui/SectionHeader";
 
 export function WhyItWorks() {
@@ -45,7 +45,7 @@ export function WhyItWorks() {
             key={feature}
             className="why-it-works-card bg-[#212121] px-6 rounded-md flex gap-4 items-center py-6 opacity-0"
           >
-            <IconWrapper
+            <AnimatedIconWrapper
               className="size-8 flex-center p-0 shrink-0"
               icon={Check}
             />

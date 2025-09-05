@@ -1,12 +1,21 @@
-import { IconWrapper } from "@/app/components/ui/IconWrapper";
+import { AnimatedIconWrapper } from "@/app/components/ui/AnimatedIconWrapper";
 import { RoadmapStage } from "../constants/roadmapStages";
 import { getStatusBadge } from "../getStatusBadge";
 
-export function Stage({ stage, labels }: { stage: RoadmapStage; labels: { completed: string; inProgress: string; next: string } }) {
+export function Stage({
+  stage,
+  labels,
+}: {
+  stage: RoadmapStage;
+  labels: { completed: string; inProgress: string; next: string };
+}) {
   return (
     <div className="bg-[#212121] rounded-md p-6 space-y-6 min-h-full flex flex-col">
       <div className="flex items-center justify-between">
-        <IconWrapper className="size-12 flex-center" icon={stage.icon} />
+        <AnimatedIconWrapper
+          className="size-12 flex-center"
+          icon={stage.icon}
+        />
         {getStatusBadge(stage.status, labels)}
       </div>
 

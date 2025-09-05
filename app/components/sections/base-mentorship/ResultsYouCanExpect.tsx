@@ -1,13 +1,13 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Globe, Laptop, MessageSquare, Star, Target } from "lucide-react";
-import { FeatureCard } from "../../ui/FeatureCard";
-import { IconWrapper } from "../../ui/IconWrapper";
-import { SectionHeader } from "../../ui/SectionHeader";
 import { useTranslations } from "next-intl";
-import { useRichText } from "@/app/hooks/useRichText";
+import { AnimatedIconWrapper } from "../../ui/AnimatedIconWrapper";
+import { FeatureCard } from "../../ui/FeatureCard";
+import { SectionHeader } from "../../ui/SectionHeader";
 
 export function ResultsYouCanExpect() {
   const t = useTranslations("BaseMentorship.ResultsYouCanExpect");
@@ -51,10 +51,7 @@ export function ResultsYouCanExpect() {
 
   return (
     <section className="py-[10svh] space-y-8">
-      <SectionHeader
-        preTitle={t("preTitle")}
-        title={<>{rich("title")}</>}
-      />
+      <SectionHeader preTitle={t("preTitle")} title={<>{rich("title")}</>} />
 
       <div className="grid lg:grid-cols-2 gap-2">
         {results.map((result) => (
@@ -68,7 +65,7 @@ export function ResultsYouCanExpect() {
         ))}
 
         <div className="result-card bg-tertiary rounded-md flex gap-4 p-8 lg:col-span-2">
-          <IconWrapper className="hidden lg:block" icon={Star} />
+          <AnimatedIconWrapper className="hidden lg:block" icon={Star} />
           <div className="space-y-2">
             <p className="text-xl font-bold">{t("case.title")}</p>
             <p className="max-w-6xl text-gray">{t("case.description")}</p>

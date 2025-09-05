@@ -1,10 +1,12 @@
+"use client";
+
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "../Accordion";
-import { IconWrapper } from "../IconWrapper";
+import { AnimatedIconWrapper } from "../AnimatedIconWrapper";
 import { ComparatorFeature, IComparator } from "./types";
 
 export function Comparator({
@@ -50,7 +52,7 @@ function ComparatorItem({
     >
       <AccordionTrigger className="items-center p-2">
         <div className="flex items-center gap-4">
-          <IconWrapper icon={feature.icon} />
+          <AnimatedIconWrapper icon={feature.icon} />
           <p className="font-medium">{feature.title}</p>
         </div>
       </AccordionTrigger>
