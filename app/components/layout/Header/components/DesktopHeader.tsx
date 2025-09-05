@@ -85,7 +85,7 @@ export default function DesktopHeader() {
                       <NavigationMenuLink
                         asChild
                         key={subItem.title}
-                        className="w-[50%] hover:w-[60%] ease-bouncy transition-all duration-400"
+                        className="w-[50%] hover:w-[55%] ease-bouncy transition-all duration-400"
                       >
                         <Link href={subItem.href || "/"}>
                           <FeatureCard
