@@ -9,11 +9,11 @@ import { BottomSection } from "./components/BottomSection";
 import { TopSection } from "./components/TopSection";
 
 export function HeroSection() {
-  const [show, setShow] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
   useGSAP(() => {
-    setShow(true);
-    if (!show) return;
+    setLoaded(true);
+    if (!loaded) return;
 
     gsap.fromTo(
       ".hero-button",
@@ -33,9 +33,9 @@ export function HeroSection() {
         ease: "power4.out",
       }
     );
-  }, [show]);
+  }, [loaded]);
 
-  if (!show) {
+  if (!loaded) {
     // just show hero section when page is hydrated, so animation runs without flicker
     return <section className="h-svh" />;
   }

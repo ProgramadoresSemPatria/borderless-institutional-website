@@ -1,21 +1,18 @@
 "use client";
 
-import { useMediaQuery } from "@/app/hooks/useMediaQuery";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import DesktopHeader from "./components/DesktopHeader";
 import { MobileHeader } from "./components/MobileHeader";
 
 export function Header() {
-  const isMobile = useMediaQuery("(max-width: 1024px)");
+  const [loaded, setLoaded] = useState(false);
+  const isMobile = useMediaQuery({ query: "(max-width: 1024px)" });
 
-  return (
-    <>
-      {isMobile ? (
-        <MobileHeader />
-      ) : (
-        <div className="hidden lg:block">
-          <DesktopHeader />
-        </div>
-      )}
-    </>
-  );
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
+  if (!loaded) return null;
+  return <>{isMobile ? <MobileHeader /> : <DesktopHeader />}</>;
 }
