@@ -1,12 +1,11 @@
 "use client";
 
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useGSAP } from "@gsap/react";
 import clsx from "clsx";
 import gsap from "gsap";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import NavItems from "./NavItems";
 

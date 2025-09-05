@@ -12,10 +12,9 @@ import {
   navigationMenuTriggerStyle,
 } from "@/app/components/ui/NavigationMenu";
 import { cn } from "@/app/lib/utils";
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function DesktopHeader() {
