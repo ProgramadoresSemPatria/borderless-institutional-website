@@ -3,7 +3,7 @@
 import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { AnimatedGrid } from "../../ui/AnimatedGrid";
+import ExpandableGrid from "../../ui/ExpandableGrid";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
 import { useOurServices } from "./hooks/useOurServices";
@@ -38,20 +38,20 @@ export function OurServices() {
         className="w-full max-w-lg xl:max-w-[40%]"
       />
 
-      <div className="grid md:grid-cols-2 gap-2 grow relative">
-        {services.map((service, index) => (
+      <ExpandableGrid
+        itemSize={16}
+        gap={0.5}
+        itemsPerRow={2}
+        items={services.map((service, index) => (
           <FeatureCard
             title={service.title}
             description={service.description}
             icon={service.icon}
-            className={`service-card ${index === 2 && "md:col-span-2"}`}
+            className={`service-card md:h-full`}
             key={`service-${index}`}
           />
         ))}
-        <div className="absolute right-0 bottom-0 translate-y-1/2 translate-x-1/2 z-[-1]">
-          <AnimatedGrid />
-        </div>
-      </div>
+      />
     </section>
   );
 }
