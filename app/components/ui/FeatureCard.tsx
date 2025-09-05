@@ -26,7 +26,7 @@ export function FeatureCard({
   return (
     <div
       className={twMerge(
-        "rounded-md md:h-64 p-6 flex flex-col justify-between gap-8 opacity-0 group",
+        "rounded-md md:h-64 p-6 flex flex-col justify-between gap-8 group",
         variant === "primary" ? "bg-tertiary" : "bg-[#212121]",
         className
       )}
