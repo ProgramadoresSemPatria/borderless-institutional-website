@@ -1,11 +1,12 @@
 "use client";
 
+import { useRichText } from "@/app/hooks/useRichText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import ExpandableGrid from "../../ui/ExpandableGrid";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
 import { useWhyBorderless } from "./hooks/useWhyBorderless";
-import { useRichText } from "@/app/hooks/useRichText";
 
 export function WhyBorderless() {
   const { header, results } = useWhyBorderless();
@@ -29,20 +30,31 @@ export function WhyBorderless() {
   });
 
   return (
-    <section className="py-[10svh] space-y-6">
+    <section className="pt-[10svh] pb-2 space-y-6">
       <SectionHeader preTitle={header.preTitle} title={rich("title")} />
 
-      <div className="grid lg:grid-cols-2 2xl:grid-cols-4 gap-2">
-        {results.map((result) => (
+      <ExpandableGrid
+        itemHeight={12}
+        itemsPerRow={1}
+        breakpoints={{
+          lg: {
+            itemsPerRow: 2,
+            itemHeight: 16,
+          },
+          "2xl": {
+            itemsPerRow: 4,
+            itemHeight: 16,
+          },
+        }}
+        items={results.map((result) => (
           <FeatureCard
-            className="results-card"
             key={result.title}
             title={result.title}
             description={result.description}
             icon={result.icon}
           />
         ))}
-      </div>
+      />
     </section>
   );
 }

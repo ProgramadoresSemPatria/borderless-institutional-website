@@ -1,58 +1,21 @@
 "use client";
 
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import { useRichText } from "@/app/hooks/useRichText";
 import { AnimatedText } from "../../ui/AnimatedText";
+import ExpandableGrid from "../../ui/ExpandableGrid";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { FullWidthCard } from "../../ui/FullWidthCard";
 import { SectionHeader } from "../../ui/SectionHeader";
 import { useForInvestors } from "./hooks/useForInvestors";
-import { useRichText } from "@/app/hooks/useRichText";
 
 export function ForInvestors() {
   const { header, incubation, hub, banner } = useForInvestors();
   const { rich } = useRichText("ForFoundersAndInvestors.ForInvestors");
-  useGSAP(() => {
-    gsap.fromTo(
-      ".for-investors-feature-card",
-      { y: "20%", opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        ease: "back.inOut",
-        duration: 0.8,
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: ".for-investors-feature-card",
-          start: "top 90%",
-        },
-      }
-    );
-
-    gsap.fromTo(
-      ".borderless-hub-features-card",
-      { y: "20%", opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        ease: "back.inOut",
-        duration: 0.8,
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: ".borderless-hub-features-card",
-          start: "top 90%",
-        },
-      }
-    );
-  });
 
   return (
     <section className="py-[10svh] space-y-8">
       <div className="space-y-4">
-        <SectionHeader
-          preTitle={header.preTitle}
-          title={rich("title")}
-        />
+        <SectionHeader preTitle={header.preTitle} title={rich("title")} />
 
         <AnimatedText className="text-gray text-lg font-medium max-w-6xl">
           {header.description}
@@ -62,8 +25,16 @@ export function ForInvestors() {
       <div className="space-y-4">
         <AnimatedText as="h2">{rich("incubationTitle")}</AnimatedText>
 
-        <div className="grid lg:grid-cols-2 gap-2">
-          {incubation.map((feature) => (
+        <ExpandableGrid
+          itemsPerRow={1}
+          itemHeight={15}
+          breakpoints={{
+            lg: {
+              itemsPerRow: 2,
+              itemHeight: 16,
+            },
+          }}
+          items={incubation.map((feature) => (
             <FeatureCard
               className="for-investors-feature-card"
               key={feature.title}
@@ -72,17 +43,24 @@ export function ForInvestors() {
               icon={feature.icon}
             />
           ))}
-        </div>
+        />
       </div>
 
       <div className="space-y-4">
         <AnimatedText as="h2">{rich("hubTitle")}</AnimatedText>
 
         <div className="space-y-2 bg-tertiary p-2">
-          <div className="grid lg:grid-cols-2 gap-2">
-            {hub.map((feature) => (
+          <ExpandableGrid
+            itemsPerRow={1}
+            itemHeight={12}
+            breakpoints={{
+              lg: {
+                itemsPerRow: 2,
+                itemHeight: 16,
+              },
+            }}
+            items={hub.map((feature) => (
               <FeatureCard
-                className="borderless-hub-features-card"
                 key={feature.title}
                 title={feature.title}
                 description={feature.description}
@@ -90,7 +68,7 @@ export function ForInvestors() {
                 variant="secondary"
               />
             ))}
-          </div>
+          />
           <FullWidthCard
             title={banner.title}
             description={banner.description}
