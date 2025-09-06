@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { Globe, Laptop, MessageSquare, Star, Target } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { AnimatedIconWrapper } from "../../ui/AnimatedIconWrapper";
+import ExpandableGrid from "../../ui/ExpandableGrid";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
 
@@ -34,6 +35,7 @@ export function ResultsYouCanExpect() {
       icon: Target,
     },
   ];
+
   useGSAP(() => {
     gsap.fromTo(
       ".result-card",
@@ -53,17 +55,25 @@ export function ResultsYouCanExpect() {
     <section className="py-[10svh] space-y-8">
       <SectionHeader preTitle={t("preTitle")} title={<>{rich("title")}</>} />
 
-      <div className="grid lg:grid-cols-2 gap-2">
-        {results.map((result) => (
-          <FeatureCard
-            className="result-card"
-            key={result.title}
-            title={result.title}
-            description={result.description}
-            icon={result.icon}
-          />
-        ))}
-
+      <div className="space-y-2">
+        <ExpandableGrid
+          breakpoints={{
+            lg: {
+              itemsPerRow: 3,
+              itemHeight: 16,
+            },
+          }}
+          itemsPerRow={1}
+          itemHeight={13}
+          items={results.map((result) => (
+            <FeatureCard
+              key={result.title}
+              title={result.title}
+              description={result.description}
+              icon={result.icon}
+            />
+          ))}
+        />
         <div className="result-card bg-tertiary rounded-md flex gap-4 p-8 lg:col-span-2">
           <AnimatedIconWrapper className="hidden lg:block" icon={Star} />
           <div className="space-y-2">

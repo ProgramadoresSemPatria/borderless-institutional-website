@@ -90,7 +90,7 @@ export default function DesktopHeader() {
                           <FeatureCard
                             title={subItem.title}
                             description={subItem.description}
-                            className="opacity-100"
+                            className="h-64"
                             variant="secondary"
                           />
                         </Link>

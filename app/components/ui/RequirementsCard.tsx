@@ -1,14 +1,25 @@
 import { Check } from "lucide-react";
+import { twMerge } from "tailwind-merge";
 import { AnimatedIconWrapper } from "./AnimatedIconWrapper";
 
 interface RequirementsCardProps {
   title?: string;
   items: string[];
+  className?: string;
 }
 
-export function RequirementsCard({ title, items }: RequirementsCardProps) {
+export function RequirementsCard({
+  title,
+  items,
+  className,
+}: RequirementsCardProps) {
   return (
-    <div className="requirements-card bg-tertiary rounded-md p-8 space-y-4 opacity-0">
+    <div
+      className={twMerge(
+        "requirements-card bg-tertiary rounded-md p-8 space-y-4 w-full opacity-0",
+        className
+      )}
+    >
       {title && <p className="text-xl font-bold">{title}</p>}
       <div className="text-gray space-y-4">
         {items.map((item, index) => (

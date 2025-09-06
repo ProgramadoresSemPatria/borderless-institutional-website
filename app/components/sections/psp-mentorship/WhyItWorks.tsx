@@ -37,7 +37,7 @@ export function WhyItWorks() {
         {features.map((feature) => (
           <div
             key={feature}
-            className="why-it-works-card bg-[#212121] px-6 rounded-md flex gap-4 items-center py-6"
+            className="why-it-works-card bg-[#212121] px-6 rounded-md flex gap-4 items-center py-6 opacity-0"
           >
             <AnimatedIconWrapper
               className="size-8 flex-center p-0 shrink-0"

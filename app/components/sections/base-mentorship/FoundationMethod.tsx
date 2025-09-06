@@ -1,12 +1,11 @@
 "use client";
 
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import { useRichText } from "@/app/hooks/useRichText";
 import { Code, Map, MessageSquare, User } from "lucide-react";
+import { useTranslations } from "next-intl";
+import ExpandableGrid from "../../ui/ExpandableGrid";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
-import { useTranslations } from "next-intl";
-import { useRichText } from "@/app/hooks/useRichText";
 
 export function FoundationMethod() {
   const t = useTranslations("BaseMentorship.FoundationMethod");
@@ -34,39 +33,33 @@ export function FoundationMethod() {
       icon: Map,
     },
   ];
-  useGSAP(() => {
-    gsap.fromTo(
-      ".global-method-card",
-      { y: "20%", opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        ease: "back.inOut",
-        duration: 0.8,
-        stagger: 0.1,
-        scrollTrigger: { trigger: ".global-method-card", start: "top 90%" },
-      }
-    );
-  });
 
   return (
     <section className="space-y-8 py-[10svh]">
-      <SectionHeader
-        preTitle={t("preTitle")}
-        title={<>{rich("title")}</>}
-      />
+      <SectionHeader preTitle={t("preTitle")} title={<>{rich("title")}</>} />
 
-      <div className="grid md:grid-cols-2 2xl:grid-cols-4 gap-2">
-        {methods.map((method) => (
+      <ExpandableGrid
+        items={methods.map((method) => (
           <FeatureCard
             key={method.title}
             title={method.title}
             description={method.description}
             icon={method.icon}
-            className="global-method-card"
           />
         ))}
-      </div>
+        itemHeight={12}
+        itemsPerRow={1}
+        breakpoints={{
+          md: {
+            itemsPerRow: 2,
+            itemHeight: 16,
+          },
+          "2xl": {
+            itemsPerRow: 4,
+            itemHeight: 16,
+          },
+        }}
+      />
     </section>
   );
 }
