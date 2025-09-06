@@ -3,6 +3,7 @@
 import { cn } from "@/app/lib/utils";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import React, { useEffect, useRef, useState } from "react";
 
 type ExpandingGridBaseProps = {
@@ -83,18 +84,23 @@ export default function ExpandableGrid(props: ExpandingGridProps) {
 
   useGSAP(
     () => {
-      gsap.set(".expandable-grid-item", { opacity: 0, y: "20%" });
-      gsap.to(".expandable-grid-item", {
-        y: 0,
-        opacity: 1,
-        ease: "back.inOut",
-        duration: 0.8,
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: ref.current,
-          start: "top 90%",
-        },
-      });
+      ScrollTrigger.refresh();
+
+      gsap.fromTo(
+        ".expandable-grid-item",
+        { opacity: 0, y: "20%" },
+        {
+          y: 0,
+          opacity: 1,
+          ease: "back.inOut",
+          duration: 0.8,
+          stagger: 0.1,
+          scrollTrigger: {
+            trigger: ref.current,
+            start: "top 90%",
+          },
+        }
+      );
     },
     { scope: ref, dependencies: [rows], revertOnUpdate: true }
   );
@@ -120,7 +126,7 @@ export default function ExpandableGrid(props: ExpandingGridProps) {
             <div
               key={`cell-${rowIndex}-${colIndex}`}
               className={cn(
-                "size-full transition-all duration-[450ms] ease-bouncy expandable-grid-item",
+                "size-full transition-all duration-[450ms] ease-bouncy expandable-grid-item opacity-0",
                 row.length > 1 && "hover:w-[110%]"
               )}
             >
