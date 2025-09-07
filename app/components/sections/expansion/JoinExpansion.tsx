@@ -9,7 +9,7 @@ export function JoinExpansion() {
   return (
     <section className="pb-[15svh]">
       <FullWidthCard title={card.title} description={card.description}>
-        <ExternalLink href={'/'}>{card.cta}</ExternalLink>
+        <ExternalLink href={"/"}>{card.cta}</ExternalLink>
       </FullWidthCard>
     </section>
   );

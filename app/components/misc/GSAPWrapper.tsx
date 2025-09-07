@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "@/i18n/navigation";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollSmoother, ScrollTrigger, SplitText } from "gsap/all";
@@ -9,6 +10,7 @@ import { useEffect, useRef } from "react";
 gsap.registerPlugin(useGSAP, SplitText, ScrollTrigger, ScrollSmoother);
 
 export function GSAPWrapper({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
   const lenisRef = useRef<LenisRef>(null);
 
   useEffect(() => {
@@ -22,6 +24,12 @@ export function GSAPWrapper({ children }: { children: React.ReactNode }) {
       gsap.ticker.remove(update);
     };
   }, []);
+
+  useEffect(() => {
+    lenisRef.current?.lenis?.scrollTo(0, {
+      immediate: true,
+    });
+  }, [pathname]);
 
   return (
     <>

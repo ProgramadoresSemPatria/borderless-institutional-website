@@ -48,6 +48,8 @@ export function WhoShouldJoin() {
             />
           )),
           <RequirementsCard
+            className="h-full opacity-100"
+            key={"requirements-to-join"}
             title={t("requirements.title")}
             items={[t("requirements.items.0"), t("requirements.items.1")]}
           />,

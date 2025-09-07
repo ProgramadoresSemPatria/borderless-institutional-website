@@ -54,8 +54,8 @@ export default async function RootLayout({
         className={`${montserrat.className} ${ivyPresto.variable} antialiased`}
       >
         <NextIntlClientProvider>
-          <Header />
           <GSAPWrapper>
+            <Header />
             {children}
             <Footer />
           </GSAPWrapper>

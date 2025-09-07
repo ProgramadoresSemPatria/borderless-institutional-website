@@ -35,7 +35,10 @@ export function ResultsYouCanExpect() {
               icon={result.icon}
             />
           )),
-          <div className="result-card bg-tertiary rounded-md flex gap-4 p-8 lg:col-span-3">
+          <div
+            className="result-card bg-tertiary rounded-md flex gap-4 p-8 lg:col-span-3"
+            key={"result-card"}
+          >
             <AnimatedIconWrapper className="hidden lg:block" icon={Star} />
             <div className="space-y-2">
               <p className="text-xl font-bold">{t("success.title")}</p>

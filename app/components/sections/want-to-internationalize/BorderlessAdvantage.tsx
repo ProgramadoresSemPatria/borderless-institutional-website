@@ -1,42 +1,33 @@
 "use client";
 
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import { useRichText } from "@/app/hooks/useRichText";
+import ExpandableGrid from "../../ui/ExpandableGrid";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
-import { useRichText } from "@/app/hooks/useRichText";
 import { useBorderlessAdvantage } from "./hooks/useBorderlessAdvantage";
 
 export function BorderlessAdvantage() {
   const { rich } = useRichText("WantToInternationalize.BorderlessAdvantage");
   const { header, features } = useBorderlessAdvantage();
-  useGSAP(() => {
-    gsap.fromTo(
-      ".borderless-advantage-card",
-      { y: "20%", opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        ease: "back.inOut",
-        duration: 0.8,
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: ".borderless-advantage-card",
-          start: "top 90%",
-        },
-      }
-    );
-  });
 
   return (
     <section className="space-y-8 py-[10svh]">
-      <SectionHeader
-        preTitle={header.preTitle}
-        title={rich(header.titleKey)}
-      />
+      <SectionHeader preTitle={header.preTitle} title={rich(header.titleKey)} />
 
-      <div className="grid md:grid-cols-2 2xl:grid-cols-4 gap-2">
-        {features.map((feature) => (
+      <ExpandableGrid
+        itemHeight={12}
+        itemsPerRow={1}
+        breakpoints={{
+          md: {
+            itemHeight: 16,
+            itemsPerRow: 2,
+          },
+          "2xl": {
+            itemHeight: 16,
+            itemsPerRow: 4,
+          },
+        }}
+        items={features.map((feature) => (
           <FeatureCard
             key={feature.title}
             title={feature.title}
@@ -45,7 +36,7 @@ export function BorderlessAdvantage() {
             className="borderless-advantage-card"
           />
         ))}
-      </div>
+      />
     </section>
   );
 }

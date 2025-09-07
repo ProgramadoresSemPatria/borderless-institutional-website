@@ -38,7 +38,6 @@ export function WhoIsItFor() {
             t("techRoles.items.1"),
             t("techRoles.items.2"),
           ]}
-          className="lg:hover:w-[110%] transition-all ease-bouncy duration-300"
         />
         <RequirementsCard
           title={t("requirements.title")}
@@ -47,7 +46,6 @@ export function WhoIsItFor() {
             t("requirements.items.1"),
             t("requirements.items.2"),
           ]}
-          className="lg:hover:w-[110%] transition-all ease-bouncy duration-300"
         />
       </div>
     </section>
