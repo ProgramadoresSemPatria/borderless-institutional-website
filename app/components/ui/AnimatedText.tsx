@@ -28,39 +28,42 @@ export function AnimatedText<E extends ElementType = "p">({
 }: AnimatedTextProps<E>) {
   const Component = as || "p";
   const container = useRef(null);
-
   const { className, ...rest } = props;
 
   useGSAP(
     () => {
-      const scrollTrigger = ScrollTrigger.create({
-        trigger: container.current,
-        start: "top 85%",
-        ...scrollTriggerVars,
-      });
-
-      const gsapAnimation = (self: SplitText) => {
-        const elementsToAnimate =
-          self[(splitTextVars?.type as SplitTextType) || "lines"];
-
-        return gsap.from(elementsToAnimate, {
-          y: "100%",
-          duration: 1.25,
-          stagger: 0.1,
-          ease: "power4.out",
-          scrollTrigger,
-          onComplete: () => self.revert(),
-          ...tweenVars,
+      const raf = requestAnimationFrame(() => {
+        const scrollTrigger = ScrollTrigger.create({
+          trigger: container.current,
+          start: "top 85%",
+          ...scrollTriggerVars,
         });
-      };
 
-      SplitText.create(container.current, {
-        type: "lines",
-        mask: "lines",
-        autoSplit: true,
-        onSplit: (self) => gsapAnimation(self),
-        ...splitTextVars,
+        const gsapAnimation = (self: SplitText) => {
+          const elementsToAnimate =
+            self[(splitTextVars?.type as SplitTextType) || "lines"];
+
+          return gsap.from(elementsToAnimate, {
+            y: "100%",
+            duration: 1.25,
+            stagger: 0.1,
+            ease: "power4.out",
+            scrollTrigger,
+            onComplete: () => self.revert(),
+            ...tweenVars,
+          });
+        };
+
+        SplitText.create(container.current, {
+          type: "lines",
+          mask: "lines",
+          autoSplit: true,
+          onSplit: (self) => gsapAnimation(self),
+          ...splitTextVars,
+        });
       });
+
+      return () => cancelAnimationFrame(raf);
     },
     { scope: container }
   );
