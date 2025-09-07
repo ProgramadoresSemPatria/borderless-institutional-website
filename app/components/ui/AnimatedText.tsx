@@ -9,6 +9,7 @@ type AnimatedTextOwnProps<E extends ElementType> = {
   children: ReactNode;
   splitTextVars?: SplitText.Vars;
   tweenVars?: gsap.TweenVars;
+  scrollTriggerVars?: ScrollTrigger.Vars;
   as?: E;
 };
 
@@ -22,6 +23,7 @@ export function AnimatedText<E extends ElementType = "p">({
   children,
   splitTextVars,
   tweenVars,
+  scrollTriggerVars,
   ...props
 }: AnimatedTextProps<E>) {
   const Component = as || "p";
@@ -43,10 +45,13 @@ export function AnimatedText<E extends ElementType = "p">({
             duration: 1.25,
             stagger: 0.1,
             ease: "power4.out",
-            onComplete: () => self.revert(),
+            onComplete: () => {
+              self.revert();
+            },
             scrollTrigger: {
               trigger: container.current,
               start: "top 85%",
+              ...scrollTriggerVars,
             },
             ...tweenVars,
           });
