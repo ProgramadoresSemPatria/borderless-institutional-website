@@ -56,6 +56,8 @@ export function HeroSection() {
             width={671}
             height={798}
             src={"/borderless-logo-black.svg"}
+            priority
+            loading="eager"
             alt="logo"
             className="size-full opacity-80"
           />

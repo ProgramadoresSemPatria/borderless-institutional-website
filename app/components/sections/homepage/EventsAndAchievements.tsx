@@ -31,7 +31,7 @@ export function EventsAndAchievements() {
   });
 
   return (
-    <section className="flex flex-col gap-8 py-12 bg-tertiary">
+    <section className="flex flex-col gap-8 py-12 bg-tertiary rounded-md">
       <AnimatedText as="h2" className="px-8 lg:px-16">
         {rich("title")}
       </AnimatedText>

@@ -20,7 +20,7 @@ export function RequirementsCard({
         className
       )}
     >
-      {title && <p className="text-xl font-bold">{title}</p>}
+      {title && <p className="text-lg md:text-xl font-bold">{title}</p>}
       <div className="text-gray space-y-4">
         {items.map((item, index) => (
           <div key={index} className="flex items-center gap-4">

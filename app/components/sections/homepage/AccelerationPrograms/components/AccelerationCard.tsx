@@ -16,12 +16,12 @@ export function AccelerationCard({
   return (
     <div
       className={twMerge(
-        "bg-tertiary rounded-md p-8 size-full flex flex-col",
+        "bg-tertiary rounded-md p-6 md:p-8 size-full flex flex-col",
         className
       )}
     >
       <div className="space-y-6 grow">
-        <h3 className="text-xl md:text-2xl font-bold">{title}</h3>
+        <h3 className="text-lg md:text-2xl font-bold">{title}</h3>
         <p className="text-sm md:text-base text-gray">{description}</p>
 
         <div className="space-y-3 text-white/90">

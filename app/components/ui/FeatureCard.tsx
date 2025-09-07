@@ -11,6 +11,7 @@ interface FeatureCardProps {
   icon?: LucideIcon;
   variant?: "primary" | "secondary";
   className?: string;
+  titleClassName?: string;
 }
 
 export function FeatureCard({
@@ -18,6 +19,7 @@ export function FeatureCard({
   description,
   icon,
   className,
+  titleClassName,
   variant = "primary",
 }: FeatureCardProps) {
   const IconComponent = icon || ArrowUpRight;
@@ -26,14 +28,16 @@ export function FeatureCard({
   return (
     <div
       className={twMerge(
-        "rounded-md size-full p-6 flex flex-col justify-between gap-8 group",
+        "rounded-md size-full p-5 md:p-6 flex flex-col justify-between gap-8 group",
         variant === "primary" ? "bg-tertiary" : "bg-[#212121]",
         className
       )}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <h3 className="text-xl font-bold">{title}</h3>
+      <h3 className={twMerge("text-lg md:text-xl font-bold", titleClassName)}>
+        {title}
+      </h3>
       <div className="w-full flex items-center justify-between gap-4">
         <p className="text-sm md:text-base font-medium max-w-xs text-gray">
           {description}

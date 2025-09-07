@@ -1,8 +1,6 @@
 "use client";
 
 import { useRichText } from "@/app/hooks/useRichText";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 import ExpandableGrid from "../../ui/ExpandableGrid";
 import { FeatureCard } from "../../ui/FeatureCard";
 import { SectionHeader } from "../../ui/SectionHeader";
@@ -11,23 +9,6 @@ import { useWhyBorderless } from "./hooks/useWhyBorderless";
 export function WhyBorderless() {
   const { header, results } = useWhyBorderless();
   const { rich } = useRichText("ForFoundersAndInvestors.WhyBorderless");
-  useGSAP(() => {
-    gsap.fromTo(
-      ".results-card",
-      { y: "20%", opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        ease: "back.inOut",
-        duration: 0.8,
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: ".results-card",
-          start: "top 90%",
-        },
-      }
-    );
-  });
 
   return (
     <section className="pt-[10svh] pb-2 space-y-6">

@@ -50,7 +50,8 @@ export default function NavItems({ onClick }: { onClick: () => void }) {
                 <FeatureCard
                   title={subItem.title}
                   description={subItem.description}
-                  className="opacity-100 p-4"
+                  className="p-4"
+                  titleClassName="text-base"
                   variant="secondary"
                 />
               </Link>
