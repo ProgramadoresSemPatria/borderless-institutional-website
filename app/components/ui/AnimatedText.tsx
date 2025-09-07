@@ -2,7 +2,7 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { SplitText } from "gsap/SplitText";
+import { ScrollTrigger, SplitText } from "gsap/all";
 import { ComponentProps, ElementType, ReactNode, useRef } from "react";
 
 type AnimatedTextOwnProps<E extends ElementType> = {
@@ -14,9 +14,9 @@ type AnimatedTextOwnProps<E extends ElementType> = {
 };
 
 type AnimatedTextProps<E extends ElementType> = AnimatedTextOwnProps<E> &
-  ComponentProps<E>;
+  Omit<ComponentProps<E>, keyof AnimatedTextOwnProps<E>>;
 
-type Mask = "lines" | "words" | "chars";
+type SplitTextType = "lines" | "words" | "chars";
 
 export function AnimatedText<E extends ElementType = "p">({
   as,
@@ -33,30 +33,30 @@ export function AnimatedText<E extends ElementType = "p">({
 
   useGSAP(
     () => {
-      if (!container.current) return;
-
-      SplitText.create(container.current, {
+      const split = SplitText.create(container.current, {
         type: "lines",
         mask: "lines",
         autoSplit: true,
-        onSplit: (self) => {
-          return gsap.from(self[(splitTextVars?.type as Mask) || "lines"], {
-            y: "100%",
-            duration: 1.25,
-            stagger: 0.1,
-            ease: "power4.out",
-            onComplete: () => {
-              self.revert();
-            },
-            scrollTrigger: {
-              trigger: container.current,
-              start: "top 85%",
-              ...scrollTriggerVars,
-            },
-            ...tweenVars,
-          });
-        },
         ...splitTextVars,
+      });
+
+      const scrollTrigger = ScrollTrigger.create({
+        trigger: container.current,
+        start: "top 85%",
+        ...scrollTriggerVars,
+      });
+
+      const elementsToAnimate =
+        split[(splitTextVars?.type as SplitTextType) || "lines"];
+
+      gsap.from(elementsToAnimate, {
+        y: "100%",
+        duration: 1.25,
+        stagger: 0.1,
+        ease: "power4.out",
+        scrollTrigger,
+        onComplete: () => split.revert(),
+        ...tweenVars,
       });
     },
     { scope: container }
