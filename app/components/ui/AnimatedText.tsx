@@ -33,30 +33,33 @@ export function AnimatedText<E extends ElementType = "p">({
 
   useGSAP(
     () => {
-      const split = SplitText.create(container.current, {
-        type: "lines",
-        mask: "lines",
-        autoSplit: true,
-        ...splitTextVars,
-      });
-
       const scrollTrigger = ScrollTrigger.create({
         trigger: container.current,
         start: "top 85%",
         ...scrollTriggerVars,
       });
 
-      const elementsToAnimate =
-        split[(splitTextVars?.type as SplitTextType) || "lines"];
+      const gsapAnimation = (self: SplitText) => {
+        const elementsToAnimate =
+          self[(splitTextVars?.type as SplitTextType) || "lines"];
 
-      gsap.from(elementsToAnimate, {
-        y: "100%",
-        duration: 1.25,
-        stagger: 0.1,
-        ease: "power4.out",
-        scrollTrigger,
-        onComplete: () => split.revert(),
-        ...tweenVars,
+        return gsap.from(elementsToAnimate, {
+          y: "100%",
+          duration: 1.25,
+          stagger: 0.1,
+          ease: "power4.out",
+          scrollTrigger,
+          onComplete: () => self.revert(),
+          ...tweenVars,
+        });
+      };
+
+      SplitText.create(container.current, {
+        type: "lines",
+        mask: "lines",
+        autoSplit: true,
+        onSplit: (self) => gsapAnimation(self),
+        ...splitTextVars,
       });
     },
     { scope: container }
