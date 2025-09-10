@@ -23,36 +23,43 @@ export function useGetOurTeam() {
       name: "Felipe Meriga",
       role: t("roles.felipe"),
       src: "/team/felipe.webp",
-      github: 'https://github.com/felipemeriga',
-      linkedin: 'https://www.linkedin.com/in/felipersil/'
+      github: "https://github.com/felipemeriga",
+      linkedin: "https://www.linkedin.com/in/felipersil/",
     },
     {
       name: "Matheus Avi",
       role: t("roles.matheus"),
       src: "/team/matheus.webp",
-      github: 'https://github.com/matheusavi',
-      linkedin: 'https://www.linkedin.com/in/matheusavi/'
+      github: "https://github.com/matheusavi",
+      linkedin: "https://www.linkedin.com/in/matheusavi/",
     },
     {
       name: "André Wlodkosvki",
       role: t("roles.andre"),
       src: "/team/andre.webp",
-      github: 'https://github.com/andrewlod',
-      linkedin: 'https://www.linkedin.com/in/andrewlod/'
+      github: "https://github.com/andrewlod",
+      linkedin: "https://www.linkedin.com/in/andrewlod/",
     },
     {
       name: "Alex Miloski",
       role: t("roles.alex"),
       src: "/team/alex.webp",
-      github: 'https://github.com/alex-miloski',
-      linkedin: 'https://www.linkedin.com/in/amiloski'
+      github: "https://github.com/alex-miloski",
+      linkedin: "https://www.linkedin.com/in/amiloski",
     },
     {
       name: "Thiago Dantas",
       role: t("roles.thiago"),
       src: "/team/thiago.webp",
-      github: 'https://github.com/thiagodma',
-      linkedin: 'https://www.linkedin.com/in/thethiagodma/'
+      github: "https://github.com/thiagodma",
+      linkedin: "https://www.linkedin.com/in/thethiagodma/",
+    },
+    {
+      name: "Victor Pietro",
+      role: t("roles.victor"),
+      src: "/team/victor.webp",
+      github: "https://github.com/pietroow",
+      linkedin: "https://www.linkedin.com/in/pietrovictor/",
     },
   ];
 

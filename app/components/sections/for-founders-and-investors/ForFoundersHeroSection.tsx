@@ -1,6 +1,7 @@
 "use client";
 
 import { useRichText } from "@/app/hooks/useRichText";
+import { Link } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
 import { AnimatedText } from "../../ui/AnimatedText";
 
@@ -34,10 +35,13 @@ export function ForFoundersHeroSection() {
         </div>
 
         <div className="overflow-hidden pt-2">
-          <button className="hero-button group border-2 border-primary py-3 w-full md:w-sm rounded-md flex-center gap-4 hover:opacity-80 cursor-pointer transition-opacity duration-150">
+          <Link
+            href={"/contact"}
+            className="hero-button group border-2 border-primary py-3 w-full md:w-sm rounded-md flex-center gap-4 hover:opacity-80 cursor-pointer transition-opacity duration-150"
+          >
             {cta}
             <ArrowRight className="group-hover:translate-x-1 transition-translate duration-150" />
-          </button>
+          </Link>
         </div>
       </div>
     </section>

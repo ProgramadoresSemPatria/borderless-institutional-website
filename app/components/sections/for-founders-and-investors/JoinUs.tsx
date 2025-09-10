@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useTranslations } from "next-intl";
 import { ExternalLink } from "../../ui/ExternalLink";
@@ -11,11 +11,8 @@ export function JoinUs() {
   const cta = t("cta");
   return (
     <section className="pb-[15svh]">
-      <FullWidthCard
-        title={title}
-        description={description}
-      >
-        <ExternalLink href={'/'}>{cta}</ExternalLink>
+      <FullWidthCard title={title} description={description}>
+        <ExternalLink href={"/contact"}>{cta}</ExternalLink>
       </FullWidthCard>
     </section>
   );
