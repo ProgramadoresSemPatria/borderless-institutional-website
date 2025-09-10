@@ -3,7 +3,13 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
-import { ComponentProps, ElementType, ReactNode, useRef } from "react";
+import {
+  ComponentProps,
+  ElementType,
+  ReactNode,
+  useRef,
+  useState,
+} from "react";
 
 type AnimatedTextOwnProps<E extends ElementType> = {
   children: ReactNode;
@@ -26,46 +32,48 @@ export function AnimatedText<E extends ElementType = "p">({
   scrollTriggerVars,
   ...props
 }: AnimatedTextProps<E>) {
+  const [isClient, setIsClient] = useState(false);
   const Component = as || "p";
   const container = useRef(null);
   const { className, ...rest } = props;
 
   useGSAP(
     () => {
-      const raf = requestAnimationFrame(() => {
-        const scrollTrigger = ScrollTrigger.create({
-          trigger: container.current,
-          start: "top 85%",
-          ...scrollTriggerVars,
-        });
+      if (!isClient) {
+        setIsClient(true);
+        return;
+      }
 
-        const gsapAnimation = (self: SplitText) => {
-          const elementsToAnimate =
-            self[(splitTextVars?.type as SplitTextType) || "lines"];
-
-          return gsap.from(elementsToAnimate, {
-            y: "100%",
-            duration: 1.25,
-            stagger: 0.1,
-            ease: "power4.out",
-            scrollTrigger,
-            onComplete: () => self.revert(),
-            ...tweenVars,
-          });
-        };
-
-        SplitText.create(container.current, {
-          type: "lines",
-          mask: "lines",
-          autoSplit: true,
-          onSplit: (self) => gsapAnimation(self),
-          ...splitTextVars,
-        });
+      const scrollTrigger = ScrollTrigger.create({
+        trigger: container.current,
+        start: "top 85%",
+        ...scrollTriggerVars,
       });
 
-      return () => cancelAnimationFrame(raf);
+      const gsapAnimation = (self: SplitText) => {
+        const elementsToAnimate =
+          self[(splitTextVars?.type as SplitTextType) || "lines"];
+
+        return gsap.from(elementsToAnimate, {
+          y: "100%",
+          duration: 1.25,
+          stagger: 0.1,
+          ease: "power4.out",
+          scrollTrigger,
+          onComplete: () => self.revert(),
+          ...tweenVars,
+        });
+      };
+
+      SplitText.create(container.current, {
+        type: "lines",
+        mask: "lines",
+        autoSplit: true,
+        onSplit: (self) => gsapAnimation(self),
+        ...splitTextVars,
+      });
     },
-    { scope: container }
+    { scope: container, dependencies: [isClient] }
   );
 
   return (
