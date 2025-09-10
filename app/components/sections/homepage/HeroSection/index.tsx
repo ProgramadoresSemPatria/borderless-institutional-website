@@ -60,6 +60,7 @@ export function HeroSection() {
             loading="eager"
             alt="logo"
             className="size-full opacity-80"
+            fetchPriority="high"
           />
         </div>
       </div>
