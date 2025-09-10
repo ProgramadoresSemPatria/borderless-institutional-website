@@ -87,7 +87,6 @@ export function Testimonials() {
                           src={testimonial.iframeSrc}
                           className="absolute inset-0 size-full"
                           allow="autoplay; fullscreen; picture-in-picture"
-                          loading="lazy"
                         />
                       </div>
                     </div>
