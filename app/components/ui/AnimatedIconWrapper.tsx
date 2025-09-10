@@ -26,19 +26,23 @@ export function AnimatedIconWrapper({
 
   useGSAP(
     () => {
-      if (hovered) {
-        gsap.to(".circle-path", {
-          clipPath: "circle(140% at 0% 100%)",
-          duration: 0.5,
-          ease: "power4.inOut",
-        });
-      } else {
-        gsap.to(".circle-path", {
-          clipPath: "circle(0% at 0% 100%)",
-          duration: 0.5,
-          ease: "power4.inOut",
-        });
-      }
+      const mm = gsap.matchMedia();
+
+      mm.add("(min-width: 1280px)", () => {
+        if (hovered) {
+          gsap.to(".circle-path", {
+            clipPath: "circle(140% at 0% 100%)",
+            duration: 0.5,
+            ease: "power4.inOut",
+          });
+        } else {
+          gsap.to(".circle-path", {
+            clipPath: "circle(0% at 0% 100%)",
+            duration: 0.5,
+            ease: "power4.inOut",
+          });
+        }
+      });
     },
     { scope: ref, dependencies: [hovered] }
   );
@@ -54,7 +58,7 @@ export function AnimatedIconWrapper({
       <IconComponent
         className={twMerge(
           "size-5 transition-transform duration-300 ease-in-out",
-          hovered && "-translate-y-[200%] translate-x-[200%]",
+          hovered && "xl:-translate-y-[200%] xl:translate-x-[200%]",
           iconClassName
         )}
       />
@@ -63,7 +67,7 @@ export function AnimatedIconWrapper({
         <IconComponent
           className={twMerge(
             "size-5 transition-transform translate-y-[200%] -translate-x-[200%] duration-300 delay-100 text-black ease-in-out",
-            hovered && "translate-y-0 translate-x-0",
+            hovered && "xl:translate-y-0 xl:translate-x-0",
             iconClassName,
             onHoverIconColor
           )}

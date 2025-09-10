@@ -117,7 +117,7 @@ export default function ExpandableGrid(props: ExpandingGridProps) {
       {rows.map((row, rowIndex) => (
         <div
           key={`row-${rowIndex}`}
-          className="flex transition-all h-full has-[div:hover]:h-[115%] duration-[450ms] ease-bouncy"
+          className="flex transition-all h-full xl:has-[div:hover]:h-[115%] duration-[450ms] ease-bouncy"
           style={{
             gap: `${gap}rem`,
           }}
@@ -127,7 +127,7 @@ export default function ExpandableGrid(props: ExpandingGridProps) {
               key={`cell-${rowIndex}-${colIndex}`}
               className={cn(
                 "size-full transition-all duration-[450ms] ease-bouncy expandable-grid-item opacity-0",
-                row.length > 1 && "hover:w-[110%]"
+                row.length > 1 && "xl:hover:w-[110%]"
               )}
             >
               {colItem}

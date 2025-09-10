@@ -3,11 +3,11 @@
 import { usePathname } from "@/i18n/navigation";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ScrollSmoother, ScrollTrigger, SplitText } from "gsap/all";
+import { ScrollTrigger, SplitText } from "gsap/all";
 import { LenisRef, ReactLenis } from "lenis/react";
 import { useEffect, useRef } from "react";
 
-gsap.registerPlugin(useGSAP, SplitText, ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(useGSAP, SplitText, ScrollTrigger);
 
 export function GSAPWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
