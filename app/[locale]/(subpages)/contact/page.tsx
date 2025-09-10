@@ -69,12 +69,13 @@ export default function Page() {
       </h1>
       <p className="text-gray mb-8">{t("subtitle")}</p>
 
-      <div className="grid gap-4 xl:grid-cols-[30%_1fr] bg-tertiary p-2 rounded-md mb-8">
-        <aside className="flex flex-col space-y-4 bg-[#212121] p-4 mb-8 xl:min-h-full">
+      <div className="flex gap-4 flex-col xl:flex-row bg-tertiary p-2 rounded-md mb-8">
+        <aside className="flex flex-col space-y-4 bg-[#212121] p-4 basis-1/3 rounded-sm">
           <div className="text-xl font-semibold">
             {t("aside.contactDetails")}
           </div>
-          <div className="space-y-6 grow">
+
+          <div className="space-y-6 xl:mb-auto">
             <p>
               <span className="block font-bold">
                 {t("aside.directEmailLabel")}
@@ -109,7 +110,7 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="text-gray text-sm mt-12 xl:mt-0">
+          <div className="text-gray text-sm mt-12 xl:mt-0 max-w-md">
             {t("aside.address")}
           </div>
         </aside>
@@ -117,7 +118,7 @@ export default function Page() {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="space-y-4 py-6 px-2"
+            className="space-y-4 py-6 px-2 grow"
           >
             <FormField
               control={form.control}
