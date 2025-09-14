@@ -38,19 +38,29 @@ export default function BioPage() {
         <AnimatedText as="h1" className="text-2xl md:text-3xl font-semibold">
           Yuri Pereira
         </AnimatedText>
-        <AnimatedText className="text-gray text-base max-w-3xl text-pretty">
-          Software Engineer no Vale do Silício, Startup Tech Advisor, Escritor e
-          Palestrante. Ajudo profissionais da área tech a conquistar vagas
-          internacionais para conseguirem ofertas em moedas fortes (dólar, euro,
-          franco suíço), atingindo salários de 30 a 60 mil reais por mês.
-        </AnimatedText>
+        <div className="text-gray text-base max-w-3xl text-pretty space-y-4">
+          <AnimatedText>
+            Ex-Software Engineer no Vale do Silício e Founder da Borderless Coding, sou poliglota (a caminho da sexta língua), escritor e mentor dedicado a abrir caminhos globais para profissionais de tecnologia.
+          </AnimatedText>
+          
+          <AnimatedText>
+            Tendo vivido em 14 países, aprendi que a verdadeira liberdade nasce da combinação entre conhecimento técnico, visão estratégica e a capacidade real de escolher onde viver. 
+            <span className="text-white font-medium">&nbsp; Opcionalidade não é privilégio, é construção.</span>
+          </AnimatedText>
+
+          <AnimatedText>
+            Hoje ajudo devs e tech professionals a romper barreiras, conquistar ofertas internacionais e multiplicar seu valor no mercado. 
+            Mais do que salários em moedas fortes (R$30k a R$60k por mês), 
+            minha missão é formar uma nova geração de profissionais globais: independentes, reconhecidos e livres para viver sem fronteiras.
+          </AnimatedText>
+        </div>
       </header>
 
       {/* Serviços */}
       <div className="flex flex-col gap-4">
         <Link
           href={
-            "https://www.borderlesscoding.com/fap01?utm_campaign=ig-yuri-bio&utm_medium=&utm_source="
+            "#"
           }
           target="_blank"
           className="yuri-card"
@@ -64,10 +74,8 @@ export default function BioPage() {
             <h3 className="mt-4 text-lg md:text-xl font-semibold">
               Diagnóstico de Carreira Personalizado
             </h3>
-            <p className="mt-2 text-gray text-sm md:text-base">
-              Eu vou avaliar o que pode alavancar ou atrapalhar sua carreira
-              Tech e construir um plano de ação para internacionalizar sua
-              carreira e conseguir ofertas em moedas fortes.
+            <p className="mt-2 text-gray text-sm md:text-base leading-relaxed">
+              Eu vou avaliar o que pode alavancar ou atrapalhar sua carreira Tech e construir um plano de ação para internacionalizar sua carreira e conseguir ofertas em moedas fortes.
             </p>
             <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-gray">
               <span className="bg-[#212121] text-white/80 px-2.5 py-1 rounded">
@@ -89,7 +97,7 @@ export default function BioPage() {
 
         <Link
           href={
-            "https://www.borderlesscoding.com/fap2?utm_campaign=ig-yuri-bio&utm_medium=&utm_source="
+            "#"
           }
           target="_blank"
           className="yuri-card"
@@ -103,10 +111,8 @@ export default function BioPage() {
             <h3 className="mt-4 text-lg md:text-xl font-semibold">
               Método Carreira Global
             </h3>
-            <p className="mt-2 text-gray text-sm md:text-base">
-              A mesma metodologia que me tirou do Brasil como Dev para mais de
-              60k/mês com contratos no exterior. Sem ter faculdade, com inglês
-              fluente e trabalhando do Brasil.
+            <p className="mt-2 text-gray text-sm md:text-base leading-relaxed">
+              A mesma metodologia que me tirou do Brasil como Dev para mais de 60k/mês com contratos no exterior. Sem ter faculdade, com inglês fluente e trabalhando do Brasil.
             </p>
             <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-gray">
               <span className="bg-[#212121] text-white/80 px-2.5 py-1 rounded">
