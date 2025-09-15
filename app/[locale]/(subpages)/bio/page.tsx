@@ -142,7 +142,7 @@ export default function BioPage() {
 
         <Link
           href={
-            "https://pay.borderlesscoding.com/pay/oferta-guia?_gl=1*1st87c7*_ga*MTk2OTMzNzQxMC4xNzU1NTI3MDEw*_ga_WNB1CPKQHF*czE3NTYxNjc5MTUkbzQkZzEkdDE3NTYxNjg2ODUkajU4JGwwJGg4NDMxMzMwMzI."
+            "https://link.borderlesscoding.com/guia-auto-didata-998112"
           }
           target="_blank"
         >
