@@ -46,12 +46,9 @@ function formatWhen(dateISO?: string, tz?: string) {
 }
 
 export default async function Page(props: {
-  searchParams?:
-    | Record<string, string | string[] | undefined>
-    | Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 }) {
-
-  const searchParams = (await props.searchParams) ?? {};
+  const searchParams: Record<string, string | string[] | undefined> = (await props.searchParams) ?? {};
 
   const name = val(searchParams, "name") ?? "";
   const email = val(searchParams, "email") ?? "";
