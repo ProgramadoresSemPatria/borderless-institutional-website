@@ -3,8 +3,8 @@ import { ExternalLink, ShieldCheck, CheckCircle2, ThumbsUp } from "lucide-react"
 import { Testimonials } from "@/app/components/sections/homepage/Testimonials";
 import ConfirmationClient from "@/app/components/sections/confirmation-call/ConfirmationClient";
 
-type QP = { [k: string]: string | string[] | undefined };
-const val = (q: QP, k: string) => (Array.isArray(q[k]) ? q[k]![0] : (q[k] as string | undefined));
+const val = (q: Record<string, string | string[] | undefined>, k: string) =>
+  Array.isArray(q[k]) ? (q[k] as string[])[0] : (q[k] as string | undefined);
 
 function normalizeWaFromPhone(raw?: string) {
   if (!raw) return undefined;
@@ -45,8 +45,14 @@ function formatWhen(dateISO?: string, tz?: string) {
   }
 }
 
-export default function Page({ searchParams }: { searchParams: QP }) {
-  // Same names you already use
+export default async function Page(props: {
+  searchParams?:
+    | Record<string, string | string[] | undefined>
+    | Promise<Record<string, string | string[] | undefined>>;
+}) {
+
+  const searchParams = (await props.searchParams) ?? {};
+
   const name = val(searchParams, "name") ?? "";
   const email = val(searchParams, "email") ?? "";
   const phone = val(searchParams, "phone") ?? "";
