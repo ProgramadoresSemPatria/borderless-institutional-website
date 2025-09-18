@@ -5,6 +5,7 @@ import { Testimonials } from "@/app/components/sections/homepage/Testimonials";
 import { CalendarDays, Clock, Video, Copy, ExternalLink, ShieldCheck, CheckCircle2, ThumbsUp } from "lucide-react";
 import { useMemo } from "react";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 
 export default function Page() {
@@ -47,6 +48,7 @@ export default function Page() {
   };
 
   return (
+    <Suspense fallback={<div className="px-4 py-8"> Carregando… </div>}>
     <div className="min-h-screen bg-gradient-to-b from-black to-zinc-950 text-zinc-100">
       <header className="max-w-xl mx-auto px-4 pt-10 pb-4">
         <div className="flex items-center justify-between">
@@ -136,5 +138,6 @@ export default function Page() {
         </section>
       </main>
     </div>
+    </Suspense>
   );
 }
