@@ -1,3 +1,5 @@
+"use client";
+
 import { Check } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 import { AnimatedIconWrapper } from "./AnimatedIconWrapper";

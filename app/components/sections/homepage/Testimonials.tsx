@@ -3,6 +3,7 @@
 import { useRichText } from "@/app/hooks/useRichText";
 import AutoHeight from "embla-carousel-auto-height";
 import Image from "next/image";
+import { ReactNode } from "react";
 import { AnimatedText } from "../../ui/AnimatedText";
 import {
   Carousel,
@@ -11,9 +12,16 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../../ui/Carousel";
+import { SectionHeader } from "../../ui/SectionHeader";
 import { useTestimonials } from "./hooks/useTestimonials";
 
-export function Testimonials() {
+export function Testimonials({
+  title,
+  preTitle,
+}: {
+  title?: ReactNode;
+  preTitle?: string;
+}) {
   const testimonials = useTestimonials();
   const { rich } = useRichText("HomePage.Testimonials");
 
@@ -41,9 +49,13 @@ export function Testimonials() {
         ]}
       >
         <div className="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-12">
-          <AnimatedText as="h2" className="max-w-4xl">
-            {rich("title")}
-          </AnimatedText>
+          {title && preTitle ? (
+            <SectionHeader title={title} preTitle={preTitle} />
+          ) : (
+            <AnimatedText as="h2" className="max-w-4xl">
+              {rich("title")}
+            </AnimatedText>
+          )}
           <div className="flex gap-2">
             <CarouselPrevious />
             <CarouselNext />

@@ -12,7 +12,6 @@ export function Footer() {
   return (
     <footer className="bg-[#f1f1f1] rounded-tl-4xl rounded-tr-4xl py-[4svh] relative overflow-hidden z-10">
       <TalkToAProfessional />
-
       <div className="w-[90%] max-w-[1800px] mx-auto bg-white rounded-2xl text-[#636363] p-12 space-y-12 relative">
         <div className="grid gap-12 md:grid-cols-2 xl:grid-cols-4">
           {footerSections.map((section) => {
