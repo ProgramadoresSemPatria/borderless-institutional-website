@@ -18,24 +18,17 @@ function normalizeWaFromPhone(raw?: string) {
 
 function parseDateSafe(s?: string) {
   if (!s) return undefined;
-  let d = new Date(s);
-  if (!Number.isNaN(d.getTime())) return d;
-  d = new Date(s.replace(" ", "T"));
-  if (!Number.isNaN(d.getTime())) return d;
-  if (!/[zZ]|[+-]\d{2}:?\d{2}$/.test(s)) {
-    d = new Date(s.replace(" ", "T") + "Z");
-    if (!Number.isNaN(d.getTime())) return d;
-  }
-  return undefined;
+  
+  // Simple parsing - let the browser handle the date as-is
+  const d = new Date(s);
+  return !Number.isNaN(d.getTime()) ? d : undefined;
 }
 
-function formatWhen(dateISO?: string, tz?: string) {
+function formatWhen(dateISO?: string) {
   const d = parseDateSafe(dateISO);
-  const timeZone = tz || "UTC";
   if (!d) return null;
   try {
     return new Intl.DateTimeFormat("pt-BR", {
-      timeZone,
       weekday: "long",
       year: "numeric",
       month: "long",
@@ -56,7 +49,7 @@ export default async function Page(props: {
 
   const contactId = val(searchParams, "contact_id");
   const name = val(searchParams, "name") ?? "";
-  const tzRaw = val(searchParams, "tz") ?? "UTC";
+  const tzRaw = val(searchParams, "tz");
   const email = val(searchParams, "email") ?? "";
   const phone = val(searchParams, "phone") ?? "";
 
@@ -93,7 +86,6 @@ export default async function Page(props: {
           }>;
         } = await resp.json();
         const events = Array.isArray(data.events) ? data.events : [];
-        
         if (events.length > 0) {
           const latest = events
             .slice()
@@ -120,13 +112,8 @@ export default async function Page(props: {
   if (!whatsappUrl || whatsappUrl === "#") {
     whatsappUrl = normalizeWaFromPhone(phone) ?? "#";
   }
-  // Normalize tz like "America/Sao_Paulo (GMT-3)" -> "America/Sao_Paulo"
-  const tz = (() => {
-    const match = tzRaw.match(/[A-Za-z_\/]+(?:\/[A-Za-z_]+)*/);
-    return match ? match[0] : "UTC";
-  })();
-  const when = formatWhen(dateISO, tz);
-
+  const tz = tzRaw || "America/Sao_Paulo";
+  const when = formatWhen(dateISO);
   return (
     <div className="pt-36">
       {/* The interactive hero is a Client Component */}
