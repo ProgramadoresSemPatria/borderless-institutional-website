@@ -1,9 +1,11 @@
-// app/[locale]/confirmation-call/ConfirmationClient.tsx
 "use client";
 
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { CalendarDays, Clock, Copy, ExternalLink, Video } from "lucide-react";
 import { toast } from "sonner";
 import { AnimatedText } from "../../ui/AnimatedText";
+import { RequirementsCard } from "../../ui/RequirementsCard";
 
 type Props = {
   name: string;
@@ -47,6 +49,20 @@ export default function ConfirmationClient({
     } catch {}
   };
 
+  useGSAP(() => {
+    gsap.fromTo(
+      ".confirmation-card",
+      { y: "20%", opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "back.inOut",
+        duration: 0.8,
+        stagger: 0.1,
+      }
+    );
+  });
+
   return (
     <section>
       <header>
@@ -62,9 +78,8 @@ export default function ConfirmationClient({
           para você chegar preparado e tirar o máximo proveito da conversa.
         </AnimatedText>
       </header>
-
       <div className="rounded-md bg-tertiary p-2 mt-8 grid md:grid-cols-3 gap-2">
-        <div className="rounded-md bg-background p-5">
+        <div className="confirmation-card rounded-md bg-background p-5">
           <div className="flex items-center gap-3">
             <CalendarDays className="h-5 w-5" />
             <h3 className="font-medium">Quando</h3>
@@ -77,7 +92,7 @@ export default function ConfirmationClient({
           </p>
         </div>
 
-        <div className="rounded-md bg-background p-5">
+        <div className="confirmation-card rounded-md bg-background p-5">
           <div className="flex items-center gap-3">
             <Video className="h-5 w-5" />
             <h3 className="font-medium">Acesso à sala</h3>
@@ -107,7 +122,7 @@ export default function ConfirmationClient({
           </p>
         </div>
 
-        <div className="rounded-md bg-background p-5">
+        <div className="confirmation-card rounded-md bg-background p-5">
           <div className="flex items-center gap-3">
             <Clock className="h-5 w-5" />
             <h3 className="font-medium">Precisa remarcar?</h3>
@@ -150,6 +165,28 @@ export default function ConfirmationClient({
           )}
           */}
         </div>
+      </div>
+      {/* Expectations + checklist (pure server markup) */}
+      <div className="grid md:grid-cols-2 gap-2 bg-tertiary p-2 pt-0">
+        <RequirementsCard
+          className="confirmation-card opacity-100 bg-background"
+          title="Alinhando expectativas"
+          items={[
+            "Conversa de diagnóstico para entender seu momento e travas rumo ao mercado internacional",
+            "Recomendação prática baseada no método GO GLOBAL",
+            "Sem promessas irreais; Se houver fit, mostramos os caminhos (BASE e PSP)",
+          ]}
+        />
+        <RequirementsCard
+          className="confirmation-card opacity-100 bg-background"
+          title="Checklist (5 min)"
+          items={[
+            "Ambiente silencioso + fones",
+            "Tenha LinkedIn, GitHub e CV abertos",
+            "Pense em 1–2 metas para 90 dias",
+            "Teste câmera/áudio 2 min antes",
+          ]}
+        />
       </div>
     </section>
   );
