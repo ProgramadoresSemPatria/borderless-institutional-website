@@ -1,6 +1,9 @@
+// app/[locale]/confirmation-call/page.tsx
 import ConfirmationClient from "@/app/components/sections/confirmation-call/ConfirmationClient";
 import { Testimonials } from "@/app/components/sections/homepage/Testimonials";
 import { ExternalLink } from "@/app/components/ui/ExternalLink";
+
+export const revalidate = 0;
 
 const val = (q: Record<string, string | string[] | undefined>, k: string) =>
   Array.isArray(q[k]) ? (q[k] as string[])[0] : (q[k] as string | undefined);
@@ -14,24 +17,17 @@ function normalizeWaFromPhone(raw?: string) {
 
 function parseDateSafe(s?: string) {
   if (!s) return undefined;
-  let d = new Date(s);
-  if (!Number.isNaN(d.getTime())) return d;
-  d = new Date(s.replace(" ", "T"));
-  if (!Number.isNaN(d.getTime())) return d;
-  if (!/[zZ]|[+-]\d{2}:?\d{2}$/.test(s)) {
-    d = new Date(s.replace(" ", "T") + "Z");
-    if (!Number.isNaN(d.getTime())) return d;
-  }
-  return undefined;
+
+  // Simple parsing - let the browser handle the date as-is
+  const d = new Date(s);
+  return !Number.isNaN(d.getTime()) ? d : undefined;
 }
 
-function formatWhen(dateISO?: string, tz?: string) {
+function formatWhen(dateISO?: string) {
   const d = parseDateSafe(dateISO);
-  const timeZone = tz || "UTC";
   if (!d) return null;
   try {
     return new Intl.DateTimeFormat("pt-BR", {
-      timeZone,
       weekday: "long",
       year: "numeric",
       month: "long",
@@ -44,25 +40,76 @@ function formatWhen(dateISO?: string, tz?: string) {
   }
 }
 
-export default function ConfirmationCallPage({
+export default async function ConfirmationCallPage({
   searchParams,
 }: {
   searchParams: Record<string, string | string[] | undefined>;
 }) {
+  const contactId = val(searchParams, "contact_id");
   const name = val(searchParams, "name") ?? "";
+  const tzRaw = val(searchParams, "tz");
   const email = val(searchParams, "email") ?? "";
   const phone = val(searchParams, "phone") ?? "";
-  const dateISO = val(searchParams, "date");
-  const tz = val(searchParams, "tz") ?? "UTC";
-  const joinUrl = val(searchParams, "joinUrl") ?? "#";
-  const rescheduleUrl = val(searchParams, "rescheduleUrl") ?? "#";
-  const calendarUrl = val(searchParams, "calendarUrl");
+
+  // These values now come exclusively from the GHL API response
+  let joinUrl: string = "#";
+  let rescheduleUrl: string = "#";
+  const calendarUrl: string | undefined = undefined;
+  let dateISO: string | undefined = undefined;
+
+  // Fetch appointment data from GoHighLevel using contact_id
+  if (contactId && process.env.GHL_API_KEY) {
+    try {
+      const resp = await fetch(
+        `https://services.leadconnectorhq.com/contacts/${encodeURIComponent(
+          contactId
+        )}/appointments`,
+        {
+          headers: {
+            Accept: "application/json",
+            Version: "2021-07-28",
+            Authorization: `Bearer ${process.env.GHL_API_KEY}`,
+          },
+          cache: "no-store",
+        }
+      );
+      if (resp.ok) {
+        const data: {
+          events?: Array<{
+            id: string;
+            calendarId: string;
+            startTime: string;
+            endTime?: string;
+            address?: string;
+          }>;
+        } = await resp.json();
+        const events = Array.isArray(data.events) ? data.events : [];
+        if (events.length > 0) {
+          const latest = events.slice().sort((a, b) => {
+            const ad = parseDateSafe(a.startTime)?.getTime() ?? 0;
+            const bd = parseDateSafe(b.startTime)?.getTime() ?? 0;
+            return bd - ad;
+          })[0];
+          if (latest) {
+            joinUrl = latest.address || joinUrl;
+            dateISO = latest.startTime;
+
+            // Build reschedule and cancel URLs per instructions
+            rescheduleUrl = `https://go.borderlesscoding.com/widget/booking/${latest.calendarId}?event_id=${latest.id}`;
+            // If you want to expose cancel, repurpose calendarUrl or add UI later
+            // const cancelUrl = `/widget/cancel-booking?event_id=${latest.id}`;
+          }
+        }
+      }
+    } catch {}
+  }
+
   let whatsappUrl = val(searchParams, "whatsappUrl") ?? "#";
   if (!whatsappUrl || whatsappUrl === "#") {
     whatsappUrl = normalizeWaFromPhone(phone) ?? "#";
   }
-  const when = formatWhen(dateISO, tz);
-
+  const tz = tzRaw || "America/Sao_Paulo";
+  const when = formatWhen(dateISO);
   return (
     <div className="pt-36">
       {/* The interactive hero is a Client Component */}
