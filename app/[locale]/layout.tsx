@@ -1,4 +1,5 @@
 import { routing } from "@/i18n/routing";
+import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -62,6 +63,7 @@ export default async function RootLayout({
           <Toaster richColors className="select-none" closeButton />
         </NextIntlClientProvider>
       </body>
+      <GoogleTagManager gtmId="GTM-TZWWWMPW" />
     </html>
   );
 }
