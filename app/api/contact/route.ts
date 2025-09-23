@@ -11,7 +11,10 @@ export async function POST(req: Request) {
     const { data, error } = await resend.emails.send({
       from: "contato@borderlesscoding.com",
       to: "contato@borderlesscoding.com",
-      subject: `Contact from borderless website by ${json.name}`,
+      subject:
+        json.orderId.length > 0
+          ? `Pedido de Reembolso Order #ID ${json.orderId}`
+          : `Contact from borderless website by ${json.name}`,
       replyTo: json.email,
       react: ContactEmailTemplate({
         email: json.email,
