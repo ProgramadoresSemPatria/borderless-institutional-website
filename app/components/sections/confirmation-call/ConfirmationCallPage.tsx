@@ -15,19 +15,28 @@ function normalizeWaFromPhone(raw?: string) {
   return `https://wa.me/${withCountry}`;
 }
 
-function parseDateSafe(s?: string) {
+function parseDateSafe(s?: string, timezone?: string) {
   if (!s) return undefined;
 
-  // Simple parsing - let the browser handle the date as-is
-  const d = new Date(s);
+  // API sends startTime in BRT (GMT-3) by default
+  // We need to parse it considering the user's timezone from query params
+  let d = new Date(s);
+
+  // If the date string doesn't have timezone info, assume it's in BRT
+  if (!/[zZ]|[+-]\d{2}:?\d{2}$/.test(s)) {
+    // Add BRT timezone offset to the date string
+    d = new Date(s + "-03:00"); // BRT is GMT-3
+  }
+
   return !Number.isNaN(d.getTime()) ? d : undefined;
 }
 
-function formatWhen(dateISO?: string) {
-  const d = parseDateSafe(dateISO);
+function formatWhen(dateISO?: string, timezone?: string) {
+  const d = parseDateSafe(dateISO, timezone);
   if (!d) return null;
   try {
     return new Intl.DateTimeFormat("pt-BR", {
+      timeZone: timezone || "America/Sao_Paulo",
       weekday: "long",
       year: "numeric",
       month: "long",
@@ -50,6 +59,10 @@ export default async function ConfirmationCallPage({
   const tzRaw = val(searchParams, "tz");
   const email = val(searchParams, "email") ?? "";
   const phone = val(searchParams, "phone") ?? "";
+
+  // Timezone is mandatory for proper calculations
+  // Default to America/Sao_Paulo if not provided in query params
+  const tz = tzRaw || "America/Sao_Paulo";
 
   // These values now come exclusively from the GHL API response
   let joinUrl: string = "#";
@@ -86,8 +99,8 @@ export default async function ConfirmationCallPage({
         const events = Array.isArray(data.events) ? data.events : [];
         if (events.length > 0) {
           const latest = events.slice().sort((a, b) => {
-            const ad = parseDateSafe(a.startTime)?.getTime() ?? 0;
-            const bd = parseDateSafe(b.startTime)?.getTime() ?? 0;
+            const ad = parseDateSafe(a.startTime, tz)?.getTime() ?? 0;
+            const bd = parseDateSafe(b.startTime, tz)?.getTime() ?? 0;
             return bd - ad;
           })[0];
           if (latest) {
@@ -108,8 +121,7 @@ export default async function ConfirmationCallPage({
   if (!whatsappUrl || whatsappUrl === "#") {
     whatsappUrl = normalizeWaFromPhone(phone) ?? "#";
   }
-  const tz = tzRaw || "America/Sao_Paulo";
-  const when = formatWhen(dateISO);
+  const when = formatWhen(dateISO, tz);
   return (
     <div className="pt-36">
       {/* The interactive hero is a Client Component */}
