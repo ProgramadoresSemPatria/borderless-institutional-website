@@ -1447,7 +1447,9 @@
         "name": "Nome",
         "email": "E-mail",
         "topic": "Assunto",
-        "message": "Mensagem"
+        "message": "Mensagem",
+        "orderId": "ID do pedido",
+        "orderIdLabel": "Para obter o ID do pedido acesse o email com a confirmaçao da sua compra e copie o cole o número do seu pedido"
       },
       "placeholders": {
         "name": "John Doe",
@@ -1469,7 +1471,8 @@
         "nameMax": "O nome deve ter no máximo 120 caracteres",
         "emailInvalid": "E-mail inválido",
         "messageMin": "A mensagem deve ter pelo menos 10 caracteres",
-        "messageMax": "A mensagem deve ter no máximo 3000 caracteres"
+        "messageMax": "A mensagem deve ter no máximo 3000 caracteres",
+        "orderIdRequired": "O ID do pedido é obrigatório para solicitações de reembolso"
       },
       "submit": "Enviar e-mail",
       "successToast": "Mensagem enviada com sucesso!",

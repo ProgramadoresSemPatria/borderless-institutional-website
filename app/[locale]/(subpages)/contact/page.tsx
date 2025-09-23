@@ -9,6 +9,7 @@ import {
   FormMessage,
 } from "@/app/components/ui/Form";
 import { Input } from "@/app/components/ui/Input";
+import { Popover, PopoverContent } from "@/app/components/ui/Popover";
 import {
   Select,
   SelectContent,
@@ -17,7 +18,14 @@ import {
   SelectValue,
 } from "@/app/components/ui/Select";
 import { Spinner } from "@/app/components/ui/Spinner";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/app/components/ui/Tooltip";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { PopoverTrigger } from "@radix-ui/react-popover";
+import { Info } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
@@ -37,6 +45,7 @@ export default function Page() {
       email: "",
       topic: "General",
       message: "",
+      orderId: "",
     },
   });
 
@@ -61,6 +70,8 @@ export default function Page() {
       toast.error(t("Form.errorToast"));
     }
   };
+
+  const selectedTopic = form.watch("topic");
 
   return (
     <section className="pt-36 pb-[10svh]">
@@ -186,6 +197,48 @@ export default function Page() {
                 </FormItem>
               )}
             />
+
+            {selectedTopic === "Refund" && (
+              <FormField
+                control={form.control}
+                name="orderId"
+                render={({ field }) => (
+                  <FormItem className="mb-6">
+                    <div className="flex items-center gap-2">
+                      <FormLabel>{t("Form.labels.orderId")}</FormLabel>
+
+                      <Popover>
+                        <PopoverTrigger className="2xl:hidden">
+                          <Info className="text-white/50 size-4" />
+                        </PopoverTrigger>
+                        <PopoverContent
+                          align="center"
+                          collisionPadding={{
+                            left: 30,
+                          }}
+                          className="max-w-sm bg-foreground text-background text-sm font-medium"
+                        >
+                          {t("Form.labels.orderIdLabel")}
+                        </PopoverContent>
+                      </Popover>
+
+                      <Tooltip>
+                        <TooltipTrigger className="hidden 2xl:block">
+                          <Info className="text-white/50 size-4" />
+                        </TooltipTrigger>
+                        <TooltipContent className="max-w-sm text-sm flex-center font-medium">
+                          {t("Form.labels.orderIdLabel")}
+                        </TooltipContent>
+                      </Tooltip>
+                    </div>
+                    <FormControl>
+                      <Input {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            )}
 
             <FormField
               control={form.control}

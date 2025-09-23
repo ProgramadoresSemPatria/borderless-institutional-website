@@ -19,6 +19,7 @@ export type ContactFormData = {
   email: string;
   topic: (typeof contactTopics)[number];
   message: string;
+  orderId?: string;
 };
 
 export function useContactFormSchema() {
@@ -26,18 +27,30 @@ export function useContactFormSchema() {
 
   const schema = useMemo(
     () =>
-      z.object({
-        name: z
-          .string()
-          .min(2, { message: t("nameMin") })
-          .max(120, { message: t("nameMax") }),
-        email: z.string().email({ message: t("emailInvalid") }),
-        topic: z.enum(contactTopics),
-        message: z
-          .string()
-          .min(10, { message: t("messageMin") })
-          .max(3000, { message: t("messageMax") }),
-      }),
+      z
+        .object({
+          name: z
+            .string()
+            .min(2, { message: t("nameMin") })
+            .max(120, { message: t("nameMax") }),
+          email: z.string().email({ message: t("emailInvalid") }),
+          topic: z.enum(contactTopics),
+          orderId: z.string().optional(),
+          message: z
+            .string()
+            .min(10, { message: t("messageMin") })
+            .max(3000, { message: t("messageMax") }),
+        })
+        .refine(
+          (data) => {
+            if (data.topic !== "Refund") return true;
+            return data.topic === "Refund" && !!data.orderId;
+          },
+          {
+            path: ["orderId"],
+            error: t("orderIdRequired"),
+          }
+        ),
     [t]
   );
 
