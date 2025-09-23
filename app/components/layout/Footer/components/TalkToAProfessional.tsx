@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatedIconWrapper } from "@/app/components/ui/AnimatedIconWrapper";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ArrowUpRight } from "lucide-react";
@@ -10,41 +10,48 @@ import Image from "next/image";
 import { useState } from "react";
 
 export function TalkToAProfessional() {
+  const pathname = usePathname();
   const [hovered, setHovered] = useState(false);
   const t = useTranslations("Footer.TalkToAProfessional");
 
-  useGSAP(() => {
-    const mm = gsap.matchMedia();
+  useGSAP(
+    () => {
+      const mm = gsap.matchMedia();
 
-    mm.add("(min-width: 1350px)", () => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".footer-container",
-          scrub: 1,
-        },
+      mm.add("(min-width: 1350px)", () => {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".footer-container",
+            scrub: 1,
+          },
+        });
+
+        tl.to(".left-text", {
+          translateX: "-15%",
+        });
+
+        tl.to(
+          ".right-text",
+          {
+            translateX: "15%",
+          },
+          "<"
+        );
+
+        tl.to(
+          ".background-footer-img",
+          {
+            scale: 1.25,
+          },
+          "<"
+        );
       });
-
-      tl.to(".left-text", {
-        translateX: "-15%",
-      });
-
-      tl.to(
-        ".right-text",
-        {
-          translateX: "15%",
-        },
-        "<"
-      );
-
-      tl.to(
-        ".background-footer-img",
-        {
-          scale: 1.25,
-        },
-        "<"
-      );
-    });
-  });
+    },
+    {
+      dependencies: [pathname],
+      revertOnUpdate: true,
+    }
+  );
 
   return (
     <div className="footer-container w-[90%] max-w-[1800px] flex max-[1350px]:flex-col items-center justify-center text-black gap-12 py-[15svh] max-[1350px]:pt-[8svh] mx-auto">
