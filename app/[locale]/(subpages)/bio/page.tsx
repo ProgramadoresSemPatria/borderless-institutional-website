@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ArrowUpRight, Star } from "lucide-react";
 import Image from "next/image";
+import { useMemo, useState, useEffect } from "react";
 
 export default function BioPage() {
   useGSAP(() => {
@@ -22,6 +23,85 @@ export default function BioPage() {
       }
     );
   });
+
+  // --- Simple A/B ordering (sticky per session) ---
+  // We randomize which CTA card appears first (Quiz vs Avaliador)
+  const [order, setOrder] = useState<"quiz-first" | "evaluator-first">("quiz-first");
+  useEffect(() => {
+    const key = "bio-cta-order";
+    const saved = typeof window !== "undefined" ? window.sessionStorage.getItem(key) : null;
+    if (saved === "quiz-first" || saved === "evaluator-first") {
+      setOrder(saved);
+      return;
+    }
+    const roll = Math.random() < 0.5 ? "quiz-first" : "evaluator-first";
+    setOrder(roll);
+    try {
+      window.sessionStorage.setItem(key, roll);
+    } catch (_) {}
+  }, []);
+
+  const ctas = useMemo(() => {
+    const quiz = (
+      <Link
+        href="https://psp.borderlesscoding.com/quiz?utm_campaign=ig-bio"
+        target="_blank"
+        className="yuri-card"
+      >
+        <div className="bg-tertiary rounded-xl p-5 md:p-6 border border-white/5">
+          <div className="flex items-center gap-2 text-xs font-semibold text-green-400">
+            <span className="bg-green-500/15 text-green-300 px-2 py-1 rounded">QUIZ GRATUITO</span>
+          </div>
+          <h3 className="mt-4 text-lg md:text-xl font-semibold">
+            Está pronto para vagas internacionais?
+          </h3>
+          <p className="mt-2 text-gray text-sm md:text-base leading-relaxed">
+            Descubra em 90 segundos seu nível atual para oportunidades globais e receba um plano de próximos passos.
+          </p>
+          <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-gray">
+            <span className="bg-[#212121] text-white/80 px-2.5 py-1 rounded">Sem cadastro</span>
+            <span className="bg-[#212121] text-white/80 px-2.5 py-1 rounded">Resultado imediato</span>
+          </div>
+          <div className="flex-center rounded-md cursor-pointer bg-primary text-white w-fit p-1 pl-3 space-x-2 hover:bg-primary/90 transition-colors duration-150 mt-5">
+            <p className="text-sm font-medium">Fazer o Quiz</p>
+            <div className="bg-tertiary rounded-sm p-2.5">
+              <ArrowUpRight className="size-3.5" />
+            </div>
+          </div>
+        </div>
+      </Link>
+    );
+
+    const evaluator = (
+      <Link
+        href="https://ac.borderlesscoding.com/s1/?utm_campaign=ig-bio"
+        target="_blank"
+        className="yuri-card"
+      >
+        <div className="bg-tertiary rounded-xl p-5 md:p-6 border border-white/5">
+          <div className="flex items-center gap-2 text-xs font-semibold text-green-400">
+            <span className="bg-green-500/15 text-green-300 px-2 py-1 rounded">ANÁLISE GRATUITA</span>
+          </div>
+          <h3 className="mt-4 text-lg md:text-xl font-semibold">Avaliador GitHub & LinkedIn</h3>
+          <p className="mt-2 text-gray text-sm md:text-base leading-relaxed">
+            Veja se seu perfil é competitivo no mercado internacional. Receba um raio-x com pontos fortes, gaps e ações práticas.
+          </p>
+          <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-gray">
+            <span className="bg-[#212121] text-white/80 px-2.5 py-1 rounded">5 minutos</span>
+            <span className="bg-[#212121] text-white/80 px-2.5 py-1 rounded">Checklist objetivo</span>
+          </div>
+          <div className="flex-center rounded-md cursor-pointer bg-primary text-white w-fit p-1 pl-3 space-x-2 hover:bg-primary/90 transition-colors duration-150 mt-5">
+            <p className="text-sm font-medium">Avaliar meu perfil</p>
+            <div className="bg-tertiary rounded-sm p-2.5">
+              <ArrowUpRight className="size-3.5" />
+            </div>
+          </div>
+        </div>
+      </Link>
+    );
+
+    return order === "quiz-first" ? [quiz, evaluator] : [evaluator, quiz];
+  }, [order]);
 
   return (
     <section className="pt-36 pb-[10svh] flex flex-col gap-12">
@@ -56,81 +136,17 @@ export default function BioPage() {
         </div>
       </header>
 
-      {/* Serviços */}
+      {/* CTA Cards */}
       <div className="flex flex-col gap-4">
-        <Link
-          href={
-            "#"
-          }
-          target="_blank"
-          className="yuri-card"
-        >
-          <div className="bg-tertiary rounded-xl p-5 md:p-6 border border-white/5">
-            <div className="flex items-center gap-2 text-xs font-semibold text-green-400">
-              <span className="bg-green-500/15 text-green-300 px-2 py-1 rounded">
-                GRÁTIS POR TEMPO LIMITADO
-              </span>
-            </div>
-            <h3 className="mt-4 text-lg md:text-xl font-semibold">
-              Diagnóstico de Carreira Personalizado
-            </h3>
-            <p className="mt-2 text-gray text-sm md:text-base leading-relaxed">
-              Eu vou avaliar o que pode alavancar ou atrapalhar sua carreira Tech e construir um plano de ação para internacionalizar sua carreira e conseguir ofertas em moedas fortes.
-            </p>
-            <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-gray">
-              <span className="bg-[#212121] text-white/80 px-2.5 py-1 rounded">
-                30 minutos
-              </span>
-              <span className="bg-[#212121] text-white/80 px-2.5 py-1 rounded">
-                Google Meet
-              </span>
-            </div>
-
-            <div className="flex-center rounded-md cursor-pointer bg-primary text-white w-fit p-1 pl-3 space-x-2 hover:bg-primary/90 transition-colors duration-150 mt-5">
-              <p className="text-sm font-medium">Agendar agora</p>
-              <div className="bg-tertiary rounded-sm p-2.5">
-                <ArrowUpRight className="size-3.5" />
-              </div>
-            </div>
+        {ctas.map((cta, index) => (
+          <div key={index}>
+            {cta}
           </div>
-        </Link>
-
-        <Link
-          href={
-            "#"
-          }
-          target="_blank"
-          className="yuri-card"
-        >
-          <div className="bg-tertiary rounded-xl p-5 md:p-6 border border-white/5">
-            <div className="flex items-center gap-2 text-xs font-semibold text-green-400">
-              <span className="bg-green-500/15 text-green-300 px-2 py-1 rounded">
-                GRÁTIS POR TEMPO LIMITADO
-              </span>
-            </div>
-            <h3 className="mt-4 text-lg md:text-xl font-semibold">
-              Método Carreira Global
-            </h3>
-            <p className="mt-2 text-gray text-sm md:text-base leading-relaxed">
-              A mesma metodologia que me tirou do Brasil como Dev para mais de 60k/mês com contratos no exterior. Sem ter faculdade, com inglês fluente e trabalhando do Brasil.
-            </p>
-            <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-gray">
-              <span className="bg-[#212121] text-white/80 px-2.5 py-1 rounded">
-                5 minutos
-              </span>
-            </div>
-            <div className="flex-center rounded-md cursor-pointer bg-primary text-white w-fit p-1 pl-3 space-x-2 hover:bg-primary/90 transition-colors duration-150 mt-5">
-              <p className="text-sm font-medium">Quero conhecer</p>
-              <div className="bg-tertiary rounded-sm p-2.5">
-                <ArrowUpRight className="size-3.5" />
-              </div>
-            </div>
-          </div>
-        </Link>
+        ))}
       </div>
 
       {/* Livros */}
-      <div className="space-y-8 mt-8">
+      <div className="space-y-8">
         <SectionHeader
           preTitle="Meus livros"
           title={
@@ -141,9 +157,7 @@ export default function BioPage() {
         />
 
         <Link
-          href={
-            "https://link.borderlesscoding.com/guia-auto-didata-998112"
-          }
+          href="https://link.borderlesscoding.com/guia-auto-didata-998112"
           target="_blank"
         >
           <div className="bg-tertiary rounded-md p-2 flex gap-8 border border-white/5 flex-col max-w-[15rem]">
@@ -172,11 +186,11 @@ export default function BioPage() {
       </div>
 
       {/* Outros links */}
-      <div className="space-y-2">
+      <div className="space-y-4">
         <h3 className="text-lg font-semibold">Outros Links</h3>
         <Link
           href="/psp-mentorship"
-          className="flex items-center justify-between w-full bg-tertiary rounded-xl border border-white/5 p-4 hover:opacity-80 transition-opacity mt-6"
+          className="flex items-center justify-between w-full bg-tertiary rounded-xl border border-white/5 p-4 hover:opacity-80 transition-opacity"
         >
           <span>Mentoria PSP</span>
           <span className="text-white/60">
