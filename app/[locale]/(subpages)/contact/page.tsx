@@ -64,6 +64,16 @@ export default function Page() {
         return;
       }
 
+      if ((values.orderId?.length ?? 0) > 0) {
+        await fetch("https://n8n.borderlesscoding.com/webhook/refund", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        });
+      }
+
       toast.success(t("Form.successToast"));
       form.reset();
     } catch {
