@@ -12,7 +12,7 @@ export function ApplyNow() {
         title={t("title")}
         description={t("description")}
       >
-        <ExternalLink href={'/'}>{t("cta")}</ExternalLink>
+        <ExternalLink href={'https://go.borderlesscoding.com/widget/bookings/diagnostico-carreira-2025'}>{t("cta")}</ExternalLink>
       </FullWidthCard>
     </section>
   );

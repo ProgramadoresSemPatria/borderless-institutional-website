@@ -35,10 +35,11 @@ export function PspHeroSection() {
 
         <div className="overflow-hidden pt-2">
           <a href={'https://go.borderlesscoding.com/widget/bookings/diagnostico-carreira-2025'} >
-          <button className="hero-button group border-2 border-primary py-3 w-full md:w-sm rounded-md flex-center gap-4 hover:opacity-80 cursor-pointer transition-opacity duration-150">
-            {t("cta")}
-            <ArrowRight className="group-hover:translate-x-1 transition-translate duration-150" />
-          </button>
+            <button className="hero-button group border-2 border-primary py-3 w-full md:w-sm rounded-md flex-center gap-4 hover:opacity-80 cursor-pointer transition-opacity duration-150">
+              {t("cta")}
+              asdasdasdas
+              <ArrowRight className="group-hover:translate-x-1 transition-translate duration-150" />
+            </button>
           </a>
         </div>
       </div>

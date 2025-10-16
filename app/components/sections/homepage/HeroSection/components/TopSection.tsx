@@ -12,7 +12,6 @@ export function TopSection() {
         <Globe />
         <p className="text-sm md:text-xl">{t("tagline")}</p>
       </div>
-
       <AnimatedText
         tweenVars={{
           scrollTrigger: undefined,
@@ -24,10 +23,12 @@ export function TopSection() {
       </AnimatedText>
 
       <div className="overflow-hidden pt-2">
-        <button className="hero-button group border-2 border-primary py-3 w-full md:w-sm rounded-md flex-center gap-4 hover:opacity-80 cursor-pointer transition-opacity duration-150">
-          {t("button")}
-          <ArrowRight className="group-hover:translate-x-1 transition-translate duration-150" />
-        </button>
+        <a href={'https://go.borderlesscoding.com/widget/bookings/diagnostico-carreira-2025'} >
+          <button className="hero-button group border-2 border-primary py-3 w-full md:w-sm rounded-md flex-center gap-4 hover:opacity-80 cursor-pointer transition-opacity duration-150">
+            {t("button")}
+            <ArrowRight className="group-hover:translate-x-1 transition-translate duration-150" />
+          </button>
+        </a>
       </div>
     </div>
   );
