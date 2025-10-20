@@ -28,6 +28,17 @@ export const metadata: Metadata = {
   icons: {
     icon: "/borderless-logo.svg",
   },
+  metadataBase: new URL("https://www.borderlesscoding.net"),
+  openGraph: {
+    images: [
+      {
+        url: "/thumbnail.png",
+        alt: "Borderless Coding Thumbnail",
+        width: 579,
+        height: 385,
+      },
+    ],
+  },
 };
 
 export function generateStaticParams() {
