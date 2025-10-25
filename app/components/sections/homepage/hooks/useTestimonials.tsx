@@ -9,6 +9,7 @@ export interface Testimonial {
   testimony?: string;
   iframeSrc?: string;
   description?: string;
+  isHorizontal?: boolean;
 }
 
 export function useTestimonials(): Testimonial[] {

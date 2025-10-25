@@ -4,6 +4,7 @@ import { useRichText } from "@/app/hooks/useRichText";
 import AutoHeight from "embla-carousel-auto-height";
 import Image from "next/image";
 import { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 import { AnimatedText } from "../../ui/AnimatedText";
 import {
   Carousel,
@@ -94,7 +95,14 @@ export function Testimonials({
                 {testimonial.iframeSrc && (
                   <div className="size-full space-y-6">
                     <div className="bg-black/30 rounded-md overflow-hidden">
-                      <div className="mx-auto w-full sm:w-[60%] aspect-[9/16] relative overflow-hidden">
+                      <div
+                        className={twMerge(
+                          "mx-auto w-full relative overflow-hidden",
+                          testimonial.isHorizontal
+                            ? "aspect-[16/9]"
+                            : " sm:w-[60%] aspect-[9/16]"
+                        )}
+                      >
                         <iframe
                           src={testimonial.iframeSrc}
                           className="absolute inset-0 size-full"

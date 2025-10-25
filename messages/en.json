@@ -137,39 +137,85 @@
           "img": "/testimonials/caique.png",
           "name": "Caíque",
           "role": "PSP mentee",
-          "iframeSrc": "https://player.vimeo.com/video/1108946498?h=3f9f4bb648&api=1",
-          "description": "Went from 8k BRL in Brazil to over 60k BRL (11k usd/month) in 6 months."
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=65c1dad6-dadc-4af2-a252-b619d40f4741",
+          "description": "Went from 8k BRL in Brazil to over 60k BRL (11k usd/month) in 6 months.",
+          "isHorizontal": false
         },
         {
           "img": "/testimonials/lucas.png",
           "name": "Lucas",
           "role": "PSP mentee",
-          "iframeSrc": "https://player.vimeo.com/video/1108946473?h=669d1e58ee&api=1",
-          "description": "Went from 3k BRL in Brazil to over 25k BRL (5k usd/month + equity in a startup in AZ, USA)."
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=f94e2ed5-c630-4b38-9cab-78c370c310a4",
+          "description": "Went from 3k BRL in Brazil to over 25k BRL (5k usd/month + equity in a startup in AZ, USA).",
+          "isHorizontal": false
+        },
+        {
+          "img": "/testimonials/pietro.png",
+          "name": "Pietro",
+          "role": "PSP",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=838bc50f-8a4f-4ef5-887a-079637f4563e",
+          "testimony": "Dev Java - From US$5K/month to US$8.5K/month | PSP\nHe left a consultancy where he worked as a Java Dev, earning US$5,000/month, into a Lead Java Dev contract earning US$8,500/month.",
+          "isHorizontal": true
+        },
+        {
+          "img": "/testimonials/guilherme.png",
+          "name": "Guilherme Campos",
+          "role": "PSP",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=9cc8575c-5ee7-43b6-a360-b1f39afe7397",
+          "testimony": "Back End Engineer - From full-stack to senior global | Barcelona\nGuilherme was a .NET Developer Pleno in Ireland where he was unhappy with his life and after implementing the Go Global method taught in the Programmers Without a Country Mentorship Program, he became a Senior .NET Back End Engineer and now lives in one of the best cities in Europe, Barcelona!",
+          "isHorizontal": true
+        },
+        {
+          "img": "/testimonials/gelson.png",
+          "name": "Gelson Rodrigues",
+          "role": "PSP",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=10332b90-b8bd-4534-bd91-f88b1b0883d1",
+          "testimony": "Front End - From unemployed to US$9k/month\nGelson was unemployed after a layoff in outsourcing, where he was making R$20K in Brazil. Currently, he receives a salary of US$9,000 dollars/month after successfully internationalizing his career with only 1 MONTH of mentorship, applying the Go Global method taught in the Programmers Without a Country Mentorship Program.",
+          "isHorizontal": true
+        },
+        {
+          "img": "/testimonials/bernardo.png",
+          "name": "Bernardo Bossi",
+          "role": "PSP",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=b714c8be-a704-4cdb-ad92-26d840220b6b",
+          "testimony": "Full Stack - From Dishwasher to Software Developer | Portugal\nHe left Ireland working as a Kitchen Porter (Dishwasher) earning a minimum salary of €870/month in Portugal to become a Software Developer earning €3600/month, even without formal education!",
+          "isHorizontal": true
+        },
+        {
+          "img": "/testimonials/joao.png",
+          "name": "João Soares",
+          "role": "PSP",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=177cfda4-7bc1-4dcd-a5ea-0fb3ed4ef7a3",
+          "testimony": "Dev Golang - From System Analyst to Pleno Golang Developer | BR\nJoão was a System Analyst earning R$3,000/month and after implementing the method taught in the Base Mentorship Program, he achieved his dream of becoming a Golang Developer Pleno, earning R$9,000/month!",
+          "isHorizontal": false
         },
         {
           "img": "/testimonials/thiago.png",
           "name": "Thiago Valverde",
           "role": "PSP mentee",
-          "testimony": "Name: Thiago Valverde de Souza\nPrevious role: Backend Developer\nSalary before mentorship: USD 13k\nCurrent role: Web3 Developer / Backend Developer\nCurrent salary: $22k\nExperience: 24 years old\nMentorship length: 1 month\nStrategies: Job through applications. Created some repos but didn’t share on code up yet.\n4 hours/day applying with customized CV and cover letter.\nWeb3 study, aligning speech to get a job abroad - Self learner talking about other career shifts.\nIn 1 month there were 19 processes where I passed the initial screening, 3 offers declined because they were not the desired rate or were web2."
+          "testimony": "Name: Thiago Valverde de Souza\nPrevious role: Backend Developer\nSalary before mentorship: USD 13k\nCurrent role: Web3 Developer / Backend Developer\nCurrent salary: $22k\nExperience: 24 years old\nMentorship length: 1 month\nStrategies: Job through applications. Created some repos but didn’t share on code up yet.\n4 hours/day applying with customized CV and cover letter.\nWeb3 study, aligning speech to get a job abroad - Self learner talking about other career shifts.\nIn 1 month there were 19 processes where I passed the initial screening, 3 offers declined because they were not the desired rate or were web2.",
+          "isHorizontal": false
         },
         {
           "img": "/testimonials/arthur.png",
           "name": "Arthur Duarte",
           "role": "Base mentee",
-          "testimony": "Forget the stock market - invest your money in access to people and knowledge instead.\nLast year I paid to join a coding community with fellow Brazilian developers, and it completely changed my life.\nBeing around different people who all had the same goals and were looking for the same things made me realize how important community and the right guidance really are.\nI genuinely feel like paying for access to people is the best investment you can make.\nPut your money towards knowledge and access to people and places."
+          "testimony": "Forget the stock market - invest your money in access to people and knowledge instead.\nLast year I paid to join a coding community with fellow Brazilian developers, and it completely changed my life.\nBeing around different people who all had the same goals and were looking for the same things made me realize how important community and the right guidance really are.\nI genuinely feel like paying for access to people is the best investment you can make.\nPut your money towards knowledge and access to people and places.",
+          "isHorizontal": false
         },
         {
           "img": "/testimonials/eduardo.png",
           "name": "Eduardo Chaves",
           "role": "Base mentee",
-          "testimony": "Name: Eduardo Chaves\nPrevious position: Lead Developer (Low-Code)\nSalary before mentorship: ~US$ 7.5/hr (~US$ 1,300)\nCurrent position: AI/LLM Developer (Low-Code)\nCurrent salary: US$ 18/hr (~US$ 2,900)\nExperience: ~2.5 years\nMentorship duration: ~6 months"
+          "testimony": "Name: Eduardo Chaves\nPrevious position: Lead Developer (Low-Code)\nSalary before mentorship: ~US$ 7.5/hr (~US$ 1,300)\nCurrent position: AI/LLM Developer (Low-Code)\nCurrent salary: US$ 18/hr (~US$ 2,900)\nExperience: ~2.5 years\nMentorship duration: ~6 months",
+          "isHorizontal": false
         },
         {
           "img": "/testimonials/yuri.png",
           "name": "Yuri Bodó",
           "role": "Base mentee",
-          "testimony": "Name: Mario Yuri Mota Lara\nPrevious position: Junior Programmer\nPrevious salary: R$ 2250\nSalary before mentorship: R$000\nCurrent position: Fullstack Developer\nAge: 18 years\nCurrent salary: R$ 8000\nExperience: 2.5 years\nMentorship duration: 1 year"
+          "testimony": "Name: Mario Yuri Mota Lara\nPrevious position: Junior Programmer\nPrevious salary: R$ 2250\nSalary before mentorship: R$000\nCurrent position: Fullstack Developer\nAge: 18 years\nCurrent salary: R$ 8000\nExperience: 2.5 years\nMentorship duration: 1 year",
+          "isHorizontal": false
         }
       ]
     },
