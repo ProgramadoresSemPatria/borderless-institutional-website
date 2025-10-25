@@ -85,7 +85,7 @@ export function Testimonials({
                   </div>
                 </div>
 
-                {testimonial.testimony && (
+                {testimonial.testimony && !testimonial.iframeSrc && (
                   <div className="text-base text-gray space-y-4">
                     {formatTestimony(testimonial.testimony)}
                   </div>
@@ -103,6 +103,12 @@ export function Testimonials({
                       </div>
                     </div>
                     <p className="text-gray">{testimonial.description}</p>
+                  </div>
+                )}
+
+                {testimonial.testimony && testimonial.iframeSrc && (
+                  <div className="text-base text-gray space-y-4">
+                    {formatTestimony(testimonial.testimony)}
                   </div>
                 )}
               </div>
