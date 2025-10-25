@@ -110,15 +110,50 @@
           "img": "/testimonials/caique.png",
           "name": "Caíque",
           "role": "Mentorado da PSP",
-          "iframeSrc": "https://player.vimeo.com/video/1108946498?h=3f9f4bb648&api=1",
-          "description": "Saiu de 8k BRL do Brasil para mais de 60k BRL (11k usd/month) em 6 meses."
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=65c1dad6-dadc-4af2-a252-b619d40f4741",
+          "testimony": "Saiu de 8k BRL do Brasil para mais de 60k BRL (11k usd/month) em 6 meses."
         },
         {
           "img": "/testimonials/lucas.png",
           "name": "Lucas",
           "role": "Mentorado da PSP",
-          "iframeSrc": "https://player.vimeo.com/video/1108946473?h=669d1e58ee&api=1",
-          "description": "Saiu de 3k BRL do Brasil para mais de 25k BRL (5k usd/month + equity em uma startup no AZ, USA)."
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=f94e2ed5-c630-4b38-9cab-78c370c310a4",
+          "testimony": "Saiu de 3k BRL do Brasil para mais de 25k BRL (5k usd/month + equity em uma startup no AZ, USA)."
+        },
+        {
+          "img": "/testimonials/pietro.png",
+          "name": "Pietro",
+          "role": "PSP",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=838bc50f-8a4f-4ef5-887a-079637f4563e",
+          "testimony": "Dev Java - De US$5K/mês para US$8.5K/mês | PSP\nSaiu de uma consultoria onde trabalhava como Dev Java ganhando US$5.000 dólares por mês para um contrato de Lead Java ganhando US$8.500 dólares por mês"
+        },
+        {
+          "img": "/testimonials/guilherme.png",
+          "name": "Guilherme Campos",
+          "role": "PSP",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=9cc8575c-5ee7-43b6-a360-b1f39afe7397",
+          "testimony": "Back End Engineer - De dev pleno a sênior global | Barcelona\nGuilherme era Desenvolvedor Pleno .NET na Irlanda onde estava insatisfeito com sua vida e após implementar o Método Go Global ensinado na Mentoria Programadores Sem Pátria, se tornou Senior Back End Engineer .NET e hoje mora numa das melhores cidades da Europa, Barcelona!"
+        },
+        {
+          "img": "/testimonials/gelson.png",
+          "name": "Gelson Rodrigues",
+          "role": "PSP",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=10332b90-b8bd-4534-bd91-f88b1b0883d1",
+          "testimony": "Front End - De Desempregado para US$9k/mês\nGelson estava desempregado após um layoff na Outsourcing que trabalhava no Brasil aonde ganhava R$20K nesse emprego. Atualmente recebe um salário de US$9.000 dólares/mês após conseguir internacionalizar sua carreira com apenas 1 MÊS DE MENTORIA aplicando o Método Go Global ensinado na Mentoria Programadores Sem Pátria."
+        },
+        {
+          "img": "/testimonials/bernardo.png",
+          "name": "Bernardo Bossi",
+          "role": "PSP",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=b714c8be-a704-4cdb-ad92-26d840220b6b",
+          "testimony": "Full Stack - De Lavador de pratos para Desenvolvedor de Software | Portugal\nSaiu da Irlanda trabalhando como Kitchen Porter (Lavador de pratos) ganhando um salário mínimo de €870/mês para Portugal para trabalhar como Desenvolvedor de Software ganhando €3600/mês mesmo sem faculdade!"
+        },
+        {
+          "img": "/testimonials/joao.png",
+          "name": "João Soares",
+          "role": "PSP",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=177cfda4-7bc1-4dcd-a5ea-0fb3ed4ef7a3",
+          "testimony": "Dev Golang - De analista de sistemas a Golang Developer Pleno | BR\nJoão era Analista de Sistemas e ganhava um salário de R$3.000/mês e após implementar a metodologia ensinada na Mentoria A Base conseguiu sua tão sonhada vaga como Golang Developer Pleno, ganhando um salário de R$9.000/mês!"
         },
         {
           "img": "/testimonials/thiago.png",
