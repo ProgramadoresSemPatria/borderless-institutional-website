@@ -111,83 +111,77 @@
           "name": "Caíque",
           "role": "Mentorado da PSP",
           "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=65c1dad6-dadc-4af2-a252-b619d40f4741",
-          "testimony": "Saiu de 8k BRL do Brasil para mais de 60k BRL (11k usd/month) em 6 meses.",
-          "isHorizontal": false
+          "testimony": "**Saiu de 8k BRL do Brasil para mais de 60k BRL** (11k usd/month) em 6 meses."
         },
         {
           "img": "/testimonials/lucas.png",
           "name": "Lucas",
           "role": "Mentorado da PSP",
           "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=f94e2ed5-c630-4b38-9cab-78c370c310a4",
-          "testimony": "Saiu de 3k BRL do Brasil para mais de 25k BRL (5k usd/month + equity em uma startup no AZ, USA).",
-          "isHorizontal": false
+          "testimony": "**Saiu de 3k BRL do Brasil para mais de 25k BRL** (5k usd/month + equity em uma startup no AZ, USA)."
         },
         {
           "img": "/testimonials/pietro.png",
           "name": "Pietro",
-          "role": "PSP",
+          "role": "Mentorado da PSP",
           "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=838bc50f-8a4f-4ef5-887a-079637f4563e",
-          "testimony": "Dev Java - De US$5K/mês para US$8.5K/mês | PSP\nSaiu de uma consultoria onde trabalhava como Dev Java ganhando US$5.000 dólares por mês para um contrato de Lead Java ganhando US$8.500 dólares por mês",
+          "testimony": "**Dev Java - De US$5K/mês para US$8.5K/mês | PSP**\nSaiu de uma consultoria onde trabalhava como Dev Java ganhando US$5.000 dólares por mês para um contrato de Lead Java ganhando US$8.500 dólares por mês",
           "isHorizontal": true
         },
         {
           "img": "/testimonials/guilherme.png",
           "name": "Guilherme Campos",
-          "role": "PSP",
+          "role": "Mentorado da PSP",
           "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=9cc8575c-5ee7-43b6-a360-b1f39afe7397",
-          "testimony": "Back End Engineer - De dev pleno a sênior global | Barcelona\nGuilherme era Desenvolvedor Pleno .NET na Irlanda onde estava insatisfeito com sua vida e após implementar o Método Go Global ensinado na Mentoria Programadores Sem Pátria, se tornou Senior Back End Engineer .NET e hoje mora numa das melhores cidades da Europa, Barcelona!",
+          "testimony": "**Back End Engineer - De dev pleno a sênior global | Barcelona**\nGuilherme era Desenvolvedor Pleno .NET na Irlanda onde estava insatisfeito com sua vida e após implementar o Método Go Global ensinado na Mentoria Programadores Sem Pátria, se tornou Senior Back End Engineer .NET e hoje mora numa das melhores cidades da Europa, Barcelona!",
           "isHorizontal": true
         },
         {
           "img": "/testimonials/gelson.png",
           "name": "Gelson Rodrigues",
-          "role": "PSP",
+          "role": "Mentorado da PSP",
           "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=10332b90-b8bd-4534-bd91-f88b1b0883d1",
-          "testimony": "Front End - De Desempregado para US$9k/mês\nGelson estava desempregado após um layoff na Outsourcing que trabalhava no Brasil aonde ganhava R$20K nesse emprego. Atualmente recebe um salário de US$9.000 dólares/mês após conseguir internacionalizar sua carreira com apenas 1 MÊS DE MENTORIA aplicando o Método Go Global ensinado na Mentoria Programadores Sem Pátria.",
+          "testimony": "**Front End - De Desempregado para US$9k/mês**\nGelson estava desempregado após um layoff na Outsourcing que trabalhava no Brasil aonde ganhava R$20K nesse emprego. Atualmente recebe um salário de US$9.000 dólares/mês após conseguir internacionalizar sua carreira com apenas 1 MÊS DE MENTORIA aplicando o Método Go Global ensinado na Mentoria Programadores Sem Pátria.",
           "isHorizontal": true
         },
         {
           "img": "/testimonials/bernardo.png",
           "name": "Bernardo Bossi",
-          "role": "PSP",
+          "role": "Mentorado da PSP",
           "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=b714c8be-a704-4cdb-ad92-26d840220b6b",
-          "testimony": "Full Stack - De Lavador de pratos para Desenvolvedor de Software | Portugal\nSaiu da Irlanda trabalhando como Kitchen Porter (Lavador de pratos) ganhando um salário mínimo de €870/mês para Portugal para trabalhar como Desenvolvedor de Software ganhando €3600/mês mesmo sem faculdade!",
+          "testimony": "**Full Stack - De Lavador de pratos para Desenvolvedor de Software | Portugal**\nSaiu da Irlanda trabalhando como Kitchen Porter (Lavador de pratos) ganhando um salário mínimo de €870/mês para Portugal para trabalhar como Desenvolvedor de Software ganhando €3600/mês mesmo sem faculdade!",
           "isHorizontal": true
         },
         {
           "img": "/testimonials/joao.png",
           "name": "João Soares",
-          "role": "PSP",
+          "role": "Mentorado da PSP",
           "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=177cfda4-7bc1-4dcd-a5ea-0fb3ed4ef7a3",
-          "testimony": "Dev Golang - De analista de sistemas a Golang Developer Pleno | BR\nJoão era Analista de Sistemas e ganhava um salário de R$3.000/mês e após implementar a metodologia ensinada na Mentoria A Base conseguiu sua tão sonhada vaga como Golang Developer Pleno, ganhando um salário de R$9.000/mês!"
+          "testimony": "**Dev Golang - De analista de sistemas a Golang Developer Pleno | BR**\nJoão era Analista de Sistemas e ganhava um salário de R$3.000/mês e após implementar a metodologia ensinada na Mentoria A Base conseguiu sua tão sonhada vaga como Golang Developer Pleno, ganhando um salário de R$9.000/mês!"
         },
         {
           "img": "/testimonials/thiago.png",
           "name": "Thiago Valverde",
           "role": "Mentorado da PSP",
-          "testimony": "Nome: Thiago Valverde de Souza\nVaga anterior: Backend Developer\nQuanto ganhava antes da mentoria: USD 13k\nVaga Atual: Web3 Developer / Backend Developer\nSalário atual: $22k\nExperiência: 24 anos\nTempo de mentoria: 1 mês\nEstratégias: Vaga através de aplicações. Criei alguns repos mas não compartilhei no code up ainda.\n4 horas por dia de aplicação com currículo e cover letter personalizados.\nEstudo de Web3, Alinhamento do discurso para conseguir uma vaga fora do meu domínio - Self learner falando sobre outros career shifts.\nEm 1 mês foram 19 processos onde passei do initial screening, 3 offers recusadas pois não eram do rate desejado ou eram web2.",
-          "isHorizontal": false
+          "testimony": "**Nome**: Thiago Valverde de Souza\n**Vaga anterior**: Backend Developer\n**Quanto ganhava antes da mentoria**: USD 13k\n**Vaga Atual**: Web3 Developer / Backend Developer\n**Salário atual**: $22k\n**Experiência**: 24 anos\n**Tempo de mentoria**: 1 mês\n**Estratégias**: Vaga através de aplicações. Criei alguns repos mas não compartilhei no code up ainda.\n4 horas por dia de aplicação com currículo e cover letter personalizados.\nEstudo de Web3, Alinhamento do discurso para conseguir uma vaga fora do meu domínio - Self learner falando sobre outros career shifts.\nEm 1 mês foram 19 processos onde passei do initial screening, 3 offers recusadas pois não eram do rate desejado ou eram web2."
         },
         {
           "img": "/testimonials/arthur.png",
           "name": "Arthur Duarte",
           "role": "Mentorado da Base",
-          "testimony": "Esqueça o mercado de ações – invista seu dinheiro em acesso a pessoas e conhecimento, em vez disso.\nNo ano passado, paguei para participar de uma comunidade de programação com outros desenvolvedores brasileiros, e isso mudou completamente a minha vida.\nEstar perto de pessoas diferentes que tinham os mesmos objetivos e procuravam as mesmas coisas me fez perceber o quanto a comunidade e a orientação certa são importantes.\nSinto de verdade que pagar pelo acesso a pessoas é o melhor investimento que você pode fazer.\nColoque seu dinheiro em conhecimento e acesso a pessoas e lugares.",
-          "isHorizontal": false
+          "testimony": "Esqueça o mercado de ações – invista seu dinheiro em acesso a pessoas e conhecimento, em vez disso.\nNo ano passado, paguei para participar de uma comunidade de programação com outros desenvolvedores brasileiros, e isso mudou completamente a minha vida.\nEstar perto de pessoas diferentes que tinham os mesmos objetivos e procuravam as mesmas coisas me fez perceber o quanto a comunidade e a orientação certa são importantes.\nSinto de verdade que pagar pelo acesso a pessoas é o melhor investimento que você pode fazer.\nColoque seu dinheiro em conhecimento e acesso a pessoas e lugares."
         },
         {
           "img": "/testimonials/eduardo.png",
           "name": "Eduardo Chaves",
           "role": "Mentorado da Base",
-          "testimony": "Nome: Eduardo Chaves\nVaga anterior: Lead Developer (Low-Code)\nQuanto ganhava antes da mentoria: ~US$ 7.5/hr (~US$ 1.300)\nVaga atual: AI/LLM Developer (Low-Code)\nSalário atual: US$ 18/hr (~US$ 2.900)\nExperiência: ~2.5 anos\nTempo de mentoria: ~6 meses",
-          "isHorizontal": false
+          "testimony": "**Nome**: Eduardo Chaves\n**Vaga anterior**: Lead Developer (Low-Code)\n**Quanto ganhava antes da mentoria**: ~US$ 7.5/hr (~US$ 1.300)\n**Vaga atual**: AI/LLM Developer (Low-Code)\n**Salário atual**: US$ 18/hr (~US$ 2.900)\n**Experiência**: ~2.5 anos\n**Tempo de mentoria**: ~6 meses"
         },
         {
           "img": "/testimonials/yuri.png",
           "name": "Yuri Bodó",
           "role": "Mentorado da Base",
-          "testimony": "Nome: Mario Yuri Mota Lara\nVaga anterior: Programador Junior\nSalario anterior: R$ 2250\nQuanto ganhava antes da mentoria: R$000\nVaga atual: Fullstack Developer\nIdade: 18 anos\nSalário atual: R$ 8000\nExperiência: 2.5 anos\nTempo de mentoria: 1 ano",
-          "isHorizontal": false
+          "testimony": "**Nome**: Mario Yuri Mota Lara\n**Vaga anterior**: Programador Junior\n**Salario anterior**: R$ 2250\n**Quanto ganhava antes da mentoria**: R$000\n**Vaga atual**: Fullstack Developer\n**Idade**: 18 anos\n**Salário atual**: R$ 8000\n**Experiência**: 2.5 anos\n**Tempo de mentoria**: 1 ano"
         }
       ]
     },

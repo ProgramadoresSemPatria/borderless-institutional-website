@@ -8,7 +8,6 @@ export interface Testimonial {
   role: string;
   testimony?: string;
   iframeSrc?: string;
-  description?: string;
   isHorizontal?: boolean;
 }
 
