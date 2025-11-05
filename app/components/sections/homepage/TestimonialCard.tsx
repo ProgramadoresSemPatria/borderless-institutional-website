@@ -4,8 +4,6 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { Testimonial } from "./hooks/useTestimonials";
 
-interface TestimonialCardProps extends Testimonial {}
-
 export function TestimonialCard({
   img,
   name,
@@ -13,7 +11,7 @@ export function TestimonialCard({
   iframeSrc,
   isHorizontal,
   testimony,
-}: TestimonialCardProps) {
+}: Testimonial) {
   function formatTestimony(testimony: string) {
     return testimony.split("\n").map((line, index) => {
       if (!line.trim()) return <br key={index} />;
