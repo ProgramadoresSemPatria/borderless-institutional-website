@@ -6,7 +6,13 @@ import { Github, Linkedin } from "lucide-react";
 import Image from "next/image";
 import { AnimatedIconWrapper } from "../../ui/AnimatedIconWrapper";
 import { AnimatedText } from "../../ui/AnimatedText";
-import { Carousel, CarouselContent, CarouselItem } from "../../ui/Carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../../ui/Carousel";
 import { useGetOurTeam } from "./hooks/useGetOurTeam";
 
 export function OurTeam() {
@@ -32,12 +38,23 @@ export function OurTeam() {
 
   return (
     <section style={{ minHeight: "fit-content" }}>
-      <div className="bg-tertiary py-8 lg:py-16 flex-col rounded-md space-y-12">
-        <AnimatedText as="h2" className="w-fit ml-8 lg:ml-16">
-          {title}
-        </AnimatedText>
+      <div className="bg-tertiary py-8 lg:py-16 rounded-md">
+        <Carousel
+          className="w-full space-y-4"
+          opts={{
+            align: "start",
+            breakpoints: { "(min-width: 640px)": { dragFree: true } },
+          }}
+        >
+          <div className="flex flex-col sm:flex-row sm:items-center w-full gap-4 justify-between px-8 lg:px-16">
+            <AnimatedText as="h2">{title}</AnimatedText>
 
-        <Carousel className="w-full space-y-4">
+            <div className="gap-2 flex">
+              <CarouselPrevious />
+              <CarouselNext />
+            </div>
+          </div>
+
           <CarouselContent className="first:ml-4 last:mr-8 lg:first:ml-12 lg:last:mr-16 -ml-4">
             {members.map((member) => (
               <CarouselItem

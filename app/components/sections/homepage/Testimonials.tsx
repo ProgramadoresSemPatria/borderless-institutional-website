@@ -97,11 +97,9 @@ export function Testimonials({
         ]}
         className="flex flex-col gap-4 lg:gap-8"
       >
-        <div className="w-full flex justify-end">
-          <div className="flex gap-2">
-            <CarouselPrevious />
-            <CarouselNext />
-          </div>
+        <div className="w-full gap-2 flex lg:justify-end">
+          <CarouselPrevious />
+          <CarouselNext />
         </div>
 
         <CarouselContent className="-ml-2 items-start md:items-stretch">
@@ -132,11 +130,9 @@ export function Testimonials({
         ]}
         className="flex flex-col gap-4 lg:gap-8"
       >
-        <div className="w-full flex justify-end">
-          <div className="flex gap-2">
-            <CarouselPrevious />
-            <CarouselNext />
-          </div>
+        <div className="w-full gap-2 flex lg:justify-end">
+          <CarouselPrevious />
+          <CarouselNext />
         </div>
 
         <CarouselContent className="-ml-2 items-start md:items-stretch">

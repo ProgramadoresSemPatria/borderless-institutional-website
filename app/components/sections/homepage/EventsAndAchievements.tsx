@@ -5,7 +5,13 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import { AnimatedText } from "../../ui/AnimatedText";
-import { Carousel, CarouselContent, CarouselItem } from "../../ui/Carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../../ui/Carousel";
 import { useGetEventsAndAchievements } from "./hooks/useGetEventsAndAchievements";
 
 export function EventsAndAchievements() {
@@ -31,12 +37,23 @@ export function EventsAndAchievements() {
   });
 
   return (
-    <section className="flex flex-col gap-8 py-12 bg-tertiary rounded-md">
-      <AnimatedText as="h2" className="px-8 lg:px-16">
-        {rich("title")}
-      </AnimatedText>
+    <section className="flex py-12 bg-tertiary rounded-md">
+      <Carousel
+        className="w-full space-y-4"
+        opts={{
+          align: "start",
+          breakpoints: { "(min-width: 640px)": { dragFree: true } },
+        }}
+      >
+        <div className="flex flex-col sm:flex-row sm:items-center w-full gap-4 justify-between px-8 lg:px-16">
+          <AnimatedText as="h2">{rich("title")}</AnimatedText>
 
-      <Carousel>
+          <div className="gap-2 flex">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
+        </div>
+
         <CarouselContent className="first:ml-4 last:mr-8 lg:first:ml-12 lg:last:mr-16">
           {events.map((event) => (
             <CarouselItem
