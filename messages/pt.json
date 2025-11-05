@@ -139,77 +139,6 @@
           "isHorizontal": true
         },
         {
-          "img": "/testimonials/arthur.png",
-          "name": "Arthur Duarte",
-          "role": "Mentorado da Base",
-          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=ff1dd8bb-40df-4c10-ab67-10fe51064bd1",
-          "testimony": "**Arthur Duarte - AI Specialist - From bartender to AI Specialist in Canada | CAN**\nArthur used to work as a bartender in Canada before entering the Base Mentorship Program. He currently works with Artificial Intelligence, one of the areas of technology that is growing fast and pays the highest salaries! He went from a salary of R$5,000 as a bartender to a salary of R$15,000 working remotely!",
-          "isHorizontal": true
-        },
-        {
-          "img": "/testimonials/pedro.png",
-          "name": "Pedro Oliveira",
-          "role": "Mentorado da Base",
-          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=5bbe33a3-4752-4d38-9558-c2263b859ab5",
-          "testimony": "Confira o depoimento do nosso mentorado Pedro Oliveira e veja o que mudou na vida dele após entrar na Mentoria A Base! Em 8 meses conseguiu sua primeira oportunidade como Desenvolvedor Full Stack saindo do ZERO!",
-          "isHorizontal": true
-        },
-        {
-          "img": "/testimonials/pablo.png",
-          "name": "Pablo Montes",
-          "role": "Mentorado da Base",
-          "iframeSrc": "https://player-v-z2caf1f2d-778.tv.pandavideo.com.br/embed/?v=9b324b3f-3f7d-4be1-afed-7d82e4c887db",
-          "testimony": "Confira o depoimento do Pablo Montes e o que mudou na sua vida após entrar na Mentoria A Base!! Depois de 1 ano de mentoria, Pablo se tornou Dev Jr no maior Investment Bank da América Latina!",
-          "isHorizontal": true
-        },
-        {
-          "img": "/testimonials/yuri.png",
-          "name": "Yuri Bodó",
-          "role": "Mentorado da Base",
-          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=36ac8871-f2eb-43b6-b423-ee52028a2c7f",
-          "testimony": "Mario Yuri é nosso embaixador da Mentoria A Base, entrou na mentoria aos 17 anos cursando o ensino médio e mesmo sem faculdade conseguiu sua vaga como desenvolvedor! Natural de Rondônia Mario Yuri trabalha atualmente como desenvolvedor full stack numa startup de tecnologia em São Paulo - SP",
-          "isHorizontal": true
-        },
-        {
-          "img": "/testimonials/duanne.png",
-          "name": "Duanne Moraes",
-          "role": "Mentorado da Base",
-          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=42f6cc33-4d8e-466b-8269-c52f063eb102",
-          "testimony": "**Duanne Moraes - Back End - De militar a desenvolvedor back end | BR**\nDuanne tem 27 anos e por 7 anos serviu como fuzileiro naval da Marinha do Brasil, após um tempo insatisfeito buscava meios para mudar de área. Duanne entrou na turma de pré-lançamento da Mentoria A Base, em 1 ano conseguiu realizar sua transição de carreira da área Militar para a área Tech e hoje trabalha como desenvolvedor Back End!!",
-          "isHorizontal": true
-        },
-        {
-          "img": "/testimonials/gabriel.png",
-          "name": "Gabriel Melo",
-          "role": "Mentorado da Base",
-          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=eccee9ec-ae38-47ca-ad94-b48bde1a56e7",
-          "testimony": "Gabriel Melo, que fez a transição de carreira vindo da área de Gestão para a área de Tecnologia se tornando programador após 5 meses de mentoria! Atualmente trabalha como Full Stack Pleno!",
-          "isHorizontal": true
-        },
-        {
-          "img": "/testimonials/ricardo.png",
-          "name": "Ricardo Franco",
-          "role": "Mentorado da Base",
-          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=93baa6d5-b22b-4f68-beb9-3604eb42b8f8",
-          "testimony": "Confira o depoimento do Ricardo Franco, que no seu segundo ciclo da Mentoria A Base conseguiu internacionalizar sua carreira como Analista de Sistemas!",
-          "isHorizontal": true
-        },
-        {
-          "img": "/testimonials/gabriel_souza.png",
-          "name": "Gabriel Souza",
-          "role": "Mentorado da Base",
-          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=4bded2ef-c218-4b45-866a-2e9b749c1b36",
-          "testimony": "Como Gabriel Souza se tornou um dos top 10% mais commiters do github no MUNDO, após ter feito o codeUP",
-          "isHorizontal": true
-        },
-        {
-          "img": "/testimonials/joao.png",
-          "name": "João Soares",
-          "role": "Mentorado da PSP",
-          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=177cfda4-7bc1-4dcd-a5ea-0fb3ed4ef7a3",
-          "testimony": "**Dev Golang - De analista de sistemas a Golang Developer Pleno | BR**\nJoão era Analista de Sistemas e ganhava um salário de R$3.000/mês e após implementar a metodologia ensinada na Mentoria A Base conseguiu sua tão sonhada vaga como Golang Developer Pleno, ganhando um salário de R$9.000/mês!"
-        },
-        {
           "img": "/testimonials/caique.png",
           "name": "Caíque",
           "role": "Mentorado da PSP",
@@ -222,6 +151,62 @@
           "role": "Mentorado da PSP",
           "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=f94e2ed5-c630-4b38-9cab-78c370c310a4",
           "testimony": "**Saiu de 3k BRL do Brasil para mais de 25k BRL** (5k usd/month + equity em uma startup no AZ, USA)."
+        },
+        {
+          "img": "/testimonials/arthur.png",
+          "name": "Arthur Duarte",
+          "role": "Mentorado da Base",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=ff1dd8bb-40df-4c10-ab67-10fe51064bd1",
+          "testimony": "**Arthur Duarte - AI Specialist - From bartender to AI Specialist in Canada | CAN**\nArthur used to work as a bartender in Canada before entering the Base Mentorship Program. He currently works with Artificial Intelligence, one of the areas of technology that is growing fast and pays the highest salaries! He went from a salary of R$5,000 as a bartender to a salary of R$15,000 working remotely!"
+        },
+        {
+          "img": "/testimonials/duanne.png",
+          "name": "Duanne Moraes",
+          "role": "Mentorado da Base",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=42f6cc33-4d8e-466b-8269-c52f063eb102",
+          "testimony": "**Duanne Moraes - Back End - De militar a desenvolvedor back end | BR**\nDuanne tem 27 anos e por 7 anos serviu como fuzileiro naval da Marinha do Brasil, após um tempo insatisfeito buscava meios para mudar de área. Duanne entrou na turma de pré-lançamento da Mentoria A Base, em 1 ano conseguiu realizar sua transição de carreira da área Militar para a área Tech e hoje trabalha como desenvolvedor Back End!!"
+        },
+        {
+          "img": "/testimonials/joao.png",
+          "name": "João Soares",
+          "role": "Mentorado da PSP",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=177cfda4-7bc1-4dcd-a5ea-0fb3ed4ef7a3",
+          "testimony": "**Dev Golang - De analista de sistemas a Golang Developer Pleno | BR**\nJoão era Analista de Sistemas e ganhava um salário de R$3.000/mês e após implementar a metodologia ensinada na Mentoria A Base conseguiu sua tão sonhada vaga como Golang Developer Pleno, ganhando um salário de R$9.000/mês!"
+        },
+        {
+          "img": "/testimonials/pedro.png",
+          "name": "Pedro Oliveira",
+          "role": "Mentorado da Base",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=5bbe33a3-4752-4d38-9558-c2263b859ab5",
+          "testimony": "Confira o depoimento do nosso mentorado Pedro Oliveira e veja o que mudou na vida dele após entrar na Mentoria A Base! Em 8 meses conseguiu sua primeira oportunidade como Desenvolvedor Full Stack saindo do ZERO!"
+        },
+        {
+          "img": "/testimonials/yuri.png",
+          "name": "Yuri Bodó",
+          "role": "Mentorado da Base",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=36ac8871-f2eb-43b6-b423-ee52028a2c7f",
+          "testimony": "Mario Yuri é nosso embaixador da Mentoria A Base, entrou na mentoria aos 17 anos cursando o ensino médio e mesmo sem faculdade conseguiu sua vaga como desenvolvedor! Natural de Rondônia Mario Yuri trabalha atualmente como desenvolvedor full stack numa startup de tecnologia em São Paulo - SP"
+        },
+        {
+          "img": "/testimonials/gabriel.png",
+          "name": "Gabriel Melo",
+          "role": "Mentorado da Base",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=eccee9ec-ae38-47ca-ad94-b48bde1a56e7",
+          "testimony": "Gabriel Melo, que fez a transição de carreira vindo da área de Gestão para a área de Tecnologia se tornando programador após 5 meses de mentoria! Atualmente trabalha como Full Stack Pleno!"
+        },
+        {
+          "img": "/testimonials/ricardo.png",
+          "name": "Ricardo Franco",
+          "role": "Mentorado da Base",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=93baa6d5-b22b-4f68-beb9-3604eb42b8f8",
+          "testimony": "Confira o depoimento do Ricardo Franco, que no seu segundo ciclo da Mentoria A Base conseguiu internacionalizar sua carreira como Analista de Sistemas!"
+        },
+        {
+          "img": "/testimonials/gabriel_souza.png",
+          "name": "Gabriel Souza",
+          "role": "Mentorado da Base",
+          "iframeSrc": "https://player-vz-2caf1f2d-778.tv.pandavideo.com.br/embed/?v=4bded2ef-c218-4b45-866a-2e9b749c1b36",
+          "testimony": "Como Gabriel Souza se tornou um dos top 10% mais commiters do github no MUNDO, após ter feito o codeUP"
         },
         {
           "img": "/testimonials/thiago.png",
