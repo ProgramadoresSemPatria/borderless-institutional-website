@@ -2,9 +2,7 @@
 
 import { useRichText } from "@/app/hooks/useRichText";
 import AutoHeight from "embla-carousel-auto-height";
-import Image from "next/image";
 import { ReactNode } from "react";
-import { twMerge } from "tailwind-merge";
 import { AnimatedText } from "../../ui/AnimatedText";
 import {
   Carousel,
@@ -15,6 +13,7 @@ import {
 } from "../../ui/Carousel";
 import { SectionHeader } from "../../ui/SectionHeader";
 import { useTestimonials } from "./hooks/useTestimonials";
+import { TestimonialCard } from "./TestimonialCard";
 
 export function Testimonials({
   title,
@@ -26,17 +25,24 @@ export function Testimonials({
   const testimonials = useTestimonials();
   const { rich } = useRichText("HomePage.Testimonials");
 
-  function formatTestimony(testimony: string) {
-    return testimony
-      .split("\n")
-      .map((line, index) => <p key={index}>{line}</p>);
-  }
+  const horizontalTestimonials = testimonials.filter(
+    (testimonial) => testimonial.isHorizontal
+  );
+
+  const verticalTestimonials = testimonials.filter(
+    (testimonial) => !testimonial.isHorizontal && testimonial.iframeSrc
+  );
+
+  const testimonialsWithoutVideo = testimonials.filter(
+    (testimonial) => !testimonial.iframeSrc
+  );
 
   return (
     <section className="py-[10svh] border-b border-solid border-white/20 space-y-12">
       <Carousel
         opts={{
           align: "start",
+          breakpoints: { "(min-width: 768px)": { dragFree: true } },
         }}
         className="flex flex-col gap-4 lg:gap-8"
         plugins={[
@@ -63,63 +69,83 @@ export function Testimonials({
           </div>
         </div>
 
-        <CarouselContent className="-ml-2 items-start">
-          {testimonials.map((testimonial, index) => (
+        <CarouselContent className="-ml-2 items-start md:items-stretch">
+          {horizontalTestimonials.map((testimonial, index) => (
             <CarouselItem
               key={`testimonial-${index}`}
               className="md:basis-1/2 xl:basis-1/3 pl-2"
             >
-              <div className="bg-tertiary rounded-md p-6 select-none flex flex-col gap-6">
-                <div className="flex items-center gap-4">
-                  <div className="relative size-16">
-                    <Image
-                      fill
-                      src={testimonial.img}
-                      alt="profile picture"
-                      className="rounded-full object-cover"
-                      sizes="100%"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-bold">{testimonial.name}</p>
-                    <p className="text-sm">{testimonial.role}</p>
-                  </div>
-                </div>
+              <TestimonialCard {...testimonial} />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
 
-                {testimonial.testimony && !testimonial.iframeSrc && (
-                  <div className="text-base text-gray space-y-4">
-                    {formatTestimony(testimonial.testimony)}
-                  </div>
-                )}
+      <Carousel
+        opts={{
+          align: "start",
+          breakpoints: { "(min-width: 768px)": { dragFree: true } },
+        }}
+        plugins={[
+          AutoHeight({
+            breakpoints: {
+              "(min-width: 768px)": {
+                active: false,
+              },
+            },
+          }),
+        ]}
+        className="flex flex-col gap-4 lg:gap-8"
+      >
+        <div className="w-full flex justify-end">
+          <div className="flex gap-2">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
+        </div>
 
-                {testimonial.iframeSrc && (
-                  <div className="size-full space-y-6">
-                    <div className="bg-black/30 rounded-md overflow-hidden">
-                      <div
-                        className={twMerge(
-                          "mx-auto w-full relative overflow-hidden",
-                          testimonial.isHorizontal
-                            ? "aspect-[16/9]"
-                            : " sm:w-[60%] aspect-[9/16]"
-                        )}
-                      >
-                        <iframe
-                          src={testimonial.iframeSrc}
-                          className="absolute inset-0 size-full"
-                          allow="autoplay; fullscreen; picture-in-picture"
-                        />
-                      </div>
-                    </div>
-                    <p className="text-gray">{testimonial.description}</p>
-                  </div>
-                )}
+        <CarouselContent className="-ml-2 items-start md:items-stretch">
+          {verticalTestimonials.map((testimonial, index) => (
+            <CarouselItem
+              key={`testimonial-vert-${index}`}
+              className="md:basis-1/2 xl:basis-1/3 pl-2"
+            >
+              <TestimonialCard {...testimonial} />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
 
-                {testimonial.testimony && testimonial.iframeSrc && (
-                  <div className="text-base text-gray space-y-4">
-                    {formatTestimony(testimonial.testimony)}
-                  </div>
-                )}
-              </div>
+      <Carousel
+        opts={{
+          align: "start",
+          breakpoints: { "(min-width: 768px)": { dragFree: true } },
+        }}
+        plugins={[
+          AutoHeight({
+            breakpoints: {
+              "(min-width: 768px)": {
+                active: false,
+              },
+            },
+          }),
+        ]}
+        className="flex flex-col gap-4 lg:gap-8"
+      >
+        <div className="w-full flex justify-end">
+          <div className="flex gap-2">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
+        </div>
+
+        <CarouselContent className="-ml-2 items-start md:items-stretch">
+          {testimonialsWithoutVideo.map((testimonial, index) => (
+            <CarouselItem
+              key={`testimonial-text-${index}`}
+              className="md:basis-1/2 xl:basis-1/3 pl-2"
+            >
+              <TestimonialCard {...testimonial} />
             </CarouselItem>
           ))}
         </CarouselContent>
