@@ -314,6 +314,10 @@
         {
           "description": "Borderless mentees won second place at the EthCC hackathon in Cannes, France",
           "src": "/events/hackthon.webp"
+        },
+        {
+          "description": "Presence at The International Conference on Rust in Florence - 2025 as speaker",
+          "src": "/events/meriga-_florence_rust-conf.jpeg"
         }
       ]
     }
