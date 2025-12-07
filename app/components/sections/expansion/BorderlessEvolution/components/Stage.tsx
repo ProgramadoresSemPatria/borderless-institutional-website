@@ -1,13 +1,16 @@
 import { AnimatedIconWrapper } from "@/app/components/ui/AnimatedIconWrapper";
-import { RoadmapStage } from "../constants/roadmapStages";
-import { getStatusBadge } from "../getStatusBadge";
+import { getStatusBadge } from "../utils/getStatusBadge";
+import {
+  RoadmapStage,
+  RoadmapStatusLabels,
+} from "../../hooks/useBorderlessEvolution";
 
 export function Stage({
   stage,
   labels,
 }: {
   stage: RoadmapStage;
-  labels: { completed: string; inProgress: string; next: string };
+  labels: RoadmapStatusLabels;
 }) {
   return (
     <div className="bg-[#212121] rounded-md p-6 space-y-6 min-h-full flex flex-col">

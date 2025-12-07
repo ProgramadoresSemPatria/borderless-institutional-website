@@ -1,9 +1,12 @@
 import { CheckCircle, Clock, Eye } from "lucide-react";
-import { StageStatus } from "./constants/roadmapStages";
+import {
+  RoadmapStatusLabels,
+  StageStatus,
+} from "../../hooks/useBorderlessEvolution";
 
 export const getStatusBadge = (
   status: StageStatus,
-  labels: { completed: string; inProgress: string; next: string }
+  labels: RoadmapStatusLabels
 ) => {
   switch (status) {
     case "completed":

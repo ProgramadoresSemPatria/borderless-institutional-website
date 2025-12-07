@@ -1298,6 +1298,20 @@
       },
       "stages": [
         {
+          "icon": "calendar",
+          "title": "Roadmap Summary",
+          "timeline": "2025-2030",
+          "description": "",
+          "goals": [
+            "2025: Platform consolidation (community, forum, core infra)",
+            "2026: Launch and scale of Borderless Hiring (Talent Engine + Placement)",
+            "2027: Expansion of hiring marketplace and employer network",
+            "2028: Launch of Borderless Ventures (startup creation layer)",
+            "2029–2030: Global venture engine + investment vehicle maturation"
+          ]
+        },
+        {
+          "icon": "users",
           "title": "Talent Foundation",
           "timeline": "2023–2025",
           "description": "Borderless started by unlocking the global market for Brazilian developers.",
@@ -1306,9 +1320,11 @@
             "BASE Mentorship: preparing beginners and early-career devs for the global stage",
             "Bootcamps: specialized programs (e.g. Web3 Global Developer) feeding new markets"
           ],
-          "outcome": "This created a pipeline of pre-vetted, globally ready talent."
+          "outcome": "This created a pipeline of pre-vetted, globally ready talent.",
+          "status": "completed"
         },
         {
+          "icon": "laptop",
           "title": "Platform Scale",
           "timeline": "Late 2025",
           "description": "Next, we are consolidating our Borderless Platform — a super app for professionals:",
@@ -1317,29 +1333,38 @@
             "Onboarding and career dashboards",
             "Networking and hiring hub"
           ],
-          "outcome": "The platform transforms our mentorship results into scalable infrastructure, where talent meets opportunity at scale."
+          "outcome": "The platform transforms our mentorship results into scalable infrastructure, where talent meets opportunity at scale.",
+          "status": "in-progress"
         },
         {
-          "title": "Startup Incubation",
+          "icon": "rocket",
+          "title": "Borderless Hiring – Global Talent Engine",
           "timeline": "2026",
-          "description": "With talent validated and a platform in place, the natural expansion is founder-led startups. Every year, hackathons and incubation cycles inside Borderless will generate new ventures.",
+          "description": "With the Borderless Platform consolidated and talent validated through the PSP and the Core, the focus for 2026 is the launch and scale of the Borderless Hiring™ engine — our global placement ecosystem connecting Brazilian professionals to international companies.",
           "goals": [
-            "SPV model (separate LLCs) – ensuring investor protection and clean growth",
-            "Focus sectors: SaaS, AI, DevTools, and fintech",
-            "Support: product strategy, growth expertise, and technical architecture"
+            "Talent validation pipeline (CORE + Talent Engine)",
+            "Employer acquisition and hiring operations",
+            "Talent Cards, screening, and performance scoring",
+            "Placement cycles and global hiring success metrics",
+            "Infrastructure for future marketplace and AI matching"
           ],
-          "outcome": ""
+          "outcome": "The Hiring Engine builds the foundation of credibility, scalability, and data required for Borderless Ventures to thrive in the future",
+          "status": "next"
         },
         {
-          "title": "Investment Access",
-          "timeline": "2026 onward",
-          "description": "Borderless Ventures connects global investors to our dealflow.",
+          "icon": "trendingUp",
+          "title": "Borderless Ventures - Future Vision",
+          "timeline": "2028 onward",
+          "description": "After the Borderless Hiring Engine reaches maturity, the next stage is to expand Borderless into a global venture ecosystem. Starting in 2028, we will launch Borderless Ventures, a startup creation and investment platform built on top of our validated pool of global talent and our hiring infrastructure.",
           "goals": [
-            "US-facing vehicle – smooth participation for international investors",
-            "Diversified pipeline – ventures born from mentorship, platform, and hackathons",
-            "Capital efficiency – startups bootstrap with community talent before raising rounds"
+            "SPVs (separate LLCs) to ensure clean governance and investor protection",
+            "Venture creation through hackathons, incubation cycles, and founder pipelines",
+            "Ecosystem dealflow sourced from platform, PSP, Hiring, and community",
+            "US-facing investment vehicle for smooth participation by global investors",
+            "Capital-efficient venture building: startups bootstrap using Borderless talent before raising rounds"
           ],
-          "outcome": "This expansion ensures that investors tap into a pre-qualified pipeline and founders raise with confidence."
+          "outcome": "Launching Ventures only after the hiring engine scales ensures a predictable dealflow, high-quality founders, and the credibility and data expected by global investors.",
+          "status": "next"
         }
       ]
     }

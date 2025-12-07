@@ -1262,6 +1262,20 @@
       },
       "stages": [
         {
+          "icon": "calendar",
+          "title": "Resumo do Roadmap",
+          "timeline": "2025-2030",
+          "description": "",
+          "goals": [
+            "2025: Consolidação da plataforma (comunidade, fórum, infraestrutura central)",
+            "2026: Lançamento e escala do Borderless Hiring (Talent Engine + Placement)",
+            "2027: Expansão do marketplace de contratação e da rede de empregadores",
+            "2028: Lançamento do Borderless Ventures (camada de criação de startups)",
+            "2029–2030: Motor global de ventures + maturação do veículo de investimento"
+          ]
+        },
+        {
+          "icon": "users",
           "title": "Fundação de Talentos",
           "timeline": "2023–2025",
           "description": "A Borderless começou destravando o mercado global para desenvolvedores brasileiros.",
@@ -1270,40 +1284,51 @@
             "Mentoria BASE: preparando iniciantes e plenos iniciais para o palco global",
             "Bootcamps: programas especializados (ex.: Web3 Global Developer) alimentando novos mercados"
           ],
-          "outcome": "Isso criou um pipeline de talentos pré-validados e prontos para o global."
+          "outcome": "Isso criou um pipeline de talentos pré-validados e prontos para o global.",
+          "status": "completed"
         },
         {
+          "icon": "laptop",
           "title": "Escala da Plataforma",
           "timeline": "Final de 2025",
-          "description": "Em seguida, estamos consolidando a nossa Borderless Platform — um super app para profissionais:",
+          "description": "Em seguida, estamos consolidando a nossa plataforma Borderless — um super app para profissionais:",
           "goals": [
             "Comunidade, fórum e módulos de aprendizagem",
             "Onboarding e dashboards de carreira",
             "Hub de networking e contratação"
           ],
-          "outcome": "A plataforma transforma os resultados das mentorias em infraestrutura escalável, onde talento e oportunidade se encontram em escala."
+          "outcome": "A plataforma transforma os resultados das mentorias em infraestrutura escalável, onde talento e oportunidade se encontram em escala.",
+          "status": "in-progress"
         },
         {
-          "title": "Incubação de Startups",
+          "icon": "rocket",
+          "title": "Borderless Hiring – Global Talent Engine",
           "timeline": "2026",
-          "description": "Com talento validado e plataforma no ar, a expansão natural é via startups lideradas por founders. Todos os anos, hackathons e ciclos de incubação dentro da Borderless vão gerar novos negócios.",
+          "description": "Com a plataforma Borderless consolidada e o talento validado através do PSP e do Core, o foco para 2026 é o lançamento e escala do Borderless Hiring™ engine — nosso ecossistema global de colocações conectando profissionais brasileiros a empresas internacionais.",
           "goals": [
-            "Modelo de SPV (LLCs separadas) – garantindo proteção ao investidor e crescimento limpo",
-            "Setores foco: SaaS, IA, DevTools e fintech",
-            "Suporte: estratégia de produto, growth e arquitetura técnica"
+            "Pipeline de validação de talentos (CORE + Talent Engine)",
+            "Aquisição de empregadores e operações de contratação",
+            "Talent Cards, triagem e avaliação de performance",
+            "Ciclos de alocação e métricas globais de sucesso em contratação",
+            "Infraestrutura para futuro marketplace e matching por IA"
           ],
-          "outcome": ""
+          "outcome": "O Hiring Engine constrói a base de credibilidade, escalabilidade e dados necessários para a Borderless Ventures prosperar no futuro",
+          "status": "next"
         },
         {
-          "title": "Acesso a Investimento",
-          "timeline": "2026 em diante",
-          "description": "A Borderless Ventures conecta investidores globais ao nosso dealflow.",
+          "icon": "trendingUp",
+          "title": "Borderless Ventures - Visão Futura",
+          "timeline": "2028 em diante",
+          "description": "Após o Borderless Hiring Engine atingir a maturidade, o próximo passo é expandir a Borderless para um ecossistema global de ventures. A partir de 2028, lançaremos o Borderless Ventures, uma plataforma de criação e investimento em startups construída sobre nossa base validada de talentos globais e nossa infraestrutura de contratação.",
           "goals": [
-            "Veículo voltado aos EUA – participação simples para investidores internacionais",
-            "Pipeline diversificado – negócios nascidos de mentorias, plataforma e hackathons",
-            "Eficiência de capital – startups bootstrap com talento da comunidade antes de captar"
+            "SPVs (LLCs separadas) para garantir governança transparente e proteção aos investidores",
+            "Criação de startups por meio de hackathons, ciclos de incubação e pipelines de founders",
+            "Dealflow do ecossistema originado da plataforma, PSP, Hiring e comunidade",
+            "Veículo de investimento focado nos EUA para facilitar participação de investidores globais",
+            "Construção de startups eficiente em capital: bootstrapping de startups usando o talento Borderless antes de captar investimentos"
           ],
-          "outcome": "Essa expansão garante que investidores acessem um pipeline pré-qualificado e founders captem com confiança."
+          "outcome": "Lançar o Ventures somente após a escala do Hiring Engine garante um dealflow previsível, founders de alta qualidade, além da credibilidade e dos dados esperados por investidores globais.",
+          "status": "next"
         }
       ]
     }

@@ -1,32 +1,62 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { roadmapStages, RoadmapStage } from "../BorderlessEvolution/constants/roadmapStages";
+import { useMessages, useTranslations } from "next-intl";
+import {
+  Calendar,
+  Laptop,
+  LucideIcon,
+  Rocket,
+  TrendingUp,
+  Users,
+} from "lucide-react";
 
-export interface EvolutionHeader {
-  titleKey: string;
+const icons: Record<string, LucideIcon> = {
+  users: Users,
+  laptop: Laptop,
+  rocket: Rocket,
+  trendingUp: TrendingUp,
+  calendar: Calendar,
+};
+
+export type StageStatus = "completed" | "in-progress" | "next";
+interface RoadmapStageMessage {
+  title: string;
+  timeline: string;
+  description: string;
+  goals: string[];
+  status: StageStatus;
+  icon: string;
+  outcome?: string;
+}
+
+export type RoadmapStage = Omit<RoadmapStageMessage, "icon"> & {
+  icon: LucideIcon;
+};
+
+export interface RoadmapStatusLabels {
+  completed: string;
+  inProgress: string;
+  next: string;
 }
 
 export function useBorderlessEvolution() {
-  const t = useTranslations("Expansion.BorderlessEvolution");
-  const header: EvolutionHeader = { titleKey: "title" };
+  const messages = useMessages();
 
-  // Map existing constant to translated fields using consistent ordering
-  const stages: RoadmapStage[] = roadmapStages.map((stage, i) => ({
-    icon: stage.icon,
+  const stagesMessage = messages.Expansion.BorderlessEvolution
+    .stages as RoadmapStageMessage[];
+
+  const stages: RoadmapStage[] = stagesMessage.map((stage, i) => ({
+    icon: icons[stage.icon],
     status: stage.status,
-    title: t(`stages.${i}.title`),
-    timeline: t(`stages.${i}.timeline`),
-    description: t(`stages.${i}.description`),
-    goals: [0, 1, 2].map((g) => t(`stages.${i}.goals.${g}`)).filter(Boolean),
-    outcome: t(`stages.${i}.outcome`),
+    title: stage.title,
+    timeline: stage.timeline,
+    description: stage.description,
+    goals: stage.goals,
+    outcome: stage.outcome,
   }));
 
-  const status = {
-    completed: t("status.completed"),
-    inProgress: t("status.inProgress"),
-    next: t("status.next"),
-  } as const;
+  const statusLabels = messages.Expansion.BorderlessEvolution
+    .status as RoadmapStatusLabels;
 
-  return { header, stages, status } as const;
+  return { stages, statusLabels } as const;
 }
