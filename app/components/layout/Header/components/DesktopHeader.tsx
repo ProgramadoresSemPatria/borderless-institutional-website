@@ -2,6 +2,7 @@
 
 import { useNavItems } from "@/app/components/layout/Header/hooks/useNavItems";
 import { FeatureCard } from "@/app/components/ui/FeatureCard";
+import { LinkWithUtmParams } from "@/app/components/ui/LinkWithUtmParams";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,7 +13,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/app/components/ui/NavigationMenu";
 import { cn } from "@/app/lib/utils";
-import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import { usePathname, useRouter } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
@@ -38,7 +39,10 @@ export default function DesktopHeader() {
       />
 
       <div className="group w-[90%] max-w-[900px] mx-auto bg-[#2a2a2b] rounded-lg p-2 flex justify-between items-center h-fit relative shadow-2xl z-50">
-        <Link href={"/"} className="flex items-center gap-3 h-full">
+        <LinkWithUtmParams
+          href={"/"}
+          className="flex items-center gap-3 h-full"
+        >
           <Image
             width={501}
             height={596}
@@ -47,7 +51,7 @@ export default function DesktopHeader() {
             className="w-fit h-8 ml-4"
           />
           <p className="font-bold text-xl">Borderless</p>
-        </Link>
+        </LinkWithUtmParams>
 
         <div className="flex gap-1">
           <NavigationMenu
@@ -68,7 +72,7 @@ export default function DesktopHeader() {
                   {item.subItems ? (
                     <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
                   ) : (
-                    <Link
+                    <LinkWithUtmParams
                       className={cn(
                         navigationMenuTriggerStyle,
                         "hover:opacity-80 transition-opacity duration-150"
@@ -76,7 +80,7 @@ export default function DesktopHeader() {
                       href={item.href || "/"}
                     >
                       {item.title}
-                    </Link>
+                    </LinkWithUtmParams>
                   )}
 
                   <NavigationMenuContent className="bg-tertiary flex w-[900px]">
@@ -86,14 +90,14 @@ export default function DesktopHeader() {
                         key={subItem.title}
                         className="w-[50%] hover:w-[55%] ease-bouncy transition-all duration-400"
                       >
-                        <Link href={subItem.href || "/"}>
+                        <LinkWithUtmParams href={subItem.href || "/"}>
                           <FeatureCard
                             title={subItem.title}
                             description={subItem.description}
                             className="h-64"
                             variant="secondary"
                           />
-                        </Link>
+                        </LinkWithUtmParams>
                       </NavigationMenuLink>
                     ))}
                   </NavigationMenuContent>

@@ -62,7 +62,7 @@ export function IncubatedStartups({ title, preTitle }: IncubatedStartupsProps) {
             </div>
 
             <div className="w-full flex justify-end">
-              <ExternalLink target="_blank" href={startup.href}>
+              <ExternalLink byPassUtmParams target="_blank" href={startup.href}>
                 {startup.buttonText}
               </ExternalLink>
             </div>

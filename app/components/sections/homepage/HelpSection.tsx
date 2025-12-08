@@ -25,6 +25,7 @@ export function HelpSection() {
           </ExternalLink>
           <ExternalLink
             target="_blank"
+            byPassUtmParams
             className="w-full flex-row-reverse justify-end gap-4 pl-1 hover:scale-100"
             href={"https://community.borderlesscoding.com/"}
           >

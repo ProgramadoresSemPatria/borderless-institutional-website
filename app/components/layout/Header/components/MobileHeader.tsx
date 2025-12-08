@@ -1,6 +1,6 @@
 "use client";
 
-import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import { usePathname, useRouter } from "@/i18n/navigation";
 import { useGSAP } from "@gsap/react";
 import clsx from "clsx";
 import gsap from "gsap";
@@ -8,6 +8,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import NavItems from "./NavItems";
+import { LinkWithUtmParams } from "@/app/components/ui/LinkWithUtmParams";
 
 export function MobileHeader() {
   const [isOpenAnimation, setIsOpenAnimation] = useState<boolean>(false);
@@ -87,7 +88,7 @@ export function MobileHeader() {
 
       <nav className="fixed w-full top-8 left-0 right-0 z-50">
         <div className="w-[90%] max-w-[1800px] mx-auto bg-[#2a2a2b] rounded-lg p-2 flex justify-between items-center h-16 relative shadow-2xl">
-          <Link
+          <LinkWithUtmParams
             href={"/"}
             className="flex items-center gap-3 h-full py-2"
             onClick={hideMenu}
@@ -100,7 +101,7 @@ export function MobileHeader() {
               className="w-fit h-full ml-4"
             />
             <p className="font-bold text-lg">Borderless</p>
-          </Link>
+          </LinkWithUtmParams>
 
           <button
             className="cursor-pointer bg-primary h-full aspect-square rounded-sm"

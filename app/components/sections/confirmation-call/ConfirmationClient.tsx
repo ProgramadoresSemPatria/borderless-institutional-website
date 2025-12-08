@@ -6,6 +6,7 @@ import { CalendarDays, Clock, Copy, ExternalLink, Video } from "lucide-react";
 import { toast } from "sonner";
 import { AnimatedText } from "../../ui/AnimatedText";
 import { RequirementsCard } from "../../ui/RequirementsCard";
+import { LinkWithUtmParams } from "../../ui/LinkWithUtmParams";
 
 type Props = {
   name: string;
@@ -98,7 +99,7 @@ export default function ConfirmationClient({
             <h3 className="font-medium">Acesso à sala</h3>
           </div>
           <div className="mt-2 flex flex-wrap items-center gap-2">
-            <a
+            <LinkWithUtmParams
               href={joinUrl}
               target="_blank"
               className={`inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium ${
@@ -108,7 +109,7 @@ export default function ConfirmationClient({
               }`}
             >
               Entrar na sala <ExternalLink className="h-4 w-4" />
-            </a>
+            </LinkWithUtmParams>
             <button
               onClick={() => copy(joinUrl)}
               className="inline-flex items-center gap-2 rounded-md border border-zinc-700 px-3 py-2 text-sm hover:bg-zinc-800"
@@ -127,7 +128,7 @@ export default function ConfirmationClient({
             <Clock className="h-5 w-5" />
             <h3 className="font-medium">Precisa remarcar?</h3>
           </div>
-          <a
+          <LinkWithUtmParams
             href={rescheduleUrl}
             target="_blank"
             className={`mt-2 inline-block text-sm underline underline-offset-4 ${
@@ -137,7 +138,7 @@ export default function ConfirmationClient({
             }`}
           >
             Clique aqui para remarcar
-          </a>
+          </LinkWithUtmParams>
           <a
             href={whatsappUrl}
             target="_blank"

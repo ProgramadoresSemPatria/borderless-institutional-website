@@ -1,7 +1,8 @@
 "use client";
 
 import { AnimatedIconWrapper } from "@/app/components/ui/AnimatedIconWrapper";
-import { Link, usePathname } from "@/i18n/navigation";
+import { LinkWithUtmParams } from "@/app/components/ui/LinkWithUtmParams";
+import { usePathname } from "@/i18n/navigation";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ArrowUpRight } from "lucide-react";
@@ -60,7 +61,7 @@ export function TalkToAProfessional() {
         <span className="min-[1350px]:hidden font-ivy">{t("right")}</span>{" "}
       </p>
 
-      <Link
+      <LinkWithUtmParams
         href={"/contact"}
         className="relative cursor-pointer group"
         onMouseEnter={() => setHovered(true)}
@@ -80,7 +81,7 @@ export function TalkToAProfessional() {
           className="absolute bg-primary rounded-md p-4 bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 group-hover:rotate-6 ease-bouncy transition-all duration-400"
           iconClassName="text-white size-10"
         />
-      </Link>
+      </LinkWithUtmParams>
 
       <p className="right-text font-ivy text-7xl hidden min-[1350px]:block">
         {t("right")}

@@ -1,15 +1,16 @@
 "use client";
 
-import { Link } from "@/i18n/navigation";
 import { ArrowUpRight } from "lucide-react";
 import { LinkProps } from "next/link";
 import { ComponentProps, ReactNode, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { AnimatedIconWrapper } from "./AnimatedIconWrapper";
+import { LinkWithUtmParams } from "./LinkWithUtmParams";
 
 type Props = {
   children: ReactNode;
   className?: string;
+  byPassUtmParams?: boolean;
 } & LinkProps &
   ComponentProps<"a">;
 
@@ -18,12 +19,14 @@ export function ExternalLink({
   className,
   href = "/",
   target,
+  byPassUtmParams = false,
 }: Props) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <Link
+    <LinkWithUtmParams
       href={href}
+      byPassUtmParams={byPassUtmParams}
       target={target}
       className={twMerge(
         "flex-center rounded-md cursor-pointer bg-primary text-white w-fit p-1 pl-3 space-x-2 hover:scale-110 transition-all duration-500 ease-bouncy",
@@ -41,6 +44,6 @@ export function ExternalLink({
         onHoverBackground="bg-white/90"
         onHoverIconColor="text-black"
       />
-    </Link>
+    </LinkWithUtmParams>
   );
 }

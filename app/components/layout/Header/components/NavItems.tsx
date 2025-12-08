@@ -7,7 +7,7 @@ import {
 } from "@/app/components/ui/Accordion";
 import { AnimatedIconWrapper } from "@/app/components/ui/AnimatedIconWrapper";
 import { FeatureCard } from "@/app/components/ui/FeatureCard";
-import { Link } from "@/i18n/navigation";
+import { LinkWithUtmParams } from "@/app/components/ui/LinkWithUtmParams";
 
 export default function NavItems({ onClick }: { onClick: () => void }) {
   const navItems = useNavItems();
@@ -30,19 +30,19 @@ export default function NavItems({ onClick }: { onClick: () => void }) {
               </div>
             </AccordionTrigger>
           ) : (
-            <Link
+            <LinkWithUtmParams
               className="flex items-center gap-4 bg-[#212121] p-2 pr-4 text-sm"
               href={item.href || "/"}
               onClick={onClick}
             >
               {item.icon && <AnimatedIconWrapper icon={item.icon} />}
               <p className="font-medium">{item.title}</p>
-            </Link>
+            </LinkWithUtmParams>
           )}
 
           <AccordionContent className="flex flex-col gap-2 pb-0">
             {item.subItems?.map((subItem) => (
-              <Link
+              <LinkWithUtmParams
                 key={subItem.title}
                 href={subItem.href || "/"}
                 onClick={onClick}
@@ -54,7 +54,7 @@ export default function NavItems({ onClick }: { onClick: () => void }) {
                   titleClassName="text-base"
                   variant="secondary"
                 />
-              </Link>
+              </LinkWithUtmParams>
             ))}
           </AccordionContent>
         </AccordionItem>

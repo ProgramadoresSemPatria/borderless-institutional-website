@@ -2,6 +2,7 @@ import RichText from "@/app/components/ui/RichText";
 import { ArrowRight, Globe } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { AnimatedText } from "../../../../ui/AnimatedText";
+import { LinkWithUtmParams } from "@/app/components/ui/LinkWithUtmParams";
 
 export function TopSection() {
   const t = useTranslations("HomePage.HeroSection.TopSection");
@@ -23,12 +24,17 @@ export function TopSection() {
       </AnimatedText>
 
       <div className="overflow-hidden pt-2">
-        <a href={'https://go.borderlesscoding.com/widget/bookings/diagnostico-carreira-2025'} >
+        <LinkWithUtmParams
+          target="_blank"
+          href={
+            "https://go.borderlesscoding.com/widget/bookings/diagnostico-carreira-2025"
+          }
+        >
           <button className="hero-button group border-2 border-primary py-3 w-full md:w-sm rounded-md flex-center gap-4 hover:opacity-80 cursor-pointer transition-opacity duration-150">
             {t("button")}
             <ArrowRight className="group-hover:translate-x-1 transition-translate duration-150" />
           </button>
-        </a>
+        </LinkWithUtmParams>
       </div>
     </div>
   );

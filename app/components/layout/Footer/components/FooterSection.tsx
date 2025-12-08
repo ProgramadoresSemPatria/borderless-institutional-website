@@ -1,4 +1,4 @@
-import { Link } from "@/i18n/navigation";
+import { LinkWithUtmParams } from "@/app/components/ui/LinkWithUtmParams";
 
 type FooterSectionItem = {
   name: string;
@@ -17,13 +17,13 @@ export function FooterSection({
       <h3 className="text-black font-semibold md:text-lg">{title}</h3>
       <div className="font-semibold flex flex-col space-y-2 text-sm md:text-base">
         {items.map((item) => (
-          <Link
+          <LinkWithUtmParams
             key={item.name}
             href={item.href}
             className="cursor-pointer hover:opacity-70 transition-opacity duration-150"
           >
             {item.name}
-          </Link>
+          </LinkWithUtmParams>
         ))}
       </div>
     </div>
