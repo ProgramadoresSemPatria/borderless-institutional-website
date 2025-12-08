@@ -11,6 +11,7 @@ import { Footer } from "../components/layout/Footer";
 import { Header } from "../components/layout/Header";
 import { GSAPWrapper } from "../components/misc/GSAPWrapper";
 import "../globals.css";
+import { Suspense } from "react";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -65,14 +66,16 @@ export default async function RootLayout({
       <body
         className={`${montserrat.className} ${ivyPresto.variable} antialiased`}
       >
-        <NextIntlClientProvider>
-          <GSAPWrapper>
-            <Header />
-            {children}
-            <Footer />
-          </GSAPWrapper>
-          <Toaster richColors className="select-none" closeButton />
-        </NextIntlClientProvider>
+        <Suspense>
+          <NextIntlClientProvider>
+            <GSAPWrapper>
+              <Header />
+              {children}
+              <Footer />
+            </GSAPWrapper>
+            <Toaster richColors className="select-none" closeButton />
+          </NextIntlClientProvider>
+        </Suspense>
       </body>
       <GoogleTagManager gtmId="GTM-TZWWWMPW" />
     </html>
