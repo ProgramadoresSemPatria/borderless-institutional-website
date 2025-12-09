@@ -35,7 +35,6 @@ export function BaseHeroSection() {
 
         <div className="overflow-hidden pt-2">
           <LinkWithUtmParams
-            target="_blank"
             href={
               "https://go.borderlesscoding.com/widget/bookings/diagnostico-carreira-2025"
             }

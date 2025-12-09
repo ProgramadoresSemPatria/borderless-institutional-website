@@ -10,7 +10,6 @@ export function ApplyNow() {
     <section className="pb-[15svh]">
       <FullWidthCard title={t("title")} description={t("description")}>
         <ExternalLink
-          target="_blank"
           href={
             "https://go.borderlesscoding.com/widget/bookings/diagnostico-carreira-2025"
           }
