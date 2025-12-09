@@ -31,14 +31,14 @@ export default function DesktopHeader() {
   };
 
   return (
-    <nav className="fixed w-full h-fit top-8 inset-0 z-50">
+    <nav className="fixed w-[90%] max-w-[900px] h-fit top-8 inset-0 z-50 mx-auto">
       <div
         className={`fixed inset-0 bg-black transition-opacity duration-200 pointer-events-none z-40 ${
           dimmed ? "opacity-40" : "opacity-0"
         }`}
       />
 
-      <div className="group w-[90%] max-w-[900px] mx-auto bg-[#2a2a2b] rounded-lg p-2 flex justify-between items-center h-fit relative shadow-2xl z-50">
+      <div className="group mx-auto bg-[#2a2a2b] rounded-lg p-2 flex justify-between items-center h-fit relative shadow-2xl z-50">
         <LinkWithUtmParams
           href={"/"}
           className="flex items-center gap-3 h-full"
