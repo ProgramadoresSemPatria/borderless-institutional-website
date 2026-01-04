@@ -7,11 +7,10 @@ import { WhyBorderless } from "@/app/components/sections/want-to-hire/WhyBorderl
 import { createMetadata } from "@/app/lib/seo";
 import { getTranslations } from "next-intl/server";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: string };
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
 }) {
+  const params = await props.params;
   const t = await getTranslations({
     locale: params.locale,
     namespace: "Metadata.WantToHire",

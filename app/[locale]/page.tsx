@@ -13,11 +13,10 @@ import { TalentCompanies } from "../components/sections/homepage/TalentCompanies
 import { Testimonials } from "../components/sections/homepage/Testimonials";
 import { createMetadata } from "../lib/seo";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: string };
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
 }) {
+  const params = await props.params;
   return createMetadata({ locale: params.locale });
 }
 
