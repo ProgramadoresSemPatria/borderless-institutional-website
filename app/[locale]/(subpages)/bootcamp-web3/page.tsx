@@ -5,6 +5,26 @@ import { ModulesOverview } from "@/app/components/sections/bootcamp-web3/Modules
 import { ResultsYouCanExpect } from "@/app/components/sections/bootcamp-web3/ResultsYouCanExpect";
 import { WhoShouldJoin } from "@/app/components/sections/bootcamp-web3/WhoShouldJoin";
 import { WhyThisBootcamp } from "@/app/components/sections/bootcamp-web3/WhyThisBootcamp";
+import { createMetadata } from "@/app/lib/seo";
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const t = await getTranslations({
+    locale: params.locale,
+    namespace: "Metadata.BootcampWeb3",
+  });
+
+  return createMetadata({
+    locale: params.locale,
+    title: t("title"),
+    description: t("description"),
+    pathname: "/bootcamp-web3",
+  });
+}
 
 export default function Page() {
   return (

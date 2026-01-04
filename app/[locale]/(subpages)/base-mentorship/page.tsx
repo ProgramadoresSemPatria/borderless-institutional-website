@@ -7,6 +7,26 @@ import { ResultsYouCanExpect } from "@/app/components/sections/base-mentorship/R
 import { WhatIsBaseMentorship } from "@/app/components/sections/base-mentorship/WhatIsBaseMentorship";
 import { WhoIsItFor } from "@/app/components/sections/base-mentorship/WhoIsItFor";
 import { WhyItWorks } from "@/app/components/sections/base-mentorship/WhyItWorks";
+import { createMetadata } from "@/app/lib/seo";
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const t = await getTranslations({
+    locale: params.locale,
+    namespace: "Metadata.BaseMentorship",
+  });
+
+  return createMetadata({
+    locale: params.locale,
+    title: t("title"),
+    description: t("description"),
+    pathname: "/base-mentorship",
+  });
+}
 
 export default function Page() {
   return (

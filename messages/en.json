@@ -1676,5 +1676,39 @@
       "buttonText": "Members Only",
       "href": "https://community.borderlesscoding.com/"
     }
-  ]
+  ],
+  "Metadata": {
+    "HomePage": {
+      "title": "Global tech starts here",
+      "description": "The bridge between Brazilian tech talents and the international market — with educational products, our own platform, and incubated startups."
+    },
+    "BaseMentorship": {
+      "title": "BASE Mentorship",
+      "description": "BASE Mentorship is the career foundation program for ambitious Brazilian tech professionals who want to prepare for high-paying international roles. Develop the skills, portfolio, and confidence to step into the global market — and become ready for PSP Mentorship"
+    },
+    "BootcampWeb3": {
+      "title": "Bootcamp Web3",
+      "description": "An intensive, practical bootcamp to build real Web3 skills, from blockchain fundamentals to shipping production-grade dApps"
+    },
+    "PspMentorship": {
+      "title": "PSP Mentorship",
+      "description": "PSP Mentorship is the proven career acceleration program for senior Brazilian developers to land high-paying international contracts, earning in USD/EUR, without relying on luck, ‘miracle’ recruiters, or endless applications."
+    },
+    "ForFoundersAndInvestors": {
+      "title": "Founders and Investors",
+      "description": "We empower the next generation of international tech founders through mentorship, incubation, and access to a global network of investors."
+    },
+    "WantToHire": {
+      "title": "Want to Hire",
+      "description": "Through Borderless Coding, you get direct access to a pool of highly qualified Brazilian developers, engineers, and data professionals — ready to work for global companies. Unlike traditional consultancies, we don’t charge placement fees."
+    },
+    "WantToInternationalize": {
+      "title": "Internationalize",
+      "description": "Borderless Coding has already helped 100+ Brazilian developers land international jobs paying $10K+ USD/month. You could be next."
+    },
+    "Expansion": {
+      "title": "Borderless Expansion",
+      "description": "From mentorship and platform to startup incubation and investor access — this is our roadmap to scale impact."
+    }
+  }
 }

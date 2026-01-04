@@ -1640,5 +1640,39 @@
       "buttonText": "Exclusivo para membros",
       "href": "https://community.borderlesscoding.com/"
     }
-  ]
+  ],
+  "Metadata": {
+    "HomePage": {
+      "title": "Global tech starts here",
+      "description": "A ponte entre talentos tech brasileiros e o mercado internacional — com produtos educacionais, plataforma própria e startups em incubação."
+    },
+    "BaseMentorship": {
+      "title": "Mentoria BASE",
+      "description": "A Mentoria BASE é o programa de fundamentos de carreira para profissionais brasileiros ambiciosos de tecnologia que querem se preparar para vagas internacionais de alta remuneração. Desenvolva as habilidades, o portfólio e a confiança para entrar no mercado global — e ficar pronto para a Mentoria PSP"
+    },
+    "BootcampWeb3": {
+      "title": "BootCamp Web3",
+      "description": "Bootcamp intensivo e prático para desenvolver habilidades reais em Web3 — dos fundamentos de blockchain ao deploy de dApps de produção"
+    },
+    "PspMentorship": {
+      "title": "Mentoria PSP",
+      "description": "A Mentoria PSP é o programa comprovado de aceleração de carreira para developers seniores brasileiros conquistarem contratos internacionais de alta remuneração, ganhando em USD/EUR, sem depender de sorte, recrutadores ‘milagrosos’ ou aplicações infinitas"
+    },
+    "ForFoundersAndInvestors": {
+      "title": "Founders e Investidores",
+      "description": "Empoderamos a próxima geração de founders internacionais por meio de mentoria, incubação e acesso a uma rede global de investidores."
+    },
+    "WantToHire": {
+      "title": "Contratar",
+      "description": "Com a Borderless Coding, você tem acesso direto a um pool de desenvolvedores, engenheiros e profissionais de dados brasileiros altamente qualificados — prontos para trabalhar em empresas globais. Diferente de consultorias tradicionais, não cobramos taxa de contratação."
+    },
+    "WantToInternationalize": {
+      "title": "Internacionalizar",
+      "description": "A Borderless Coding já ajudou 100+ desenvolvedores brasileiros a conquistarem vagas internacionais pagando $10K+ USD/mês. Você pode ser o próximo."
+    },
+    "Expansion": {
+      "title": "Expansão Borderless",
+      "description": "De mentoria e plataforma à incubação de startups e acesso a investidores — este é nosso roadmap para escalar impacto."
+    }
+  }
 }

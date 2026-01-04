@@ -7,6 +7,26 @@ import { ResultsYouCanExpect } from "@/app/components/sections/psp-mentorship/Re
 import { WhatIsPspMentorship } from "@/app/components/sections/psp-mentorship/WhatIsPspMentorship";
 import { WhoIsItFor } from "@/app/components/sections/psp-mentorship/WhoIsItFor";
 import { WhyItWorks } from "@/app/components/sections/psp-mentorship/WhyItWorks";
+import { createMetadata } from "@/app/lib/seo";
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const t = await getTranslations({
+    locale: params.locale,
+    namespace: "Metadata.PspMentorship",
+  });
+
+  return createMetadata({
+    locale: params.locale,
+    title: t("title"),
+    description: t("description"),
+    pathname: "/psp-mentorship",
+  });
+}
 
 export default function Page() {
   return (

@@ -11,6 +11,15 @@ import { OurTeam } from "../components/sections/homepage/OurTeam";
 import { StartupIncubator } from "../components/sections/homepage/StartupIncubator";
 import { TalentCompanies } from "../components/sections/homepage/TalentCompanies";
 import { Testimonials } from "../components/sections/homepage/Testimonials";
+import { createMetadata } from "../lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  return createMetadata({ locale: params.locale });
+}
 
 export default function Page() {
   return (
