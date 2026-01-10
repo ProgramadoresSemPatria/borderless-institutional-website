@@ -47,7 +47,7 @@ export function createMetadata({
       languages: {
         pt: `${siteConfig.url}/pt${safePathname}`,
         en: `${siteConfig.url}/en${safePathname}`,
-        "x-default": `${siteConfig.url}/en${safePathname}`,
+        "x-default": `${siteConfig.url}/pt${safePathname}`,
       },
     },
     openGraph: {
