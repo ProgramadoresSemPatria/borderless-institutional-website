@@ -1,9 +1,11 @@
+import { OurHistory } from "@/app/components/sections/homepage/OurHistory";
+import { OurTeam } from "@/app/components/sections/homepage/OurTeam";
+import { Testimonials } from "@/app/components/sections/homepage/Testimonials";
 import { ApplyNow } from "@/app/components/sections/psp-mentorship/ApplyNow";
 import { CompareOurMentorships } from "@/app/components/sections/psp-mentorship/CompareOurMentorships";
 import { GoGlobalMethod } from "@/app/components/sections/psp-mentorship/GoGlobalMethod";
 import { HowItWorks } from "@/app/components/sections/psp-mentorship/HowItWorks";
 import { PspHeroSection } from "@/app/components/sections/psp-mentorship/PspHeroSection";
-import { ResultsYouCanExpect } from "@/app/components/sections/psp-mentorship/ResultsYouCanExpect";
 import { Tiers } from "@/app/components/sections/psp-mentorship/Tiers";
 import { WhatIsPspMentorship } from "@/app/components/sections/psp-mentorship/WhatIsPspMentorship";
 import { WhoIsItFor } from "@/app/components/sections/psp-mentorship/WhoIsItFor";
@@ -37,10 +39,14 @@ export default function Page() {
       <WhoIsItFor />
       <GoGlobalMethod />
       <HowItWorks />
-      <ResultsYouCanExpect />
       <WhyItWorks />
+      <Testimonials />
       <CompareOurMentorships />
-      <ApplyNow />
+      <div className="space-y-4">
+        <OurHistory />
+        <OurTeam />
+        <ApplyNow />
+      </div>
     </div>
   );
 }

@@ -630,28 +630,6 @@
         }
       ]
     },
-    "ResultsYouCanExpect": {
-      "preTitle": "Our alumni report",
-      "title": "<italic>Results</italic> You Can Expect",
-      "results": [
-        {
-          "title": "Fast Results",
-          "description": "First international job offers within 30–90 days"
-        },
-        {
-          "title": "Salary Jump",
-          "description": "Salary jumps to $12K+ USD/month for Tier 3 professionals"
-        },
-        {
-          "title": "Independence",
-          "description": "Confidence to negotiate offers and work globally without third-party dependency"
-        }
-      ],
-      "success": {
-        "title": "Real Success Story",
-        "text": "Thiago, a senior backend developer from Belo Horizonte, already earning $10K USD/month, secured <highlight>an additional $9K USD contract</highlight> in just 27 days of mentorship"
-      }
-    },
     "WhatIs": {
       "title": "What is PSP Mentorship?",
       "description": "The Programador Sem Pátria (PSP) Mentorship is a high-performance career acceleration program designed for experienced Brazilian tech professionals who are ready to play in the global market. Led by Yuri Pereira, founder of Borderless Coding, PSP combines strategic positioning, technical interview mastery, networking, and direct mentorship to create predictable international job offers.",

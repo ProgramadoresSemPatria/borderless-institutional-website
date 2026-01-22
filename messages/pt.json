@@ -859,28 +859,6 @@
         }
       ]
     },
-    "ResultsYouCanExpect": {
-      "preTitle": "Nossos alumni relatam",
-      "title": "<italic>Resultados</italic> que você pode esperar",
-      "results": [
-        {
-          "title": "Resultados rápidos",
-          "description": "Primeiras propostas internacionais em 30–90 dias"
-        },
-        {
-          "title": "Salário maior",
-          "description": "Saltos salariais para $12K+ USD/mês para profissionais Tier 3"
-        },
-        {
-          "title": "Independência",
-          "description": "Confiança para negociar propostas e trabalhar globalmente sem depender de terceiros"
-        }
-      ],
-      "success": {
-        "title": "Case real de sucesso",
-        "text": "Thiago, backend sênior de Belo Horizonte, já ganhando $10K USD/mês, conquistou <highlight>um contrato adicional de $9K USD</highlight> em apenas 27 dias de mentoria"
-      }
-    },
     "WhatIs": {
       "title": "O que é a Mentoria PSP?",
       "description": "A Mentoria Programador Sem Pátria (PSP) é um programa de aceleração de carreira de alta performance para profissionais brasileiros experientes de tecnologia prontos para iniciar no mercado global. Liderada por Yuri Pereira, fundador da Borderless Coding, a PSP combina posicionamento estratégico, domínio de entrevistas técnicas, networking e mentoria direta para gerar propostas internacionais previsíveis.",
