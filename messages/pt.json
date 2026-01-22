@@ -948,6 +948,42 @@
           ]
         }
       ]
+    },
+    "Comparison": {
+      "title": "Por que a PSP é a maior autoridade em internacionalização de carreiras tech do Brasil",
+      "header": ["Critério", "Mentoria PSP", "Outras mentorias"],
+      "items": [
+        {
+          "title": "Objetivo central",
+          "borderless": "Progressão de carreira global com escala de salário por TIER",
+          "generic": "Conquistar o primeiro contrato internacional"
+        },
+        {
+          "title": "Acompanhamento após o 1º contrato",
+          "borderless": "Continuidade estratégica para upgrade de contratos, negociação e leverage",
+          "generic": "Normalmente encerra ou perde profundidade"
+        },
+        {
+          "title": "Mentores especializados",
+          "borderless": "5 mentores de diferentes áreas técnicas, com feedback sob medida",
+          "generic": "1 mentor generalista ou suporte limitado"
+        },
+        {
+          "title": "Mock Interviews reais",
+          "borderless": "Simulações mensais cobrindo live coding, system design e behavioral",
+          "generic": "Simulações pontuais ou apenas teoria"
+        },
+        {
+          "title": "Inglês técnico aplicado",
+          "borderless": "Aulas 3x por semana, focadas em entrevistas e trabalho real",
+          "generic": "Inglês tratado como pré-requisito"
+        },
+        {
+          "title": "Visão de longo prazo",
+          "borderless": "Planejamento fiscal, mudança de país, equity e crescimento patrimonial",
+          "generic": "Não aborda temas fiscais ou patrimoniais"
+        }
+      ]
     }
   },
   "ForFoundersAndInvestors": {

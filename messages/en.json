@@ -719,6 +719,42 @@
           ]
         }
       ]
+    },
+    "Comparison": {
+      "title": "Why the PSP is the largest authority in internationalizing tech careers in Brazil",
+      "header": ["Criteria", "PSP Mentorship", "Other mentorships"],
+      "items": [
+        {
+          "title": "Core objective",
+          "borderless": "Global career progression with salary scaling by TIER",
+          "generic": "Land the first international contract"
+        },
+        {
+          "title": "Post–first contract follow-up",
+          "borderless": "Strategic continuity for contract upgrades, negotiation, and leverage",
+          "generic": "Usually ends or loses depth"
+        },
+        {
+          "title": "Specialized mentors",
+          "borderless": "5 mentors from different technical areas, with tailored feedback",
+          "generic": "1 generalist mentor or limited support"
+        },
+        {
+          "title": "Real mock interviews",
+          "borderless": "Monthly simulations covering live coding, system design, and behavioral interviews",
+          "generic": "Occasional simulations or theory only"
+        },
+        {
+          "title": "Applied technical English",
+          "borderless": "Classes three times a week, focused on interviews and real work",
+          "generic": "English treated as a prerequisite"
+        },
+        {
+          "title": "Long-term vision",
+          "borderless": "Tax planning, country relocation, equity, and wealth growth",
+          "generic": "Does not address tax or wealth-related topics"
+        }
+      ]
     }
   },
   "BootcampWeb3": {
