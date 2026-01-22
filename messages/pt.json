@@ -814,36 +814,48 @@
       "items": [
         {
           "title": "Duração",
-          "description": "6 ou 12 meses (escolha seu plano)"
+          "description": "6 ou 12 meses (escolha seu plano)",
+          "img": "/mentorship/duration.webp"
         },
-        { "title": "Formato", "description": "100% online" },
+        {
+          "title": "Formato",
+          "description": "100% online",
+          "img": "/mentorship/format.webp"
+        },
         {
           "title": "Encontros ao vivo",
-          "description": "Chamadas estratégicas quinzenais com feedback direto do Yuri"
+          "description": "Chamadas estratégicas quinzenais com feedback direto do Yuri",
+          "img": "/mentorship/live.webp"
         },
         {
           "title": "Mentores especialistas",
-          "description": "5 mentores de diferentes áreas para conduzir mock interviews e dar feedback sob medida"
+          "description": "5 mentores de diferentes áreas para conduzir mock interviews e dar feedback sob medida",
+          "img": "/mentorship/mentors.webp"
         },
         {
           "title": "Mock Interviews",
-          "description": "Simulações mensais cobrindo os principais formatos de entrevista globais"
+          "description": "Simulações mensais cobrindo os principais formatos de entrevista globais",
+          "img": "/mentorship/mock.webp"
         },
         {
           "title": "Inglês",
-          "description": "Aulas 3x/semana do básico à fluência técnica"
+          "description": "Aulas 3x/semana do básico à fluência técnica",
+          "img": "/mentorship/english.webp"
         },
         {
           "title": "Acesso à Plataforma Borderless",
-          "description": "Todos os mentorados recebem conta premium na Borderless Platform — centralizando comunidade, aprendizado e networking em um só lugar"
+          "description": "Todos os mentorados recebem conta premium na Borderless Platform — centralizando comunidade, aprendizado e networking em um só lugar",
+          "img": "/mentorship/platform.webp"
         },
         {
           "title": "Currículo",
-          "description": "Modelos de currículo de alta conversão adaptáveis às estratégias definidas durante a mentoria"
+          "description": "Modelos de currículo de alta conversão adaptáveis às estratégias definidas durante a mentoria",
+          "img": "/mentorship/resume.webp"
         },
         {
           "title": "Scripts",
-          "description": "Scripts, templates e pipelines comprovados para acelerar resultados"
+          "description": "Scripts, templates e pipelines comprovados para acelerar resultados",
+          "img": "/mentorship/scripts.webp"
         }
       ]
     },

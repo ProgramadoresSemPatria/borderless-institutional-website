@@ -585,39 +585,48 @@
       "items": [
         {
           "title": "Duration",
-          "description": "6 or 12 months (choose your plan)"
+          "description": "6 or 12 months (choose your plan)",
+          "img": "/mentorship/duration.webp"
         },
         {
           "title": "Format",
-          "description": "100% online"
+          "description": "100% online",
+          "img": "/mentorship/format.webp"
         },
         {
           "title": "Live Sessions",
-          "description": "Bi-weekly strategy calls with direct feedback from Yuri"
+          "description": "Bi-weekly strategy calls with direct feedback from Yuri",
+          "img": "/mentorship/live.webp"
         },
         {
           "title": "Expert Mentors",
-          "description": "5 mentors from different backgrounds to run mock interviews and give tailored feedback"
+          "description": "5 mentors from different backgrounds to run mock interviews and give tailored feedback",
+          "img": "/mentorship/mentors.webp"
         },
         {
           "title": "Mock Interviews",
-          "description": "Monthly simulations covering the main global interview formats"
+          "description": "Monthly simulations covering the main global interview formats",
+          "img": "/mentorship/mock.webp"
         },
         {
           "title": "English Coaching",
-          "description": "3x/week classes from basic to advanced technical fluency"
+          "description": "3x/week classes from basic to advanced technical fluency",
+          "img": "/mentorship/english.webp"
         },
         {
           "title": "Borderless Platform Access",
-          "description": "All mentees receive a premium account on the Borderless Platform — centralizing community, learning, and networking in one place"
+          "description": "All mentees receive a premium account on the Borderless Platform — centralizing community, learning, and networking in one place",
+          "img": "/mentorship/platform.webp"
         },
         {
           "title": "Resumé",
-          "description": "High-conversion résumé templates adaptable to strategies reached during the mentorship"
+          "description": "High-conversion résumé templates adaptable to strategies reached during the mentorship",
+          "img": "/mentorship/resume.webp"
         },
         {
           "title": "Scripts",
-          "description": "Proven scripts, templates, and pipelines to speed up results"
+          "description": "Proven scripts, templates, and pipelines to speed up results",
+          "img": "/mentorship/scripts.webp"
         }
       ]
     },

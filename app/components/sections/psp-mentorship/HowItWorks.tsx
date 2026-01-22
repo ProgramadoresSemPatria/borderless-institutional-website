@@ -20,15 +20,15 @@ export function HowItWorks() {
         <ExpandableGrid
           breakpoints={{
             md: {
-              itemHeight: 16,
+              itemHeight: 20,
               itemsPerRow: 2,
             },
             xl: {
-              itemHeight: 16,
+              itemHeight: 20,
               itemsPerRow: 3,
             },
           }}
-          itemHeight={12}
+          itemHeight={14}
           itemsPerRow={1}
           items={instructions.map((instruction) => (
             <FeatureCard
@@ -38,6 +38,7 @@ export function HowItWorks() {
               description={instruction.description}
               variant="secondary"
               icon={instruction.icon}
+              img={instruction.img}
             />
           ))}
         />
