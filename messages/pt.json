@@ -906,6 +906,58 @@
         "Um sistema claro, passo a passo, validado com 105+ casos de sucesso",
         "Uma comunidade de alta performance que mantém sua accountability"
       ]
+    },
+    "Tiers": {
+      "title": "Na <italic>mentoria PSP</italic>, o primeiro contrato internacional é o início, não o fim",
+      "subtitle": "A maioria das mentorias de carreira ajuda você a conseguir um job em dólar. A Mentoria Programador Sem Pátria é um sistema de progressão de carreira no mercado global. Aqui escalamos com você, tier por tier – do primeiro contrato, a escala de remuneração.",
+      "goal": "OBJETIVO",
+      "items": [
+        {
+          "index": 1,
+          "img": "/tiers/world.webp",
+          "title": "Entrada no mercado global",
+          "goal": "Sair do mercado nacional e fechar o primeiro contrato internacional em até 90 dias",
+          "items": [
+            "Posicionamento internacional correto (LinkedIn, CV, narrativa)",
+            "Preparação para entrevistas técnicas e comportamentais em inglês",
+            "Construção de pipeline ativo de oportunidades"
+          ]
+        },
+        {
+          "index": 2,
+          "img": "/tiers/negotiation.webp",
+          "title": "Estabilização e aumento de leverage",
+          "goal": "Deixar de ser iniciante no mercado global e ganhar poder de negociação",
+          "items": [
+            "Estratégia de troca e upgrade de contratos",
+            "Posicionamento como profissional de nível intermediário global",
+            "Redução de risco e aumento de previsibilidade"
+          ]
+        },
+        {
+          "index": 3,
+          "img": "/tiers/money.webp",
+          "title": "Escalada de salário e autoridade global",
+          "goal": "Escalar remuneração e relevância no mercado internacional",
+          "items": [
+            "Acesso a empresas mais capitalizadas",
+            "Negociação avançada de salário e condições",
+            "Consolidação de autoridade técnica e estratégica"
+          ]
+        },
+        {
+          "index": 4,
+          "img": "/tiers/heritage.webp",
+          "title": "Consolidação patrimonial e decisões de longo prazo",
+          "goal": "Transformar renda alta em patrimônio e liberdade sustentável",
+          "items": [
+            "Planejamento fiscal e estrutural internacional",
+            "Decisões sobre país, residência fiscal e mobilidade",
+            "Estratégias envolvendo equity, stock options e upside",
+            "Planejamento de carreira e finanças no longo prazo"
+          ]
+        }
+      ]
     }
   },
   "ForFoundersAndInvestors": {

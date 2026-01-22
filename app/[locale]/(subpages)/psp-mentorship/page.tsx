@@ -4,6 +4,7 @@ import { GoGlobalMethod } from "@/app/components/sections/psp-mentorship/GoGloba
 import { HowItWorks } from "@/app/components/sections/psp-mentorship/HowItWorks";
 import { PspHeroSection } from "@/app/components/sections/psp-mentorship/PspHeroSection";
 import { ResultsYouCanExpect } from "@/app/components/sections/psp-mentorship/ResultsYouCanExpect";
+import { Tiers } from "@/app/components/sections/psp-mentorship/Tiers";
 import { WhatIsPspMentorship } from "@/app/components/sections/psp-mentorship/WhatIsPspMentorship";
 import { WhoIsItFor } from "@/app/components/sections/psp-mentorship/WhoIsItFor";
 import { WhyItWorks } from "@/app/components/sections/psp-mentorship/WhyItWorks";
@@ -32,6 +33,7 @@ export default function Page() {
     <div>
       <PspHeroSection />
       <WhatIsPspMentorship />
+      <Tiers />
       <WhoIsItFor />
       <GoGlobalMethod />
       <HowItWorks />

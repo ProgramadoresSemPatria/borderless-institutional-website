@@ -8,7 +8,7 @@ import { AnimatedText } from "./AnimatedText";
 
 interface SectionHeaderProps {
   title: ReactNode;
-  preTitle: string;
+  preTitle?: string;
   className?: string;
 }
 
@@ -39,12 +39,14 @@ export function SectionHeader({
 
   return (
     <div ref={sectionHeaderRef} className={twMerge("space-y-4", className)}>
-      <div className="flex items-center gap-2">
-        <div className="header-dot size-2 rounded-full bg-primary" />
-        <AnimatedText className="text-sm md:text-xl font-medium">
-          {preTitle}
-        </AnimatedText>
-      </div>
+      {preTitle && (
+        <div className="flex items-center gap-2">
+          <div className="header-dot size-2 rounded-full bg-primary" />
+          <AnimatedText className="text-sm md:text-xl font-medium">
+            {preTitle}
+          </AnimatedText>
+        </div>
+      )}
       <AnimatedText as="h2" className="max-w-4xl">
         {title}
       </AnimatedText>

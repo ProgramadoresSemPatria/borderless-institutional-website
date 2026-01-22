@@ -4,7 +4,6 @@ import RichText from "@/app/components/ui/RichText";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { AnimatedText } from "../../ui/AnimatedText";
-import { ExternalLink } from "../../ui/ExternalLink";
 import { LinkWithUtmParams } from "../../ui/LinkWithUtmParams";
 
 export function PspHeroSection() {
