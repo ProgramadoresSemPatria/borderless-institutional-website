@@ -14,6 +14,7 @@ import {
 import { SectionHeader } from "../../ui/SectionHeader";
 import { ITier, useTiers } from "./hooks/useTiers";
 import { useRichText } from "@/app/hooks/useRichText";
+import Image from "next/image";
 
 export function Tiers() {
   const { rich } = useRichText("PspMentorship.Tiers");
@@ -87,10 +88,12 @@ function TierCard({ index, goal, items, title, img }: ITier) {
 
   return (
     <div className="rounded-md size-full p-5 pb-8 md:p-6 flex flex-col gap-6 bg-tertiary select-none">
-      <div className="relative rounded-sm overflow-hidden">
-        <img
+      <div className="relative rounded-sm overflow-hidden w-full aspect-9/7 sm:aspect-16/5">
+        <Image
           src={img}
-          className="size-full aspect-9/7 sm:aspect-16/5 object-cover object-center"
+          alt={title}
+          fill
+          className="size-full object-cover object-center"
         />
 
         <div className="absolute bottom-4 left-4 z-10 pr-4">
@@ -98,7 +101,7 @@ function TierCard({ index, goal, items, title, img }: ITier) {
           <p className="w-full text-gray-400">{title}</p>
         </div>
 
-        <div className="absolute size-full bg-linear-to-t from-15% from-black/85 to-100% to-black/30 bottom-0" />
+        <div className="absolute size-full bg-linear-to-t from-15% from-black/85 to-100% to-black/50 bottom-0" />
       </div>
 
       <div>
