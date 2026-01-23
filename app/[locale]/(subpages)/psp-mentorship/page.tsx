@@ -40,8 +40,8 @@ export default function Page() {
       <GoGlobalMethod />
       <HowItWorks />
       <WhyItWorks />
-      <Testimonials />
       <Comparison />
+      <Testimonials />
       <div className="space-y-4">
         <OurHistory />
         <OurTeam />

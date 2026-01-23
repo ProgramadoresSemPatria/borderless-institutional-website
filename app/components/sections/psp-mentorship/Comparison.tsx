@@ -1,7 +1,6 @@
 import { CheckIcon } from "lucide-react";
 import { SectionHeader } from "../../ui/SectionHeader";
 import {
-  TableCaption,
   TableHeader,
   TableRow,
   TableHead,
@@ -15,7 +14,7 @@ export function Comparison() {
   const { title, header, items } = useComparison();
 
   return (
-    <section className="pt-[10svh] pb-12 space-y-8">
+    <section className="py-[10svh] space-y-8">
       <SectionHeader title={title} />
 
       <div className="md:hidden space-y-6">
