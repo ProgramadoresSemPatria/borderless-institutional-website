@@ -300,6 +300,10 @@
       "title": "Events and <italic>achievements</italic>",
       "events": [
         {
+          "description": "Second Borderless conference in São Paulo, 2026, with 5 countries and 21 Brazilian states gathered",
+          "src": "/events/conference_2026.webp"
+        },
+        {
           "description": "First Borderless conference in São Paulo, Brazil, with over 70 guests",
           "src": "/events/conference.webp"
         },

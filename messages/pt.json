@@ -273,6 +273,10 @@
       "title": "Eventos e <italic>conquistas</italic>",
       "events": [
         {
+          "description": "Segunda Borderless conf São Paulo, 2026, 5 países e 21 estados brasileiros reunidos",
+          "src": "/events/conference_2026.webp"
+        },
+        {
           "description": "Primeira borderless conf São Paulo, Brasil, para mais de 70 convidados",
           "src": "/events/conference.webp"
         },
