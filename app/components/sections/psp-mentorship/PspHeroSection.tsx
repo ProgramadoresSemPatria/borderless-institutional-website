@@ -39,7 +39,7 @@ export function PspHeroSection() {
               "https://go.borderlesscoding.com/widget/bookings/diagnostico-carreira-2025"
             }
           >
-            <button className="hero-button group border-2 border-primary py-3 w-full md:w-sm rounded-md flex-center gap-4 hover:opacity-80 cursor-pointer transition-opacity duration-150">
+            <button className="hero-button group border-2 border-primary py-4 w-full md:w-sm rounded-md flex-center gap-4 hover:opacity-80 cursor-pointer transition-opacity duration-150 px-4 text-left">
               {t("cta")}
               <ArrowRight className="group-hover:translate-x-1 transition-translate duration-150" />
             </button>

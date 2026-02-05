@@ -11,7 +11,7 @@ export function HowItWorks() {
   const instructions = useHowItWorks();
 
   return (
-    <section className="rounded-md space-y-8 py-[10svh]">
+    <section className="rounded-md space-y-8 pt-[10svh] pb-2">
       <AnimatedText as="h2" className="text-pretty">
         {rich("title")}
       </AnimatedText>

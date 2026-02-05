@@ -36,9 +36,11 @@ export default function Page() {
       <PspHeroSection />
       <WhatIsPspMentorship />
       <WhoIsItFor />
+      <ApplyNow className="pb-0" />
       <Tiers />
       <GoGlobalMethod />
       <HowItWorks />
+      <ApplyNow className="pb-0" />
       <WhyItWorks />
       <Comparison />
       <Testimonials />

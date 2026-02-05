@@ -22,12 +22,12 @@ export function WhoIsItFor() {
         duration: 0.8,
         stagger: 0.1,
         scrollTrigger: { trigger: ".requirements-card", start: "top 90%" },
-      }
+      },
     );
   });
 
   return (
-    <section className="py-[10svh] space-y-8">
+    <section className="pt-[10svh] pb-2 space-y-8">
       <SectionHeader preTitle={t("preTitle")} title={rich("title")} />
 
       <div className="flex flex-col lg:flex-row gap-2">
