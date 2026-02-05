@@ -12,7 +12,7 @@
         "discoverMore": "Discover more"
       },
       "NumbersHighlightCard": {
-        "stats": "500 students, 105 internationalized and 2 incubated startups",
+        "stats": "500 students, 120 internationalized and 2 incubated startups",
         "name": "Borderless Coding",
         "logoAlt": "borderless logo"
       }
@@ -131,7 +131,7 @@
       ]
     },
     "Testimonials": {
-      "title": "<italic>105+ Success Stories</italic> – professionals now working in the US, Europe, and Asia.",
+      "title": "<italic>120+ Success Stories</italic> – professionals now working in the US, Europe, and Asia.",
       "list": [
         {
           "img": "/testimonials/guilherme.png",
@@ -273,7 +273,7 @@
       "title": "Our <italic>History</italic>",
       "paragraphs": [
         "Created in 2023 by Yuri Pereira initially as a mentorship connecting developers with the market, today it has become an ecosystem with Tech teachers, English teachers, CTOs, Managers, Cybersecurity and various tech industry experts.",
-        "Today, Borderless has already contributed to the internationalization of over 105 professionals — from career beginners to specialists with more than 10 years of experience."
+        "Today, Borderless has already contributed to the internationalization of over 120 professionals — from career beginners to specialists with more than 10 years of experience."
       ]
     },
     "OurTeam": {
@@ -633,7 +633,7 @@
     "WhatIs": {
       "title": "What is PSP Mentorship?",
       "description": "The Programador Sem Pátria (PSP) Mentorship is a high-performance career acceleration program designed for experienced Brazilian tech professionals who are ready to play in the global market. Led by Yuri Pereira, founder of Borderless Coding, PSP combines strategic positioning, technical interview mastery, networking, and direct mentorship to create predictable international job offers.",
-      "highlight": "Over 105+ alumni have already landed roles in companies from the US, Canada, Europe, and Asia — many with salaries ranging from $5K to $15K/month."
+      "highlight": "Over 120+ mentees have already landed roles in companies from the US, Canada, Europe, and Asia — many with salaries ranging from $5K to $15K/month."
     },
     "WhoIsItFor": {
       "preTitle": "Who is it for?",
@@ -664,7 +664,7 @@
       "features": [
         "Direct access to a mentor who has personally scaled from $5K to $90K/month in tech contracts",
         "5 specialized mentors for diverse interview preparation",
-        "A clear, step-by-step system validated with 105+ success stories",
+        "A clear, step-by-step system validated with 120+ success stories",
         "A high-performance community that keeps you accountable"
       ]
     },
@@ -1343,7 +1343,7 @@
       "results": [
         {
           "title": "Proven track record",
-          "description": "$1.5M+ in revenue in the last 12 months, 105+ success stories"
+          "description": "$1.5M+ in revenue in the last 12 months, 120+ success stories"
         },
         {
           "title": "Strong dealflow",

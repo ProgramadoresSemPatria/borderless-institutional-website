@@ -12,7 +12,7 @@
         "discoverMore": "Descubra mais"
       },
       "NumbersHighlightCard": {
-        "stats": "500 alunos, 105 internacionalizados e 2 startups encubadas",
+        "stats": "500 alunos, 120 internacionalizados e 2 startups encubadas",
         "name": "Borderless Coding",
         "logoAlt": "logo da borderless"
       }
@@ -104,7 +104,7 @@
       ]
     },
     "Testimonials": {
-      "title": "<italic>105+ Cases de sucesso</italic> – profissionais agora trabalhando nos EUA, Europa e Ásia.",
+      "title": "<italic>120+ Cases de sucesso</italic> – profissionais agora trabalhando nos EUA, Europa e Ásia.",
       "list": [
         {
           "img": "/testimonials/guilherme.png",
@@ -246,7 +246,7 @@
       "title": "Nossa <italic>História</italic>",
       "paragraphs": [
         "Criada em 2023 por Yuri Pereira somente como uma mentoria que conectava developers com o mercado, hoje se tornou um ecossistema com professores de Tech, Inglês, CTO's, Managers, Cybersecurity e diversos áreas do mercado tech.",
-        "Hoje, a Borderless já contribuiu para a internacionalização de mais de 105 profissionais — desde iniciantes em início de carreira até especialistas com mais de 10 anos de experiência."
+        "Hoje, a Borderless já contribuiu para a internacionalização de mais de 120 profissionais — desde iniciantes em início de carreira até especialistas com mais de 10 anos de experiência."
       ]
     },
     "OurTeam": {
@@ -862,7 +862,7 @@
     "WhatIs": {
       "title": "O que é a Mentoria PSP?",
       "description": "A Mentoria Programador Sem Pátria (PSP) é um programa de aceleração de carreira de alta performance para profissionais brasileiros experientes de tecnologia prontos para iniciar no mercado global. Liderada por Yuri Pereira, fundador da Borderless Coding, a PSP combina posicionamento estratégico, domínio de entrevistas técnicas, networking e mentoria direta para gerar propostas internacionais previsíveis.",
-      "highlight": "Mais de 105+ ex-alunos já conquistaram vagas em empresas nos EUA, Canadá, Europa e Ásia — muitos com salários entre $5K e $15K/mês."
+      "highlight": "Mais de 120+ alunos já conquistaram vagas em empresas nos EUA, Canadá, Europa e Ásia — muitos com salários entre $5K e $15K/mês."
     },
     "WhoIsItFor": {
       "preTitle": "Para quem é?",
@@ -893,7 +893,7 @@
       "features": [
         "Acesso direto a um mentor que pessoalmente escalou de $5K para $90K/mês em contratos de tech",
         "5 mentores especializados para preparo diverso de entrevistas",
-        "Um sistema claro, passo a passo, validado com 105+ casos de sucesso",
+        "Um sistema claro, passo a passo, validado com 120+ casos de sucesso",
         "Uma comunidade de alta performance que mantém sua accountability"
       ]
     },
@@ -1310,7 +1310,7 @@
       "results": [
         {
           "title": "Histórico comprovado",
-          "description": "+$1.5M em receita nos últimos 12 meses, 105+ cases de sucesso"
+          "description": "+$1.5M em receita nos últimos 12 meses, 120+ cases de sucesso"
         },
         {
           "title": "Dealflow forte",
