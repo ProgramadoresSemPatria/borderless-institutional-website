@@ -35,8 +35,8 @@ export default function Page() {
     <div>
       <PspHeroSection />
       <WhatIsPspMentorship />
-      <Tiers />
       <WhoIsItFor />
+      <Tiers />
       <GoGlobalMethod />
       <HowItWorks />
       <WhyItWorks />
