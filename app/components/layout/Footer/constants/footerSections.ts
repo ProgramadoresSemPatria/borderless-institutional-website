@@ -9,6 +9,7 @@ export const footerSections: FooterSectionConfig[] = [
     items: [
       { nameKey: "howItWorks", href: "/how-it-works" },
       { nameKey: "privacyPolicy", href: "/legal/privacy-policy" },
+      { nameKey: "termsOfService", href: "/legal/terms-of-service" },
       { nameKey: "refundPolicy", href: "/legal/refund-policy" },
       { nameKey: "contact", href: "/contact" },
     ],

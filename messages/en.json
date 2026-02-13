@@ -1440,6 +1440,7 @@
         "items": {
           "howItWorks": "How Borderless works",
           "privacyPolicy": "Privacy Policy",
+          "termsOfService": "Terms of Service",
           "refundPolicy": "Refund Policy",
           "contact": "Contact"
         }
@@ -1540,6 +1541,137 @@
       "methodBody": "Returned to the original payment method within 5–10 business days after approval (processor dependent).",
       "abuseTitle": "Abuse prevention",
       "abuseBody": "We may deny repeated refund requests by the same customer."
+    },
+    "TermsOfService": {
+      "metadataTitle": "Terms of Service – Borderless Coding",
+      "h1": "Terms of Service",
+      "effectiveDate": "Effective date: August 13, 2026",
+      "lastUpdated": "Last updated: February 01, 2026",
+      "intro": "These Terms of Service (\"Terms\") are a legal agreement between you (\"Customer\", \"you\") and Borderless Coding LLC, a Wyoming limited liability company located at 30 N Gould St, STE R, Sheridan, WY 82801, USA (\"Borderless Coding\", \"we\", \"us\"). By purchasing any program, creating an account, or accessing our platform, you agree to these Terms in full. If you do not agree, do not use our services.",
+      "s1Title": "1. Services Provided",
+      "s1Body": "Borderless Coding provides digital career-acceleration services, including but not limited to:",
+      "servicesItems": [
+        "<strong>Mentorship programs</strong> (PSP Mentorship, BASE Mentorship) with live sessions, community access, and structured curriculum.",
+        "<strong>Cohort-based programs</strong> and bootcamps.",
+        "<strong>Digital products</strong> such as recorded courses, templates, and downloadable resources.",
+        "<strong>Access to the Borderless Platform</strong> (platform.borderlesscoding.com) for lessons, community, and progress tracking."
+      ],
+      "s1Footer": "All services are delivered 100% online. Nothing physical is shipped.",
+      "s2Title": "2. Eligibility",
+      "eligibilityItems": [
+        "You must be at least 18 years old to purchase or participate in any Borderless Coding program.",
+        "By creating an account, you confirm that the information you provide is accurate and complete."
+      ],
+      "s3Title": "3. Account & Access",
+      "accountItems": [
+        "Upon purchase, you receive an email receipt and account-activation link.",
+        "Your account role (Free, Starter, BASE, PSP) is provisioned upon email verification.",
+        "Account credentials are personal and non-transferable. You are responsible for all activity under your account.",
+        "We reserve the right to suspend or terminate accounts that violate these Terms."
+      ],
+      "s4Title": "4. Program Enrollment & Delivery",
+      "enrollmentItems": [
+        "Mentorship cohorts are capacity-limited. Your seat is reserved upon confirmed payment.",
+        "Video lessons are hosted on third-party platforms (e.g., Vimeo). Live sessions are conducted via Google Meet or similar tools.",
+        "Replays, community access, and downloadable resources are available as specified in your program tier.",
+        "Scheduling of 1:1 or group calls is done through our calendar tool; time-zone-friendly options are provided."
+      ],
+      "s5Title": "5. Payment Terms",
+      "paymentItems": [
+        "Payments are processed via Stripe, Appmax, or other payment processors we may adopt.",
+        "Prices are listed in the applicable currency at checkout (BRL, USD, or other).",
+        "If you choose a payment plan, you are committing to the full program price. Installments continue on schedule unless a refund is approved under our Refund Policy.",
+        "Failed payments may result in temporary suspension of access until the balance is resolved."
+      ],
+      "s6Title": "6. Refund & Cancellation Policy",
+      "s6Body": {
+        "beforeLink": "Our full",
+        "linkText": "Refund & Cancellation Policy",
+        "linkHref": "/legal/refund-policy",
+        "afterLink": "is incorporated into these Terms by reference."
+      },
+      "s6SummaryTitle": "Summary:",
+      "refundSummaryItems": [
+        "Full refund within 7 days of purchase if you have not accessed paid content or attended live sessions.",
+        "After 7 days or after accessing content/live calls, all sales are final for cohorts and mentorships.",
+        "Digital products (templates, recordings) are non-refundable after download or access."
+      ],
+      "s7Title": "7. Intellectual Property",
+      "ipItems": [
+        "All curriculum, methodologies (including the Go Global™ method), course materials, templates, recordings, platform content, and branding are the exclusive property of Borderless Coding LLC.",
+        "Your enrollment grants you a personal, non-transferable, non-exclusive license to access and use program materials for your own career development.",
+        "You may not copy, redistribute, resell, record, screenshot for commercial use, or share program content with non-enrolled individuals.",
+        "Violation of intellectual property terms may result in immediate account termination without refund."
+      ],
+      "s8Title": "8. Community & Code of Conduct",
+      "communityItems": [
+        "Access to our Discord community and platform forums is a privilege, not a right.",
+        "You agree to engage respectfully with mentors, staff, and fellow members.",
+        "Prohibited behavior includes: harassment, spam, solicitation, sharing of confidential program content, hate speech, and any conduct that disrupts the learning environment.",
+        "We reserve the right to remove members from the community without refund for serious or repeated violations."
+      ],
+      "s9Title": "9. Mentorship Disclaimer",
+      "mentorshipItems": [
+        "Borderless Coding provides career guidance, education, and mentorship — not employment services, recruitment, or job placement guarantees.",
+        "Results depend on your individual effort, experience, market conditions, and other factors beyond our control.",
+        "Testimonials and success stories reflect individual outcomes and are not guaranteed results.",
+        "We do not guarantee specific salary levels, job offers, interview invitations, or timelines."
+      ],
+      "s10Title": "10. Limitation of Liability",
+      "s10Intro": "To the maximum extent permitted by law:",
+      "liabilityItems": [
+        "Borderless Coding's total liability for any claim arising from these Terms or your use of our services shall not exceed the amount you paid for the specific program giving rise to the claim.",
+        "We are not liable for indirect, incidental, consequential, or punitive damages, including lost income, lost opportunities, or career outcomes.",
+        "We are not liable for technical issues, service interruptions, or third-party platform outages beyond our reasonable control."
+      ],
+      "s11Title": "11. Privacy & Data",
+      "s11Body": {
+        "beforeLink": "Your personal data is handled in accordance with our",
+        "linkText": "Privacy Policy",
+        "linkHref": "/legal/privacy-policy",
+        "afterLink": ". By using our services, you consent to the collection and use of data as described therein."
+      },
+      "s12Title": "12. Third-Party Services",
+      "thirdPartyItems": [
+        "Our services rely on third-party tools (Stripe, Appmax, PandaVideo, Google Meet, Discord, etc.).",
+        "We are not responsible for their terms, availability, or data practices.",
+        "Your use of those platforms is subject to their respective terms of service."
+      ],
+      "s13Title": "13. Modifications to Terms",
+      "s13Body": "We may update these Terms at any time. Material changes will be communicated via email or platform notification. Continued use of our services after changes constitutes acceptance of the updated Terms.",
+      "s14Title": "14. Governing Law & Disputes",
+      "disputesItems": [
+        "These Terms are governed by the laws of the State of Wyoming, United States.",
+        "Any dispute shall first be addressed through good-faith negotiation by contacting contato@borderlesscoding.com.",
+        "If unresolved within 30 days, disputes shall be submitted to binding arbitration under the rules of the American Arbitration Association, conducted in English.",
+        "You waive any right to participate in class-action lawsuits or class-wide arbitration."
+      ],
+      "s15Title": "15. Severability",
+      "s15Body": "If any provision of these Terms is found unenforceable, the remaining provisions remain in full effect.",
+      "s16Title": "16. Entire Agreement",
+      "s16Body": {
+        "parts": [
+          "These Terms, together with the ",
+          " and ",
+          ", constitute the entire agreement between you and Borderless Coding LLC regarding the use of our services."
+        ],
+        "links": [
+          {
+            "text": "Privacy Policy",
+            "href": "/legal/privacy-policy"
+          },
+          {
+            "text": "Refund Policy",
+            "href": "/legal/refund-policy"
+          }
+        ]
+      },
+      "contactTitle": "Contact",
+      "contactItems": [
+        "<strong>Email:</strong> contato@borderlesscoding.com",
+        "<strong>Entity:</strong> Borderless Coding LLC",
+        "<strong>Address:</strong> 30 N Gould St, STE R, Sheridan, WY 82801, Wyoming, USA"
+      ]
     }
   },
   "HowItWorks": {

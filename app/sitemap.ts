@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "for-founders-and-investors",
     "how-it-works",
     "legal/privacy-policy",
+    "legal/terms-of-service",
     "legal/refund-policy",
     "psp-mentorship",
     "want-to-hire",

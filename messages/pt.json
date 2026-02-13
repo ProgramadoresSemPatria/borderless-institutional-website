@@ -1404,6 +1404,7 @@
         "items": {
           "howItWorks": "Como funciona a Borderless",
           "privacyPolicy": "Política de Privacidade",
+          "termsOfService": "Termos de Serviço",
           "refundPolicy": "Política de Reembolso",
           "contact": "Contato"
         }
@@ -1504,6 +1505,137 @@
       "methodBody": "Devolução para o método de pagamento original em 5–10 dias úteis após aprovação (dependente do processador).",
       "abuseTitle": "Prevenção de abuso",
       "abuseBody": "Podemos negar solicitações de reembolso repetidas pelo mesmo cliente."
+    },
+    "TermsOfService": {
+      "metadataTitle": "Termos de Serviço – Borderless Coding",
+      "h1": "Termos de Serviço",
+      "effectiveDate": "Data de vigência: 13 de agosto de 2026",
+      "lastUpdated": "Última atualização: 01 de fevereiro de 2026",
+      "intro": "Estes Termos de Serviço (\"Termos\") são um acordo legal entre você (\"Cliente\", \"você\") e a Borderless Coding LLC, uma sociedade limitada do Wyoming localizada em 30 N Gould St, STE R, Sheridan, WY 82801, EUA (\"Borderless Coding\", \"nós\", \"nos\"). Ao comprar qualquer programa, criar uma conta ou acessar nossa plataforma, você concorda integralmente com estes Termos. Se você não concordar, não use nossos serviços.",
+      "s1Title": "1. Serviços Fornecidos",
+      "s1Body": "A Borderless Coding fornece serviços digitais de aceleração de carreira, incluindo, mas não se limitando a:",
+      "servicesItems": [
+        "<strong>Programas de mentoria</strong> (PSP Mentorship, BASE Mentorship) com sessões ao vivo, acesso à comunidade e currículo estruturado.",
+        "<strong>Programas baseados em cohort</strong> e bootcamps.",
+        "<strong>Produtos digitais</strong> como cursos gravados, templates e recursos para download.",
+        "<strong>Acesso à Plataforma Borderless</strong> (platform.borderlesscoding.com) para aulas, comunidade e acompanhamento de progresso."
+      ],
+      "s1Footer": "Todos os serviços são entregues 100% online. Nada físico é enviado.",
+      "s2Title": "2. Elegibilidade",
+      "eligibilityItems": [
+        "Você deve ter pelo menos 18 anos para comprar ou participar de qualquer programa da Borderless Coding.",
+        "Ao criar uma conta, você confirma que as informações fornecidas são precisas e completas."
+      ],
+      "s3Title": "3. Conta e Acesso",
+      "accountItems": [
+        "Após a compra, você recebe um recibo por e-mail e um link de ativação da conta.",
+        "Seu papel na conta (Free, Starter, BASE, PSP) é provisionado após a verificação do e-mail.",
+        "As credenciais da conta são pessoais e intransferíveis. Você é responsável por toda a atividade em sua conta.",
+        "Reservamo-nos o direito de suspender ou encerrar contas que violem estes Termos."
+      ],
+      "s4Title": "4. Inscrição e Entrega do Programa",
+      "enrollmentItems": [
+        "As turmas de mentoria têm capacidade limitada. Sua vaga é reservada após o pagamento confirmado.",
+        "As aulas em vídeo são hospedadas em plataformas de terceiros (por exemplo, Vimeo). As sessões ao vivo são realizadas via Google Meet ou ferramentas similares.",
+        "Replays, acesso à comunidade e recursos para download estão disponíveis conforme especificado no seu nível do programa.",
+        "O agendamento de chamadas 1:1 ou em grupo é feito através da nossa ferramenta de calendário; opções amigáveis ao fuso horário são fornecidas."
+      ],
+      "s5Title": "5. Termos de Pagamento",
+      "paymentItems": [
+        "Os pagamentos são processados via Stripe, Appmax ou outros processadores de pagamento que possamos adotar.",
+        "Os preços são listados na moeda aplicável no checkout (BRL, USD ou outras).",
+        "Se você escolher um plano de pagamento, está se comprometendo com o preço total do programa. As parcelas continuam conforme o cronograma, a menos que um reembolso seja aprovado sob nossa Política de Reembolso.",
+        "Pagamentos falhos podem resultar na suspensão temporária do acesso até que o saldo seja resolvido."
+      ],
+      "s6Title": "6. Política de Reembolso e Cancelamento",
+      "s6Body": {
+        "beforeLink": "Nossa",
+        "linkText": "Política de Reembolso e Cancelamento",
+        "linkHref": "/legal/refund-policy",
+        "afterLink": "está incorporada a estes Termos por referência."
+      },
+      "s6SummaryTitle": "Resumo:",
+      "refundSummaryItems": [
+        "Reembolso integral em até 7 dias da compra se você não tiver acessado conteúdo pago ou participado de sessões ao vivo.",
+        "Após 7 dias ou após acessar conteúdo/chamadas ao vivo, todas as vendas são finais para turmas e mentorias.",
+        "Produtos digitais (templates, gravações) não são reembolsáveis após download ou acesso."
+      ],
+      "s7Title": "7. Propriedade Intelectual",
+      "ipItems": [
+        "Todo o currículo, metodologias (incluindo o método Go Global™), materiais do curso, templates, gravações, conteúdo da plataforma e marca são propriedade exclusiva da Borderless Coding LLC.",
+        "Sua inscrição concede a você uma licença pessoal, intransferível e não exclusiva para acessar e usar materiais do programa para seu próprio desenvolvimento de carreira.",
+        "Você não pode copiar, redistribuir, revender, gravar, fazer capturas de tela para uso comercial ou compartilhar conteúdo do programa com pessoas não inscritas.",
+        "A violação dos termos de propriedade intelectual pode resultar no encerramento imediato da conta sem reembolso."
+      ],
+      "s8Title": "8. Comunidade e Código de Conduta",
+      "communityItems": [
+        "O acesso à nossa comunidade Discord e fóruns da plataforma é um privilégio, não um direito.",
+        "Você concorda em se envolver respeitosamente com mentores, equipe e outros membros.",
+        "Comportamentos proibidos incluem: assédio, spam, solicitação, compartilhamento de conteúdo confidencial do programa, discurso de ódio e qualquer conduta que perturbe o ambiente de aprendizado.",
+        "Reservamo-nos o direito de remover membros da comunidade sem reembolso por violações graves ou repetidas."
+      ],
+      "s9Title": "9. Aviso sobre Mentoria",
+      "mentorshipItems": [
+        "A Borderless Coding fornece orientação de carreira, educação e mentoria — não serviços de emprego, recrutamento ou garantias de colocação profissional.",
+        "Os resultados dependem do seu esforço individual, experiência, condições de mercado e outros fatores além do nosso controle.",
+        "Depoimentos e histórias de sucesso refletem resultados individuais e não são resultados garantidos.",
+        "Não garantimos níveis salariais específicos, ofertas de emprego, convites para entrevistas ou prazos."
+      ],
+      "s10Title": "10. Limitação de Responsabilidade",
+      "s10Intro": "Na máxima extensão permitida por lei:",
+      "liabilityItems": [
+        "A responsabilidade total da Borderless Coding por qualquer reclamação decorrente destes Termos ou do uso de nossos serviços não excederá o valor que você pagou pelo programa específico que deu origem à reclamação.",
+        "Não somos responsáveis por danos indiretos, incidentais, consequenciais ou punitivos, incluindo perda de renda, oportunidades perdidas ou resultados de carreira.",
+        "Não somos responsáveis por problemas técnicos, interrupções de serviço ou falhas de plataformas de terceiros além do nosso controle razoável."
+      ],
+      "s11Title": "11. Privacidade e Dados",
+      "s11Body": {
+        "beforeLink": "Seus dados pessoais são tratados de acordo com nossa",
+        "linkText": "Política de Privacidade",
+        "linkHref": "/legal/privacy-policy",
+        "afterLink": ". Ao usar nossos serviços, você consente com a coleta e uso de dados conforme descrito nela."
+      },
+      "s12Title": "12. Serviços de Terceiros",
+      "thirdPartyItems": [
+        "Nossos serviços dependem de ferramentas de terceiros (Stripe, Appmax, PandaVideo, Google Meet, Discord, etc.).",
+        "Não somos responsáveis por seus termos, disponibilidade ou práticas de dados.",
+        "Seu uso dessas plataformas está sujeito aos respectivos termos de serviço."
+      ],
+      "s13Title": "13. Modificações nos Termos",
+      "s13Body": "Podemos atualizar estes Termos a qualquer momento. Mudanças materiais serão comunicadas por e-mail ou notificação na plataforma. O uso continuado de nossos serviços após as mudanças constitui aceitação dos Termos atualizados.",
+      "s14Title": "14. Lei Aplicável e Disputas",
+      "disputesItems": [
+        "Estes Termos são regidos pelas leis do Estado de Wyoming, Estados Unidos.",
+        "Qualquer disputa deve ser primeiro abordada através de negociação de boa-fé entrando em contato com contato@borderlesscoding.com.",
+        "Se não resolvida em 30 dias, as disputas serão submetidas à arbitragem vinculativa sob as regras da American Arbitration Association, conduzida em inglês.",
+        "Você renuncia a qualquer direito de participar de ações coletivas ou arbitragem coletiva."
+      ],
+      "s15Title": "15. Divisibilidade",
+      "s15Body": "Se qualquer disposição destes Termos for considerada inexequível, as disposições restantes permanecem em pleno vigor.",
+      "s16Title": "16. Acordo Integral",
+      "s16Body": {
+        "parts": [
+          "Estes Termos, juntamente com a ",
+          " e a ",
+          ", constituem o acordo integral entre você e a Borderless Coding LLC sobre o uso de nossos serviços."
+        ],
+        "links": [
+          {
+            "text": "Política de Privacidade",
+            "href": "/legal/privacy-policy"
+          },
+          {
+            "text": "Política de Reembolso",
+            "href": "/legal/refund-policy"
+          }
+        ]
+      },
+      "contactTitle": "Contato",
+      "contactItems": [
+        "<strong>E-mail:</strong> contato@borderlesscoding.com",
+        "<strong>Entidade:</strong> Borderless Coding LLC",
+        "<strong>Endereço:</strong> 30 N Gould St, STE R, Sheridan, WY 82801, Wyoming, EUA"
+      ]
     }
   },
   "HowItWorks": {
