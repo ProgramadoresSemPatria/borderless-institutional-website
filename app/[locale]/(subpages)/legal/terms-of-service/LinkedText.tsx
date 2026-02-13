@@ -2,6 +2,7 @@
 
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import { ReactNode } from "react";
 
 interface LinkedTextProps {
   translationKey: string;
@@ -44,7 +45,7 @@ export function MultiLinkedText({
     href: string;
   }>;
 
-  const result: (string | JSX.Element)[] = [];
+  const result: (string | ReactNode)[] = [];
   
   parts.forEach((part, idx) => {
     result.push(part);

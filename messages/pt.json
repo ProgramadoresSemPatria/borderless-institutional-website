@@ -50,9 +50,18 @@
           "title": "Mentoria PSP",
           "description": "Programa de mentorias estruturado para acelerar sua carreira em tecnologia",
           "features": [
-            { "title": "Mentoria especializada", "icon": "user" },
-            { "title": "Projetos práticos", "icon": "code" },
-            { "title": "Network global", "icon": "users" }
+            {
+              "title": "Mentoria especializada",
+              "icon": "user"
+            },
+            {
+              "title": "Projetos práticos",
+              "icon": "code"
+            },
+            {
+              "title": "Network global",
+              "icon": "users"
+            }
           ],
           "href": "/psp-mentorship"
         },
@@ -60,9 +69,18 @@
           "title": "Mentoria BASE",
           "description": "Fundamentos sólidos para sua jornada em tecnologia e mercados internacionais",
           "features": [
-            { "title": "Base técnica", "icon": "code" },
-            { "title": "Soft skills", "icon": "speech" },
-            { "title": "Preparação global", "icon": "earth" }
+            {
+              "title": "Base técnica",
+              "icon": "code"
+            },
+            {
+              "title": "Soft skills",
+              "icon": "speech"
+            },
+            {
+              "title": "Preparação global",
+              "icon": "earth"
+            }
           ],
           "href": "/base-mentorship"
         },
@@ -70,9 +88,18 @@
           "title": "Bootcamp: Web3 Global Developer",
           "description": "Bootcamp intensivo focado em tecnologias Web3 e desenvolvimento descentralizado",
           "features": [
-            { "title": "Web3 Stack", "icon": "code" },
-            { "title": "DApps", "icon": "network" },
-            { "title": "Blockchain", "icon": "bitcoin" }
+            {
+              "title": "Web3 Stack",
+              "icon": "code"
+            },
+            {
+              "title": "DApps",
+              "icon": "network"
+            },
+            {
+              "title": "Blockchain",
+              "icon": "bitcoin"
+            }
           ],
           "href": "/bootcamp-web3"
         }
@@ -346,8 +373,14 @@
     "HowItWorks": {
       "title": "Como a <italic>Mentoria</italic> Funciona?",
       "items": {
-        "duration": { "title": "Duração", "description": "12 meses" },
-        "format": { "title": "Formato", "description": "100% online" },
+        "duration": {
+          "title": "Duração",
+          "description": "12 meses"
+        },
+        "format": {
+          "title": "Formato",
+          "description": "100% online"
+        },
         "live": {
           "title": "Sessões ao Vivo",
           "description": "Chamadas semanais em grupo com embaixadores"
@@ -636,13 +669,17 @@
             },
             {
               "title": "Rust (40%) – Foco em Solana",
-              "content": ["Anchor framework & Solana accounts model"],
+              "content": [
+                "Anchor framework & Solana accounts model"
+              ],
               "length": "12h",
               "extra": "💻 Build: NFT minting + auction dApp"
             },
             {
               "title": "GoLang (10%) – Introdução a Cosmos",
-              "content": ["Tendermint / Cosmos SDK basics"],
+              "content": [
+                "Tendermint / Cosmos SDK basics"
+              ],
               "length": "3h",
               "extra": "💻 Build: Minimal blockchain node"
             },
@@ -820,7 +857,10 @@
           "title": "Duração",
           "description": "6 ou 12 meses (escolha seu plano)"
         },
-        { "title": "Formato", "description": "100% online" },
+        {
+          "title": "Formato",
+          "description": "100% online"
+        },
         {
           "title": "Encontros ao vivo",
           "description": "Chamadas estratégicas quinzenais com feedback direto do Yuri"
@@ -1340,7 +1380,11 @@
   "Header": {
     "logoAlt": "logo da borderless",
     "navItems": [
-      { "title": "Bootcamp", "href": "/bootcamp-web3", "icon": "globe" },
+      {
+        "title": "Bootcamp",
+        "href": "/bootcamp-web3",
+        "icon": "globe"
+      },
       {
         "title": "Mentorias",
         "icon": "users",
@@ -1509,7 +1553,7 @@
     "TermsOfService": {
       "metadataTitle": "Termos de Serviço – Borderless Coding",
       "h1": "Termos de Serviço",
-      "effectiveDate": "Data de vigência: 13 de agosto de 2026",
+      "effectiveDate": "Data de vigência: 13 de agosto de 2025",
       "lastUpdated": "Última atualização: 01 de fevereiro de 2026",
       "intro": "Estes Termos de Serviço (\"Termos\") são um acordo legal entre você (\"Cliente\", \"você\") e a Borderless Coding LLC, uma sociedade limitada do Wyoming localizada em 30 N Gould St, STE R, Sheridan, WY 82801, EUA (\"Borderless Coding\", \"nós\", \"nos\"). Ao comprar qualquer programa, criar uma conta ou acessar nossa plataforma, você concorda integralmente com estes Termos. Se você não concordar, não use nossos serviços.",
       "s1Title": "1. Serviços Fornecidos",

@@ -879,13 +879,17 @@
             },
             {
               "title": "Rust (40%) – Solana Focus",
-              "content": ["Anchor framework & Solana accounts model"],
+              "content": [
+                "Anchor framework & Solana accounts model"
+              ],
               "length": "12h",
               "extra": "💻 Build: NFT minting + auction dApp"
             },
             {
               "title": "GoLang (10%) – Cosmos Intro",
-              "content": ["Tendermint / Cosmos SDK basics"],
+              "content": [
+                "Tendermint / Cosmos SDK basics"
+              ],
               "length": "3h",
               "extra": "💻 Build: Minimal blockchain node"
             },
@@ -1376,7 +1380,11 @@
   "Header": {
     "logoAlt": "borderless logo",
     "navItems": [
-      { "title": "Bootcamp", "href": "/bootcamp-web3", "icon": "globe" },
+      {
+        "title": "Bootcamp",
+        "href": "/bootcamp-web3",
+        "icon": "globe"
+      },
       {
         "title": "Mentorships",
         "icon": "users",
@@ -1545,7 +1553,7 @@
     "TermsOfService": {
       "metadataTitle": "Terms of Service – Borderless Coding",
       "h1": "Terms of Service",
-      "effectiveDate": "Effective date: August 13, 2026",
+      "effectiveDate": "Effective date: August 13, 2025",
       "lastUpdated": "Last updated: February 01, 2026",
       "intro": "These Terms of Service (\"Terms\") are a legal agreement between you (\"Customer\", \"you\") and Borderless Coding LLC, a Wyoming limited liability company located at 30 N Gould St, STE R, Sheridan, WY 82801, USA (\"Borderless Coding\", \"we\", \"us\"). By purchasing any program, creating an account, or accessing our platform, you agree to these Terms in full. If you do not agree, do not use our services.",
       "s1Title": "1. Services Provided",
