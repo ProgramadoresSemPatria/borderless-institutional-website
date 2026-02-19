@@ -108,15 +108,23 @@ export default function Page() {
                 contato@borderlesscoding.com
               </a>
             </p>
-            <p>
+            <div>
               <span className="block font-bold">{t("aside.phoneLabel")}</span>
-              <a
-                href="tel:+16507694117"
-                className="text-secondary hover:underline break-normal"
-              >
-                +1 650 769 4117
-              </a>
-            </p>
+              <div className="flex flex-col">
+                <a
+                  href="tel:+16507694117"
+                  className="text-secondary hover:underline break-normal"
+                >
+                  +1 650 769 4117
+                </a>
+                <a
+                  href="tel:+5511945277173"
+                  className="text-secondary hover:underline break-normal"
+                >
+                  +55 11 94527-7173
+                </a>
+              </div>
+            </div>
             <p>
               <span className="block font-bold">
                 {t("aside.officeHoursLabel")}
