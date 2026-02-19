@@ -107,6 +107,7 @@ export default async function RootLayout({
             };
 
             document.querySelectorAll('a').forEach(el => {
+                if (el.protocol !== 'http:' && el.protocol !== 'https:') return;
                 const elURL = new URL(el.href);
                 if (!elURL.hash) {
                     el.href = updateLinks(el, elURL);
