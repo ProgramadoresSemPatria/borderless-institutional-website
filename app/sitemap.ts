@@ -2,7 +2,6 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = `${process.env.BASE_URL}`;
-  const locales = ["en", "pt"];
   const pages = [
     "",
     "base-mentorship",
@@ -24,22 +23,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "want-to-internationalize",
   ];
 
-  return pages.flatMap((page) =>
-    locales.map((locale) => {
-      const path = page === "" ? `/${locale}` : `/${locale}/${page}`;
-      return {
-        url: `${baseUrl}${path}`,
-        lastModified: new Date(),
-        changeFrequency: "monthly",
-        alternates: {
-          languages: Object.fromEntries(
-            locales.map((locale) => [
-              locale,
-              `${baseUrl}/${locale}${page ? `/${page}` : ""}`,
-            ])
-          ),
-        },
-      };
-    })
-  );
+  return pages.map((page) => ({
+    url: `${baseUrl}/pt${page && `/${page}`}`,
+    lastModified: new Date(),
+    alternates: {
+      languages: {
+        pt: `${baseUrl}/pt${page && `/${page}`}`,
+        en: `${baseUrl}/en${page && `/${page}`}`,
+        "x-default": `${baseUrl}/pt${page && `/${page}`}`,
+      },
+    },
+  }));
 }
